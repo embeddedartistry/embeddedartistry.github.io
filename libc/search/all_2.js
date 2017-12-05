@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['b2d',['b2d',['../d4/d5f/gdtoaimp_8h.html#a0154e23d5b64457938e88865cd37bc7d',1,'b2d():&#160;gdtoaimp.h'],['../d0/ddb/misc_8c.html#abac1aaa400718b8f7b2e193efb78c7b6',1,'b2d(Bigint *a, int *e):&#160;misc.c']]],
+  ['balloc',['Balloc',['../d4/d5f/gdtoaimp_8h.html#ae4b9baed0beaa5a365940e9a6e5a45f4',1,'Balloc():&#160;gdtoaimp.h'],['../d0/ddb/misc_8c.html#ace15e32954b2e8593b2dfb79ab13dce0',1,'Balloc(int k):&#160;misc.c']]],
+  ['bcopy',['Bcopy',['../d4/d5f/gdtoaimp_8h.html#acb2492181a9c5310befb7e45e65c35c9',1,'gdtoaimp.h']]],
+  ['be16toh',['be16toh',['../d1/d84/endian_8h.html#abb9b3120f6457dc04471c134fee1d221',1,'endian.h']]],
+  ['be32toh',['be32toh',['../d1/d84/endian_8h.html#a6acac399720b3a57d9050420aa0aac41',1,'endian.h']]],
+  ['be64toh',['be64toh',['../d1/d84/endian_8h.html#af94eb043f5be14b4f260fb9b4c89ca2e',1,'endian.h']]],
+  ['betoh16',['betoh16',['../d1/d84/endian_8h.html#a5d39ee64ea0013f38b5ca4db9d0c2fae',1,'endian.h']]],
+  ['betoh32',['betoh32',['../d1/d84/endian_8h.html#ac81a7b557b43d092f9a9fb1070be0bdb',1,'endian.h']]],
+  ['betoh64',['betoh64',['../d1/d84/endian_8h.html#a2e2206e716f6773c98c1ab196aa219d7',1,'endian.h']]],
+  ['bfree',['Bfree',['../d4/d5f/gdtoaimp_8h.html#ac722090bdf4f835513f3a045d8237803',1,'Bfree():&#160;gdtoaimp.h'],['../d0/ddb/misc_8c.html#a0517b3cab3b586de1c60031f2a43de01',1,'Bfree(Bigint *v):&#160;misc.c']]],
+  ['bias',['Bias',['../d4/d5f/gdtoaimp_8h.html#a4a718198deb1f843bf9791779dee6b01',1,'gdtoaimp.h']]],
+  ['big0',['Big0',['../d4/d5f/gdtoaimp_8h.html#ae709fda6b3328d495c3addb13d51c8ec',1,'gdtoaimp.h']]],
+  ['big1',['Big1',['../d4/d5f/gdtoaimp_8h.html#a16bd098794b12e962a30252ed02ee37d',1,'gdtoaimp.h']]],
+  ['big_5fendian',['BIG_ENDIAN',['../d1/d84/endian_8h.html#a23eb5e058a210efdde3d64e69679fafa',1,'endian.h']]],
+  ['bigint',['Bigint',['../d4/d5f/gdtoaimp_8h.html#df/d49/struct_bigint',1,'Bigint'],['../d4/d5f/gdtoaimp_8h.html#af4d1f814f7bcd9a50ee45efea0942d99',1,'Bigint():&#160;gdtoaimp.h']]],
+  ['bigtens',['bigtens',['../d4/d5f/gdtoaimp_8h.html#ab31834fabbfed25337d5f33eae59db7c',1,'bigtens():&#160;gdtoaimp.h'],['../d4/d5f/gdtoaimp_8h.html#af2460104601017e24117a419bd23630d',1,'bigtens():&#160;misc.c'],['../d0/ddb/misc_8c.html#af2460104601017e24117a419bd23630d',1,'bigtens():&#160;misc.c']]],
+  ['bitstob',['bitstob',['../d6/d91/gdtoa_8c.html#aff548bc6cab562dec45f754fe552c575',1,'gdtoa.c']]],
+  ['bletch',['Bletch',['../d4/d5f/gdtoaimp_8h.html#a7c80938abca604122c8f7afb66d59331',1,'gdtoaimp.h']]],
+  ['bndry_5fmask',['Bndry_mask',['../d4/d5f/gdtoaimp_8h.html#a328cff0f8990e802688af178354211ff',1,'gdtoaimp.h']]],
+  ['bndry_5fmask1',['Bndry_mask1',['../d4/d5f/gdtoaimp_8h.html#ad1db7929322cfb6d39c183e032d4c680',1,'gdtoaimp.h']]],
+  ['bool',['bool',['../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9',1,'stdbool.h']]],
+  ['bsearch',['bsearch',['../dc/d9c/stdlib_8h.html#a49a76993c8406bc5a389dfabb8089bd1',1,'bsearch(const void *, const void *, size_t, size_t, int(*)(const void *, const void *)):&#160;stdlib.h'],['../de/d39/bsearch_8c.html#acea6fa3532b75cc066ffa82739a24327',1,'bsearch(void *key, const void *base0, size_t nmemb, size_t size, int *compar) const:&#160;bsearch.c']]],
+  ['bsearch_2ec',['bsearch.c',['../de/d39/bsearch_8c.html',1,'']]],
+  ['byte_5forder',['BYTE_ORDER',['../d1/d84/endian_8h.html#a1771b7fb65ee640524d0052f229768c3',1,'endian.h']]]
+];
