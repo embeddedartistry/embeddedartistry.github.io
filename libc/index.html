@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Embedded Artistry lic: libc</title>
+<title>Embedded Artistry libc: libc</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Embedded Artistry lic
+   <div id="projectname">Embedded Artistry libc
    </div>
    <div id="projectbrief">C Standard Library Support for Bare-metal Systems</div>
   </td>
@@ -88,29 +88,18 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>In order to conserve precious memory resources, this library does not supply the complete C standard library functionality. Instead, a subset of functions which are useful on bare-metal embedded systems has been selected. If you have a bare metal system and want to use the standard set of C functions, this library is for you!</p>
 <p>Unlike many other C libraries that I've come across, this library implements unit tests and has addressed flaws in various open-source implementations of the C standard library functions.</p>
 <p>Note that <code>malloc</code> and <code>free</code> are not included in this library. If you need dynamic memory allocation support, you can couple this library with the <a href="https://github.com/embeddedartistry/libmemory">Embedded Artistry <code>libmemory</code></a>, which contains implementations of <code>malloc</code> and <code>free</code>.</p>
+<p>If you are interested in contributing to this project, please read the <a class="el" href="d5/d69/md_docs__c_o_n_t_r_i_b_u_t_i_n_g.html">`CONTRIBUTING` guide</a>.</p>
 <h2>Table of Contents</h2>
 <ol type="1">
 <li><a href="#about-the-project">About the Project</a></li>
-</ol>
-<ol type="1">
 <li><a href="#project-status">Project Status</a></li>
-</ol>
-<ol type="1">
 <li><a href="#getting-started">Getting Started</a><ol type="a">
 <li><a href="#requirements">Requirements</a></li>
-</ol>
-<ol type="a">
 <li><a href="#building">Building</a></li>
-</ol>
-<ol type="a">
 <li><a href="#installation">Installation</a></li>
-</ol>
-<ol type="a">
 <li><a href="#usage">Usage</a></li>
 </ol>
 </li>
-</ol>
-<ol type="1">
 <li><a href="#release-process">Release Process</a><ol type="a">
 <li><a href="#versioning">Versioning</a></li>
 </ol>
@@ -157,14 +146,17 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>math.h and some definitions (INFINITY, NaN)</li>
 <li><code>stdio</code></li>
 </ul>
-<p>The following unit tests need to be added: </p><pre class="fragment">* `bsearch`
-* `imaxdiv`
-* `div`, `ldiv`
-* `realloc`
-* `rand` family
-* `strnstr`
-* `memmove`
-</pre><p>Maybe in the future:</p>
+<p>The following unit tests need to be added:</p>
+<ul>
+<li><code>bsearch</code></li>
+<li><code>imaxdiv</code></li>
+<li><code>div</code>, <code>ldiv</code></li>
+<li><code>realloc</code></li>
+<li><code>rand</code> family</li>
+<li><code>strnstr</code></li>
+<li><code>memmove</code></li>
+</ul>
+<p>Maybe in the future:</p>
 <ul>
 <li><code>wchar</code> support</li>
 <li><code>errno</code> support (enabled as a compile-time switch)</li>
@@ -216,7 +208,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>I am currently working on Contributing guidelines. In the meantime, please open an issue to discuss any contributions you'd like to make.</p>
 <h1>Further Reading</h1>
 <ul>
-<li><a href="https://embeddedartistry.github.io/libc/index.html"><code>libc</code> Documenation</a></li>
+<li><a href="https://embeddedartistry.github.io/libc/index.html"><code>libc</code> Documentation</a></li>
+<li><a class="el" href="d5/d69/md_docs__c_o_n_t_r_i_b_u_t_i_n_g.html">`CONTRIBUTING` Guide</a></li>
 </ul>
 <h1>Authors</h1>
 <ul>
@@ -225,7 +218,26 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h1>License</h1>
 <p>Copyright (c) 2017 Embedded Artistry LLC</p>
 <p>This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.</p>
+<p>musl libc is licensed under the MIT License - see [LICENSE](LICENSE) file for details.</p>
 <h1>Acknowledgments</h1>
+<p>Many of the open-source function implementations used in this library have been pulled from two primary sources:</p>
+<ul>
+<li><a href="https://opensource.apple.com/source/Libc/">Apple Open Source libc</a><ul>
+<li>abs, atof, bsearch, div family, heapsort/qsort family, abs family, imax family, strtol/ll/ull</li>
+<li>fls, flsl, flsll</li>
+<li>strstr, strtok. strnstr, strnlen, strndup, strncpy, strncat, strlen, strdup, strcpy, strcat</li>
+<li>memmem, memcpy</li>
+</ul>
+</li>
+<li><a href="https://www.musl-libc.org">musl libc</a><ul>
+<li>All ctype member functions (locale support removed)</li>
+<li>strrchr, strchrnul, strchr</li>
+<li>memset, memrchr</li>
+</ul>
+</li>
+</ul>
+<p>I have also used and improved the open-source <code>gdtoa</code> library.</p>
+<p>The initial groundwork of testing was implemented by referencing the <a href="http://nsz.repo.hu/git/?p=libc-test">libc-test</a> project.</p>
 <p><b><a href="#table-of-contents">Back to top</a></b> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

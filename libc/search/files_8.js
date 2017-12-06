@@ -13,6 +13,7 @@ var searchData=
   ['isprint_2ec',['isprint.c',['../d2/df0/isprint_8c.html',1,'']]],
   ['ispunct_2ec',['ispunct.c',['../d5/d92/ispunct_8c.html',1,'']]],
   ['isspace_2ec',['isspace.c',['../d2/de1/isspace_8c.html',1,'']]],
+  ['issue_5ftemplate_2emd',['ISSUE_TEMPLATE.md',['../db/d90/_i_s_s_u_e___t_e_m_p_l_a_t_e_8md.html',1,'']]],
   ['isupper_2ec',['isupper.c',['../d8/d23/isupper_8c.html',1,'']]],
   ['isxdigit_2ec',['isxdigit.c',['../d9/dc4/isxdigit_8c.html',1,'']]]
 ];
