@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme_2emd',['README.md',['../d9/dd6/_r_e_a_d_m_e_8md.html',1,'']]]
+  ['issue_5ftemplate_2emd',['ISSUE_TEMPLATE.md',['../db/d90/_i_s_s_u_e___t_e_m_p_l_a_t_e_8md.html',1,'']]]
 ];

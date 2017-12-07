@@ -84,33 +84,20 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">libmemory </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a href="http://136.24.14.137:12345/job/ea-nightly/libmemory/master"></a></p>
-<p>Embedded Artistry's <code>libmemory</code> is a memory management library for embedded systems. If you have a bare metal system and want to use <code><a class="el" href="df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a></code>, this library is for you!</p>
+<div class="textblock"><p>Embedded Artistry's <code>libmemory</code> is a memory management library for embedded systems. If you have a bare metal system and want to use <code><a class="el" href="df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a></code>, this library is for you!</p>
 <p><code>libmemory</code> provides various implemetations of the <code><a class="el" href="df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a></code> and <code><a class="el" href="df/dbe/malloc__freelist_8c.html#afbedc913aa4651b3c3b4b3aecd9b4711">free()</a></code> functions. The primary malloc implementation is a freelist allocator which can be used on a bare-metal system. Wrappers for some RTOSes are also provided (and can be added if not already). You wil also find other useful memory functions, such as <code><a class="el" href="d6/dfa/aligned__malloc_8h.html#af9d29fa5731420020b36ffbf56e6de97" title="Allocated aligned memory. ">aligned_malloc()</a></code>.</p>
 <p>This library is meant to be coupled with a <code>libc</code> implementation (such as the <a href="https://github.com/embeddedartistry/libc">Embedded Artistry <code>libc</code></a>). <code><a class="el" href="df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a></code> and <code><a class="el" href="df/dbe/malloc__freelist_8c.html#afbedc913aa4651b3c3b4b3aecd9b4711">free()</a></code> are not redefined in these headers, so you can safely use this library with your platform's existing <code>libc</code>.</p>
 <h2>Table of Contents</h2>
 <ol type="1">
 <li><a href="#about-the-project">About the Project</a></li>
-</ol>
-<ol type="1">
 <li><a href="#project-status">Project Status</a></li>
-</ol>
-<ol type="1">
 <li><a href="#getting-started">Getting Started</a><ol type="a">
 <li><a href="#requirements">Requirements</a></li>
-</ol>
-<ol type="a">
 <li><a href="#building">Building</a></li>
-</ol>
-<ol type="a">
 <li><a href="#installation">Installation</a></li>
-</ol>
-<ol type="a">
 <li><a href="#usage">Usage</a></li>
 </ol>
 </li>
-</ol>
-<ol type="1">
 <li><a href="#release-process">Release Process</a><ol type="a">
 <li><a href="#versioning">Versioning</a></li>
 </ol>
@@ -122,7 +109,6 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>A block of memory needs to be initially assigned using the <code><a class="el" href="d0/d4c/malloc_8h.html#aefccca545b4f08bf860289c476b51aae" title="Assign blocks of memory for use by malloc(). ">malloc_addblock()</a></code> function. This tells the malloc implementation what memory address and size to use for the heap.</p>
 <div class="fragment"><div class="line">// Allocate 4MB to the heap starting at memory address 0xDEADBEEF</div><div class="line">malloc_addblock(0xDEADBEEF, 4 * 1024 * 1024);</div></div><!-- fragment --><p>One memory has been allcated to the heap, you can use <code><a class="el" href="df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a></code> and <code><a class="el" href="df/dbe/malloc__freelist_8c.html#afbedc913aa4651b3c3b4b3aecd9b4711">free()</a></code> as expected.</p>
 <h1>Project Status</h1>
-<p><a href="http://136.24.14.137:12345/job/ea-nightly/libmemory/master"></a></p>
 <ul>
 <li>Basic memory allocation is implemented using the free-list strategy</li>
 <li>Cross-compiling with the Premake buildsystem is currently not implemented.</li>
@@ -171,7 +157,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>You can allocate aligned memory using <code><a class="el" href="d6/dfa/aligned__malloc_8h.html#af9d29fa5731420020b36ffbf56e6de97" title="Allocated aligned memory. ">aligned_malloc()</a></code>:</p>
 <div class="fragment"><div class="line">void* aligned_malloc(size_t align, size_t size);</div></div><!-- fragment --><p>Alignment must be a power of two!</p>
 <p>Aligned memory can only be free'd using <code><a class="el" href="d6/dfa/aligned__malloc_8h.html#a274dd8714485eed9c9328973d44ec5dc" title="Free aligned memory. ">aligned_free()</a></code>:</p>
-<div class="fragment"><div class="line">void aligned_free(void* ptr);</div></div><!-- fragment --><p>For more information, see <code>aligned_memory.h</code> and the generated documentation.</p>
+<div class="fragment"><div class="line">void aligned_free(void* ptr);</div></div><!-- fragment --><p>For more information, see <code>aligned_memory.h</code>and <a href="https://embeddedartistry.github.io/libmemory/d6/dfa/aligned__malloc_8h.html">the documentation</a>.</p>
 <h2>Testing</h2>
 <p>The tests for this library are written with <a href="https://cmocka.org">CMocka</a>. You can run the tests by issuing the following command:</p>
 <div class="fragment"><div class="line">make test</div></div><!-- fragment --><p>By default, test results are generated for use by the CI server and are formatted in JUnit XML. The test results XML files can be found in <code>buildresults/testresults/</code>.</p>
@@ -181,12 +167,18 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>You can auto-format your code to match the style guidelines by issuing the following command:</p>
 <div class="fragment"><div class="line">make format</div></div><!-- fragment --><p>Formatting is enforced by the Jenkins build server which runs continuous integration for this project. Your pull request will not be accepted if the formatting check fails.</p>
 <h1>Documentation</h1>
-<p>Documentation can be built by running the following command:</p>
+<p><a href="https://embeddedartistry.github.io/libmemory/index.html">Documentation for the latest release can always be found here</a>.</p>
+<p>Documentation can be built locally by running the following command:</p>
 <div class="fragment"><div class="line">make doc</div></div><!-- fragment --><p>Documentation can be found in <code>buildresults/doc</code>, and the root page is <code>index.html</code>.</p>
 <h1>Need help?</h1>
 <p>If you need further assistance or have any questions, please <a href="https://github.com/embeddedartistry/libmemory/issues/new">file a GitHub Issue</a> or send us an email using the <a href="http://embeddedartistry.com/contact">Embedded Artistry Contact Form</a>.</p>
 <h1>Contributing</h1>
-<p>I am currently working on Contributing guidelines. In the meantime, please open an issue to discuss any contributions you'd like to make.</p>
+<p>If you are intersted in contributing to this project, please read our <a class="el" href="d5/d69/md_docs__c_o_n_t_r_i_b_u_t_i_n_g.html">contributing guidelines</a>.</p>
+<h1>Further Reading</h1>
+<ul>
+<li><a href="https://embeddedartistry.github.io/libmemory/index.html"><code>libmemory</code> Documentation</a></li>
+<li><a class="el" href="d5/d69/md_docs__c_o_n_t_r_i_b_u_t_i_n_g.html">CONTRIBUTING guide</a></li>
+</ul>
 <h1>Authors</h1>
 <ul>
 <li><b><a href="https://github.com/phillipjohnston">Phillip Johnston</a></b> - original library author - <a href="https://github.com/embeddedartistry">Embedded Artistry</a></li>
