@@ -10,7 +10,7 @@ pipeline
     {
       steps
       {
-        copyArtifacts(projectname: 'ea-nightly/libc', selector: upstream, filter: 'documentation.tgz', optional: true)
+        copyArtifacts(projectName: 'ea-nightly/libc', selector: upstream, filter: 'documentation.tgz', optional: true)
       }
       post
       {
