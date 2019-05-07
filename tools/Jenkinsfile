@@ -10,18 +10,20 @@ pipeline
     {
       steps
       {
-        copyArtifacts(projectName: 'ea-nightly/libc', selector: upstream, filter: 'documentation.tgz', optional: true)
+        copyArtifacts filter: 'documentation.tgz', fingerprintArtifacts: true, projectName: 'ea-nightly/libc/master', selector: upstream(fallbackToLastSuccessful: true, upstreamFilterStrategy: 'UseNewest')
       }
       post
       {
         success
         {
+          sh 'git checkout master'
           sh 'git rm -rf libc'
           sh 'mkdir libc'
-          sh 'tar -C libc --strip-components=3 -xf documentation.tgz buildresults/doc'
+          sh 'tar -C libc --strip-components=2 -xf documentation.tgz'
           sh 'git add libc'
           sh 'git commit -m "Updating libc documentation via Jenkins Pipeline Job"'
           sh 'git push'
+          sh 'rm documentation.tgz'
         }
       }
     }
