@@ -58,5 +58,25 @@ pipeline
         }
       }
     }
+    stage('Framework Documentation')
+    {
+      steps
+      {
+        copyArtifacts filter: 'documentation.tgz', fingerprintArtifacts: true, projectName: 'ea-nightly/embedded-framework/master', selector: upstream(fallbackToLastSuccessful: true, upstreamFilterStrategy: 'UseNewest')
+      }
+      post
+      {
+        success
+        {
+          sh 'git rm -rf framework'
+          sh 'mkdir -p framework'
+          sh 'tar -C framework --strip-components=2 -xf documentation.tgz'
+          sh 'rm documentation.tgz'
+          sh 'git add framework'
+          sh 'git commit -m "Updating framework documentation via Jenkins Pipeline Job" || true'
+          sh 'git push'
+        }
+      }
+    }
   }
 }
