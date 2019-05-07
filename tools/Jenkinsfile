@@ -1,0 +1,29 @@
+#!groovy
+@Library('jenkins-pipeline-lib') _
+
+pipeline
+{
+  agent any
+  stages
+  {
+    stage('libc Documentation')
+    {
+      steps
+      {
+        copyArtifacts(projectname: 'ea-nightly/libc', selector: upstream, filter: 'documentation.tgz', optional: true)
+      }
+      post
+      {
+        success
+        {
+          sh 'git rm -rf libc'
+          sh 'mkdir libc'
+          sh 'tar -C libc --strip-components=3 -xf documentation.tgz buildresults/doc'
+          sh 'git add libc'
+          sh 'git commit -m "Updating libc documentation via Jenkins Pipeline Job"'
+          sh 'git push'
+        }
+      }
+    }
+  }
+}
