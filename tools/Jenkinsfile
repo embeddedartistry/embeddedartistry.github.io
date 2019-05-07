@@ -18,7 +18,7 @@ pipeline
         {
           sh 'git checkout master'
           sh 'git rm -rf libc'
-          sh 'mkdir libc'
+          sh 'mkdir -p libc'
           sh 'tar -C libc --strip-components=2 -xf documentation.tgz'
           sh 'git add libc'
           sh 'git commit -m "Updating libc documentation via Jenkins Pipeline Job"'
@@ -39,7 +39,7 @@ pipeline
         {
           sh 'git checkout master'
           sh 'git rm -rf libmemory'
-          sh 'mkdir libmemory'
+          sh 'mkdir -p libmemory'
           sh 'tar -C libmemory --strip-components=2 -xf documentation.tgz'
           sh 'git add libmemory'
           sh 'git commit -m "Updating libmemory documentation via Jenkins Pipeline Job"'
