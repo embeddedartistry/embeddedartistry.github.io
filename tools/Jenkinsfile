@@ -27,5 +27,26 @@ pipeline
         }
       }
     }
+    stage('libmemory Documentation')
+    {
+      steps
+      {
+        copyArtifacts filter: 'documentation.tgz', fingerprintArtifacts: true, projectName: 'ea-nightly/libmemory/master', selector: upstream(fallbackToLastSuccessful: true, upstreamFilterStrategy: 'UseNewest')
+      }
+      post
+      {
+        success
+        {
+          sh 'git checkout master'
+          sh 'git rm -rf libmemory'
+          sh 'mkdir libmemory'
+          sh 'tar -C libmemory --strip-components=2 -xf documentation.tgz'
+          sh 'git add libmemory'
+          sh 'git commit -m "Updating libmemory documentation via Jenkins Pipeline Job"'
+          sh 'git push'
+          sh 'rm documentation.tgz'
+        }
+      }
+    }
   }
 }
