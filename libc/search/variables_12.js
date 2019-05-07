@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../d4/d5f/gdtoaimp_8h.html#ae56981315f471a190603887aee98ca99',1,'Bigint']]]
+  ['vax',['VAX',['../d4/d5f/gdtoaimp_8h.html#a6f5065da6f30a7ecf67f3a22bb215adb',1,'VAX():&#160;gdtoaimp.h'],['../da/db6/arithchk_8c.html#a72fa4fdd0adb8702efe94e74e05e3850',1,'VAX():&#160;arithchk.c']]]
 ];

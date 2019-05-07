@@ -1,0 +1,5 @@
+<map id="isblank" name="isblank">
+<area shape="rect" id="node1" title="Checks if the given character is a blank character." alt="" coords="246,5,309,31"/>
+<area shape="rect" id="node2" href="$dc/dab/iswblank_8c.html#a934cbdaad02f3df1b03e566103a5a118" title=" " alt="" coords="126,5,198,31"/>
+<area shape="rect" id="node3" href="$d0/d6a/iswctype_8c.html#a895fea1b38ea206a927d97c2e4543c64" title=" " alt="" coords="5,5,78,31"/>
+</map>

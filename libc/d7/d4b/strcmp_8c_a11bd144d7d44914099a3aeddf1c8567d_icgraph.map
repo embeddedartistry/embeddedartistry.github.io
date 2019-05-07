@@ -1,0 +1,6 @@
+<map id="strcmp" name="strcmp">
+<area shape="rect" id="node1" title="Compares two null&#45;terminated byte strings lexicographically." alt="" coords="121,55,182,80"/>
+<area shape="rect" id="node2" href="$d1/d05/strcoll_8c.html#a08d3c569cca80ee114f3a0ef7c8d33b9" title=" " alt="" coords="11,5,67,31"/>
+<area shape="rect" id="node3" href="$d1/dad/wctrans_8c.html#a2ace81befe4d2380c163def6a3185171" title=" " alt="" coords="5,55,73,80"/>
+<area shape="rect" id="node4" href="$db/d6d/wctype_8c.html#a83ad9e9d2c0e0bc5f19643545a93767b" title=" " alt="" coords="8,104,70,129"/>
+</map>

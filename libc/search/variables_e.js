@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sign',['sign',['../d4/d5f/gdtoaimp_8h.html#a4380eb98f7653bb74d8377c0d68d6cb7',1,'Bigint']]],
-  ['sudden_5funderflow',['sudden_underflow',['../d5/dec/gdtoa_8h.html#af201ef4d0ef4e9f9f90077778883564c',1,'FPI']]]
+  ['quot',['quot',['../dc/d9c/stdlib_8h.html#a0b9dda2884048daa68ca4aaa12b17b9a',1,'div_t::quot()'],['../dc/d9c/stdlib_8h.html#a73efd59c176304c327cb4214d0e5e5c9',1,'ldiv_t::quot()'],['../dc/d9c/stdlib_8h.html#ae4d4bccdf22f41e052073f5790c5ec37',1,'lldiv_t::quot()'],['../dc/d9c/stdlib_8h.html#a9339814cbb7610c72fb7d30c6573b393',1,'imaxdiv_t::quot()']]]
 ];

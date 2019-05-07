@@ -1,11 +1,4 @@
 var searchData=
 [
-  ['abs_2ec',['abs.c',['../df/da2/abs_8c.html',1,'']]],
-  ['alpha_2eh',['alpha.h',['../d4/dc1/alpha_8h.html',1,'']]],
-  ['arith_2eh',['arith.h',['../d7/deb/arith_8h.html',1,'']]],
-  ['arithchk_2ec',['arithchk.c',['../da/db6/arithchk_8c.html',1,'']]],
-  ['atof_2ec',['atof.c',['../d4/d6d/atof_8c.html',1,'']]],
-  ['atoi_2ec',['atoi.c',['../df/d93/atoi_8c.html',1,'']]],
-  ['atol_2ec',['atol.c',['../d9/d84/atol_8c.html',1,'']]],
-  ['atoll_2ec',['atoll.c',['../d5/d07/atoll_8c.html',1,'']]]
+  ['0001_2drecord_2darchitecture_2ddecisions_2emd',['0001-record-architecture-decisions.md',['../df/d9b/src_2gdtoa_2docs_2architecture_2decisions_20001-record-architecture-decisions_8md.html',1,'(Global Namespace)'],['../dd/d09/docs_2architecture_2decisions_20001-record-architecture-decisions_8md.html',1,'(Global Namespace)']]]
 ];

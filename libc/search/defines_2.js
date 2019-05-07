@@ -15,6 +15,7 @@ var searchData=
   ['big1',['Big1',['../d4/d5f/gdtoaimp_8h.html#a16bd098794b12e962a30252ed02ee37d',1,'gdtoaimp.h']]],
   ['big_5fendian',['BIG_ENDIAN',['../d1/d84/endian_8h.html#a23eb5e058a210efdde3d64e69679fafa',1,'endian.h']]],
   ['bigtens',['bigtens',['../d4/d5f/gdtoaimp_8h.html#ab31834fabbfed25337d5f33eae59db7c',1,'gdtoaimp.h']]],
+  ['bitop',['BITOP',['../d8/dba/strcspn_8c.html#a552f91896137da429defe29948a1c98f',1,'BITOP():&#160;strcspn.c'],['../da/dab/strspn_8c.html#a552f91896137da429defe29948a1c98f',1,'BITOP():&#160;strspn.c']]],
   ['bletch',['Bletch',['../d4/d5f/gdtoaimp_8h.html#a7c80938abca604122c8f7afb66d59331',1,'gdtoaimp.h']]],
   ['bndry_5fmask',['Bndry_mask',['../d4/d5f/gdtoaimp_8h.html#a328cff0f8990e802688af178354211ff',1,'gdtoaimp.h']]],
   ['bndry_5fmask1',['Bndry_mask1',['../d4/d5f/gdtoaimp_8h.html#ad1db7929322cfb6d39c183e032d4c680',1,'gdtoaimp.h']]],

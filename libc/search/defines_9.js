@@ -31,7 +31,7 @@ var searchData=
   ['int_5fleast64_5fmin',['INT_LEAST64_MIN',['../df/dd8/stdint_8h.html#ac12b4f6966b57ad82feb683b284b4060',1,'stdint.h']]],
   ['int_5fleast8_5fmax',['INT_LEAST8_MAX',['../df/dd8/stdint_8h.html#aa05109908fb2770f632d2b646b9f85bf',1,'stdint.h']]],
   ['int_5fleast8_5fmin',['INT_LEAST8_MIN',['../df/dd8/stdint_8h.html#a3e986cad833f63f420962ff60eda87e5',1,'stdint.h']]],
-  ['int_5fmax',['INT_MAX',['../d9/d86/limits_8h.html#a9ec306f36d50c7375e74f0d1c55a3a67',1,'INT_MAX():&#160;limits.h'],['../d4/d5f/gdtoaimp_8h.html#af2bdae8b2a1a2c6cc68215ef219d2673',1,'Int_max():&#160;gdtoaimp.h']]],
+  ['int_5fmax',['Int_max',['../d4/d5f/gdtoaimp_8h.html#af2bdae8b2a1a2c6cc68215ef219d2673',1,'Int_max():&#160;gdtoaimp.h'],['../d9/d86/limits_8h.html#a9ec306f36d50c7375e74f0d1c55a3a67',1,'INT_MAX():&#160;limits.h']]],
   ['int_5fmin',['INT_MIN',['../d9/d86/limits_8h.html#a21658776274b3d146c674318b635a334',1,'limits.h']]],
   ['intmax_5fc',['INTMAX_C',['../df/dd8/stdint_8h.html#a6b556b8b5f86e13f1c2a6e8f9b9b4966',1,'stdint.h']]],
   ['intmax_5fmax',['INTMAX_MAX',['../df/dd8/stdint_8h.html#a022b9b0a3564d786244a4631847c37a3',1,'stdint.h']]],

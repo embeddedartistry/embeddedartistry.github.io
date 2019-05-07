@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['rand',['rand',['../dc/d9c/stdlib_8h.html#ae23144bcbb8e3742b00eb687c36654d1',1,'stdlib.h']]],
-  ['rand_5fr',['rand_r',['../dc/d9c/stdlib_8h.html#ad83478fc594dcfd19c7fff0875902340',1,'stdlib.h']]],
-  ['ratio',['ratio',['../d4/d85/smisc_8c.html#ace46c9b14265fe1bfe9a549c744d1b74',1,'smisc.c']]],
-  ['realloc',['realloc',['../dc/d9c/stdlib_8h.html#a1a6b5e8d2f1c37e5b43e4345586075be',1,'realloc(void *ptr, size_t size):&#160;realloc.c'],['../d8/d8a/realloc_8c.html#a1a6b5e8d2f1c37e5b43e4345586075be',1,'realloc(void *ptr, size_t size):&#160;realloc.c']]],
-  ['reallocf',['reallocf',['../dc/d9c/stdlib_8h.html#a4a046ddd68dd117c794f1f52df5dad33',1,'reallocf(void *ptr, size_t size):&#160;realloc.c'],['../d8/d8a/realloc_8c.html#a4a046ddd68dd117c794f1f52df5dad33',1,'reallocf(void *ptr, size_t size):&#160;realloc.c']]],
-  ['rshift',['rshift',['../da/da6/gmisc_8c.html#adad9ea606e5fa838ca4d5f16cd1bcbf5',1,'gmisc.c']]],
-  ['rv_5falloc',['rv_alloc',['../db/d7f/dmisc_8c.html#afc960fc849b37c3f2443327ba8fac37f',1,'dmisc.c']]],
-  ['rvok',['rvOK',['../d0/d95/strtodg_8c.html#a9fde49c1cd3c16860959898602d1b382',1,'strtodg.c']]]
+  ['qsort',['qsort',['../dc/d9c/stdlib_8h.html#aaebdf6410fa5cdf32c4d52cb5b77e2e7',1,'qsort(void *a, size_t n, size_t es, int(*compar)(const void *, const void *)):&#160;stdlib.h'],['../d7/da4/qsort_8c.html#a2e2d678f8229e5cc532206da89450741',1,'qsort(void *a, size_t n, size_t es, cmp_t *cmp):&#160;qsort.c']]],
+  ['qsort_5fr',['qsort_r',['../dc/d9c/stdlib_8h.html#a322a1313f4c6f10234b0624681829a78',1,'stdlib.h']]],
+  ['quick_5fexit',['quick_exit',['../dc/d9c/stdlib_8h.html#a3e491e583821a1cfa7cb21e5614ebca6',1,'stdlib.h']]],
+  ['quorem',['quorem',['../db/d7f/dmisc_8c.html#a9660199cac9322cd9ddad4bfb9aa9d92',1,'dmisc.c']]]
 ];

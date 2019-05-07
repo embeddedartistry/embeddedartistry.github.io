@@ -1,0 +1,4 @@
+<map id="isalnum" name="isalnum">
+<area shape="rect" id="node1" title="Checks if the given character is an alphanumeric character." alt="" coords="117,5,184,31"/>
+<area shape="rect" id="node2" href="$d5/d92/ispunct_8c.html#af29554b3ec04ea7684482bffed5dbce6" title="Checks if the given character is a punctuation character." alt="" coords="5,5,69,31"/>
+</map>

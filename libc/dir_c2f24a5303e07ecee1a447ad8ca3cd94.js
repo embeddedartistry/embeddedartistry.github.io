@@ -21,6 +21,8 @@ var dir_c2f24a5303e07ecee1a447ad8ca3cd94 =
     [ "rand.c", "d6/df4/rand_8c.html", "d6/df4/rand_8c" ],
     [ "realloc.c", "d8/d8a/realloc_8c.html", "d8/d8a/realloc_8c" ],
     [ "strtol.c", "d5/d65/strtol_8c.html", "d5/d65/strtol_8c" ],
+    [ "strtold.c", "d1/dbe/strtold_8c.html", "d1/dbe/strtold_8c" ],
     [ "strtoll.c", "db/d51/strtoll_8c.html", "db/d51/strtoll_8c" ],
+    [ "strtoul.c", "d5/d03/strtoul_8c.html", "d5/d03/strtoul_8c" ],
     [ "strtoull.c", "dd/d39/strtoull_8c.html", "dd/d39/strtoull_8c" ]
 ];

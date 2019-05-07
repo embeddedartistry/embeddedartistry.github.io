@@ -1,8 +1,27 @@
 var searchData=
 [
-  ['k',['k',['../d4/d5f/gdtoaimp_8h.html#a032d76e80da2f21df10c0794244d12f2',1,'Bigint']]],
-  ['kind',['kind',['../da/db6/arithchk_8c.html#a07eb9af9c1fc600a16715ce8fe086097',1,'Akind']]],
-  ['kmask',['kmask',['../d4/d5f/gdtoaimp_8h.html#a752db913a54cd91a160b4d0afa622d78',1,'gdtoaimp.h']]],
-  ['kmax',['Kmax',['../d4/d5f/gdtoaimp_8h.html#a60a2b72a9437564147596c3308b55845',1,'gdtoaimp.h']]],
-  ['kshift',['kshift',['../d4/d5f/gdtoaimp_8h.html#abb17159a538a6ee20126daeb4415207a',1,'gdtoaimp.h']]]
+  ['haszero',['HASZERO',['../d9/dd9/memchr_8c.html#ab5535094991cbb3793d5ad23a1631fe8',1,'HASZERO():&#160;memchr.c'],['../d3/d56/strchrnul_8c.html#ab5535094991cbb3793d5ad23a1631fe8',1,'HASZERO():&#160;strchrnul.c']]],
+  ['hd_5finit_2ec',['hd_init.c',['../df/d79/hd__init_8c.html',1,'']]],
+  ['heapsort',['heapsort',['../dc/d9c/stdlib_8h.html#aabf6120eebbf45551e204fccb5c852d9',1,'heapsort(void *vbase, size_t nmemb, size_t size, int(*compar)(const void *, const void *)):&#160;stdlib.h'],['../de/d47/heapsort_8c.html#a2e21bd02f544c4431d9a3a197154bdc3',1,'heapsort(void *vbase, size_t nmemb, size_t size, int *compar):&#160;heapsort.c']]],
+  ['heapsort_2ec',['heapsort.c',['../de/d47/heapsort_8c.html',1,'']]],
+  ['heapsort_5fr',['heapsort_r',['../dc/d9c/stdlib_8h.html#a8e7dacffb5eea8467aa96e0d53076480',1,'heapsort_r(void *vbase, size_t nmemb, size_t size, void *thunk, int(*compar)(void *, const void *, const void *)):&#160;stdlib.h'],['../df/d50/heapsort__r_8c.html#ae452b57b75075261a70569e143de3fc8',1,'heapsort_r(void *vbase, size_t nmemb, size_t size, void *thunk, int *compar):&#160;heapsort_r.c']]],
+  ['heapsort_5fr_2ec',['heapsort_r.c',['../df/d50/heapsort__r_8c.html',1,'']]],
+  ['hexdig',['hexdig',['../d4/d5f/gdtoaimp_8h.html#a60cde7b5959f50c66fb18e0ba62a9754',1,'hexdig():&#160;gdtoaimp.h'],['../d4/d5f/gdtoaimp_8h.html#ace314df7b1715709ec5d2e6b47508124',1,'hexdig():&#160;hd_init.c'],['../df/d79/hd__init_8c.html#afef8549d0f3c8db7c0ee2d198d8b0686',1,'hexdig():&#160;hd_init.c']]],
+  ['hexdig_5finit_5fd2a',['hexdig_init_D2A',['../d4/d5f/gdtoaimp_8h.html#a018081190fec79a1deba8392018af3ff',1,'hexdig_init_D2A(Void):&#160;hd_init.c'],['../df/d79/hd__init_8c.html#a018081190fec79a1deba8392018af3ff',1,'hexdig_init_D2A(Void):&#160;hd_init.c']]],
+  ['hexnan',['hexnan',['../d4/d5f/gdtoaimp_8h.html#ac61b092647e6775a4e3b7c35222d4822',1,'hexnan():&#160;gdtoaimp.h'],['../d5/d7b/hexnan_8c.html#a7a7e3bb1eaff8cbcf94fc0782d560360',1,'hexnan(CONST char **sp, FPI *fpi, ULong *x0):&#160;hexnan.c']]],
+  ['hexnan_2ec',['hexnan.c',['../d5/d7b/hexnan_8c.html',1,'']]],
+  ['hi0bits',['hi0bits',['../d4/d5f/gdtoaimp_8h.html#a5c34648bd3463625028a77b73411ff42',1,'gdtoaimp.h']]],
+  ['hi0bits_5fd2a',['hi0bits_D2A',['../d0/ddb/misc_8c.html#a86069759728dd31f43a16fe4ea6a38fe',1,'misc.c']]],
+  ['highs',['HIGHS',['../d9/dd9/memchr_8c.html#afbd5404d49a943ac706a7db7469dab16',1,'HIGHS():&#160;memchr.c'],['../d3/d56/strchrnul_8c.html#afbd5404d49a943ac706a7db7469dab16',1,'HIGHS():&#160;strchrnul.c']]],
+  ['honor_5fflt_5frounds',['Honor_FLT_ROUNDS',['../d7/deb/arith_8h.html#a018c7c21aa0266e3d85be4d148898d5e',1,'arith.h']]],
+  ['htinit',['htinit',['../df/d79/hd__init_8c.html#a769fd55c28dd26e6bdcaa94ebc7057fe',1,'hd_init.c']]],
+  ['htobe16',['htobe16',['../d1/d84/endian_8h.html#a4b9167199621b390f82c3e5361ba6df6',1,'endian.h']]],
+  ['htobe32',['htobe32',['../d1/d84/endian_8h.html#aa65407014913309932b9a5ea3c16a86d',1,'endian.h']]],
+  ['htobe64',['htobe64',['../d1/d84/endian_8h.html#a5c81b75e6da4507e0a90b6f6169c4787',1,'endian.h']]],
+  ['htole16',['htole16',['../d1/d84/endian_8h.html#a3ea73a6089f61223b225c46e2ba58a47',1,'endian.h']]],
+  ['htole32',['htole32',['../d1/d84/endian_8h.html#a9bea1e76e277f13ae39ac86095510bfa',1,'endian.h']]],
+  ['htole64',['htole64',['../d1/d84/endian_8h.html#a3070a5f8867dbc37bdafcb1a7cd491bf',1,'endian.h']]],
+  ['htonl',['htonl',['../d1/d84/endian_8h.html#ae4027a6ad07f13aa12eab285a1b46019',1,'htonl():&#160;endian.h'],['../d1/d84/endian_8h.html#abd1249696a0fa7574b8a9f3e8a9e6e17',1,'HTONL():&#160;endian.h']]],
+  ['htonll',['htonll',['../d1/d84/endian_8h.html#a9f4bf0773c45ad9a9753a1b784a13fbb',1,'htonll():&#160;endian.h'],['../d1/d84/endian_8h.html#a806795ac46f7f8b024b4d5686c74074f',1,'HTONLL():&#160;endian.h']]],
+  ['htons',['htons',['../d1/d84/endian_8h.html#a51799f5ebb4c7228ef7e95c247030f42',1,'htons():&#160;endian.h'],['../d1/d84/endian_8h.html#a3f238b7fb42a7acac31b428c4d292188',1,'HTONS():&#160;endian.h']]]
 ];

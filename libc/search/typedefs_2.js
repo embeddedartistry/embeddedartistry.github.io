@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['cmp_5ft',['cmp_t',['../d7/da4/qsort_8c.html#abd8540c0d653e4a1457e863923410bbc',1,'qsort.c']]]
+  ['bigint',['Bigint',['../d4/d5f/gdtoaimp_8h.html#af4d1f814f7bcd9a50ee45efea0942d99',1,'gdtoaimp.h']]],
+  ['bool',['bool',['../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9',1,'stdbool.h']]]
 ];

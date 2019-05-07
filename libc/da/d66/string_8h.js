@@ -9,8 +9,12 @@ var string_8h =
     [ "strcat", "da/d66/string_8h.html#a73b97e9a92ba62b0f5e09af8fa1a8630", null ],
     [ "strchr", "da/d66/string_8h.html#a12871ed234858ef0e363d2b8aa572fc1", null ],
     [ "strcmp", "da/d66/string_8h.html#a11bd144d7d44914099a3aeddf1c8567d", null ],
+    [ "strcoll", "da/d66/string_8h.html#a475622e0ad1d42f098afa1c08af954ad", null ],
     [ "strcpy", "da/d66/string_8h.html#a3a95102cb27fc69982deeaf32d14d2ca", null ],
+    [ "strcspn", "da/d66/string_8h.html#a4e8462eddc5a160451a246bc1bc22bb4", null ],
     [ "strdup", "da/d66/string_8h.html#a2c4f14c424a31db9c57fd046c3b9f0df", null ],
+    [ "strerror", "da/d66/string_8h.html#aa464a810f15e69fe6d985c4edb2e626e", null ],
+    [ "strerror_r", "da/d66/string_8h.html#a3f575ba9f1252511bd5c6e73db1e3b99", null ],
     [ "strlen", "da/d66/string_8h.html#a008e171a518fe0e0352f31b245e03875", null ],
     [ "strncat", "da/d66/string_8h.html#aa5840783e657cde16cc5ff5efe8bfa3b", null ],
     [ "strncmp", "da/d66/string_8h.html#a07f4a84c11c106e95c32b6ab509346ef", null ],
@@ -18,7 +22,10 @@ var string_8h =
     [ "strndup", "da/d66/string_8h.html#a9dd8c380e1619571aa097b2119a9bca9", null ],
     [ "strnlen", "da/d66/string_8h.html#ad50ec2039d764d2ff084007ccb957cdb", null ],
     [ "strnstr", "da/d66/string_8h.html#a2377134299138b29edffb17f91bfe649", null ],
+    [ "strpbrk", "da/d66/string_8h.html#a20d6321febae7448d32252b300b7300a", null ],
     [ "strrchr", "da/d66/string_8h.html#a0c05a458deff028ef4d4e64059098db4", null ],
+    [ "strspn", "da/d66/string_8h.html#a417885431ec6bd9c35f34ca1d10ca48b", null ],
     [ "strstr", "da/d66/string_8h.html#ac7f01fb84d21fc755e35cd36535022fc", null ],
-    [ "strtok", "da/d66/string_8h.html#a80f8fb5a529dbd4b3efb2575764d850e", null ]
+    [ "strtok", "da/d66/string_8h.html#a80f8fb5a529dbd4b3efb2575764d850e", null ],
+    [ "strxfrm", "da/d66/string_8h.html#a977757b5098fa24eeb94905be9525a3f", null ]
 ];

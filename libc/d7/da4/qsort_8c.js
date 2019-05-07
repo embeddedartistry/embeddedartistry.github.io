@@ -10,7 +10,8 @@ var qsort_8c =
     [ "vecswap", "d7/da4/qsort_8c.html#a584c607dc0b230ebfdde9a157887c6a9", null ],
     [ "cmp_t", "d7/da4/qsort_8c.html#abd8540c0d653e4a1457e863923410bbc", null ],
     [ "_qsort", "d7/da4/qsort_8c.html#a6e93bbe57ddfaa0efdf5b3ead5aa2906", null ],
-    [ "med3", "d7/da4/qsort_8c.html#a89c000c2d54ee9057befb301b6b68b42", null ],
+    [ "med3", "d7/da4/qsort_8c.html#a71141f49d9313ac4d2ce766be84a6691", null ],
     [ "med3", "d7/da4/qsort_8c.html#a29a900e5f918b208535ff3be67b3567c", null ],
-    [ "qsort", "d7/da4/qsort_8c.html#a2e2d678f8229e5cc532206da89450741", null ]
+    [ "qsort", "d7/da4/qsort_8c.html#a2e2d678f8229e5cc532206da89450741", null ],
+    [ "swapfunc", "d7/da4/qsort_8c.html#a8a478a4a443f7a1555c4e9cf9b1c07bc", null ]
 ];

@@ -1,0 +1,7 @@
+<map id="toupper" name="toupper">
+<area shape="rect" id="node1" title="Converts the given character to lowercase." alt="" coords="376,31,443,56"/>
+<area shape="rect" id="node2" href="$d2/d5f/towupper_8c.html#aaf8d2b2d230df873695d41757d5889f9" title=" " alt="" coords="252,31,328,56"/>
+<area shape="rect" id="node3" href="$de/db3/iswlower_8c.html#a92c2a9aad2bf7e6c56a7c01597f59649" title=" " alt="" coords="129,5,201,31"/>
+<area shape="rect" id="node5" href="$d8/dbe/towctrans_8c.html#a7bf5ecea0641ad3803700c26a307f828" title=" " alt="" coords="126,55,204,80"/>
+<area shape="rect" id="node4" href="$d0/d6a/iswctype_8c.html#a895fea1b38ea206a927d97c2e4543c64" title=" " alt="" coords="5,5,78,31"/>
+</map>

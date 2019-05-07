@@ -1,0 +1,12 @@
+<map id="isdigit" name="isdigit">
+<area shape="rect" id="node1" title="Checks if the given character is a numeric character." alt="" coords="232,179,288,204"/>
+<area shape="rect" id="node2" href="$df/d93/atoi_8c.html#aec327ac88a4cd588e82a8b0ac752b089" title="Interprets an integer value in a byte string pointed to by str." alt="" coords="129,5,172,31"/>
+<area shape="rect" id="node3" href="$d9/d84/atol_8c.html#ad92c5a918e5bcd89416deb3b64fb46ee" title="Interprets a Long value in a byte string pointed to by str." alt="" coords="129,55,172,80"/>
+<area shape="rect" id="node4" href="$d5/d07/atoll_8c.html#a53e8d1f366b7581b51b222c2e02aa765" title="Interprets a Long Long value in a byte string pointed to by str." alt="" coords="128,104,173,129"/>
+<area shape="rect" id="node5" href="$d0/d8c/isalnum_8c.html#adf38e126f73a010f30af76db2a28c6e1" title="Checks if the given character is an alphanumeric character." alt="" coords="117,153,184,179"/>
+<area shape="rect" id="node7" href="$d9/dc4/isxdigit_8c.html#adaf3aadefe3fc4fb07b6be0d7b880f53" title="Checks if the given character is a hexadecimal numeric character." alt="" coords="120,203,182,228"/>
+<area shape="rect" id="node8" href="$d5/d65/strtol_8c.html#a80ac672fc21ed312d1221eeb294bfe85" title=" " alt="" coords="125,252,176,277"/>
+<area shape="rect" id="node9" href="$db/d51/strtoll_8c.html#a878c9e072297bf2070dc918474e4bc75" title=" " alt="" coords="124,301,177,327"/>
+<area shape="rect" id="node10" href="$d5/d03/strtoul_8c.html#aea3dfd9fd35d46f2a364a5927635751b" title=" " alt="" coords="122,351,179,376"/>
+<area shape="rect" id="node6" href="$d5/d92/ispunct_8c.html#af29554b3ec04ea7684482bffed5dbce6" title="Checks if the given character is a punctuation character." alt="" coords="5,153,69,179"/>
+</map>

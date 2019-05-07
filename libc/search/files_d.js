@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['qnan_2ec',['qnan.c',['../d1/d1f/qnan_8c.html',1,'']]],
-  ['qsort_2ec',['qsort.c',['../d7/da4/qsort_8c.html',1,'']]],
-  ['qsort_5fr_2ec',['qsort_r.c',['../d3/d79/qsort__r_8c.html',1,'']]]
+  ['nl_5ftypes_2eh',['nl_types.h',['../d0/d2a/nl__types_8h.html',1,'']]],
+  ['nonspacing_2eh',['nonspacing.h',['../d4/d06/ctype_2nonspacing_8h.html',1,'(Global Namespace)'],['../d7/d15/wchar_2nonspacing_8h.html',1,'(Global Namespace)']]]
 ];

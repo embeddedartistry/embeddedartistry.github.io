@@ -1,0 +1,6 @@
+<map id="__strchrnul" name="__strchrnul">
+<area shape="rect" id="node1" title=" " alt="" coords="228,31,315,56"/>
+<area shape="rect" id="node2" href="$d6/d7b/strchr_8c.html#a12871ed234858ef0e363d2b8aa572fc1" title="Finds the first occurrence of c in the null&#45;terminated byte string pointed to by s." alt="" coords="120,5,175,31"/>
+<area shape="rect" id="node3" href="$d8/dba/strcspn_8c.html#a27e8e215377b743e9eb2ca5b402f31cf" title=" " alt="" coords="115,55,180,80"/>
+<area shape="rect" id="node4" href="$d7/def/strpbrk_8c.html#a566bea6bcfb00d675f0b4b283b757ac8" title=" " alt="" coords="5,55,67,80"/>
+</map>

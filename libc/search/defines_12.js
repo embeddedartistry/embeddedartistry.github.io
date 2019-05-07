@@ -12,6 +12,7 @@ var searchData=
   ['sig_5fatomic_5fmin',['SIG_ATOMIC_MIN',['../df/dd8/stdint_8h.html#a21e605b9ac3a03b6de93cdf5a69e129f',1,'stdint.h']]],
   ['sign_5fbit',['Sign_bit',['../d4/d5f/gdtoaimp_8h.html#a63c55d45c8c26a4d0c9d2d5c1afe5caa',1,'gdtoaimp.h']]],
   ['size_5fmax',['SIZE_MAX',['../df/dd8/stdint_8h.html#a3c75bb398badb69c7577b21486f9963f',1,'stdint.h']]],
+  ['ss',['SS',['../d9/dd9/memchr_8c.html#a88f7782e210e61586baf33b93240d905',1,'memchr.c']]],
   ['storeinc',['Storeinc',['../d4/d5f/gdtoaimp_8h.html#a9b21b8e0cb3af7c9d736d923c0870886',1,'gdtoaimp.h']]],
   ['strcp',['strcp',['../d4/d5f/gdtoaimp_8h.html#a62cfef4fe0aff3d2e9bdef4f7e972c72',1,'gdtoaimp.h']]],
   ['strtoig',['strtoIg',['../d4/d5f/gdtoaimp_8h.html#a2ee4e941c7f63138cfaa7e70f3d70605',1,'gdtoaimp.h']]],

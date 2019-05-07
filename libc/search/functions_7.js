@@ -1,9 +1,19 @@
 var searchData=
 [
-  ['heapsort',['heapsort',['../dc/d9c/stdlib_8h.html#aabf6120eebbf45551e204fccb5c852d9',1,'heapsort(void *vbase, size_t nmemb, size_t size, int(*compar)(const void *, const void *)):&#160;stdlib.h'],['../de/d47/heapsort_8c.html#a2e21bd02f544c4431d9a3a197154bdc3',1,'heapsort(void *vbase, size_t nmemb, size_t size, int *compar):&#160;heapsort.c']]],
-  ['heapsort_5fr',['heapsort_r',['../dc/d9c/stdlib_8h.html#a8e7dacffb5eea8467aa96e0d53076480',1,'heapsort_r(void *vbase, size_t nmemb, size_t size, void *thunk, int(*compar)(void *, const void *, const void *)):&#160;stdlib.h'],['../df/d50/heapsort__r_8c.html#ae452b57b75075261a70569e143de3fc8',1,'heapsort_r(void *vbase, size_t nmemb, size_t size, void *thunk, int *compar):&#160;heapsort_r.c']]],
-  ['hexdig_5finit_5fd2a',['hexdig_init_D2A',['../d4/d5f/gdtoaimp_8h.html#a018081190fec79a1deba8392018af3ff',1,'hexdig_init_D2A(Void):&#160;hd_init.c'],['../df/d79/hd__init_8c.html#a018081190fec79a1deba8392018af3ff',1,'hexdig_init_D2A(Void):&#160;hd_init.c']]],
-  ['hexnan',['hexnan',['../d5/d7b/hexnan_8c.html#a7a7e3bb1eaff8cbcf94fc0782d560360',1,'hexnan.c']]],
-  ['hi0bits_5fd2a',['hi0bits_D2A',['../d0/ddb/misc_8c.html#a86069759728dd31f43a16fe4ea6a38fe',1,'misc.c']]],
-  ['htinit',['htinit',['../df/d79/hd__init_8c.html#a92b6a497c434892726978b8a0e771f23',1,'hd_init.c']]]
+  ['g_5f_5ffmt',['g__fmt',['../d7/d4d/g____fmt_8c.html#a1ca3c7b68507ca9968cc7114e449c358',1,'g__fmt.c']]],
+  ['g_5fddfmt',['g_ddfmt',['../de/d0a/g__ddfmt_8c.html#ad1f318cc3c1efd715d25499d18ab1d18',1,'g_ddfmt.c']]],
+  ['g_5fdfmt',['g_dfmt',['../d5/d36/g__dfmt_8c.html#ae02b9b6668f2e5661c6e656514a14746',1,'g_dfmt.c']]],
+  ['g_5fffmt',['g_ffmt',['../d8/dfb/g__ffmt_8c.html#a57b1948cbf7aa63c4f0e056b0774957e',1,'g_ffmt.c']]],
+  ['g_5fqfmt',['g_Qfmt',['../d6/d52/g___qfmt_8c.html#a9453f9374dfdfcbabfb1e162cc81b137',1,'g_Qfmt.c']]],
+  ['g_5fxfmt',['g_xfmt',['../d7/da3/g__xfmt_8c.html#a777d5e298a09f66130ec09689a0e774b',1,'g_xfmt.c']]],
+  ['g_5fxlfmt',['g_xLfmt',['../d1/df9/g__x_lfmt_8c.html#a99f312541612e36a27002ef3f8b3d7f7',1,'g_xLfmt.c']]],
+  ['gdtoa',['gdtoa',['../d6/d91/gdtoa_8c.html#a3c7173d33975e779266d9862c0341cdf',1,'gdtoa.c']]],
+  ['getc',['getc',['../d6/dd1/stdio_8h.html#a4c175ef8ca0c6b6cbc15ae4421a124f3',1,'stdio.h']]],
+  ['getchar',['getchar',['../d6/dd1/stdio_8h.html#a3e29caa20f7cffe18f410f01278905a8',1,'stdio.h']]],
+  ['getenv',['getenv',['../dc/d9c/stdlib_8h.html#a872ac3564834aa0ba70a9e1bd3c2f9de',1,'stdlib.h']]],
+  ['gethex',['gethex',['../d4/d33/gethex_8c.html#acec06e4f5bf57f530afa9fad9503c2a5',1,'gethex.c']]],
+  ['gets',['gets',['../d6/dd1/stdio_8h.html#ae1dcce765754ca6bff2d928d63f5426a',1,'stdio.h']]],
+  ['getwc',['getwc',['../d6/dd1/stdio_8h.html#a54bc35afca36d10e2ee9c2b8a1597691',1,'stdio.h']]],
+  ['getwchar',['getwchar',['../d6/dd1/stdio_8h.html#aa1379ae6936df3415301dc580aa8756e',1,'stdio.h']]],
+  ['gmtime',['gmtime',['../de/df7/time_8h.html#ad6c741b7971948ac1032935bc041ac55',1,'time.h']]]
 ];

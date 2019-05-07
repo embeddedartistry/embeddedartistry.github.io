@@ -1,0 +1,4 @@
+<map id="strncmp" name="strncmp">
+<area shape="rect" id="node1" title="Compares at most n characters of two possibly null&#45;terminated arrays." alt="" coords="112,5,180,31"/>
+<area shape="rect" id="node2" href="$d3/d70/strnstr_8c.html#a2377134299138b29edffb17f91bfe649" title="Finds the first occurrence of find in the initial slen characters of the object pointed to by s." alt="" coords="5,5,64,31"/>
+</map>

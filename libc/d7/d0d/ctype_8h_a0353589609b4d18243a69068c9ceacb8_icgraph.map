@@ -1,0 +1,8 @@
+<map id="isalpha" name="isalpha">
+<area shape="rect" id="node1" title="Checks if the given character is an alphabetic character." alt="" coords="232,80,296,105"/>
+<area shape="rect" id="node2" href="$d0/d8c/isalnum_8c.html#adf38e126f73a010f30af76db2a28c6e1" title="Checks if the given character is an alphanumeric character." alt="" coords="117,5,184,31"/>
+<area shape="rect" id="node4" href="$d5/d65/strtol_8c.html#a80ac672fc21ed312d1221eeb294bfe85" title=" " alt="" coords="125,55,176,80"/>
+<area shape="rect" id="node5" href="$db/d51/strtoll_8c.html#a878c9e072297bf2070dc918474e4bc75" title=" " alt="" coords="124,104,177,129"/>
+<area shape="rect" id="node6" href="$d5/d03/strtoul_8c.html#aea3dfd9fd35d46f2a364a5927635751b" title=" " alt="" coords="122,153,179,179"/>
+<area shape="rect" id="node3" href="$d5/d92/ispunct_8c.html#af29554b3ec04ea7684482bffed5dbce6" title="Checks if the given character is a punctuation character." alt="" coords="5,5,69,31"/>
+</map>

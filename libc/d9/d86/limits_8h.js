@@ -7,6 +7,7 @@ var limits_8h =
     [ "INT_MIN", "d9/d86/limits_8h.html#a21658776274b3d146c674318b635a334", null ],
     [ "LLONG_MIN", "d9/d86/limits_8h.html#af17a13b2ae0e9c24c020ac1f044f30c2", null ],
     [ "LONG_MIN", "d9/d86/limits_8h.html#ae8a44c5a7436466221e0f3859d02420f", null ],
+    [ "MB_LEN_MAX", "d9/d86/limits_8h.html#a88a1b2d6ac46174ac7b571dca5b1f274", null ],
     [ "SCHAR_MAX", "d9/d86/limits_8h.html#a8c13fdd8c2840edf0cb04a65297037bb", null ],
     [ "SCHAR_MIN", "d9/d86/limits_8h.html#aa05d197000ad5c143ada0fcd9379b236", null ],
     [ "SHRT_MAX", "d9/d86/limits_8h.html#a1f758438cb1c7bcf55da2431f5e319e6", null ],

@@ -1,19 +1,16 @@
 var searchData=
 [
-  ['imaxabs_2ec',['imaxabs.c',['../dd/dfd/imaxabs_8c.html',1,'']]],
-  ['imaxdiv_2ec',['imaxdiv.c',['../d8/d7c/imaxdiv_8c.html',1,'']]],
-  ['isalnum_2ec',['isalnum.c',['../d0/d8c/isalnum_8c.html',1,'']]],
-  ['isalpha_2ec',['isalpha.c',['../d8/ddd/isalpha_8c.html',1,'']]],
-  ['isascii_2ec',['isascii.c',['../d8/d6b/isascii_8c.html',1,'']]],
-  ['isblank_2ec',['isblank.c',['../da/d33/isblank_8c.html',1,'']]],
-  ['iscntrl_2ec',['iscntrl.c',['../d9/d7a/iscntrl_8c.html',1,'']]],
-  ['isdigit_2ec',['isdigit.c',['../d0/d6c/isdigit_8c.html',1,'']]],
-  ['isgraph_2ec',['isgraph.c',['../dd/da4/isgraph_8c.html',1,'']]],
-  ['islower_2ec',['islower.c',['../d7/d0b/islower_8c.html',1,'']]],
-  ['isprint_2ec',['isprint.c',['../d2/df0/isprint_8c.html',1,'']]],
-  ['ispunct_2ec',['ispunct.c',['../d5/d92/ispunct_8c.html',1,'']]],
-  ['isspace_2ec',['isspace.c',['../d2/de1/isspace_8c.html',1,'']]],
-  ['issue_5ftemplate_2emd',['ISSUE_TEMPLATE.md',['../db/d90/_i_s_s_u_e___t_e_m_p_l_a_t_e_8md.html',1,'']]],
-  ['isupper_2ec',['isupper.c',['../d8/d23/isupper_8c.html',1,'']]],
-  ['isxdigit_2ec',['isxdigit.c',['../d9/dc4/isxdigit_8c.html',1,'']]]
+  ['g_5f_5ffmt_2ec',['g__fmt.c',['../d7/d4d/g____fmt_8c.html',1,'']]],
+  ['g_5fddfmt_2ec',['g_ddfmt.c',['../de/d0a/g__ddfmt_8c.html',1,'']]],
+  ['g_5fdfmt_2ec',['g_dfmt.c',['../d5/d36/g__dfmt_8c.html',1,'']]],
+  ['g_5fffmt_2ec',['g_ffmt.c',['../d8/dfb/g__ffmt_8c.html',1,'']]],
+  ['g_5fqfmt_2ec',['g_Qfmt.c',['../d6/d52/g___qfmt_8c.html',1,'']]],
+  ['g_5fxfmt_2ec',['g_xfmt.c',['../d7/da3/g__xfmt_8c.html',1,'']]],
+  ['g_5fxlfmt_2ec',['g_xLfmt.c',['../d1/df9/g__x_lfmt_8c.html',1,'']]],
+  ['gd_5fqnan_2eh',['gd_qnan.h',['../df/dc5/gd__qnan_8h.html',1,'']]],
+  ['gdtoa_2ec',['gdtoa.c',['../d6/d91/gdtoa_8c.html',1,'']]],
+  ['gdtoa_2eh',['gdtoa.h',['../d5/dec/gdtoa_8h.html',1,'']]],
+  ['gdtoaimp_2eh',['gdtoaimp.h',['../d4/d5f/gdtoaimp_8h.html',1,'']]],
+  ['gethex_2ec',['gethex.c',['../d4/d33/gethex_8c.html',1,'']]],
+  ['gmisc_2ec',['gmisc.c',['../da/da6/gmisc_8c.html',1,'']]]
 ];

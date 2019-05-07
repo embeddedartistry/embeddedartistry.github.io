@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bigint',['Bigint',['../d4/d5f/gdtoaimp_8h.html#df/d49/struct_bigint',1,'']]]
+  ['akind',['Akind',['../da/db6/arithchk_8c.html#d5/da7/struct_akind',1,'']]]
 ];

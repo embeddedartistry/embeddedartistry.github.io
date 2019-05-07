@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['k',['k',['../d4/d5f/gdtoaimp_8h.html#a032d76e80da2f21df10c0794244d12f2',1,'Bigint']]],
-  ['kind',['kind',['../da/db6/arithchk_8c.html#a07eb9af9c1fc600a16715ce8fe086097',1,'Akind']]]
+  ['hexdig',['hexdig',['../d4/d5f/gdtoaimp_8h.html#ace314df7b1715709ec5d2e6b47508124',1,'hexdig():&#160;hd_init.c'],['../df/d79/hd__init_8c.html#afef8549d0f3c8db7c0ee2d198d8b0686',1,'hexdig():&#160;hd_init.c']]]
 ];

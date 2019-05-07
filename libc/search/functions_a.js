@@ -1,15 +1,14 @@
 var searchData=
 [
-  ['main',['main',['../da/db6/arithchk_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;arithchk.c'],['../d1/d1f/qnan_8c.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;qnan.c']]],
-  ['malloc',['malloc',['../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392',1,'stdlib.h']]],
-  ['mantbits',['mantbits',['../d0/d95/strtodg_8c.html#afeed4949129a2121ce4492e20dc0199e',1,'strtodg.c']]],
-  ['med3',['med3',['../d7/da4/qsort_8c.html#a89c000c2d54ee9057befb301b6b68b42',1,'med3(char *, char *, char *, cmp_t *, void *):&#160;qsort.c'],['../d7/da4/qsort_8c.html#a29a900e5f918b208535ff3be67b3567c',1,'med3(char *a, char *b, char *c, cmp_t *cmp, void *thunk __attribute__((unused))):&#160;qsort.c']]],
-  ['memchr',['memchr',['../da/d66/string_8h.html#a16d6b0bd660cc3f9910924c6b6f4af8e',1,'string.h']]],
-  ['memcmp',['memcmp',['../da/d66/string_8h.html#a9e6df54ee04e18a3772335580e2ed872',1,'string.h']]],
-  ['memcpy',['memcpy',['../da/d66/string_8h.html#a0ee37e291991bef6e3f4b49a970171e7',1,'memcpy(void *__restrict dest, const void *__restrict src, size_t n):&#160;string.h'],['../d4/d16/memcpy_8c.html#a884f0378c1e1c3568f7d3426faa84fac',1,'memcpy(void *dst0, const void *src0, size_t length):&#160;memcpy.c']]],
-  ['memmem',['memmem',['../da/d66/string_8h.html#a46a5c759285caddc5c5a39aee3b2c48d',1,'memmem(const void *l, size_t l_len, const void *s, size_t s_len):&#160;memmem.c'],['../da/de5/memmem_8c.html#a46a5c759285caddc5c5a39aee3b2c48d',1,'memmem(const void *l, size_t l_len, const void *s, size_t s_len):&#160;memmem.c']]],
-  ['memmove',['memmove',['../da/d66/string_8h.html#a802c986820d3866639922b6bc9484f90',1,'string.h']]],
-  ['memset',['memset',['../da/d66/string_8h.html#a362b656d9de3289b55b1035d14cb4b5d',1,'string.h']]],
-  ['mult',['mult',['../d0/ddb/misc_8c.html#af5ce0c13a6e4b5463313c7bca5597d40',1,'misc.c']]],
-  ['multadd',['multadd',['../d0/ddb/misc_8c.html#aad62d6816f2fcf5a84033a1e42d721ea',1,'misc.c']]]
+  ['l_5fshift',['L_shift',['../d5/d7b/hexnan_8c.html#a3b069e65d7c8a2e796d4fce5acf88774',1,'hexnan.c']]],
+  ['labs',['labs',['../dc/d9c/stdlib_8h.html#a3b270e0b7f5c47e2511ecf21dab24b5b',1,'labs(long n):&#160;labs.c'],['../de/d7c/labs_8c.html#a912277f2dbf3594e958d116ff2b35625',1,'labs(long j):&#160;labs.c']]],
+  ['lcheck',['Lcheck',['../da/db6/arithchk_8c.html#aad8f76672d316cae352c096a0e3de638',1,'arithchk.c']]],
+  ['ldiv',['ldiv',['../dc/d9c/stdlib_8h.html#a5bc691988259a071fc535e7d67722e14',1,'ldiv(long x, long y):&#160;ldiv.c'],['../d6/d00/ldiv_8c.html#a0302920caf64a5fbe1ce0862799d7784',1,'ldiv(long num, long denom):&#160;ldiv.c']]],
+  ['llabs',['llabs',['../dc/d9c/stdlib_8h.html#a0a2674259221ee5440b2614758de5a07',1,'llabs(long long n):&#160;llabs.c'],['../df/d2e/llabs_8c.html#aba9e4316abbfa2ba716dfbf4bb1c2dc4',1,'llabs(long long j):&#160;llabs.c']]],
+  ['lldiv',['lldiv',['../dc/d9c/stdlib_8h.html#a9b7800c714251b76f6f39dcd25be3a04',1,'lldiv(long long x, long long y):&#160;lldiv.c'],['../df/de5/lldiv_8c.html#abe38f453a5be2eff9faa5591de8cf8e4',1,'lldiv(long long numer, long long denom):&#160;lldiv.c']]],
+  ['lo0bits',['lo0bits',['../d0/ddb/misc_8c.html#ad82f3f02c24f5f1c6feec5f16068e015',1,'misc.c']]],
+  ['localeconv',['localeconv',['../db/d9f/locale_8h.html#a69b40f71a20a7c8bd67b9eeeae7f40c9',1,'locale.h']]],
+  ['localtime',['localtime',['../de/df7/time_8h.html#a07638fbd95ed65c833f1ea655ad92588',1,'time.h']]],
+  ['longjmp',['longjmp',['../dd/df8/setjmp_8h.html#aeb7fd7d380625a674745b61d8e5e7b2a',1,'setjmp.h']]],
+  ['lshift',['lshift',['../d0/ddb/misc_8c.html#a4ebe177988573b898995e6f5aa669ec1',1,'misc.c']]]
 ];

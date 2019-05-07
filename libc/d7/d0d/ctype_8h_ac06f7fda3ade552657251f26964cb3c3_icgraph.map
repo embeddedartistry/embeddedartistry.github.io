@@ -1,0 +1,9 @@
+<map id="isspace" name="isspace">
+<area shape="rect" id="node1" title="Checks if the given character is a whitespace character." alt="" coords="114,129,180,155"/>
+<area shape="rect" id="node2" href="$d9/d84/atol_8c.html#ad92c5a918e5bcd89416deb3b64fb46ee" title="Interprets a Long value in a byte string pointed to by str." alt="" coords="14,5,57,31"/>
+<area shape="rect" id="node3" href="$d5/d07/atoll_8c.html#a53e8d1f366b7581b51b222c2e02aa765" title="Interprets a Long Long value in a byte string pointed to by str." alt="" coords="13,55,59,80"/>
+<area shape="rect" id="node4" href="$d5/d65/strtol_8c.html#a80ac672fc21ed312d1221eeb294bfe85" title=" " alt="" coords="11,104,61,129"/>
+<area shape="rect" id="node5" href="$db/d51/strtoll_8c.html#a878c9e072297bf2070dc918474e4bc75" title=" " alt="" coords="9,153,62,179"/>
+<area shape="rect" id="node6" href="$d5/d03/strtoul_8c.html#aea3dfd9fd35d46f2a364a5927635751b" title=" " alt="" coords="7,203,64,228"/>
+<area shape="rect" id="node7" href="$dd/d39/strtoull_8c.html#a0907a7572834dbb24063f49d4f6e146d" title="Interprets an unsigned long long value in a byte string pointed to by str." alt="" coords="5,252,66,277"/>
+</map>
