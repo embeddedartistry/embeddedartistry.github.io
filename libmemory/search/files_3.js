@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['malloc_2eh',['malloc.h',['../d0/d4c/malloc_8h.html',1,'']]],
-  ['malloc_5ffreelist_2ec',['malloc_freelist.c',['../df/dbe/malloc__freelist_8c.html',1,'']]],
-  ['malloc_5fthreadx_2ec',['malloc_threadx.c',['../d0/d6b/malloc__threadx_8c.html',1,'']]]
+  ['issue_5ftemplate_2emd',['ISSUE_TEMPLATE.md',['../db/d90/_i_s_s_u_e___t_e_m_p_l_a_t_e_8md.html',1,'']]]
 ];

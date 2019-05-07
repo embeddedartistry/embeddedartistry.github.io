@@ -1,4 +1,10 @@
 <map id="src/aligned_malloc.c" name="src/aligned_malloc.c">
-<area shape="rect" id="node6" href="$d6/dfa/aligned__malloc_8h.html" title="aligned_malloc.h" alt="" coords="431,79,552,104"/>
-<area shape="rect" id="node8" href="$d0/d4c/malloc_8h.html" title="malloc.h" alt="" coords="336,79,407,104"/>
+<area shape="rect" id="node1" title=" " alt="" coords="193,5,335,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,79,74,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="98,79,173,104"/>
+<area shape="rect" id="node4" title=" " alt="" coords="197,79,261,104"/>
+<area shape="rect" id="node5" title=" " alt="" coords="304,152,368,177"/>
+<area shape="rect" id="node6" href="$d6/dfa/aligned__malloc_8h.html" title=" " alt="" coords="431,79,552,104"/>
+<area shape="rect" id="node8" href="$d0/d4c/malloc_8h.html" title=" " alt="" coords="336,79,407,104"/>
+<area shape="rect" id="node7" title=" " alt="" coords="457,152,526,177"/>
 </map>

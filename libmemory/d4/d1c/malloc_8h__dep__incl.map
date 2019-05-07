@@ -1,3 +1,7 @@
 <map id="include/malloc.h" name="include/malloc.h">
-<area shape="rect" id="node2" href="$d3/dde/aligned__malloc_8c.html" title="src/aligned_malloc.c" alt="" coords="5,79,147,104"/>
+<area shape="rect" id="node1" title=" " alt="" coords="265,5,382,31"/>
+<area shape="rect" id="node2" href="$d3/dde/aligned__malloc_8c.html" title=" " alt="" coords="5,79,147,104"/>
+<area shape="rect" id="node3" href="$df/dbe/malloc__freelist_8c.html" title=" " alt="" coords="171,79,310,104"/>
+<area shape="rect" id="node4" href="$de/d01/malloc__freertos_8c.html" title=" " alt="" coords="334,79,478,104"/>
+<area shape="rect" id="node5" href="$d0/d6b/malloc__threadx_8c.html" title=" " alt="" coords="502,79,646,104"/>
 </map>

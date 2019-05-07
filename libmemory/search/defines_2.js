@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ptr_5foffset_5fsz',['PTR_OFFSET_SZ',['../d3/dde/aligned__malloc_8c.html#ae270c0b6ce92c0334142b6ac81ea047d',1,'aligned_malloc.c']]]
+  ['is_5fpower_5f2',['IS_POWER_2',['../d7/d69/posix__memalign_8c.html#afde7f480bb136d95a4da3bdf0c616442',1,'posix_memalign.c']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['aligned_5fmalloc_2ec',['aligned_malloc.c',['../d3/dde/aligned__malloc_8c.html',1,'']]],
-  ['aligned_5fmalloc_2eh',['aligned_malloc.h',['../d6/dfa/aligned__malloc_8h.html',1,'']]]
+  ['0001_2drecord_2darchitecture_2ddecisions_2emd',['0001-record-architecture-decisions.md',['../d0/d8c/0001-record-architecture-decisions_8md.html',1,'']]]
 ];

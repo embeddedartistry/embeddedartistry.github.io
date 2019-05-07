@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['memalign',['memalign',['../d6/dfa/aligned__malloc_8h.html#ad3cb0af0afe3f554732e296d29b6d4ea',1,'aligned_malloc.h']]],
-  ['min_5falloc_5fsz',['MIN_ALLOC_SZ',['../df/dbe/malloc__freelist_8c.html#a3b1ea0787ffad991a7abe1716d4084b2',1,'malloc_freelist.c']]]
+  ['freertos_5fheap_5fregion_5fcnt',['FREERTOS_HEAP_REGION_CNT',['../de/d01/malloc__freertos_8c.html#a3b82aa8a9f5c02fbe12f673874b08228',1,'malloc_freertos.c']]]
 ];
