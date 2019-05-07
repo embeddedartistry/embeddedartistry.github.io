@@ -1,0 +1,8 @@
+<map id="embvm::spi::master" name="embvm::spi::master">
+<area shape="rect" id="node1" title="This class provides the SPI master interface definition." alt="" coords="253,380,390,693"/>
+<area shape="rect" id="node4" href="$d6/d18/group___aardvark_drivers.html#d4/d3d/classembdrv_1_1aardvark_s_p_i_master" title="Create an Aardvark SPI Master Driver." alt="" coords="5,768,193,975"/>
+<area shape="rect" id="node5" href="$d2/d2e/classembvm_1_1spi_1_1active_master.html" title=" " alt="" coords="217,768,426,975"/>
+<area shape="rect" id="node6" href="$da/d33/group___test_drivers.html#df/d0e/classtest_1_1spi_test_driver" title="SPI Master Unit Test Driver." alt="" coords="450,741,602,1001"/>
+<area shape="rect" id="node2" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="180,5,319,332"/>
+<area shape="rect" id="node3" title=" " alt="" coords="342,132,448,205"/>
+</map>

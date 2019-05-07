@@ -1,0 +1,9 @@
+<map id="embdrv::aardvarkGPIOInput&lt; TPinID, TPull &gt;" name="embdrv::aardvarkGPIOInput&lt; TPinID, TPull &gt;">
+<area shape="rect" id="node1" title="Aardvark GPIO Input driver." alt="" coords="142,1135,330,1301"/>
+<area shape="rect" id="node6" href="$d6/d18/group___aardvark_drivers.html" title=" " alt="" coords="5,1363,224,1516"/>
+<area shape="rect" id="node7" href="$d6/d18/group___aardvark_drivers.html" title=" " alt="" coords="248,1363,466,1516"/>
+<area shape="rect" id="node2" href="$d2/d3c/classembvm_1_1gpio_1_1input.html" title="This class defines a GPIO input interface." alt="" coords="169,879,303,1085"/>
+<area shape="rect" id="node3" href="$dd/d2b/classembvm_1_1gpio_1_1base.html" title=" " alt="" coords="165,636,307,829"/>
+<area shape="rect" id="node4" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="161,5,300,332"/>
+<area shape="rect" id="node5" href="$dd/d2b/classembvm_1_1gpio_1_1base.html" title="This class defines the common GPIO interfaces." alt="" coords="252,381,393,575"/>
+</map>

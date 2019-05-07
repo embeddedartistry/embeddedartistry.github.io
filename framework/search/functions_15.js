@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['uint64_5fgen',['uint64_gen',['../d0/d40/test_2stdlib_2heapsort_8c.html#a9c7a754e6550805699dab8924fee3a6f',1,'uint64_gen(uint64_t *p, uint64_t *p_sorted, size_t num):&#160;heapsort.c'],['../d7/d4e/test_2stdlib_2heapsort__r_8c.html#a9c7a754e6550805699dab8924fee3a6f',1,'uint64_gen(uint64_t *p, uint64_t *p_sorted, size_t num):&#160;heapsort_r.c'],['../d5/dda/test_2stdlib_2qsort_8c.html#a9c7a754e6550805699dab8924fee3a6f',1,'uint64_gen(uint64_t *p, uint64_t *p_sorted, size_t num):&#160;qsort.c'],['../d3/d7a/test_2stdlib_2qsort__r_8c.html#a9c7a754e6550805699dab8924fee3a6f',1,'uint64_gen(uint64_t *p, uint64_t *p_sorted, size_t num):&#160;qsort_r.c']]],
+  ['uint64_5ftest',['uint64_test',['../d0/d40/test_2stdlib_2heapsort_8c.html#a0c1b68cebf69519ab15389e0297a650a',1,'uint64_test(uint64_t *a, uint64_t *a_sorted, size_t len, void **state):&#160;heapsort.c'],['../d7/d4e/test_2stdlib_2heapsort__r_8c.html#a0c1b68cebf69519ab15389e0297a650a',1,'uint64_test(uint64_t *a, uint64_t *a_sorted, size_t len, void **state):&#160;heapsort_r.c'],['../d5/dda/test_2stdlib_2qsort_8c.html#a0c1b68cebf69519ab15389e0297a650a',1,'uint64_test(uint64_t *a, uint64_t *a_sorted, size_t len, void **state):&#160;qsort.c'],['../d3/d7a/test_2stdlib_2qsort__r_8c.html#a0c1b68cebf69519ab15389e0297a650a',1,'uint64_test(uint64_t *a, uint64_t *a_sorted, size_t len, void **state):&#160;qsort_r.c']]],
+  ['ulp',['ulp',['../dd/d10/ulp_8c.html#a051acc447e291c2ef6536bc393f95ae5',1,'ulp.c']]],
+  ['ulpdown',['ulpdown',['../dd/d21/strtod_i_8c.html#a9210b783ac27bc7b3b09c432e3189c01',1,'strtodI.c']]],
+  ['ulportdisableisr',['ulPortDisableISR',['../d2/d19/nrf51_2portmacro__cmsis_8h.html#aad93f1b07e98ab31f4b3ac68f04c0bc4',1,'portmacro_cmsis.h']]],
+  ['ulportraisebasepri',['ulPortRaiseBASEPRI',['../de/d2e/nrf52_2portmacro__cmsis_8h.html#a51dd72ac3e895a8c4e585319ce8d775c',1,'portmacro_cmsis.h']]],
+  ['ultod',['ULtod',['../df/d2b/strtord_8c.html#a2ff1461786700d99a8dfacadb47e09bb',1,'strtord.c']]],
+  ['ultodd',['ULtodd',['../d4/df5/strtordd_8c.html#ac73b1e3451153cd1602e089b8a02f90d',1,'strtordd.c']]],
+  ['ultof',['ULtof',['../d5/db0/strtorf_8c.html#a11a71eb82271df8ca19eaae0199afd64',1,'strtorf.c']]],
+  ['ultoq',['ULtoQ',['../d2/dad/strtor_q_8c.html#ab9f87b679fb15f2c05f5b21163cd00ac',1,'strtorQ.c']]],
+  ['ultox',['ULtox',['../d4/dde/strtorx_8c.html#a0b052fdbdf67a62c3dd30688dd1c315a',1,'strtorx.c']]],
+  ['ultoxl',['ULtoxL',['../d1/d7d/strtorx_l_8c.html#a78487aad29e0f7268fe06ae1ceff1d0e',1,'strtorxL.c']]],
+  ['ungetc',['ungetc',['../d6/dd1/stdio_8h.html#aaa45e956d4050ab6ff13699ad23f5aa6',1,'stdio.h']]],
+  ['ungetwc',['ungetwc',['../d6/dd1/stdio_8h.html#a74d2cb057dc06d40e8ec3ce06a385dcb',1,'stdio.h']]],
+  ['unique_5fresource',['unique_resource',['../d5/d7b/group___s_b_r_m.html#ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9',1,'embutil']]],
+  ['unittesthwplatform',['UnitTestHWPlatform',['../d3/d4c/class_unit_test_h_w_platform.html#a1ed6e314389cdcdffb4313904e9c567a',1,'UnitTestHWPlatform']]],
+  ['unittestplatform',['UnitTestPlatform',['../dd/d7e/class_unit_test_platform.html#ae8b8930589a7897bfd48dbba892d1996',1,'UnitTestPlatform::UnitTestPlatform()'],['../dd/d7e/class_unit_test_platform.html#a9e6c6d62a600c168f162a40ee485c1b4',1,'UnitTestPlatform::UnitTestPlatform(const char *name)'],['../dd/d7e/class_unit_test_platform.html#aa777144775a95c6aa3bd1c0cd39a6c22',1,'UnitTestPlatform::UnitTestPlatform(const std::string &amp;name)'],['../dd/d7e/class_unit_test_platform.html#af4a7984b0410c8767084d033ba7666f3',1,'UnitTestPlatform::UnitTestPlatform(const std::string_view &amp;name)']]],
+  ['unlock',['unlock',['../d2/d3b/group___framework_o_s.html#a2791ae18033d4b99e5c019234e5b47c7',1,'embvm::VirtualMutex::unlock()'],['../d6/d18/group___aardvark_drivers.html#a710576c80246a34456235657565e51ae',1,'embdrv::aardvarkAdapter::unlock()'],['../d9/dad/group___free_r_t_o_s_o_s.html#ad05e04454eac1dc8bd452f6e7bb9058a',1,'os::freertos::Mutex::unlock()'],['../db/dd1/group___p_o_s_i_x_o_s.html#a38b0c6b1fe38a0f64b4cc31bb61dca18',1,'os::posix::Mutex::unlock()'],['../dd/d72/class_a_r_m_interrupt_lock.html#a096f18d9b181a58a624a3a6828bc81a4',1,'ARMInterruptLock::unlock()'],['../da/d4e/class_thumb_interrupt_lock.html#abab0ff93b6d46237b3f89d4678c81e69',1,'ThumbInterruptLock::unlock()'],['../d3/dd5/group___framework_utils.html#aca0b14e8df9c402a4d72c8fc141fd3ac',1,'embutil::InterruptLock::unlock()'],['../d7/db0/classembutil_1_1nop__lock.html#a20c7e65a6853e20868696d0e9d5ae756',1,'embutil::nop_lock::unlock()']]],
+  ['unregisterdriver',['unregisterDriver',['../d3/de7/group___framework_platform.html#aef1a4ed6c461c106d9350d58a9c4c2e9',1,'embvm::VirtualPlatformBase']]],
+  ['unsubscribe',['unsubscribe',['../d3/de7/group___framework_platform.html#a3492cd3c96c8fb34c4b42dce5edbc454',1,'embvm::EventCenter']]],
+  ['unsubscribefromevent',['unsubscribeFromEvent',['../d3/de7/group___framework_platform.html#acc106d3051b58ae480797af5d60b9557',1,'embvm::PlatformEventManagement']]],
+  ['update_5fstats',['update_stats',['../d3/d37/libm-test_8c.html#a0fbc8f5fac3fb58ea5a3b4fd0b6c364f',1,'libm-test.c']]],
+  ['updatetofmode',['updateToFMode',['../d9/dfd/class_framework_demo_sim_platform.html#ab8b9c976172000051dab183376869285',1,'FrameworkDemoSimPlatform']]]
+];

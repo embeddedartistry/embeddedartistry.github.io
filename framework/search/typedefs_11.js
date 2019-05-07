@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['s08',['s08',['../d2/de8/aardvark_8h.html#ac734b11e390fbcb315c60f047bfb7c52',1,'aardvark.h']]],
+  ['s16',['s16',['../d2/de8/aardvark_8h.html#aa980e2c02ba2305e0f489d5650655425',1,'aardvark.h']]],
+  ['s32',['s32',['../d2/de8/aardvark_8h.html#ae9b1af5c037e57a98884758875d3a7c4',1,'aardvark.h']]],
+  ['s64',['s64',['../d2/de8/aardvark_8h.html#a350c6fc928e3bdc6c6486268ac8fb269',1,'aardvark.h']]],
+  ['short',['SHORT',['../d1/dbb/tx__port_8h.html#a9909bd3cf05f0906045f2ee85be4eeac',1,'tx_port.h']]],
+  ['sig_5ft',['sig_t',['../d3/de7/group___framework_platform.html#a430ab891d8c8d0bc89fe7a4d060259b2',1,'embvm::EventCenter']]],
+  ['sigjmp_5fbuf',['sigjmp_buf',['../dd/df8/setjmp_8h.html#acbca0ecdb48dc59ff364f568c536b8c5',1,'setjmp.h']]],
+  ['signal_5ft',['Signal_t',['../d3/de7/group___framework_platform.html#ga2347f1d36039f85cdb2fce569cb5da26',1,'embvm']]],
+  ['size_5ft',['size_t',['../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984',1,'size_t():&#160;_size_t.h'],['../de/d9d/arm_2include_2__types_2__size__t_8h.html#a7c94ea6f8948649f8d181ae55911eeaf',1,'size_t():&#160;_size_t.h'],['../d5/d26/x86_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984',1,'size_t():&#160;_size_t.h'],['../d1/dbb/x86__64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984',1,'size_t():&#160;_size_t.h'],['../df/d04/namespacetest.html#a4751cb9ca4ece847caf9d017e1678cdb',1,'test::size_t()']]],
+  ['specialfunction',['specialFunction',['../d8/d8e/namespaceembvm_1_1gpio.html#af4d42b761e53eefa9ea3acf323159d1a',1,'embvm::gpio']]],
+  ['spin_5fduration_5ft',['spin_duration_t',['../d2/d29/classembvm_1_1clk_1_1_system_clock.html#a2e1268d756507a6877e2b79a5f02d958',1,'embvm::clk::SystemClock']]],
+  ['ssize_5ft',['ssize_t',['../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#a831c6b6852c6d34448e30a88c34539fd',1,'ssize_t():&#160;_size_t.h'],['../de/d9d/arm_2include_2__types_2__size__t_8h.html#af629ed855824cf5955b54529adf78ad6',1,'ssize_t():&#160;_size_t.h'],['../d5/d26/x86_2include_2__types_2__size__t_8h.html#a831c6b6852c6d34448e30a88c34539fd',1,'ssize_t():&#160;_size_t.h'],['../d1/dbb/x86__64_2include_2__types_2__size__t_8h.html#a831c6b6852c6d34448e30a88c34539fd',1,'ssize_t():&#160;_size_t.h'],['../df/d04/namespacetest.html#a61eb8a4749262cf438e91a1ad51bb827',1,'test::ssize_t()']]],
+  ['stacktype_5ft',['StackType_t',['../d2/d19/nrf51_2portmacro__cmsis_8h.html#a84e9a8ba132feed0b2401c1f4e2ac63c',1,'StackType_t():&#160;portmacro_cmsis.h'],['../de/d2e/nrf52_2portmacro__cmsis_8h.html#a84e9a8ba132feed0b2401c1f4e2ac63c',1,'StackType_t():&#160;portmacro_cmsis.h']]],
+  ['staticdispatchqueue',['StaticDispatchQueue',['../d1/d15/group___dispatch_queue.html#ga179ebed9f4943970e58d123e15a88ab8',1,'embutil']]],
+  ['staticdriverregistry',['StaticDriverRegistry',['../d1/dc2/group___framework_driver.html#ga15a6542830410e6b1615562294233f7a',1,'embvm']]],
+  ['staticeventcenter',['StaticEventCenter',['../d3/de7/group___framework_platform.html#ga8daf93729e34bfa91462d164f0ea775f',1,'embvm']]],
+  ['staticeventqueue',['StaticEventQueue',['../d3/de7/group___framework_platform.html#ga1d200906dfb739b06b5f5edd83be66df',1,'embvm']]],
+  ['staticinstancelist',['StaticInstanceList',['../d7/d8c/group___instance_list.html#gad1980ce11e9e97ac5df4893f7cb05684',1,'embutil']]],
+  ['status',['status',['../d4/d68/namespaceembvm_1_1spi.html#a14265641871f1b92a655e8e3d277deab',1,'embvm::spi']]],
+  ['status_5fcb_5ft',['status_cb_t',['../de/d39/group___framework_drivers.html#aaf5904f77c17d5ae800b615c2d5922fa',1,'embdrv::vl53l1x']]],
+  ['storagepair_5ft',['storagePair_t',['../d6/d18/group___aardvark_drivers.html#a810c506fdff68956025b01cbf311267d',1,'embdrv::aardvarkI2CMaster::storagePair_t()'],['../d6/d18/group___aardvark_drivers.html#a3bca94210ccc93a681dab6c1acdbc850',1,'embdrv::aardvarkSPIMaster::storagePair_t()']]],
+  ['suseconds_5ft',['suseconds_t',['../da/d58/aarch64_2include_2__types_2__time__t_8h.html#ae32f449456d5f1877a9e630e92422c01',1,'suseconds_t():&#160;_time_t.h'],['../db/d53/arm_2include_2__types_2__time__t_8h.html#ae32f449456d5f1877a9e630e92422c01',1,'suseconds_t():&#160;_time_t.h'],['../d3/d1f/x86_2include_2__types_2__time__t_8h.html#a16943574a1a3549c3053895809482814',1,'suseconds_t():&#160;_time_t.h'],['../db/dc1/x86__64_2include_2__types_2__time__t_8h.html#a59054693ee0d997a81bf19ca4372619c',1,'suseconds_t():&#160;_time_t.h']]],
+  ['sweep_5fcb_5ft',['sweep_cb_t',['../dd/d35/classembvm_1_1i2c_1_1master.html#aa43d8492b3752180f502900dafdbd7fa',1,'embvm::i2c::master']]],
+  ['sweep_5flist_5ft',['sweep_list_t',['../dd/d35/classembvm_1_1i2c_1_1master.html#a82b95e009b523e3d5a600a89d6fc1d1c',1,'embvm::i2c::master']]]
+];

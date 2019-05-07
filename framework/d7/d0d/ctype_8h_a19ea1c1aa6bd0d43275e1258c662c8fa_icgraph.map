@@ -1,0 +1,12 @@
+<map id="isgraph" name="isgraph">
+<area shape="rect" id="node1" title="Checks if the given character has a graphical representation." alt="" coords="671,55,737,80"/>
+<area shape="rect" id="node2" href="$d5/d88/test_2ctype_2isgraph_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="540,5,620,31"/>
+<area shape="rect" id="node6" href="$d5/d88/test_2ctype_2isgraph_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="536,55,623,80"/>
+<area shape="rect" id="node7" href="$d0/dbf/src_2ctype_2ispunct_8c.html#af29554b3ec04ea7684482bffed5dbce6" title="Checks if the given character is a punctuation character." alt="" coords="548,104,612,129"/>
+<area shape="rect" id="node3" href="$d5/d88/test_2ctype_2isgraph_8c.html#a8abaf7647bc9158fe23ae2dfeefb9a79" title=" " alt="" coords="387,29,488,55"/>
+<area shape="rect" id="node4" href="$d9/dd4/libc_2test_2tests_8h.html#af49417e778176ba8be2b8a155997ca44" title=" " alt="" coords="104,55,192,80"/>
+<area shape="rect" id="node5" href="$d1/d54/libc_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="5,55,56,80"/>
+<area shape="rect" id="node8" href="$db/d6d/test_2ctype_2ispunct_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="394,79,481,104"/>
+<area shape="rect" id="node10" href="$db/d6d/test_2ctype_2ispunct_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="398,128,478,153"/>
+<area shape="rect" id="node9" href="$db/d6d/test_2ctype_2ispunct_8c.html#a3d34b9574bf7adc9a26448ebb6d0e76b" title=" " alt="" coords="240,80,339,105"/>
+</map>

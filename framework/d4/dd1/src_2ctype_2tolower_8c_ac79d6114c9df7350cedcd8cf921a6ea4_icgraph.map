@@ -1,0 +1,12 @@
+<map id="tolower" name="tolower">
+<area shape="rect" id="node1" title="Converts the given character to lowercase." alt="" coords="524,55,588,80"/>
+<area shape="rect" id="node2" href="$d7/d00/test_2ctype_2tolower_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="392,5,472,31"/>
+<area shape="rect" id="node6" href="$d7/d00/test_2ctype_2tolower_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="388,55,476,80"/>
+<area shape="rect" id="node7" href="$df/d03/towlower_8c.html#ab9cd9fba7f8437d2ad5242baa25fd176" title=" " alt="" coords="395,104,469,129"/>
+<area shape="rect" id="node3" href="$d7/d00/test_2ctype_2tolower_8c.html#aecbe2b7779e315d5597f4b5aa89d863d" title=" " alt="" coords="240,17,340,43"/>
+<area shape="rect" id="node4" href="$d9/dd4/libc_2test_2tests_8h.html#af49417e778176ba8be2b8a155997ca44" title=" " alt="" coords="104,17,192,43"/>
+<area shape="rect" id="node5" href="$d1/d54/libc_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="5,17,56,43"/>
+<area shape="rect" id="node8" href="$dd/d15/iswupper_8c.html#af9d04695802b960ca3765c72d73ddb7c" title=" " alt="" coords="253,79,328,104"/>
+<area shape="rect" id="node10" href="$d8/dbe/towctrans_8c.html#a7bf5ecea0641ad3803700c26a307f828" title=" " alt="" coords="251,128,329,153"/>
+<area shape="rect" id="node9" href="$d0/d6a/iswctype_8c.html#a895fea1b38ea206a927d97c2e4543c64" title=" " alt="" coords="112,79,184,104"/>
+</map>

@@ -1,0 +1,44 @@
+<map id="isdigit" name="isdigit">
+<area shape="rect" id="node1" title="Checks if the given character is a numeric character." alt="" coords="816,303,871,328"/>
+<area shape="rect" id="node2" href="$da/d72/src_2stdlib_2atoi_8c.html#aec327ac88a4cd588e82a8b0ac752b089" title="Interprets an integer value in a byte string pointed to by str." alt="" coords="703,79,745,104"/>
+<area shape="rect" id="node6" href="$df/d99/src_2stdlib_2atol_8c.html#ad92c5a918e5bcd89416deb3b64fb46ee" title="Interprets a Long value in a byte string pointed to by str." alt="" coords="703,128,745,153"/>
+<area shape="rect" id="node9" href="$dc/db6/src_2stdlib_2atoll_8c.html#a53e8d1f366b7581b51b222c2e02aa765" title="Interprets a Long Long value in a byte string pointed to by str." alt="" coords="701,177,747,203"/>
+<area shape="rect" id="node12" href="$db/d0f/test_2ctype_2isdigit_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="684,228,764,253"/>
+<area shape="rect" id="node16" href="$db/d0f/test_2ctype_2isdigit_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="680,277,768,303"/>
+<area shape="rect" id="node17" href="$d5/dbd/src_2ctype_2isalnum_8c.html#adf38e126f73a010f30af76db2a28c6e1" title="Checks if the given character is an alphanumeric character." alt="" coords="690,327,758,352"/>
+<area shape="rect" id="node25" href="$df/d84/src_2ctype_2isxdigit_8c.html#adaf3aadefe3fc4fb07b6be0d7b880f53" title="Checks if the given character is a hexadecimal numeric character." alt="" coords="693,481,755,507"/>
+<area shape="rect" id="node33" href="$d1/d7c/src_2stdlib_2strtol_8c.html#a80ac672fc21ed312d1221eeb294bfe85" title=" " alt="" coords="699,543,749,568"/>
+<area shape="rect" id="node37" href="$d0/dfb/src_2stdlib_2strtoll_8c.html#a878c9e072297bf2070dc918474e4bc75" title=" " alt="" coords="697,616,751,641"/>
+<area shape="rect" id="node40" href="$df/d30/src_2stdlib_2strtoul_8c.html#aea3dfd9fd35d46f2a364a5927635751b" title=" " alt="" coords="695,715,753,740"/>
+<area shape="rect" id="node3" href="$d4/d9e/aagpio_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="560,29,610,55"/>
+<area shape="rect" id="node4" href="$dc/de0/test_2stdlib_2atoi_8c.html#a547826026c7d5aa088622c707d47bd5c" title=" " alt="" coords="549,79,621,104"/>
+<area shape="rect" id="node5" href="$dd/d23/stdlib__tests_8h.html#a218645a7087a8b836b9d76887c57a444" title=" " alt="" coords="400,29,478,55"/>
+<area shape="rect" id="node7" href="$d7/d12/test_2stdlib_2atol_8c.html#acb6d0132f2e9e79b57cb710faa976ced" title=" " alt="" coords="549,128,621,153"/>
+<area shape="rect" id="node8" href="$dd/d23/stdlib__tests_8h.html#a5092344bade47df611358c19ae29a8f6" title=" " alt="" coords="400,103,478,128"/>
+<area shape="rect" id="node10" href="$de/dbc/test_2stdlib_2atoll_8c.html#ae77df09b8885acf5597fc48d6e40cd9e" title=" " alt="" coords="548,177,623,203"/>
+<area shape="rect" id="node11" href="$dd/d23/stdlib__tests_8h.html#abb070b4872cbcec99ae22cf3cdb7a6de" title=" " alt="" coords="398,176,480,201"/>
+<area shape="rect" id="node13" href="$db/d0f/test_2ctype_2isdigit_8c.html#a4d52bdf093f85e3396d2f49198a1d0e0" title=" " alt="" coords="540,228,631,253"/>
+<area shape="rect" id="node14" href="$d9/dd4/libc_2test_2tests_8h.html#af49417e778176ba8be2b8a155997ca44" title=" " alt="" coords="104,364,192,389"/>
+<area shape="rect" id="node15" href="$d1/d54/libc_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="5,487,56,512"/>
+<area shape="rect" id="node18" href="$d6/d4e/test_2ctype_2isalnum_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="545,277,625,303"/>
+<area shape="rect" id="node20" href="$d6/d4e/test_2ctype_2isalnum_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="542,327,629,352"/>
+<area shape="rect" id="node21" href="$d0/dbf/src_2ctype_2ispunct_8c.html#af29554b3ec04ea7684482bffed5dbce6" title="Checks if the given character is a punctuation character." alt="" coords="554,376,617,401"/>
+<area shape="rect" id="node19" href="$d6/d4e/test_2ctype_2isalnum_8c.html#a803d71139643620d112295db49f1da25" title=" " alt="" coords="387,277,490,303"/>
+<area shape="rect" id="node22" href="$db/d6d/test_2ctype_2ispunct_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="395,327,483,352"/>
+<area shape="rect" id="node24" href="$db/d6d/test_2ctype_2ispunct_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="399,376,479,401"/>
+<area shape="rect" id="node23" href="$db/d6d/test_2ctype_2ispunct_8c.html#a3d34b9574bf7adc9a26448ebb6d0e76b" title=" " alt="" coords="240,364,339,389"/>
+<area shape="rect" id="node26" href="$dd/daa/s__nan_8c.html#a07ce37a1c61c699ff15d53f670507ae1" title=" " alt="" coords="538,475,632,500"/>
+<area shape="rect" id="node30" href="$d8/dc7/test_2ctype_2isxdigit_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="542,524,629,549"/>
+<area shape="rect" id="node32" href="$d8/dc7/test_2ctype_2isxdigit_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="545,573,625,599"/>
+<area shape="rect" id="node27" href="$dd/daa/s__nan_8c.html#a80b10cbf762efba7f24e3c5335d9a24b" title=" " alt="" coords="417,425,461,451"/>
+<area shape="rect" id="node28" href="$dd/daa/s__nan_8c.html#ad86b33f61112990df3dd39cf0fe346eb" title=" " alt="" coords="415,475,463,500"/>
+<area shape="rect" id="node29" href="$dd/d8f/ld128_2s__nanl_8c.html#a3c5283bd738e4ca581b20ac249f86a3a" title=" " alt="" coords="416,524,462,549"/>
+<area shape="rect" id="node31" href="$d8/dc7/test_2ctype_2isxdigit_8c.html#a019eb24ce24cadbf914f11d76d6c6e19" title=" " alt="" coords="390,573,488,599"/>
+<area shape="rect" id="node34" href="$d0/d05/test_2stdlib_2strtol_8c.html#a3eeb42c9dfd1554123a070b88673e720" title=" " alt="" coords="546,623,625,648"/>
+<area shape="rect" id="node35" href="$d0/d05/test_2stdlib_2strtol_8c.html#a028faa7a9f4a0b60811d536a0e438248" title=" " alt="" coords="396,623,482,648"/>
+<area shape="rect" id="node36" href="$d9/dd4/libc_2test_2tests_8h.html#a0b4d030cde903bd754b3a054e547483f" title=" " alt="" coords="246,647,334,672"/>
+<area shape="rect" id="node38" href="$de/ddb/test_2stdlib_2strtoll_8c.html#a21642bf82bbf56bab8c476d0db939af3" title=" " alt="" coords="544,672,626,697"/>
+<area shape="rect" id="node39" href="$de/ddb/test_2stdlib_2strtoll_8c.html#a89b14eb69ab7385297794bd769c4ae31" title=" " alt="" coords="395,672,483,697"/>
+<area shape="rect" id="node41" href="$db/d2f/test_2stdlib_2strtoul_8c.html#a2ab119f4ba9c47944be57fb9efa06c3f" title=" " alt="" coords="542,721,629,747"/>
+<area shape="rect" id="node42" href="$db/d2f/test_2stdlib_2strtoul_8c.html#a130f3b4e098560a8b2af40b6a11fcb34" title=" " alt="" coords="392,721,486,747"/>
+</map>

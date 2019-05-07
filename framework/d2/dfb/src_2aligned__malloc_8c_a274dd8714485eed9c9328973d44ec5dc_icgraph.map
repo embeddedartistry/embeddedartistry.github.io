@@ -1,0 +1,13 @@
+<map id="aligned_free" name="aligned_free">
+<area shape="rect" id="node1" title="aligned_free works like free(), but we work backwards from the returned pointer to find the correct o..." alt="" coords="1017,80,1112,105"/>
+<area shape="rect" id="node2" href="$db/d8f/test_2src_2aligned__malloc_8c.html#a9ec335ea531aa0256fe0a0b5d04171d3" title=" " alt="" coords="827,5,966,31"/>
+<area shape="rect" id="node9" href="$d5/d7b/group___s_b_r_m.html#ga585e70b89827a5ea2f14a1037c92c549" title="Create a shared pointer to aligned memory." alt="" coords="824,55,968,80"/>
+<area shape="rect" id="node10" href="$d5/d7b/group___s_b_r_m.html#ga4c70e65b5f4bef136004c307f5342ca1" title="Create a unique pointer to aligned memory." alt="" coords="824,104,969,129"/>
+<area shape="rect" id="node11" href="$db/d8f/test_2src_2aligned__malloc_8c.html#a4c2565d5730de48dafabed8d1e125815" title=" " alt="" coords="823,153,969,179"/>
+<area shape="rect" id="node3" href="$da/da6/libmemory_2test_2tests_8h.html#aab9bed67ef0fd42b7111a860f4d0113a" title=" " alt="" coords="629,80,775,105"/>
+<area shape="rect" id="node4" href="$d9/d1b/libmemory_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="531,80,581,105"/>
+<area shape="rect" id="node5" href="$d0/d06/group___framework_boot.html#ga31518afcb6f9b88831152868d7f322f3" title="Default Framework Boot Strategy." alt="" coords="305,17,470,56"/>
+<area shape="rect" id="node6" href="$d0/d06/group___framework_boot.html#ga24570e05d9cbd38e7dbb6bc36b5780ac" title=" " alt="" coords="324,80,452,105"/>
+<area shape="rect" id="node8" href="$d0/d06/group___framework_boot.html#gaf8fdd3f323c465a60916ff75c91b71b6" title="OSX Simulator Boot Strategy." alt="" coords="293,129,483,168"/>
+<area shape="rect" id="node7" href="$de/dfa/classn_r_f52_d_k___framework_demo_platform.html#aa631c956bf766a788cff820807a6a78d" title=" " alt="" coords="5,73,245,112"/>
+</map>

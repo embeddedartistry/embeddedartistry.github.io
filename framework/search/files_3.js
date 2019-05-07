@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['b_5fexp_2ec',['b_exp.c',['../d5/dbb/b__exp_8c.html',1,'']]],
+  ['b_5flog_2ec',['b_log.c',['../df/dfd/b__log_8c.html',1,'']]],
+  ['b_5ftgamma_2ec',['b_tgamma.c',['../d7/dfe/b__tgamma_8c.html',1,'']]],
+  ['base_2ecpp',['base.cpp',['../d5/de4/base_8cpp.html',1,'']]],
+  ['base_2ehpp',['base.hpp',['../dd/d3c/base_8hpp.html',1,'']]],
+  ['basic_5fdisplay_2ecpp',['basic_display.cpp',['../db/dbb/basic__display_8cpp.html',1,'']]],
+  ['basic_5fdisplay_2ehpp',['basic_display.hpp',['../d4/d7b/basic__display_8hpp.html',1,'']]],
+  ['bits_2eh',['bits.h',['../df/db9/bits_8h.html',1,'']]],
+  ['bits_2ehpp',['bits.hpp',['../d0/d71/bits_8hpp.html',1,'']]],
+  ['blinky_2ec',['blinky.c',['../d4/dc2/blinky_8c.html',1,'']]],
+  ['blinky_2ecpp',['blinky.cpp',['../d7/d8e/blinky_8cpp.html',1,'']]],
+  ['blinky_5fmigratory_2ecpp',['blinky_migratory.cpp',['../d2/d42/blinky__migratory_8cpp.html',1,'']]],
+  ['blinky_5fplatform_2ehpp',['blinky_platform.hpp',['../d2/d91/blinky__platform_8hpp.html',1,'']]],
+  ['blinky_5fsimulator_5fhw_5fplatform_2ecpp',['blinky_simulator_hw_platform.cpp',['../d7/d96/blinky__simulator__hw__platform_8cpp.html',1,'']]],
+  ['blinky_5fsimulator_5fhw_5fplatform_2ehpp',['blinky_simulator_hw_platform.hpp',['../d4/d15/blinky__simulator__hw__platform_8hpp.html',1,'']]],
+  ['boot_2ecpp',['boot.cpp',['../dd/d8c/core_2boot_2boot_8cpp.html',1,'(Global Namespace)'],['../dd/de5/platforms_2unit__test_2boot_8cpp.html',1,'(Global Namespace)']]],
+  ['boot_5fsequencer_2ehpp',['boot_sequencer.hpp',['../d4/d46/boot__sequencer_8hpp.html',1,'']]],
+  ['bounce_2ehpp',['bounce.hpp',['../d1/d17/bounce_8hpp.html',1,'']]],
+  ['bsd_5fasm_2eh',['bsd_asm.h',['../d1/d8e/amd64_2bsd__asm_8h.html',1,'(Global Namespace)'],['../dd/d6e/i387_2bsd__asm_8h.html',1,'(Global Namespace)']]],
+  ['bsd_5fcdefs_2eh',['bsd_cdefs.h',['../d8/d50/bsd__cdefs_8h.html',1,'']]],
+  ['bsd_5ffpu_2eh',['bsd_fpu.h',['../d0/d61/bsd__fpu_8h.html',1,'']]],
+  ['bsd_5fieeefp_2eh',['bsd_ieeefp.h',['../d7/d84/amd64_2bsd__ieeefp_8h.html',1,'(Global Namespace)'],['../d8/d05/i387_2bsd__ieeefp_8h.html',1,'(Global Namespace)']]],
+  ['bsd_5fnpx_2eh',['bsd_npx.h',['../d0/d47/bsd__npx_8h.html',1,'']]],
+  ['bsearch_2ec',['bsearch.c',['../d9/d96/src_2stdlib_2bsearch_8c.html',1,'(Global Namespace)'],['../df/d1c/test_2stdlib_2bsearch_8c.html',1,'(Global Namespace)']]]
+];

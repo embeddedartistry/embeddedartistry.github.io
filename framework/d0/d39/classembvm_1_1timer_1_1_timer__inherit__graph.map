@@ -1,0 +1,5 @@
+<map id="embvm::timer::Timer" name="embvm::timer::Timer">
+<area shape="rect" id="node1" title="This class provides generic Timer interface definitions." alt="" coords="15,380,158,720"/>
+<area shape="rect" id="node3" href="$db/d9d/group___simulator_drivers.html#d8/d92/classembdrv_1_1_simulator_timer" title="Simulator timer driver." alt="" coords="5,768,168,1041"/>
+<area shape="rect" id="node2" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="18,5,156,332"/>
+</map>

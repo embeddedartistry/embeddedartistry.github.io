@@ -1,0 +1,8 @@
+<map id="embvm::spi::activeMaster&lt; TQueueSize, TLock, TCond &gt;" name="embvm::spi::activeMaster&lt; TQueueSize, TLock, TCond &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="206,796,415,1003"/>
+<area shape="rect" id="node2" href="$d4/da2/classembvm_1_1spi_1_1master.html" title="This class provides the SPI master interface definition." alt="" coords="146,433,283,747"/>
+<area shape="rect" id="node3" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="5,5,144,332"/>
+<area shape="rect" id="node4" title=" " alt="" coords="167,132,272,205"/>
+<area shape="rect" id="node5" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="307,473,508,707"/>
+<area shape="rect" id="node6" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="301,65,515,272"/>
+</map>

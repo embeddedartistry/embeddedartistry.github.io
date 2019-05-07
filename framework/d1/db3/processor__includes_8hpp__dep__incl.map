@@ -1,0 +1,11 @@
+<map id="src/processors/arm/nordic/nrf52840/processor_includes.hpp" name="src/processors/arm/nordic/nrf52840/processor_includes.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="546,5,726,57"/>
+<area shape="rect" id="node2" href="$da/dcd/arm__common__arch_8cpp.html" title=" " alt="" coords="5,112,200,151"/>
+<area shape="rect" id="node3" href="$dd/d6d/nvic_8cpp.html" title=" " alt="" coords="225,112,359,151"/>
+<area shape="rect" id="node4" href="$d0/d17/gpio__helper_8cpp.html" title=" " alt="" coords="384,105,536,157"/>
+<area shape="rect" id="node5" href="$de/d1d/twi__helper_8cpp.html" title=" " alt="" coords="560,105,712,157"/>
+<area shape="rect" id="node6" href="$d2/d50/twim__helper___8hpp.html" title=" " alt="" coords="736,105,888,157"/>
+<area shape="rect" id="node8" href="$de/d33/_free_r_t_o_s_config_8h.html" title=" " alt="" coords="913,112,1141,151"/>
+<area shape="rect" id="node9" href="$d6/d41/nrf52840_8cpp.html" title=" " alt="" coords="1164,112,1364,151"/>
+<area shape="rect" id="node7" href="$d0/dc3/twim__helper_8cpp.html" title=" " alt="" coords="736,205,888,257"/>
+</map>

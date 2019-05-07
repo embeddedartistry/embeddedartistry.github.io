@@ -1,0 +1,23 @@
+<map id="src/hw_platforms/unit_test/unittest_hw_platform.hpp" name="src/hw_platforms/unit_test/unittest_hw_platform.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="278,5,481,44"/>
+<area shape="rect" id="node2" href="$d7/d2a/virtual__hw__platform_8hpp.html" title=" " alt="" coords="5,92,139,131"/>
+<area shape="rect" id="node5" href="$de/dd3/drivers_2unit__test_2driver_8hpp.html" title=" " alt="" coords="313,99,447,124"/>
+<area shape="rect" id="node10" href="$d5/d5d/drivers_2unit__test_2gpio_8hpp.html" title=" " alt="" coords="162,99,289,124"/>
+<area shape="rect" id="node13" href="$dd/d6e/drivers_2unit__test_2i2c_8hpp.html" title=" " alt="" coords="614,99,732,124"/>
+<area shape="rect" id="node20" href="$d6/dae/drivers_2unit__test_2spi_8hpp.html" title=" " alt="" coords="471,99,590,124"/>
+<area shape="rect" id="node3" title=" " alt="" coords="52,179,116,204"/>
+<area shape="rect" id="node4" title=" " alt="" coords="17,345,71,371"/>
+<area shape="rect" id="node6" href="$d5/dd6/core_2driver_2driver_8hpp.html" title=" " alt="" coords="281,259,398,284"/>
+<area shape="rect" id="node7" href="$d8/dd9/driver__type_8hpp.html" title=" " alt="" coords="286,345,399,371"/>
+<area shape="rect" id="node9" title=" " alt="" coords="106,345,262,371"/>
+<area shape="rect" id="node8" title=" " alt="" coords="525,425,585,451"/>
+<area shape="rect" id="node11" href="$d0/dcd/core_2driver_2gpio_8hpp.html" title=" " alt="" coords="140,179,249,204"/>
+<area shape="rect" id="node12" title=" " alt="" coords="274,179,342,204"/>
+<area shape="rect" id="node14" href="$d2/d9e/core_2driver_2i2c_8hpp.html" title=" " alt="" coords="708,179,809,204"/>
+<area shape="rect" id="node18" title=" " alt="" coords="543,179,601,204"/>
+<area shape="rect" id="node19" title=" " alt="" coords="626,179,683,204"/>
+<area shape="rect" id="node15" href="$d7/d20/communication__bus_8hpp.html" title=" " alt="" coords="525,252,673,291"/>
+<area shape="rect" id="node16" title=" " alt="" coords="473,339,636,377"/>
+<area shape="rect" id="node17" title=" " alt="" coords="697,259,783,284"/>
+<area shape="rect" id="node21" href="$d4/de1/core_2driver_2spi_8hpp.html" title=" " alt="" coords="417,179,519,204"/>
+</map>

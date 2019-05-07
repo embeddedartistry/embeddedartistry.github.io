@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore" title="Defines the VirtualSemaphore interface." alt="" coords="5,31,184,56"/>
+<area shape="rect" id="node2" href="$d9/dad/group___free_r_t_o_s_o_s.html#d5/d3d/classos_1_1freertos_1_1_semaphore" title="Create a FreeRTOS semaphore (OSX variant)" alt="" coords="232,5,397,31"/>
+<area shape="rect" id="node3" href="$db/dd1/group___p_o_s_i_x_o_s.html#d2/d99/classos_1_1posix_1_1_semaphore" title="Create a POSIX semaphore (OSX variant)" alt="" coords="239,55,390,80"/>
+</map>

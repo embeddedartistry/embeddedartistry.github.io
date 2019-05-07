@@ -1,0 +1,17 @@
+<map id="src/processors/arm/nordic/freertos" name="src/processors/arm/nordic/freertos">
+<area shape="rect" id="node4" href="dir_c3d6cf4653ed684d5feffe3342906fc7.html" title="include" alt="" coords="200,157,272,205"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000053_000056.html" title="2" alt="" coords="187,133,194,146"/>
+<area shape="rect" id="node5" href="dir_df2f5c7f5d2a40478b7d332dd4b8faa1.html" title="stdlibs" alt="" coords="104,157,176,205"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000053_000060.html" title="1" alt="" coords="134,131,142,144"/>
+<area shape="rect" id="node6" href="dir_2cefd95e99a45d7119f233caddf46189.html" title="nrf52840" alt="" coords="5,157,79,205"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000053_000057.html" title="1" alt="" coords="76,141,83,154"/>
+<area shape="rect" id="node2" href="dir_d34062e12bcde627495002485a574611.html" title="nrf51" alt="" coords="177,61,249,109"/>
+<area shape="rect" id="node3" href="dir_63778f4413c2ea8efd9d69836fa1acb2.html" title="nrf52" alt="" coords="273,61,345,109"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000055_000056.html" title="1" alt="" coords="268,141,276,154"/>
+<area shape="rect" id="node7" href="dir_7b5d38f1875f1b693f62ca6a108a1129.html" title="utilities" alt="" coords="104,253,176,301"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000055_000110.html" title="2" alt="" coords="192,265,200,278"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000060_000110.html" title="1" alt="" coords="135,227,143,241"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000110_000060.html" title="4" alt="" coords="137,218,144,231"/>
+<area shape="rect" id="clust2" href="dir_c0efab90532ce002e129b4f1c41c18e9.html" alt="" coords="70,51,356,120"/>
+<area shape="rect" id="clust1" href="dir_b3d1015e89d154ee14aca97663ff9d61.html" title="nordic" alt="" coords="60,16,366,131"/>
+</map>

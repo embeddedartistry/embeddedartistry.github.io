@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['handle_5ft',['handle_t',['../d1/dda/namespaceembvm_1_1tls.html#acac61d15c32e66c2d40fdf7d6b6de1e4',1,'embvm::tls::handle_t()'],['../da/de4/namespaceembvm_1_1once.html#ac4009ae3c4ee08f20ffe60c9876a5333',1,'embvm::once::handle_t()'],['../db/d65/namespaceembvm_1_1cv.html#a0b7cfa4d38e85428b698795174f90d1d',1,'embvm::cv::handle_t()'],['../d1/da2/namespaceembvm_1_1eventflag.html#acc2ad07d95865565cc822f3f43998173',1,'embvm::eventflag::handle_t()'],['../df/d42/namespaceembvm_1_1mutex.html#a06a9c16aa29d7dd4a6388f878f6a77d4',1,'embvm::mutex::handle_t()'],['../df/d31/namespaceembvm_1_1semaphore.html#ab64bfb31ff8acf946df3df22206893b1',1,'embvm::semaphore::handle_t()'],['../db/ddc/namespaceembvm_1_1thread.html#abafb4c4ff2ca8cfadedae4baf0b92396',1,'embvm::thread::handle_t()'],['../da/d55/namespaceembvm_1_1msgqueue.html#a466695f1453be8a84dcdbb4ad652b63a',1,'embvm::msgqueue::handle_t()']]]
+];

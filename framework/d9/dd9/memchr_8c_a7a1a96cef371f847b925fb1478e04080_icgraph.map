@@ -1,0 +1,4 @@
+<map id="memchr" name="memchr">
+<area shape="rect" id="node1" title="Finds the first occurrence of c in the initial n characters of the object pointed to by s." alt="" coords="134,5,203,31"/>
+<area shape="rect" id="node2" href="$dd/dea/src_2string_2memmem_8c.html#a46a5c759285caddc5c5a39aee3b2c48d" title="Find substring s in memory area l." alt="" coords="5,5,86,31"/>
+</map>

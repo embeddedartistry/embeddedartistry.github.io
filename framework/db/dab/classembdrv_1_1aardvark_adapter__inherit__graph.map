@@ -1,0 +1,4 @@
+<map id="embdrv::aardvarkAdapter" name="embdrv::aardvarkAdapter">
+<area shape="rect" id="node1" title="Driver to control the Aardvark Adapter." alt="" coords="5,380,177,733"/>
+<area shape="rect" id="node2" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="22,5,160,332"/>
+</map>

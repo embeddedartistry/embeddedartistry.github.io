@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['virtualconditionvariable',['VirtualConditionVariable',['../d2/d3b/group___framework_o_s.html#d7/de3/classembvm_1_1_virtual_condition_variable',1,'embvm']]],
+  ['virtualeventflag',['VirtualEventFlag',['../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag',1,'embvm']]],
+  ['virtualhwplatformbase',['VirtualHwPlatformBase',['../de/de8/group___framework_hw_platform.html#d0/d7f/classembvm_1_1_virtual_hw_platform_base',1,'embvm']]],
+  ['virtualhwplatformbase_3c_20blinkysimulatorhwplatform_20_3e',['VirtualHwPlatformBase&lt; BlinkySimulatorHWPlatform &gt;',['../de/de8/group___framework_hw_platform.html',1,'embvm']]],
+  ['virtualhwplatformbase_3c_20fwdemosimulatorhwplatform_20_3e',['VirtualHwPlatformBase&lt; FWDemoSimulatorHWPlatform &gt;',['../de/de8/group___framework_hw_platform.html',1,'embvm']]],
+  ['virtualhwplatformbase_3c_20nrf52dkhwplatform_20_3e',['VirtualHwPlatformBase&lt; NRF52DKHWPlatform &gt;',['../de/de8/group___framework_hw_platform.html',1,'embvm']]],
+  ['virtualhwplatformbase_3c_20nrf52donglehwplatform_20_3e',['VirtualHwPlatformBase&lt; NRF52DongleHWPlatform &gt;',['../de/de8/group___framework_hw_platform.html',1,'embvm']]],
+  ['virtualhwplatformbase_3c_20unittesthwplatform_20_3e',['VirtualHwPlatformBase&lt; UnitTestHWPlatform &gt;',['../de/de8/group___framework_hw_platform.html',1,'embvm']]],
+  ['virtualmessagequeue',['VirtualMessageQueue',['../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue',1,'embvm']]],
+  ['virtualmutex',['VirtualMutex',['../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex',1,'embvm']]],
+  ['virtualosfactory',['VirtualOSFactory',['../d2/d3b/group___framework_o_s.html#d0/dbb/classembvm_1_1_virtual_o_s_factory',1,'embvm']]],
+  ['virtualplatformbase',['VirtualPlatformBase',['../d3/de7/group___framework_platform.html#df/d9d/classembvm_1_1_virtual_platform_base',1,'embvm']]],
+  ['virtualplatformbase_3c_20blinkydemoplatform_3c_20thwplatform_2c_20tdriverregistry_20_3e_2c_20tdriverregistry_20_3e',['VirtualPlatformBase&lt; BlinkyDemoPlatform&lt; THWPlatform, TDriverRegistry &gt;, TDriverRegistry &gt;',['../d3/de7/group___framework_platform.html',1,'embvm']]],
+  ['virtualplatformbase_3c_20frameworkdemosimplatform_2c_20platformdriverregistry_20_3e',['VirtualPlatformBase&lt; FrameworkDemoSimPlatform, PlatformDriverRegistry &gt;',['../d3/de7/group___framework_platform.html',1,'embvm']]],
+  ['virtualplatformbase_3c_20nrf52dk_5fframeworkdemoplatform_2c_20platformdriverregistry_20_3e',['VirtualPlatformBase&lt; nRF52DK_FrameworkDemoPlatform, PlatformDriverRegistry &gt;',['../d3/de7/group___framework_platform.html',1,'embvm']]],
+  ['virtualplatformbase_3c_20unittestplatform_2c_20platformdriverregistry_20_3e',['VirtualPlatformBase&lt; UnitTestPlatform, PlatformDriverRegistry &gt;',['../d3/de7/group___framework_platform.html',1,'embvm']]],
+  ['virtualprocessorarchbase',['VirtualProcessorArchBase',['../d0/d5d/group___framework_processor.html#da/d55/classembvm_1_1_virtual_processor_arch_base',1,'embvm']]],
+  ['virtualprocessorarchbase_3c_20armcommonarch_20_3e',['VirtualProcessorArchBase&lt; ARMCommonArch &gt;',['../d0/d5d/group___framework_processor.html',1,'embvm']]],
+  ['virtualprocessorbase',['VirtualProcessorBase',['../d0/d5d/group___framework_processor.html#dc/d3d/classembvm_1_1_virtual_processor_base',1,'embvm']]],
+  ['virtualprocessorbase_3c_20nrf52840_20_3e',['VirtualProcessorBase&lt; nRF52840 &gt;',['../d0/d5d/group___framework_processor.html',1,'embvm']]],
+  ['virtualprocessorbase_3c_20simulatorprocessor_20_3e',['VirtualProcessorBase&lt; SimulatorProcessor &gt;',['../d0/d5d/group___framework_processor.html',1,'embvm']]],
+  ['virtualsemaphore',['VirtualSemaphore',['../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore',1,'embvm']]],
+  ['virtualthread',['VirtualThread',['../d2/d3b/group___framework_o_s.html#df/dba/classembvm_1_1_virtual_thread',1,'embvm']]],
+  ['vl53l1x',['vl53l1x',['../de/d39/group___framework_drivers.html#d1/d6f/classembdrv_1_1vl53l1x',1,'embdrv']]]
+];

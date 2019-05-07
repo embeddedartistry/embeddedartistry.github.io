@@ -1,0 +1,4 @@
+<map id="os::freertos::EventFlag" name="os::freertos::EventFlag">
+<area shape="rect" id="node1" title="FreeRTOS Event Flag Implementation." alt="" coords="13,260,168,413"/>
+<area shape="rect" id="node2" href="$d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag" title="Defines the VirtualEventFlag interface." alt="" coords="5,5,175,212"/>
+</map>

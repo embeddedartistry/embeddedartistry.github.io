@@ -1,0 +1,53 @@
+<map id="src/platforms/unit_test/boot.cpp" name="src/platforms/unit_test/boot.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="1220,5,1342,44"/>
+<area shape="rect" id="node2" href="$d4/d46/boot__sequencer_8hpp.html" title=" " alt="" coords="1116,92,1288,117"/>
+<area shape="rect" id="node4" href="$d2/de5/unit__test_2platform_8hpp.html" title=" " alt="" coords="1312,92,1407,117"/>
+<area shape="rect" id="node3" title=" " alt="" coords="1161,165,1244,191"/>
+<area shape="rect" id="node5" href="$df/d6f/unit__test_2platform__options_8hpp.html" title=" " alt="" coords="1277,165,1423,191"/>
+<area shape="rect" id="node40" href="$d3/d4f/unittest__hw__platform_8hpp.html" title=" " alt="" coords="1675,245,1845,271"/>
+<area shape="rect" id="node6" href="$d0/d5a/virtual__platform_8hpp.html" title=" " alt="" coords="1259,332,1449,357"/>
+<area shape="rect" id="node17" href="$d9/de1/virtual__platform__dispatch_8hpp.html" title=" " alt="" coords="1024,239,1188,277"/>
+<area shape="rect" id="node33" href="$d2/d75/virtual__platform__event_8hpp.html" title=" " alt="" coords="1212,239,1376,277"/>
+<area shape="rect" id="node7" href="$de/d2c/driver__registry_8hpp.html" title=" " alt="" coords="1474,412,1642,437"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1602,579,1656,604"/>
+<area shape="rect" id="node8" href="$d8/dd9/driver__type_8hpp.html" title=" " alt="" coords="1870,579,1983,604"/>
+<area shape="rect" id="node10" href="$db/d03/instance__list_8hpp.html" title=" " alt="" coords="1187,485,1335,524"/>
+<area shape="rect" id="node9" title=" " alt="" coords="2178,659,2238,684"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1105,579,1172,604"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1350,579,1436,604"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1043,579,1082,604"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1196,572,1326,611"/>
+<area shape="rect" id="node16" title=" " alt="" coords="962,579,1019,604"/>
+<area shape="rect" id="node18" href="$df/dff/dispatch_8hpp.html" title=" " alt="" coords="670,412,820,437"/>
+<area shape="rect" id="node19" title=" " alt="" coords="715,492,775,517"/>
+<area shape="rect" id="node20" title=" " alt="" coords="799,492,928,517"/>
+<area shape="rect" id="node21" title=" " alt="" coords="602,579,699,604"/>
+<area shape="rect" id="node22" title=" " alt="" coords="5,579,93,604"/>
+<area shape="rect" id="node23" href="$d8/d65/function__queue_8hpp.html" title=" " alt="" coords="242,485,405,524"/>
+<area shape="rect" id="node27" title=" " alt="" coords="499,579,578,604"/>
+<area shape="rect" id="node28" title=" " alt="" coords="2007,572,2171,611"/>
+<area shape="rect" id="node30" title=" " alt="" coords="1003,492,1060,517"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1869,492,1928,517"/>
+<area shape="rect" id="node32" title=" " alt="" coords="631,492,691,517"/>
+<area shape="rect" id="node24" title=" " alt="" coords="210,579,262,604"/>
+<area shape="rect" id="node25" title=" " alt="" coords="285,579,375,604"/>
+<area shape="rect" id="node26" title=" " alt="" coords="399,579,475,604"/>
+<area shape="rect" id="node29" title=" " alt="" coords="117,579,186,604"/>
+<area shape="rect" id="node34" href="$dd/dd3/event__center_8hpp.html" title=" " alt="" coords="937,332,1060,357"/>
+<area shape="rect" id="node35" href="$dc/d94/event_8hpp.html" title=" " alt="" coords="1512,492,1592,517"/>
+<area shape="rect" id="node37" title=" " alt="" coords="1117,412,1181,437"/>
+<area shape="rect" id="node38" title=" " alt="" coords="844,412,920,437"/>
+<area shape="rect" id="node39" title=" " alt="" coords="944,412,991,437"/>
+<area shape="rect" id="node36" title=" " alt="" coords="1686,579,1842,604"/>
+<area shape="rect" id="node41" href="$d7/d2a/virtual__hw__platform_8hpp.html" title=" " alt="" coords="1473,325,1606,364"/>
+<area shape="rect" id="node42" href="$de/dd3/drivers_2unit__test_2driver_8hpp.html" title=" " alt="" coords="2066,332,2200,357"/>
+<area shape="rect" id="node44" href="$d5/d5d/drivers_2unit__test_2gpio_8hpp.html" title=" " alt="" coords="1915,332,2042,357"/>
+<area shape="rect" id="node47" href="$dd/d6e/drivers_2unit__test_2i2c_8hpp.html" title=" " alt="" coords="1630,332,1748,357"/>
+<area shape="rect" id="node50" href="$d6/dae/drivers_2unit__test_2spi_8hpp.html" title=" " alt="" coords="1772,332,1891,357"/>
+<area shape="rect" id="node43" href="$d5/dd6/core_2driver_2driver_8hpp.html" title=" " alt="" coords="1952,492,2069,517"/>
+<area shape="rect" id="node45" href="$d0/dcd/core_2driver_2gpio_8hpp.html" title=" " alt="" coords="1962,412,2072,437"/>
+<area shape="rect" id="node46" title=" " alt="" coords="1869,412,1938,437"/>
+<area shape="rect" id="node48" href="$d2/d9e/core_2driver_2i2c_8hpp.html" title=" " alt="" coords="2146,412,2248,437"/>
+<area shape="rect" id="node49" href="$d7/d20/communication__bus_8hpp.html" title=" " alt="" coords="2246,485,2394,524"/>
+<area shape="rect" id="node51" href="$d4/de1/core_2driver_2spi_8hpp.html" title=" " alt="" coords="2272,412,2373,437"/>
+</map>

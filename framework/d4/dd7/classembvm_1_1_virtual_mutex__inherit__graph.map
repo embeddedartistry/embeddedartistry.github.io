@@ -1,0 +1,5 @@
+<map id="embvm::VirtualMutex" name="embvm::VirtualMutex">
+<area shape="rect" id="node1" title="Defines the VirtualMutex interface." alt="" coords="74,5,220,199"/>
+<area shape="rect" id="node2" href="$d9/dad/group___free_r_t_o_s_o_s.html#d9/d3b/classos_1_1freertos_1_1_mutex" title="FreeRTOS Mutex Implementation." alt="" coords="5,247,137,400"/>
+<area shape="rect" id="node3" href="$db/dd1/group___p_o_s_i_x_o_s.html#d3/dda/classos_1_1posix_1_1_mutex" title="POSIX Mutex Implementation." alt="" coords="161,253,286,393"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="embvm::tof::sensor" name="embvm::tof::sensor">
+<area shape="rect" id="node1" title="This class defines common time&#45;of&#45;flight (ToF) sensor interfaces." alt="" coords="19,380,228,667"/>
+<area shape="rect" id="node3" href="$de/d39/group___framework_drivers.html#d1/d6f/classembdrv_1_1vl53l1x" title="ST VL53L1X Time&#45;of&#45;Flight Sensor Driver." alt="" coords="5,715,241,1335"/>
+<area shape="rect" id="node2" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="54,5,193,332"/>
+</map>

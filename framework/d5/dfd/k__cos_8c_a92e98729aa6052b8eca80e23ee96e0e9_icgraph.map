@@ -1,0 +1,34 @@
+<map id="__kernel_cos" name="__kernel_cos">
+<area shape="rect" id="node1" title=" " alt="" coords="746,860,846,886"/>
+<area shape="rect" id="node2" href="$d0/d31/s__cos_8c.html#a150af2878bca210635066cceebe51189" title=" " alt="" coords="648,486,691,511"/>
+<area shape="rect" id="node28" href="$de/d0d/s__sin_8c.html#a5c620a799fabeddc2a4cd250c145d49c" title=" " alt="" coords="650,860,689,886"/>
+<area shape="rect" id="node30" href="$d2/d46/e__lgamma__r_8c.html#a99384b6d762f2d482158ee0918a027cd" title=" " alt="" coords="641,1112,698,1138"/>
+<area shape="rect" id="node3" href="$d7/dfe/b__tgamma_8c.html#a5ebef526bd099ebdb6bb81310f93c68f" title=" " alt="" coords="480,1239,557,1264"/>
+<area shape="rect" id="node8" href="$d5/d17/e__j0_8c.html#a5b232a621d0ba73bce8759eb31c94e29" title=" " alt="" coords="468,182,569,207"/>
+<area shape="rect" id="node9" href="$dc/daf/e__jn_8c.html#ad754c378b4d0d964addad7721daf0458" title=" " alt="" coords="275,646,377,671"/>
+<area shape="rect" id="node10" href="$d5/d17/e__j0_8c.html#afd251d152e29a2e51ee553e176c08502" title=" " alt="" coords="273,458,378,483"/>
+<area shape="rect" id="node11" href="$dc/daf/e__jn_8c.html#a835f5efbaaff347b443f82df4df3bd88" title=" " alt="" coords="104,784,209,810"/>
+<area shape="rect" id="node12" href="$d2/def/e__j1_8c.html#ac3b8337fb7f32a749fc3dbd33a436a12" title=" " alt="" coords="468,835,569,860"/>
+<area shape="rect" id="node13" href="$d2/def/e__j1_8c.html#a4d9c74cb99d047982b7150109af5a9f4" title=" " alt="" coords="273,835,378,860"/>
+<area shape="rect" id="node14" href="$d2/dbf/math__private_8h.html#a8a7adbddd81552f40d2638bd3f3c9472" title=" " alt="" coords="466,1036,570,1062"/>
+<area shape="rect" id="node15" href="$d3/d94/s__ccosh_8c.html#a564bebc9fe4b3e7391736c5aeab1d98d" title=" " alt="" coords="298,1036,354,1062"/>
+<area shape="rect" id="node17" href="$d4/d7d/s__cexp_8c.html#acb2b108cf6c71acd3dfddec8b51bd275" title=" " alt="" coords="301,986,351,1011"/>
+<area shape="rect" id="node18" href="$df/d19/s__csinh_8c.html#adf94de526a577b51b3e9973de896c384" title=" " alt="" coords="300,1086,352,1111"/>
+<area shape="rect" id="node20" href="$d0/d17/s__ccos_8c.html#a6a25bcd38751910533efde6dad1499c3" title=" " alt="" coords="494,683,543,708"/>
+<area shape="rect" id="node21" href="$dd/d4e/s__cpow_8c.html#a530bea454d6ad60b048ee962dc5caf48" title=" " alt="" coords="492,486,545,511"/>
+<area shape="rect" id="node22" href="$db/df1/s__csin_8c.html#a1b9030685d326e66a93a35ca8c4bb0f6" title=" " alt="" coords="496,535,541,560"/>
+<area shape="rect" id="node23" href="$d5/da4/s__ctan_8c.html#a665b5dfc1b1f51d3b444f049c6bd95dd" title=" " alt="" coords="495,584,542,610"/>
+<area shape="rect" id="node24" href="$d2/da2/s__ctanh_8c.html#a483dc6419837c1f4cea1c9945864e606" title=" " alt="" coords="491,884,545,910"/>
+<area shape="rect" id="node26" href="$d4/d03/libm-bench_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="493,634,543,659"/>
+<area shape="rect" id="node27" href="$d3/d37/libm-test_8c.html#a72095f3a0e73101e67eb5c159924a6bf" title=" " alt="" coords="121,358,192,383"/>
+<area shape="rect" id="node4" href="$dd/d60/openlibm__math_8h.html#a04eb4c70d4731e7c95bf6fe366d95ab8" title=" " alt="" coords="291,1239,361,1264"/>
+<area shape="rect" id="node5" href="$d3/d37/libm-test_8c.html#a1083e123ef1bfdce21a3f760389ec436" title=" " alt="" coords="107,1239,205,1264"/>
+<area shape="rect" id="node7" href="$da/d97/s__tgammaf_8c.html#a071925592e6cbc062972e7f84d0e945a" title=" " alt="" coords="120,1190,193,1215"/>
+<area shape="rect" id="node6" href="$d3/d37/libm-test_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,1239,56,1264"/>
+<area shape="rect" id="node16" href="$d3/d94/s__ccosh_8c.html#a164e81bdaea7914177356981baf68379" title=" " alt="" coords="132,1036,180,1062"/>
+<area shape="rect" id="node19" href="$df/d19/s__csinh_8c.html#adc86002aaf5721f59579823df3d2e53e" title=" " alt="" coords="134,1086,179,1111"/>
+<area shape="rect" id="node25" href="$d2/da2/s__ctanh_8c.html#a0273557e595ef3a5ffb0c5daf26396b9" title=" " alt="" coords="303,884,349,910"/>
+<area shape="rect" id="node29" href="$d3/d37/libm-test_8c.html#aa4fee07d15a76b101e0c08b36df5ed0a" title=" " alt="" coords="122,1288,190,1314"/>
+<area shape="rect" id="node31" href="$d2/d46/e__lgamma__r_8c.html#aa448fa321d73b484295f049993935a12" title=" " alt="" coords="443,1340,593,1366"/>
+<area shape="rect" id="node32" href="$dd/ddd/e__lgamma_8c.html#ad91759d5764a8a97c71495e279be01c0" title=" " alt="" coords="257,1340,395,1366"/>
+</map>

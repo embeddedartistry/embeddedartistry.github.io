@@ -1,0 +1,5 @@
+<map id="embvm::VirtualThread" name="embvm::VirtualThread">
+<area shape="rect" id="node1" title="Defines the VirtualThread interface." alt="" coords="75,5,228,225"/>
+<area shape="rect" id="node2" href="$d9/dad/group___free_r_t_o_s_o_s.html#df/de2/classos_1_1freertos_1_1_thread" title="Create a FreeRTOS thread." alt="" coords="5,287,143,507"/>
+<area shape="rect" id="node3" href="$db/dd1/group___p_o_s_i_x_o_s.html#d8/da9/classos_1_1posix_1_1_thread" title="Create a POSIX thread." alt="" coords="166,273,291,520"/>
+</map>

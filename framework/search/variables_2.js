@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['b',['b',['../da/d9f/mathimpl_8h.html#a8d46d44a28977be913ff2ae444fb5e43',1,'Double::b()'],['../de/d6c/ld80_2e__powl_8c.html#a2c3fa224b5d6b4413af00fa0ed970e3d',1,'B():&#160;e_powl.c'],['../d4/d03/libm-bench_8cpp.html#ac5c11f957d4d4837e4a4e9ac2cb06013',1,'b():&#160;libm-bench.cpp']]],
+  ['b0',['b0',['../da/d95/ld80_2e__lgammal__r_8c.html#a62c8d1db4176bad4b365aa89cb14339a',1,'e_lgammal_r.c']]],
+  ['b1',['B1',['../da/de9/s__cbrt_8c.html#ae6163092ca14ab03ea332676657f1761',1,'B1():&#160;s_cbrt.c'],['../d0/d03/s__cbrtf_8c.html#a0340375b1c4fd28d44d3d8f2c21ef4c2',1,'B1():&#160;s_cbrtf.c'],['../d9/d4f/s__cbrtl_8c.html#a0340375b1c4fd28d44d3d8f2c21ef4c2',1,'B1():&#160;s_cbrtl.c'],['../da/d95/ld80_2e__lgammal__r_8c.html#adec97b37696760d780959531357154a3',1,'b1():&#160;e_lgammal_r.c']]],
+  ['b2',['B2',['../da/de9/s__cbrt_8c.html#a64d00bb25a681031488d0949a86467b4',1,'B2():&#160;s_cbrt.c'],['../d0/d03/s__cbrtf_8c.html#a63d271d6b952319d904e32c7319dbacd',1,'B2():&#160;s_cbrtf.c'],['../da/d95/ld80_2e__lgammal__r_8c.html#a2a50e5d01653c679ef74685c6b97d4c7',1,'b2():&#160;e_lgammal_r.c']]],
+  ['b3',['b3',['../da/d95/ld80_2e__lgammal__r_8c.html#abb7810552659a64b194c08c56c140b08',1,'e_lgammal_r.c']]],
+  ['b4',['b4',['../da/d95/ld80_2e__lgammal__r_8c.html#aed9412a92c5fe681da05a59472ad70ab',1,'e_lgammal_r.c']]],
+  ['baud_5f',['baud_',['../d1/dc2/group___framework_driver.html#a0f78e8c91ae0b9c5a684f2fc3524c8ac',1,'embvm::commBus']]],
+  ['big',['big',['../d9/d68/ld128_2s__expm1l_8c.html#a541ff5502a1fb97c9a550d337836fc17',1,'s_expm1l.c']]],
+  ['bigtens',['bigtens',['../d4/d5f/gdtoaimp_8h.html#af2460104601017e24117a419bd23630d',1,'bigtens():&#160;misc.c'],['../d0/ddb/misc_8c.html#af2460104601017e24117a419bd23630d',1,'bigtens():&#160;misc.c']]],
+  ['bits',['bits',['../db/d1e/powerpc__fpmath_8h.html#abb5517436ae2f1a1d21f0016a1d42df5',1,'IEEEl2bits::bits()'],['../db/d1e/powerpc__fpmath_8h.html#aaefbac8fc64df09425a85d7063d7f5f2',1,'IEEEl2bits::bits()'],['../de/d59/fpmath_8h.html#ab9ec84ed31b6d2a780f266eb9c861d52',1,'IEEEf2bits::bits()'],['../de/d59/fpmath_8h.html#ad4cffdb9206aee9580780607eca2a7ab',1,'IEEEd2bits::bits()'],['../db/d1e/powerpc__fpmath_8h.html#a2202fecbbc37bce99b46edc0aba9d0f3',1,'IEEEl2bits::bits()'],['../db/d1e/powerpc__fpmath_8h.html#a183e68b4a8bf6cf3130388558fcd5b3e',1,'IEEEl2bits::bits()'],['../db/d1e/powerpc__fpmath_8h.html#aedb966ed696377c028f7785644bb9127',1,'IEEEl2bits::bits()']]],
+  ['block',['block',['../d6/d14/src_2malloc__freelist_8c.html#a340d06d3756a2ec2cdd3ca3577250e38',1,'alloc_node_t']]],
+  ['bottomrightx',['bottomRightX',['../de/d39/group___framework_drivers.html#a40d0776ca62d3e454255a3b5791b20d5',1,'embdrv::vl53l1x::roi']]],
+  ['bottomrighty',['bottomRightY',['../de/d39/group___framework_drivers.html#a6d7dc5529be9e58234645334c4e32732',1,'embdrv::vl53l1x::roi']]],
+  ['bp',['bp',['../d7/d47/ld128_2e__powl_8c.html#adbf6d95d873b10b84fc8e5270b3d3052',1,'bp():&#160;e_powl.c'],['../de/d5e/e__pow_8c.html#a9ec7bdbb3a01ff705aaeb8819fdf9cfa',1,'bp():&#160;e_pow.c'],['../d7/dbe/e__powf_8c.html#afa3952b9a354cf5f2afded81195df986',1,'bp():&#160;e_powf.c']]],
+  ['bs',['bs',['../dd/d8c/core_2boot_2boot_8cpp.html#af5238311854beb3584fefc7a0336ef07',1,'boot.cpp']]],
+  ['buf',['buf',['../d7/d7f/log_8h.html#a35527d041ab64f020796e0f56cc39e23',1,'log_buffer_t::buf()'],['../d3/d49/test_2string_2memcpy_8c.html#a78a05cf530dddc61e7a26aefe187bd31',1,'buf():&#160;memcpy.c'],['../da/dcb/test_2string_2memset_8c.html#ad858d50988d2fd899dff0fd071ff7953',1,'buf():&#160;memset.c']]],
+  ['buf2',['buf2',['../da/dcb/test_2string_2memset_8c.html#aa5d4b618f2f52ec7526318a0ee38ac75',1,'memset.c']]],
+  ['buffer_5f',['buffer_',['../dd/d45/group___logging_subsystem.html#aee65a3f3972b897195b15d72ff172a52',1,'embvm::CircularLogBufferLogger']]],
+  ['bus_5fstatus_5f',['bus_status_',['../d1/dc2/group___framework_driver.html#a2cebd9e755d9f5a8b9833deb831b4009',1,'embvm::commBus']]],
+  ['bus_5ftimeout_5fms',['bus_timeout_ms',['../d4/dc0/drivers_2aardvark_2i2c_8cpp.html#a124b11ac3417067ebb46319b39be2960',1,'i2c.cpp']]],
+  ['busy_5f',['busy_',['../dd/dd6/classn_r_fi2c_master.html#abaadd442fdfab78d3b25fa03d679bffb',1,'nRFi2cMaster']]]
+];

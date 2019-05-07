@@ -1,0 +1,6 @@
+<map id="aa_gpio_pullup" name="aa_gpio_pullup">
+<area shape="rect" id="node1" title=" " alt="" coords="461,33,573,59"/>
+<area shape="rect" id="node2" href="$d4/d9e/aagpio_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="302,5,352,31"/>
+<area shape="rect" id="node3" href="$d6/d18/group___aardvark_drivers.html#a7b27be05e231737862560e389b675514" title="Set a pullup for GPIO." alt="" coords="241,55,413,93"/>
+<area shape="rect" id="node4" href="$d6/d18/group___aardvark_drivers.html#a9fc2c34c36d8cf4be570da36536d0fd0" title=" " alt="" coords="5,55,193,93"/>
+</map>

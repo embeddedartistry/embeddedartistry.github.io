@@ -1,0 +1,13 @@
+<map id="embutil::activeObject&lt; TDerivedClass, TStorageType, TQueueSize, TLock, TCond &gt;" name="embutil::activeObject&lt; TDerivedClass, TStorageType, TQueueSize, TLock, TCond &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="389,5,604,212"/>
+<area shape="rect" id="node2" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="28,340,194,573"/>
+<area shape="rect" id="node4" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="220,340,421,573"/>
+<area shape="rect" id="node6" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="452,340,653,573"/>
+<area shape="rect" id="node9" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="578,597,834,844"/>
+<area shape="rect" id="node10" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="827,340,993,573"/>
+<area shape="rect" id="node3" href="$d6/d18/group___aardvark_drivers.html#d4/d3d/classembdrv_1_1aardvark_s_p_i_master" title="Create an Aardvark SPI Master Driver." alt="" coords="5,868,193,1075"/>
+<area shape="rect" id="node5" href="$d2/d2e/classembvm_1_1spi_1_1active_master.html" title=" " alt="" coords="217,868,426,1075"/>
+<area shape="rect" id="node7" href="$dc/dd6/classembvm_1_1i2c_1_1active_master.html" title=" " alt="" coords="457,875,666,1068"/>
+<area shape="rect" id="node8" href="$dc/dd6/classembvm_1_1i2c_1_1active_master.html" title=" " alt="" coords="549,1136,721,1329"/>
+<area shape="rect" id="node11" href="$d6/d18/group___aardvark_drivers.html#de/da3/classembdrv_1_1aardvark_i2_c_master" title="Create an Aardvark I2C Master Driver." alt="" coords="816,875,1003,1068"/>
+</map>

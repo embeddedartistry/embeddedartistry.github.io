@@ -1,0 +1,11 @@
+<map id="embvm::VirtualPlatformBase&lt; TPlatform, TDriverRegistry &gt;" name="embvm::VirtualPlatformBase&lt; TPlatform, TDriverRegistry &gt;">
+<area shape="rect" id="node1" title="Base class for Platform definitions." alt="" coords="434,5,636,372"/>
+<area shape="rect" id="node2" href="$d3/de7/group___framework_platform.html" title=" " alt="" coords="12,460,266,840"/>
+<area shape="rect" id="node4" href="$d3/de7/group___framework_platform.html" title=" " alt="" coords="291,460,539,840"/>
+<area shape="rect" id="node6" href="$d3/de7/group___framework_platform.html" title=" " alt="" coords="563,460,787,840"/>
+<area shape="rect" id="node8" href="$d3/de7/group___framework_platform.html" title=" " alt="" coords="811,460,1022,840"/>
+<area shape="rect" id="node3" href="$de/dfa/classn_r_f52_d_k___framework_demo_platform.html" title=" " alt="" coords="5,889,273,1096"/>
+<area shape="rect" id="node5" href="$dd/d82/class_blinky_demo_platform.html" title="This Platform serves as a base class that the specific framework demo applications Can derive from." alt="" coords="303,896,527,1089"/>
+<area shape="rect" id="node7" href="$dd/d7e/class_unit_test_platform.html" title="This platform exists for use in the framework unit tests." alt="" coords="589,889,761,1096"/>
+<area shape="rect" id="node9" href="$d9/dfd/class_framework_demo_sim_platform.html" title="This Platform serves as a base class that the specific framework demo applications Can derive from." alt="" coords="804,889,1028,1096"/>
+</map>

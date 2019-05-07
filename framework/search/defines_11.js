@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['radixchar',['RADIXCHAR',['../d1/d80/langinfo_8h.html#aacff21c642554a4532af70279f0963eb',1,'langinfo.h']]],
+  ['rand_5fmax',['RAND_MAX',['../dc/d9c/stdlib_8h.html#a690f251553b39fd4f31894826141b61a',1,'stdlib.h']]],
+  ['ratio',['ratio',['../d4/d5f/gdtoaimp_8h.html#a5f49ac2f9bdde8a1770488c364748253',1,'gdtoaimp.h']]],
+  ['rcsid',['RCSID',['../d1/d8e/amd64_2bsd__asm_8h.html#a77fb005e13dd2365b8bec32d03d9a86a',1,'RCSID():&#160;bsd_asm.h'],['../dd/d6e/i387_2bsd__asm_8h.html#a77fb005e13dd2365b8bec32d03d9a86a',1,'RCSID():&#160;bsd_asm.h']]],
+  ['rng_5fconfig_5fdebug_5fcolor',['RNG_CONFIG_DEBUG_COLOR',['../d9/d71/sdk__config_8h.html#a8649cc58a42b5c05477f30bab0944206',1,'sdk_config.h']]],
+  ['rng_5fconfig_5finfo_5fcolor',['RNG_CONFIG_INFO_COLOR',['../d9/d71/sdk__config_8h.html#ae275c7bde92c5e0cbe2c2c7aefef97ae',1,'sdk_config.h']]],
+  ['rng_5fconfig_5flog_5fenabled',['RNG_CONFIG_LOG_ENABLED',['../d9/d71/sdk__config_8h.html#a045bbcbb58279bb715da5d34de3bfa6c',1,'sdk_config.h']]],
+  ['rng_5fconfig_5flog_5flevel',['RNG_CONFIG_LOG_LEVEL',['../d9/d71/sdk__config_8h.html#aaa49d30b29b1630e453d3ead704376c0',1,'sdk_config.h']]],
+  ['rng_5fconfig_5frandom_5fnumber_5flog_5fenabled',['RNG_CONFIG_RANDOM_NUMBER_LOG_ENABLED',['../d9/d71/sdk__config_8h.html#a4f36e6db576afe94bc9a99d1fe77beab',1,'sdk_config.h']]],
+  ['round_5fbiased',['ROUND_BIASED',['../d4/d5f/gdtoaimp_8h.html#adc3a63a6f1466ef1d0be5949ae90f8c0',1,'gdtoaimp.h']]],
+  ['rounded_5fdiv',['ROUNDED_DIV',['../d0/dcc/rounded__div_8h.html#a25e8110559dbc9665dfb9485be8ac60f',1,'rounded_div.h']]],
+  ['rounded_5fproduct',['rounded_product',['../d4/d5f/gdtoaimp_8h.html#a09227e189a0ccbe91a702ddd894940ee',1,'gdtoaimp.h']]],
+  ['rounded_5fquotient',['rounded_quotient',['../d4/d5f/gdtoaimp_8h.html#a34f631126fba1aa87949f45721457cd1',1,'gdtoaimp.h']]],
+  ['rounding',['Rounding',['../d9/d39/dtoa_8c.html#ab925efe1cb96e8cfb4c70b5fcb7cbfbb',1,'Rounding():&#160;dtoa.c'],['../de/d94/src_2gdtoa_2src_2strtod_8c.html#ab925efe1cb96e8cfb4c70b5fcb7cbfbb',1,'Rounding():&#160;strtod.c']]],
+  ['roundit',['roundit',['../d4/d33/s__llrint_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_llrint.c'],['../de/d55/s__llrintf_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_llrintf.c'],['../d4/d8d/s__llrintl_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_llrintl.c'],['../da/dc4/s__llround_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_llround.c'],['../d7/d95/s__llroundf_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_llroundf.c'],['../d9/d1d/s__llroundl_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_llroundl.c'],['../da/d48/s__lrint_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_lrint.c'],['../da/d75/s__lrintf_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_lrintf.c'],['../d6/d73/s__lrintl_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_lrintl.c'],['../df/d17/s__lround_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_lround.c'],['../d8/d85/s__lroundf_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_lroundf.c'],['../d8/d14/s__lroundl_8c.html#adc5d051fd0b17951a76192b109214da9',1,'roundit():&#160;s_lroundl.c']]],
+  ['rpc_5fsvc',['RPC_SVC',['../d7/d77/osx__asm_8h.html#a95253991d4ed291bee9435b39f631dac',1,'osx_asm.h']]],
+  ['rshift',['rshift',['../d4/d5f/gdtoaimp_8h.html#a4583512cf88adcb2ebb326d0bf1318b6',1,'gdtoaimp.h']]],
+  ['rtc_5fconfig_5fdebug_5fcolor',['RTC_CONFIG_DEBUG_COLOR',['../d9/d71/sdk__config_8h.html#a54d02fd1f240d63eea79cc038f657e38',1,'sdk_config.h']]],
+  ['rtc_5fconfig_5finfo_5fcolor',['RTC_CONFIG_INFO_COLOR',['../d9/d71/sdk__config_8h.html#a43d74c9d869c96c38e203782cc577b4d',1,'sdk_config.h']]],
+  ['rtc_5fconfig_5flog_5fenabled',['RTC_CONFIG_LOG_ENABLED',['../d9/d71/sdk__config_8h.html#a45e8f9ac3762e6e289d05b2ed1a20043',1,'sdk_config.h']]],
+  ['rtc_5fconfig_5flog_5flevel',['RTC_CONFIG_LOG_LEVEL',['../d9/d71/sdk__config_8h.html#a80684a79efd19df8e71cdea827737362',1,'sdk_config.h']]],
+  ['rv_5falloc',['rv_alloc',['../d4/d5f/gdtoaimp_8h.html#ac0310dbe96d6d8bba6c8903e86501fc8',1,'gdtoaimp.h']]]
+];

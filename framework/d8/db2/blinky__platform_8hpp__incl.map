@@ -1,0 +1,20 @@
+<map id="src/platforms/blinky/blinky_base/blinky_platform.hpp" name="src/platforms/blinky/blinky_base/blinky_platform.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="398,5,613,44"/>
+<area shape="rect" id="node2" href="$df/da7/core_2driver_2system__clock_8hpp.html" title=" " alt="" coords="222,92,387,117"/>
+<area shape="rect" id="node10" href="$d0/d5a/virtual__platform_8hpp.html" title=" " alt="" coords="411,92,601,117"/>
+<area shape="rect" id="node18" title=" " alt="" coords="625,92,765,117"/>
+<area shape="rect" id="node3" href="$db/d21/clock_8hpp.html" title=" " alt="" coords="80,165,158,191"/>
+<area shape="rect" id="node5" href="$d5/dd6/core_2driver_2driver_8hpp.html" title=" " alt="" coords="276,165,356,191"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,245,67,271"/>
+<area shape="rect" id="node6" href="$d8/dd9/driver__type_8hpp.html" title=" " alt="" coords="272,245,385,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="649,332,703,357"/>
+<area shape="rect" id="node9" title=" " alt="" coords="92,245,248,271"/>
+<area shape="rect" id="node7" title=" " alt="" coords="68,332,128,357"/>
+<area shape="rect" id="node11" href="$de/d2c/driver__registry_8hpp.html" title=" " alt="" coords="399,165,567,191"/>
+<area shape="rect" id="node12" href="$db/d03/instance__list_8hpp.html" title=" " alt="" coords="409,239,557,277"/>
+<area shape="rect" id="node13" title=" " alt="" coords="450,332,516,357"/>
+<area shape="rect" id="node14" title=" " alt="" coords="540,332,626,357"/>
+<area shape="rect" id="node15" title=" " alt="" coords="152,332,190,357"/>
+<area shape="rect" id="node16" title=" " alt="" coords="214,325,344,364"/>
+<area shape="rect" id="node17" title=" " alt="" coords="368,332,425,357"/>
+</map>

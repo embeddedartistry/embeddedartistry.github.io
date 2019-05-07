@@ -1,0 +1,15 @@
+<map id="strncmp" name="strncmp">
+<area shape="rect" id="node1" title="Compares at most n characters of two possibly null&#45;terminated arrays." alt="" coords="700,104,768,129"/>
+<area shape="rect" id="node2" href="$de/dc1/test_2string_2strdup_8c.html#aa42ca8cbf8293b2681e973e7847a9873" title=" " alt="" coords="561,28,648,53"/>
+<area shape="rect" id="node6" href="$dd/ddd/test_2string_2strncmp_8c.html#ac087376a3287499c9c5d62e63fd1872c" title=" " alt="" coords="402,79,500,104"/>
+<area shape="rect" id="node8" href="$d3/dc2/test_2string_2strndup_8c.html#ac66cec944eb825d7fe02a8dd5d249846" title=" " alt="" coords="557,129,652,155"/>
+<area shape="rect" id="node10" href="$d5/dd7/src_2string_2strnstr_8c.html#a2377134299138b29edffb17f91bfe649" title="Finds the first occurrence of find in the initial slen characters of the object pointed to by s." alt="" coords="575,180,633,205"/>
+<area shape="rect" id="node3" href="$d0/d43/string__tests_8h.html#a9107e7982858131f47d8083684ac6150" title=" " alt="" coords="246,29,340,55"/>
+<area shape="rect" id="node4" href="$d9/dd4/libc_2test_2tests_8h.html#ac387871103b3e95795d33217d0f60f3a" title=" " alt="" coords="104,105,193,131"/>
+<area shape="rect" id="node5" href="$d1/d54/libc_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="5,105,56,131"/>
+<area shape="rect" id="node7" href="$dd/ddd/test_2string_2strncmp_8c.html#a6c80289b758e3bbc3c8cc6b3d158442a" title=" " alt="" coords="241,80,345,105"/>
+<area shape="rect" id="node9" href="$d3/dc2/test_2string_2strndup_8c.html#ade41f177b2aa6318856736c54ad2f282" title=" " alt="" coords="243,129,344,155"/>
+<area shape="rect" id="node11" href="$d3/ddd/test_2string_2strnstr_8c.html#abea1df999ab479551e8ea354108cab4b" title=" " alt="" coords="407,180,495,205"/>
+<area shape="rect" id="node13" href="$d3/ddd/test_2string_2strnstr_8c.html#aaa74181bf22d8218e9681369833c7a53" title=" " alt="" coords="393,229,509,255"/>
+<area shape="rect" id="node12" href="$d3/ddd/test_2string_2strnstr_8c.html#ab830110a5a2cf44032f82c6a9b41a3d9" title=" " alt="" coords="246,180,340,205"/>
+</map>

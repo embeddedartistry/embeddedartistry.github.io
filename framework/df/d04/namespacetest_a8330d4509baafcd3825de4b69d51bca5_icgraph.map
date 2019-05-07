@@ -1,0 +1,9 @@
+<map id="test::_putchar" name="test::_putchar">
+<area shape="rect" id="node1" title="Output a character to a custom device like UART, used by the printf() function This function is decla..." alt="" coords="342,85,444,111"/>
+<area shape="rect" id="node2" href="$d1/d3d/printf_8c.html#a06269ee8ee1275eb9063da1a6fb6ea0e" title=" " alt="" coords="166,29,247,55"/>
+<area shape="rect" id="node5" href="$dd/d45/group___logging_subsystem.html#a918cf9e29013756e85929186964869c1" title="Print the contents of the log buffer in the console." alt="" coords="118,79,294,117"/>
+<area shape="rect" id="node6" href="$db/de0/putchar_8c.html#af4de2514b7778805db3815e8dd6cf09a" title="Requires a definition of _putchar() for your platform." alt="" coords="173,141,239,167"/>
+<area shape="rect" id="node3" href="$d3/d6b/printf_8h.html#a770cb7c9f4a7b37dc5b49c4c68a8308e" title=" " alt="" coords="9,5,67,31"/>
+<area shape="rect" id="node4" href="$d3/d6b/printf_8h.html#aa199d9388f8dcddcda1a0451315cae89" title=" " alt="" coords="5,55,70,80"/>
+<area shape="rect" id="node7" href="$d4/d54/puts_8c.html#a24df0c04767d20bfc8337baa088605ff" title=" " alt="" coords="15,141,61,167"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="embvm::led::gpio&lt; TActiveHigh &gt;" name="embvm::led::gpio&lt; TActiveHigh &gt;">
+<area shape="rect" id="node1" title="This class manages a GPIO object which is attached to an LED." alt="" coords="5,635,183,855"/>
+<area shape="rect" id="node2" href="$d0/d62/classembvm_1_1led_1_1base.html" title="This class provides LED interface definitions." alt="" coords="31,380,157,587"/>
+<area shape="rect" id="node3" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="25,5,163,332"/>
+</map>

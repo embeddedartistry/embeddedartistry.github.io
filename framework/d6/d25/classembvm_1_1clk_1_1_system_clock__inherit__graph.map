@@ -1,0 +1,5 @@
+<map id="embvm::clk::SystemClock" name="embvm::clk::SystemClock">
+<area shape="rect" id="node1" title="This class defines common system clock interfaces." alt="" coords="22,380,196,547"/>
+<area shape="rect" id="node3" href="$db/d9d/group___simulator_drivers.html#d8/d0d/classembdrv_1_1_simulator_system_clock" title="Simulator system clock driver." alt="" coords="5,595,213,748"/>
+<area shape="rect" id="node2" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="40,5,178,332"/>
+</map>

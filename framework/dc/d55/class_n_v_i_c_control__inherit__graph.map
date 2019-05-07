@@ -1,0 +1,5 @@
+<map id="NVICControl" name="NVICControl">
+<area shape="rect" id="node1" title="General ARM NVIC Controller Interface." alt="" coords="22,756,170,1003"/>
+<area shape="rect" id="node2" href="$dc/d99/class_interrupt_manager_base.html" title=" " alt="" coords="5,393,187,707"/>
+<area shape="rect" id="node3" href="$dc/d99/class_interrupt_manager_base.html" title=" " alt="" coords="5,5,187,319"/>
+</map>

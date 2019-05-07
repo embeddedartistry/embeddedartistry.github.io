@@ -1,0 +1,9 @@
+<map id="embvm::i2c::activeMaster&lt; TQueueSize, TLock, TCond &gt;" name="embvm::i2c::activeMaster&lt; TQueueSize, TLock, TCond &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="206,783,415,976"/>
+<area shape="rect" id="node7" href="$dc/dd6/classembvm_1_1i2c_1_1active_master.html" title=" " alt="" coords="224,1037,397,1231"/>
+<area shape="rect" id="node2" href="$dd/d35/classembvm_1_1i2c_1_1master.html" title="This class provides the I2C master interface definition." alt="" coords="146,433,283,733"/>
+<area shape="rect" id="node3" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="5,5,144,332"/>
+<area shape="rect" id="node4" title=" " alt="" coords="167,132,272,205"/>
+<area shape="rect" id="node5" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="307,467,508,700"/>
+<area shape="rect" id="node6" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="301,65,515,272"/>
+</map>

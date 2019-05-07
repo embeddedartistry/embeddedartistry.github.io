@@ -1,0 +1,9 @@
+<map id="Framework Core Components" name="Framework Core Components">
+<area shape="rect" id="node1" href="$d0/d5d/group___framework_processor.html" title="Interfaces and components for building a processor interface." alt="" coords="282,5,434,43"/>
+<area shape="rect" id="node2" href="$d1/dc2/group___framework_driver.html" title="Driver base classes &amp; definitions." alt="" coords="253,67,463,91"/>
+<area shape="rect" id="node3" title="Classes, interfaces, and definitions related to the framework core components." alt="" coords="5,139,205,163"/>
+<area shape="rect" id="node4" href="$d0/d06/group___framework_boot.html" title="Components to control the system/program boot process." alt="" coords="261,115,455,139"/>
+<area shape="rect" id="node5" href="$d2/d3b/group___framework_o_s.html" title="Interfaces and components for building a virtual OS." alt="" coords="261,163,455,187"/>
+<area shape="rect" id="node6" href="$de/de8/group___framework_hw_platform.html" title="Interfaces and components for building a virtual hardware platform." alt="" coords="280,211,436,248"/>
+<area shape="rect" id="node7" href="$d3/de7/group___framework_platform.html" title="Interfaces and components for building a virtual platform." alt="" coords="287,272,429,309"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="FrameworkDemoSimPlatform" name="FrameworkDemoSimPlatform">
+<area shape="rect" id="node1" title="This Platform serves as a base class that the specific framework demo applications Can derive from." alt="" coords="5,876,230,1083"/>
+<area shape="rect" id="node2" href="$d3/de7/group___framework_platform.html" title=" " alt="" coords="12,447,223,827"/>
+<area shape="rect" id="node3" href="$d3/de7/group___framework_platform.html#df/d9d/classembvm_1_1_virtual_platform_base" title="Base class for Platform definitions." alt="" coords="17,5,218,372"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Framework Drivers" name="Framework Drivers">
+<area shape="rect" id="node1" href="$db/d9d/group___simulator_drivers.html" title="Drivers intended for use with simulator applications (run on host machine)" alt="" coords="187,5,311,29"/>
+<area shape="rect" id="node2" href="$da/d33/group___test_drivers.html" title="Drivers intended for use with unit test code." alt="" coords="190,53,308,77"/>
+<area shape="rect" id="node3" title="Drivers provided by the framework." alt="" coords="5,29,139,53"/>
+</map>

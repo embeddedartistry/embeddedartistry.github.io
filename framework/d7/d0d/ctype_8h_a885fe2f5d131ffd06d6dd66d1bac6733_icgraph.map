@@ -1,0 +1,8 @@
+<map id="ispunct" name="ispunct">
+<area shape="rect" id="node1" title="Checks if the given character is a punctuation character." alt="" coords="523,31,586,56"/>
+<area shape="rect" id="node2" href="$db/d6d/test_2ctype_2ispunct_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="391,5,471,31"/>
+<area shape="rect" id="node6" href="$db/d6d/test_2ctype_2ispunct_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="387,55,475,80"/>
+<area shape="rect" id="node3" href="$db/d6d/test_2ctype_2ispunct_8c.html#a3d34b9574bf7adc9a26448ebb6d0e76b" title=" " alt="" coords="240,31,339,56"/>
+<area shape="rect" id="node4" href="$d9/dd4/libc_2test_2tests_8h.html#af49417e778176ba8be2b8a155997ca44" title=" " alt="" coords="104,31,192,56"/>
+<area shape="rect" id="node5" href="$d1/d54/libc_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="5,31,56,56"/>
+</map>

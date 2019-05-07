@@ -1,0 +1,39 @@
+<map id="src/hw_platforms/nordic/nrf52840_dongle/nrf52_dongle_hw_platform.cpp" name="src/hw_platforms/nordic/nrf52840_dongle/nrf52_dongle_hw_platform.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="202,5,376,57"/>
+<area shape="rect" id="node2" href="$db/dd2/nrf52__dongle__hw__platform_8hpp.html" title=" " alt="" coords="186,105,391,131"/>
+<area shape="rect" id="node11" title=" " alt="" coords="6,265,70,291"/>
+<area shape="rect" id="node16" href="$d0/d4c/malloc_8h.html" title=" " alt="" coords="559,105,630,131"/>
+<area shape="rect" id="node3" href="$d4/d76/led_8hpp.html" title=" " alt="" coords="403,185,505,211"/>
+<area shape="rect" id="node10" href="$d7/d2a/virtual__hw__platform_8hpp.html" title=" " alt="" coords="75,179,209,217"/>
+<area shape="rect" id="node12" href="$d2/d51/nrf52840_8hpp.html" title=" " alt="" coords="94,265,204,291"/>
+<area shape="rect" id="node14" href="$da/d30/nrf__gpio_8hpp.html" title=" " alt="" coords="284,185,379,211"/>
+<area shape="rect" id="node4" href="$d5/dd6/core_2driver_2driver_8hpp.html" title=" " alt="" coords="369,339,449,364"/>
+<area shape="rect" id="node9" href="$d0/dcd/core_2driver_2gpio_8hpp.html" title=" " alt="" coords="357,265,429,291"/>
+<area shape="rect" id="node5" href="$d8/dd9/driver__type_8hpp.html" title=" " alt="" coords="365,412,479,437"/>
+<area shape="rect" id="node7" title=" " alt="" coords="99,412,153,437"/>
+<area shape="rect" id="node8" title=" " alt="" coords="503,412,659,437"/>
+<area shape="rect" id="node6" title=" " alt="" coords="230,485,289,511"/>
+<area shape="rect" id="node13" href="$d5/d28/virtual__processor_8hpp.html" title=" " alt="" coords="21,339,231,364"/>
+<area shape="rect" id="node15" href="$d7/da5/gpio__helper_8hpp.html" title=" " alt="" coords="178,412,341,437"/>
+<area shape="rect" id="node17" href="$dc/d9c/stdlib_8h.html" title=" " alt="" coords="1098,185,1162,211"/>
+<area shape="rect" id="node18" href="$d3/dce/stddef_8h.html" title=" " alt="" coords="649,265,718,291"/>
+<area shape="rect" id="node21" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="1618,265,1682,291"/>
+<area shape="rect" id="node36" href="$da/dcf/wctype_8h.html" title=" " alt="" coords="2237,265,2311,291"/>
+<area shape="rect" id="node19" href="$de/d5d/x86__64_2include_2__types_2__ptrdiff__t_8h.html" title=" " alt="" coords="473,339,600,364"/>
+<area shape="rect" id="node20" href="$d1/dbb/x86__64_2include_2__types_2__size__t_8h.html" title=" " alt="" coords="625,339,742,364"/>
+<area shape="rect" id="node22" href="$d9/d86/limits_8h.html" title=" " alt="" coords="2285,339,2348,364"/>
+<area shape="rect" id="node24" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="2373,339,2496,364"/>
+<area shape="rect" id="node25" href="$da/d57/x86__64_2include_2__types_2__int32__t_8h.html" title=" " alt="" coords="2519,339,2642,364"/>
+<area shape="rect" id="node26" href="$d5/d63/x86__64_2include_2__types_2__int64__t_8h.html" title=" " alt="" coords="766,339,889,364"/>
+<area shape="rect" id="node27" href="$d2/d53/x86__64_2include_2__types_2__int8__t_8h.html" title=" " alt="" coords="912,339,1028,364"/>
+<area shape="rect" id="node28" href="$d4/d82/x86__64_2include_2__types_2__uint16__t_8h.html" title=" " alt="" coords="1052,339,1182,364"/>
+<area shape="rect" id="node29" href="$d5/dcc/x86__64_2include_2__types_2__uint32__t_8h.html" title=" " alt="" coords="1206,339,1337,364"/>
+<area shape="rect" id="node30" href="$dd/d27/x86__64_2include_2__types_2__uint64__t_8h.html" title=" " alt="" coords="1361,339,1491,364"/>
+<area shape="rect" id="node31" href="$d9/d12/x86__64_2include_2__types_2__uint8__t_8h.html" title=" " alt="" coords="1515,339,1638,364"/>
+<area shape="rect" id="node32" href="$d1/d4d/x86__64_2include_2__types_2__intptr__t_8h.html" title=" " alt="" coords="1662,339,1785,364"/>
+<area shape="rect" id="node33" href="$de/d06/x86__64_2include_2__types_2__uintptr__t_8h.html" title=" " alt="" coords="1809,339,1940,364"/>
+<area shape="rect" id="node34" href="$d1/dd8/x86__64_2include_2__types_2__intmax__t_8h.html" title=" " alt="" coords="1963,339,2097,364"/>
+<area shape="rect" id="node35" href="$d4/d9a/x86__64_2include_2__types_2__uintmax__t_8h.html" title=" " alt="" coords="2121,339,2262,364"/>
+<area shape="rect" id="node23" href="$d3/d22/x86__64_2include_2__limits_8h.html" title=" " alt="" coords="2282,412,2352,437"/>
+<area shape="rect" id="node37" href="$d8/d98/x86__64_2include_2__types_2__wchar__t_8h.html" title=" " alt="" coords="2667,339,2796,364"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Framework Utilities" name="Framework Utilities">
+<area shape="rect" id="node1" href="$d7/d8c/group___instance_list.html" title="Supports tracking instances which can come and go during runtime." alt="" coords="227,5,323,29"/>
+<area shape="rect" id="node2" href="$d5/d7b/group___s_b_r_m.html" title="Utilties that enable SBRM techniques." alt="" coords="194,53,355,91"/>
+<area shape="rect" id="node3" href="$d4/d9e/group___volatile___load-_store.html" title="These functions promote safer loading and storing of volatile values." alt="" coords="211,115,338,139"/>
+<area shape="rect" id="node4" href="$dd/d52/group___s_f_r.html" title="Safer types for working with special&#45;function registers." alt="" coords="188,163,361,187"/>
+<area shape="rect" id="node5" href="$df/d5e/group__linkedlist-_c.html" title="A linked list library for C modules." alt="" coords="198,211,352,235"/>
+<area shape="rect" id="node6" href="$d8/d9d/group___bit_utilities.html" title="Functions and macros that operate in a bitwise manner." alt="" coords="217,259,333,283"/>
+<area shape="rect" id="node7" href="$d1/de1/group___function_queue.html" title="Queues for storing function objects." alt="" coords="217,307,333,331"/>
+<area shape="rect" id="node8" title="Embedded Framework utility classes and functions." alt="" coords="5,235,140,259"/>
+<area shape="rect" id="node9" href="$d3/d01/group___endian_swap.html" title="Functions that can be used to swap the endianness of a value." alt="" coords="225,355,325,379"/>
+<area shape="rect" id="node10" href="$d1/d85/group___time_util.html" title="Functions that work with C and C++ time types." alt="" coords="226,403,323,427"/>
+<area shape="rect" id="node11" href="$d1/d15/group___dispatch_queue.html" title="Group of worker threads that enables asynchronous processing." alt="" coords="213,451,336,475"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="embvm::VirtualMessageQueue&lt; TType &gt;" name="embvm::VirtualMessageQueue&lt; TType &gt;">
+<area shape="rect" id="node1" title="Defines the VirtualMessageQueue interface." alt="" coords="101,5,305,252"/>
+<area shape="rect" id="node2" href="$d9/dad/group___free_r_t_o_s_o_s.html#d7/da0/classos_1_1freertos_1_1_message_queue" title="FreeRTOS Message Queue implementation for OSX." alt="" coords="5,300,195,507"/>
+<area shape="rect" id="node3" href="$db/dd1/group___p_o_s_i_x_o_s.html#d4/de6/classos_1_1posix_1_1_message_queue" title="Posix Message Queue implementation for Linux." alt="" coords="219,307,395,500"/>
+</map>

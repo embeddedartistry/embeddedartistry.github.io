@@ -1,0 +1,59 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="237,5,403,84"/>
+<area shape="rect" id="node2" href="$d6/d18/group___aardvark_drivers.html#de/da3/classembdrv_1_1aardvark_i2_c_master" title="Create an Aardvark I2C Master Driver." alt="" coords="507,59,693,84"/>
+<area shape="rect" id="node3" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="237,492,403,571"/>
+<area shape="rect" id="node4" href="$d6/d18/group___aardvark_drivers.html#d4/d3d/classembdrv_1_1aardvark_s_p_i_master" title="Create an Aardvark SPI Master Driver." alt="" coords="507,532,694,557"/>
+<area shape="rect" id="node5" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="192,108,448,200"/>
+<area shape="rect" id="node6" href="$dc/dd6/classembvm_1_1i2c_1_1active_master.html" title=" " alt="" coords="514,121,686,160"/>
+<area shape="rect" id="node7" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="219,389,420,468"/>
+<area shape="rect" id="node8" href="$dc/dd6/classembvm_1_1i2c_1_1active_master.html" title=" " alt="" coords="496,448,705,487"/>
+<area shape="rect" id="node9" href="$d0/da7/classembutil_1_1active_object.html" title=" " alt="" coords="219,644,420,723"/>
+<area shape="rect" id="node10" href="$d2/d2e/classembvm_1_1spi_1_1active_master.html" title=" " alt="" coords="496,653,705,692"/>
+<area shape="rect" id="node11" title=" " alt="" coords="34,315,115,340"/>
+<area shape="rect" id="node12" href="$dd/d35/classembvm_1_1i2c_1_1master.html" title="This class provides the I2C master interface definition." alt="" coords="251,315,389,340"/>
+<area shape="rect" id="node13" href="$d1/d85/classn_r_f51i2c_master___blocking.html" title=" " alt="" coords="512,184,689,236"/>
+<area shape="rect" id="node14" href="$dd/dd6/classn_r_fi2c_master.html" title="DMA&#45;capable I2C master (TBlocking)" alt="" coords="497,260,703,299"/>
+<area shape="rect" id="node15" href="$dd/dd6/classn_r_fi2c_master.html" title=" " alt="" coords="500,323,701,375"/>
+<area shape="rect" id="node16" href="$da/d33/group___test_drivers.html#d0/dfe/classtest_1_1i2c_test_driver" title="I2C Master Unit Test Driver." alt="" coords="537,399,664,424"/>
+<area shape="rect" id="node17" title=" " alt="" coords="34,595,115,620"/>
+<area shape="rect" id="node18" href="$d4/da2/classembvm_1_1spi_1_1master.html" title="This class provides the SPI master interface definition." alt="" coords="251,595,389,620"/>
+<area shape="rect" id="node19" href="$da/d33/group___test_drivers.html#df/d0e/classtest_1_1spi_test_driver" title="SPI Master Unit Test Driver." alt="" coords="537,595,664,620"/>
+<area shape="rect" id="node20" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="5,971,144,996"/>
+<area shape="rect" id="node21" href="$dd/d2b/classembvm_1_1gpio_1_1base.html" title=" " alt="" coords="249,1297,391,1336"/>
+<area shape="rect" id="node30" href="$dd/d2b/classembvm_1_1gpio_1_1base.html" title=" " alt="" coords="242,747,398,785"/>
+<area shape="rect" id="node32" href="$dd/d2b/classembvm_1_1gpio_1_1base.html" title=" " alt="" coords="247,809,392,848"/>
+<area shape="rect" id="node45" href="$d6/d18/group___aardvark_drivers.html#d3/dd3/classembdrv_1_1aardvark_adapter" title="Driver to control the Aardvark Adapter." alt="" coords="234,872,406,897"/>
+<area shape="rect" id="node46" href="$d1/dc2/group___framework_driver.html#df/dc5/classembvm_1_1basic_display" title="This class provides an interface for a basic 2&#45;color display device." alt="" coords="246,921,393,947"/>
+<area shape="rect" id="node48" href="$d2/d29/classembvm_1_1clk_1_1_system_clock.html" title="This class defines common system clock interfaces." alt="" coords="233,971,407,996"/>
+<area shape="rect" id="node50" href="$dd/d2b/classembvm_1_1gpio_1_1base.html" title="This class defines the common GPIO interfaces." alt="" coords="249,1020,391,1059"/>
+<area shape="rect" id="node51" href="$d0/d62/classembvm_1_1led_1_1base.html" title="This class provides LED interface definitions." alt="" coords="256,1083,383,1108"/>
+<area shape="rect" id="node53" href="$d4/d88/classembvm_1_1timer_1_1_timer.html" title="This class provides generic Timer interface definitions." alt="" coords="248,1132,391,1157"/>
+<area shape="rect" id="node55" href="$d0/dcd/classembvm_1_1tof_1_1sensor.html" title="This class defines common time&#45;of&#45;flight (ToF) sensor interfaces." alt="" coords="252,1181,387,1207"/>
+<area shape="rect" id="node57" href="$da/d33/group___test_drivers.html#de/d41/classtest_1_1_test_driver_base" title="Test driver that enables testing DriverBase." alt="" coords="249,1231,390,1256"/>
+<area shape="rect" id="node22" href="$d2/d3c/classembvm_1_1gpio_1_1input.html" title="This class defines a GPIO input interface." alt="" coords="533,1383,667,1421"/>
+<area shape="rect" id="node24" href="$d2/d3c/classembvm_1_1gpio_1_1input.html" title=" " alt="" coords="532,1231,669,1283"/>
+<area shape="rect" id="node28" href="$d2/d3c/classembvm_1_1gpio_1_1input.html" title=" " alt="" coords="532,1307,669,1359"/>
+<area shape="rect" id="node23" href="$d6/d18/group___aardvark_drivers.html#d3/d8e/classembdrv_1_1aardvark_g_p_i_o_input" title="Aardvark GPIO Input driver." alt="" coords="773,1383,961,1421"/>
+<area shape="rect" id="node25" href="$d6/d18/group___aardvark_drivers.html" title=" " alt="" coords="758,1217,976,1243"/>
+<area shape="rect" id="node26" href="$d6/d18/group___aardvark_drivers.html" title=" " alt="" coords="758,1267,976,1292"/>
+<area shape="rect" id="node27" href="$da/d33/group___test_drivers.html#d4/d6f/classtest_1_1_unit_test_g_p_i_o_input" title="Unit Test GPIO Input Driver." alt="" coords="786,1168,948,1193"/>
+<area shape="rect" id="node29" href="$da/d33/group___test_drivers.html#d6/dc1/classtest_1_1_unit_test_g_p_i_o_input_with_pullup" title="Unit Test GPIO Input Driver, with a pullup." alt="" coords="773,1316,961,1355"/>
+<area shape="rect" id="node31" href="$d4/dd8/classembvm_1_1gpio_1_1input_output.html" title="This class defines a GPIO input/output interface." alt="" coords="513,747,687,785"/>
+<area shape="rect" id="node33" href="$d9/d02/classembvm_1_1gpio_1_1output.html" title="This class defines a GPIO output interface." alt="" coords="529,816,671,841"/>
+<area shape="rect" id="node34" href="$d6/d18/group___aardvark_drivers.html" title=" " alt="" coords="753,760,981,785"/>
+<area shape="rect" id="node35" href="$d6/d18/group___aardvark_drivers.html#d0/d90/classembdrv_1_1aardvark_g_p_i_o_output" title="Aardvark GPIO Output driver." alt="" coords="768,809,966,848"/>
+<area shape="rect" id="node36" href="$d4/dfa/classn_r_f_g_p_i_o_output.html" title=" " alt="" coords="783,872,951,911"/>
+<area shape="rect" id="node37" href="$d4/dfa/classn_r_f_g_p_i_o_output.html" title=" " alt="" coords="781,935,953,960"/>
+<area shape="rect" id="node38" href="$d4/dfa/classn_r_f_g_p_i_o_output.html" title=" " alt="" coords="781,984,953,1009"/>
+<area shape="rect" id="node39" href="$d4/dfa/classn_r_f_g_p_i_o_output.html" title=" " alt="" coords="781,1033,953,1059"/>
+<area shape="rect" id="node40" href="$d4/dfa/classn_r_f_g_p_i_o_output.html" title=" " alt="" coords="781,1083,953,1108"/>
+<area shape="rect" id="node41" href="$d4/dfa/classn_r_f_g_p_i_o_output.html" title=" " alt="" coords="781,563,953,588"/>
+<area shape="rect" id="node42" href="$d4/dfa/classn_r_f_g_p_i_o_output.html" title=" " alt="" coords="784,612,950,637"/>
+<area shape="rect" id="node43" href="$d4/dfa/classn_r_f_g_p_i_o_output.html" title=" " alt="" coords="784,661,950,687"/>
+<area shape="rect" id="node44" href="$d4/dfa/classn_r_f_g_p_i_o_output.html" title=" " alt="" coords="784,711,950,736"/>
+<area shape="rect" id="node47" href="$de/d39/group___framework_drivers.html#df/d04/classembdrv_1_1ssd1306" title="Driver for the SSD1306 Display Driver." alt="" coords="538,921,662,947"/>
+<area shape="rect" id="node49" href="$db/d9d/group___simulator_drivers.html#d8/d0d/classembdrv_1_1_simulator_system_clock" title="Simulator system clock driver." alt="" coords="497,971,704,996"/>
+<area shape="rect" id="node52" href="$d0/d18/classembvm_1_1led_1_1gpio.html" title="This class manages a GPIO object which is attached to an LED." alt="" coords="511,1069,689,1108"/>
+<area shape="rect" id="node54" href="$db/d9d/group___simulator_drivers.html#d8/d92/classembdrv_1_1_simulator_timer" title="Simulator timer driver." alt="" coords="519,1132,682,1157"/>
+<area shape="rect" id="node56" href="$de/d39/group___framework_drivers.html#d1/d6f/classembdrv_1_1vl53l1x" title="ST VL53L1X Time&#45;of&#45;Flight Sensor Driver." alt="" coords="543,1181,658,1207"/>
+</map>

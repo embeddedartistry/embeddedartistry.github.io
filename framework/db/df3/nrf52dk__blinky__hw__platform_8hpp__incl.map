@@ -1,0 +1,16 @@
+<map id="src/hw_platforms/nordic/nrf52dk_blinky/nrf52dk_blinky_hw_platform.hpp" name="src/hw_platforms/nordic/nrf52dk_blinky/nrf52dk_blinky_hw_platform.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="217,5,386,57"/>
+<area shape="rect" id="node2" href="$d4/d76/led_8hpp.html" title=" " alt="" coords="180,112,282,137"/>
+<area shape="rect" id="node9" href="$d7/d2a/virtual__hw__platform_8hpp.html" title=" " alt="" coords="306,105,439,144"/>
+<area shape="rect" id="node11" href="$d2/d51/nrf52840_8hpp.html" title=" " alt="" coords="460,192,570,217"/>
+<area shape="rect" id="node13" href="$da/d30/nrf__gpio_8hpp.html" title=" " alt="" coords="61,112,156,137"/>
+<area shape="rect" id="node3" href="$d5/dd6/core_2driver_2driver_8hpp.html" title=" " alt="" coords="194,265,274,291"/>
+<area shape="rect" id="node8" href="$d0/dcd/core_2driver_2gpio_8hpp.html" title=" " alt="" coords="124,192,197,217"/>
+<area shape="rect" id="node4" href="$d8/dd9/driver__type_8hpp.html" title=" " alt="" coords="305,339,418,364"/>
+<area shape="rect" id="node6" title=" " alt="" coords="443,339,497,364"/>
+<area shape="rect" id="node7" title=" " alt="" coords="125,339,281,364"/>
+<area shape="rect" id="node5" title=" " alt="" coords="332,412,392,437"/>
+<area shape="rect" id="node10" title=" " alt="" coords="271,192,335,217"/>
+<area shape="rect" id="node12" href="$d5/d28/virtual__processor_8hpp.html" title=" " alt="" coords="410,265,620,291"/>
+<area shape="rect" id="node14" href="$d7/da5/gpio__helper_8hpp.html" title=" " alt="" coords="5,265,169,291"/>
+</map>

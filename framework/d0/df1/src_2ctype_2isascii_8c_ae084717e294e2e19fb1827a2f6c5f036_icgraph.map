@@ -1,0 +1,8 @@
+<map id="isascii" name="isascii">
+<area shape="rect" id="node1" title="Checks if a given character is a 7&#45;bit US&#45;ASCII character." alt="" coords="517,31,575,56"/>
+<area shape="rect" id="node2" href="$df/d1e/test_2ctype_2isascii_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="385,5,465,31"/>
+<area shape="rect" id="node6" href="$df/d1e/test_2ctype_2isascii_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="382,55,469,80"/>
+<area shape="rect" id="node3" href="$df/d1e/test_2ctype_2isascii_8c.html#aa4d296e0d02d0ae9a5bbc2d00ba32190" title=" " alt="" coords="240,31,334,56"/>
+<area shape="rect" id="node4" href="$d9/dd4/libc_2test_2tests_8h.html#af49417e778176ba8be2b8a155997ca44" title=" " alt="" coords="104,31,192,56"/>
+<area shape="rect" id="node5" href="$d1/d54/libc_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="5,31,56,56"/>
+</map>

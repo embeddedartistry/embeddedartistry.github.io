@@ -1,0 +1,9 @@
+<map id="UnitTestPlatform" name="UnitTestPlatform">
+<area shape="rect" id="node1" title="This platform exists for use in the framework unit tests." alt="" coords="259,876,431,1083"/>
+<area shape="rect" id="node2" href="$d3/de7/group___framework_platform.html" title=" " alt="" coords="5,447,229,827"/>
+<area shape="rect" id="node3" href="$d3/de7/group___framework_platform.html#df/d9d/classembvm_1_1_virtual_platform_base" title="Base class for Platform definitions." alt="" coords="16,5,218,372"/>
+<area shape="rect" id="node4" href="$d3/de7/group___framework_platform.html" title=" " alt="" coords="252,547,438,727"/>
+<area shape="rect" id="node5" href="$d3/de7/group___framework_platform.html#db/d75/classembvm_1_1_platform_dispatcher" title="Add a dispatch queue to the VirtualPlatform through inheritance." alt="" coords="252,99,438,279"/>
+<area shape="rect" id="node6" href="$d3/de7/group___framework_platform.html" title=" " alt="" coords="461,567,695,707"/>
+<area shape="rect" id="node7" href="$d3/de7/group___framework_platform.html#d9/df5/classembvm_1_1_platform_event_management" title="Add an event manager to the VirtualPlatform through inheritance." alt="" coords="461,119,695,259"/>
+</map>

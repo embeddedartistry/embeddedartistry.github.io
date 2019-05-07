@@ -1,0 +1,4 @@
+<map id="os::posix::Mutex" name="os::posix::Mutex">
+<area shape="rect" id="node1" title="POSIX Mutex Implementation." alt="" coords="16,247,141,387"/>
+<area shape="rect" id="node2" href="$d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex" title="Defines the VirtualMutex interface." alt="" coords="5,5,152,199"/>
+</map>

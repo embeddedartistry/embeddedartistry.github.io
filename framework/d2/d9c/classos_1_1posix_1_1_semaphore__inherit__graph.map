@@ -1,0 +1,4 @@
+<map id="os::posix::Semaphore" name="os::posix::Semaphore">
+<area shape="rect" id="node1" title="Create a POSIX semaphore (OSX variant)" alt="" coords="20,260,170,413"/>
+<area shape="rect" id="node2" href="$d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore" title="Defines the VirtualSemaphore interface." alt="" coords="5,5,184,212"/>
+</map>

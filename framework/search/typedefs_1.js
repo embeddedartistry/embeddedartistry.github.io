@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['aa_5fs08',['aa_s08',['../d2/de8/aardvark_8h.html#a3adfffda0e4b14d011db183933b23afc',1,'aardvark.h']]],
+  ['aa_5fs16',['aa_s16',['../d2/de8/aardvark_8h.html#a529682505c0bc6426b47558a18b5e8a8',1,'aardvark.h']]],
+  ['aa_5fs32',['aa_s32',['../d2/de8/aardvark_8h.html#a1cfbd8d5828ba509cc4f8ec070b0437e',1,'aardvark.h']]],
+  ['aa_5fu08',['aa_u08',['../d2/de8/aardvark_8h.html#af6687ddc1f373b898250b807f8aa6008',1,'aardvark.h']]],
+  ['aa_5fu16',['aa_u16',['../d2/de8/aardvark_8h.html#a007e44d7fd98ef884c0fffadfad60374',1,'aardvark.h']]],
+  ['aa_5fu32',['aa_u32',['../d2/de8/aardvark_8h.html#aa5b267bbdfe1919f963f436230f3d260',1,'aardvark.h']]],
+  ['aardvark',['Aardvark',['../d2/de8/aardvark_8h.html#a3a4e3f821674b67aead0f659d6eb3f8c',1,'aardvark.h']]],
+  ['aardvarkconfig',['AardvarkConfig',['../d2/de8/aardvark_8h.html#a91ac9edb8ea52bbf98db28fe8b48fa30',1,'aardvark.h']]],
+  ['aardvarkext',['AardvarkExt',['../d2/de8/aardvark_8h.html#a9258130a14477f41a46e024b40a19a20',1,'aardvark.h']]],
+  ['aardvarkgpiobits',['AardvarkGpioBits',['../d2/de8/aardvark_8h.html#a4066b38f5cefa4403d23cfac3b14048b',1,'aardvark.h']]],
+  ['aardvarki2cflags',['AardvarkI2cFlags',['../d2/de8/aardvark_8h.html#a073c88e474492f2793a1c8c65c510a51',1,'aardvark.h']]],
+  ['aardvarki2cstatus',['AardvarkI2cStatus',['../d2/de8/aardvark_8h.html#a859ad6d0733a9956f4f4bac7ae26eb2d',1,'aardvark.h']]],
+  ['aardvarkspibitorder',['AardvarkSpiBitorder',['../d2/de8/aardvark_8h.html#a4c7e4fce534f501c4dbf0ff8c4ab4d47',1,'aardvark.h']]],
+  ['aardvarkspiphase',['AardvarkSpiPhase',['../d2/de8/aardvark_8h.html#afa11440846dbcfd5271478fcae02dd2a',1,'aardvark.h']]],
+  ['aardvarkspipolarity',['AardvarkSpiPolarity',['../d2/de8/aardvark_8h.html#a4b99cd73243427eef80278a24e5d2b9b',1,'aardvark.h']]],
+  ['aardvarkspisspolarity',['AardvarkSpiSSPolarity',['../d2/de8/aardvark_8h.html#aef6273fa84818937d4108980a3b7e5f5',1,'aardvark.h']]],
+  ['aardvarkstatus',['AardvarkStatus',['../d2/de8/aardvark_8h.html#afb5371fa5699873faf74a403bd337d86',1,'aardvark.h']]],
+  ['aardvarkversion',['AardvarkVersion',['../d2/de8/aardvark_8h.html#ae7331da907eb5d7e0367e66581d60fd3',1,'aardvark.h']]],
+  ['addr_5ft',['addr_t',['../d9/d8e/namespaceembvm_1_1i2c.html#aa41a1e4cd5864e8a7203f6584609beaa',1,'embvm::i2c']]],
+  ['akind',['Akind',['../da/db6/arithchk_8c.html#a63515726a0d7416f28c4faf97f9f64e9',1,'arithchk.c']]],
+  ['ao_5fbase',['ao_base',['../dc/dd6/classembvm_1_1i2c_1_1active_master.html#a88c72aed93cc6344efc035da2e49db38',1,'embvm::i2c::activeMaster::ao_base()'],['../d2/d2e/classembvm_1_1spi_1_1active_master.html#aa0da176883deb64f467f8a9bb759e8f0',1,'embvm::spi::activeMaster::ao_base()']]],
+  ['ao_5fstorage',['ao_storage',['../d9/d8e/namespaceembvm_1_1i2c.html#a5273626ca9b103035e530046c730ca84',1,'embvm::i2c::ao_storage()'],['../d4/d68/namespaceembvm_1_1spi.html#a0db51b326d7a22f23fc1756e0b209f03',1,'embvm::spi::ao_storage()']]],
+  ['armcortexmarch',['ARMCortexMArch',['../dd/de4/arm__cortex__m_8hpp.html#a73141b77579270a180268374c8dd5911',1,'arm_cortex_m.hpp']]]
+];

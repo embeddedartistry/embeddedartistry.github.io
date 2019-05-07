@@ -1,0 +1,4 @@
+<map id="os::posix::Thread" name="os::posix::Thread">
+<area shape="rect" id="node1" title="Create a POSIX thread." alt="" coords="19,273,144,520"/>
+<area shape="rect" id="node2" href="$d2/d3b/group___framework_o_s.html#df/dba/classembvm_1_1_virtual_thread" title="Defines the VirtualThread interface." alt="" coords="5,5,158,225"/>
+</map>

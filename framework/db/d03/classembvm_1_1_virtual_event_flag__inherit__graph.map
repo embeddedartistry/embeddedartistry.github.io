@@ -1,0 +1,5 @@
+<map id="embvm::VirtualEventFlag" name="embvm::VirtualEventFlag">
+<area shape="rect" id="node1" title="Defines the VirtualEventFlag interface." alt="" coords="89,5,259,212"/>
+<area shape="rect" id="node2" href="$d9/dad/group___free_r_t_o_s_o_s.html#d7/dfb/classos_1_1freertos_1_1_event_flag" title="FreeRTOS Event Flag Implementation." alt="" coords="5,280,161,433"/>
+<area shape="rect" id="node3" href="$db/dd1/group___p_o_s_i_x_o_s.html#db/d48/classos_1_1posix_1_1_event_flag" title="POSIX Event Flag Implementation." alt="" coords="185,260,346,453"/>
+</map>

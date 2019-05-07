@@ -1,0 +1,12 @@
+<map id="embvm::i2c::master" name="embvm::i2c::master">
+<area shape="rect" id="node1" title="This class provides the I2C master interface definition." alt="" coords="537,381,675,681"/>
+<area shape="rect" id="node4" href="$dc/dd6/classembvm_1_1i2c_1_1active_master.html" title=" " alt="" coords="44,1199,216,1392"/>
+<area shape="rect" id="node5" href="$d6/d18/group___aardvark_drivers.html#de/da3/classembdrv_1_1aardvark_i2_c_master" title="Create an Aardvark I2C Master Driver." alt="" coords="67,791,254,984"/>
+<area shape="rect" id="node6" href="$dc/dd6/classembvm_1_1i2c_1_1active_master.html" title=" " alt="" coords="277,791,486,984"/>
+<area shape="rect" id="node7" href="$d1/d85/classn_r_f51i2c_master___blocking.html" title=" " alt="" coords="511,784,701,991"/>
+<area shape="rect" id="node8" href="$dd/dd6/classn_r_fi2c_master.html" title="DMA&#45;capable I2C master (TBlocking)" alt="" coords="725,731,932,1044"/>
+<area shape="rect" id="node9" href="$dd/dd6/classn_r_fi2c_master.html" title=" " alt="" coords="777,1132,978,1459"/>
+<area shape="rect" id="node10" href="$da/d33/group___test_drivers.html#d0/dfe/classtest_1_1i2c_test_driver" title="I2C Master Unit Test Driver." alt="" coords="1006,764,1158,1011"/>
+<area shape="rect" id="node2" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="465,5,603,332"/>
+<area shape="rect" id="node3" title=" " alt="" coords="627,132,732,205"/>
+</map>

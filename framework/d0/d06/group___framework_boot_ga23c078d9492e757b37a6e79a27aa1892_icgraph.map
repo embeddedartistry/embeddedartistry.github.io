@@ -1,0 +1,5 @@
+<map id="CRTStartup" name="CRTStartup">
+<area shape="rect" id="node1" title="We declare this function here because we don&#39;t want to include crt.h and Add a dependency on our libc..." alt="" coords="276,44,368,69"/>
+<area shape="rect" id="node2" href="$d0/d06/group___framework_boot.html#ga6e3e9d55c5f9a982f7116fabcb7c683e" title="Continue Setup in Main Thread Framework Boot Strategy." alt="" coords="5,5,228,44"/>
+<area shape="rect" id="node3" href="$d0/d06/group___framework_boot.html#ga31518afcb6f9b88831152868d7f322f3" title="Default Framework Boot Strategy." alt="" coords="35,68,199,107"/>
+</map>

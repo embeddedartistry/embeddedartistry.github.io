@@ -1,0 +1,62 @@
+<map id="src/platforms/blinky/blinky_sim/platform.hpp" name="src/platforms/blinky/blinky_sim/platform.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="2326,5,2491,44"/>
+<area shape="rect" id="node2" href="$d2/d91/blinky__platform_8hpp.html" title=" " alt="" coords="2257,99,2394,124"/>
+<area shape="rect" id="node20" href="$d4/d15/blinky__simulator__hw__platform_8hpp.html" title=" " alt="" coords="1556,92,1698,131"/>
+<area shape="rect" id="node58" href="$d4/d46/boot__sequencer_8hpp.html" title=" " alt="" coords="2776,99,2948,124"/>
+<area shape="rect" id="node60" href="$dd/dbe/blinky_2blinky__sim_2platform__options_8hpp.html" title=" " alt="" coords="2418,99,2564,124"/>
+<area shape="rect" id="node3" href="$df/da7/core_2driver_2system__clock_8hpp.html" title=" " alt="" coords="2010,265,2175,291"/>
+<area shape="rect" id="node11" href="$d0/d5a/virtual__platform_8hpp.html" title=" " alt="" coords="2313,185,2504,211"/>
+<area shape="rect" id="node19" title=" " alt="" coords="2794,185,2933,211"/>
+<area shape="rect" id="node4" href="$db/d21/clock_8hpp.html" title=" " alt="" coords="2250,345,2327,371"/>
+<area shape="rect" id="node6" href="$d5/dd6/core_2driver_2driver_8hpp.html" title=" " alt="" coords="1438,345,1518,371"/>
+<area shape="rect" id="node5" title=" " alt="" coords="2295,432,2357,457"/>
+<area shape="rect" id="node7" href="$d8/dd9/driver__type_8hpp.html" title=" " alt="" coords="2038,432,2152,457"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1555,432,1609,457"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1374,432,1531,457"/>
+<area shape="rect" id="node8" title=" " alt="" coords="2065,512,2125,537"/>
+<area shape="rect" id="node12" href="$de/d2c/driver__registry_8hpp.html" title=" " alt="" coords="2386,265,2554,291"/>
+<area shape="rect" id="node13" href="$db/d03/instance__list_8hpp.html" title=" " alt="" coords="2764,339,2912,377"/>
+<area shape="rect" id="node14" title=" " alt="" coords="2867,432,2934,457"/>
+<area shape="rect" id="node15" title=" " alt="" coords="2958,432,3043,457"/>
+<area shape="rect" id="node16" title=" " alt="" coords="3068,432,3106,457"/>
+<area shape="rect" id="node17" title=" " alt="" coords="2713,425,2843,464"/>
+<area shape="rect" id="node18" title=" " alt="" coords="2632,432,2689,457"/>
+<area shape="rect" id="node21" href="$dd/d3c/base_8hpp.html" title=" " alt="" coords="1003,265,1134,291"/>
+<area shape="rect" id="node41" href="$db/db2/drivers_2aardvark_2gpio_8hpp.html" title=" " alt="" coords="1283,185,1411,211"/>
+<area shape="rect" id="node44" href="$d4/d76/led_8hpp.html" title=" " alt="" coords="1435,185,1537,211"/>
+<area shape="rect" id="node45" href="$d9/d87/timer__manager_8hpp.html" title=" " alt="" coords="2557,185,2769,211"/>
+<area shape="rect" id="node50" href="$d7/d2a/virtual__hw__platform_8hpp.html" title=" " alt="" coords="1561,179,1694,217"/>
+<area shape="rect" id="node51" href="$d5/d7c/drivers_2simulator_2system__clock_8hpp.html" title=" " alt="" coords="1876,185,2061,211"/>
+<area shape="rect" id="node54" href="$df/dce/drivers_2simulator_2timer_8hpp.html" title=" " alt="" coords="1717,185,1851,211"/>
+<area shape="rect" id="node56" href="$d9/d7c/simulator__processor_8hpp.html" title=" " alt="" coords="1092,185,1258,211"/>
+<area shape="rect" id="node22" href="$d2/de8/aardvark_8h.html" title=" " alt="" coords="853,345,937,371"/>
+<area shape="rect" id="node38" title=" " alt="" coords="1043,345,1094,371"/>
+<area shape="rect" id="node39" title=" " alt="" coords="1353,345,1413,371"/>
+<area shape="rect" id="node40" title=" " alt="" coords="961,345,1019,371"/>
+<area shape="rect" id="node23" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="863,432,927,457"/>
+<area shape="rect" id="node24" href="$d9/d86/limits_8h.html" title=" " alt="" coords="9,512,72,537"/>
+<area shape="rect" id="node26" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="96,512,219,537"/>
+<area shape="rect" id="node27" href="$da/d57/x86__64_2include_2__types_2__int32__t_8h.html" title=" " alt="" coords="243,512,366,537"/>
+<area shape="rect" id="node28" href="$d5/d63/x86__64_2include_2__types_2__int64__t_8h.html" title=" " alt="" coords="390,512,513,537"/>
+<area shape="rect" id="node29" href="$d2/d53/x86__64_2include_2__types_2__int8__t_8h.html" title=" " alt="" coords="536,512,652,537"/>
+<area shape="rect" id="node30" href="$d4/d82/x86__64_2include_2__types_2__uint16__t_8h.html" title=" " alt="" coords="675,512,806,537"/>
+<area shape="rect" id="node31" href="$d5/dcc/x86__64_2include_2__types_2__uint32__t_8h.html" title=" " alt="" coords="830,512,960,537"/>
+<area shape="rect" id="node32" href="$dd/d27/x86__64_2include_2__types_2__uint64__t_8h.html" title=" " alt="" coords="985,512,1115,537"/>
+<area shape="rect" id="node33" href="$d9/d12/x86__64_2include_2__types_2__uint8__t_8h.html" title=" " alt="" coords="1139,512,1262,537"/>
+<area shape="rect" id="node34" href="$d1/d4d/x86__64_2include_2__types_2__intptr__t_8h.html" title=" " alt="" coords="1285,512,1409,537"/>
+<area shape="rect" id="node35" href="$de/d06/x86__64_2include_2__types_2__uintptr__t_8h.html" title=" " alt="" coords="1432,512,1563,537"/>
+<area shape="rect" id="node36" href="$d1/dd8/x86__64_2include_2__types_2__intmax__t_8h.html" title=" " alt="" coords="1587,512,1720,537"/>
+<area shape="rect" id="node37" href="$d4/d9a/x86__64_2include_2__types_2__uintmax__t_8h.html" title=" " alt="" coords="1745,512,1885,537"/>
+<area shape="rect" id="node25" href="$d3/d22/x86__64_2include_2__limits_8h.html" title=" " alt="" coords="5,585,76,611"/>
+<area shape="rect" id="node42" title=" " alt="" coords="1566,265,1630,291"/>
+<area shape="rect" id="node43" href="$d0/dcd/core_2driver_2gpio_8hpp.html" title=" " alt="" coords="1331,265,1441,291"/>
+<area shape="rect" id="node46" href="$dc/d56/core_2driver_2timer_8hpp.html" title=" " alt="" coords="2249,265,2362,291"/>
+<area shape="rect" id="node47" title=" " alt="" coords="2501,339,2665,377"/>
+<area shape="rect" id="node48" title=" " alt="" coords="2577,265,2629,291"/>
+<area shape="rect" id="node49" href="$de/de9/nop__lock_8hpp.html" title=" " alt="" coords="2654,265,2811,291"/>
+<area shape="rect" id="node52" title=" " alt="" coords="1939,265,1987,291"/>
+<area shape="rect" id="node53" title=" " alt="" coords="1856,265,1915,291"/>
+<area shape="rect" id="node55" title=" " alt="" coords="1704,265,1833,291"/>
+<area shape="rect" id="node57" href="$d5/d28/virtual__processor_8hpp.html" title=" " alt="" coords="1118,345,1328,371"/>
+<area shape="rect" id="node59" title=" " alt="" coords="2956,185,3039,211"/>
+</map>

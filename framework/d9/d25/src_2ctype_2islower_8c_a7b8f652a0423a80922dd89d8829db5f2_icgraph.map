@@ -1,0 +1,16 @@
+<map id="islower" name="islower">
+<area shape="rect" id="node1" title="Checks if the given character is classified as a lowercase character." alt="" coords="672,55,735,80"/>
+<area shape="rect" id="node2" href="$d0/d3f/test_2ctype_2islower_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="541,5,620,31"/>
+<area shape="rect" id="node6" href="$d0/d3f/test_2ctype_2islower_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="537,55,624,80"/>
+<area shape="rect" id="node7" href="$de/df0/src_2ctype_2toupper_8c.html#a9c2f57ac3865af9006fdbfd5db9fd517" title="Converts the given character to lowercase." alt="" coords="547,104,614,129"/>
+<area shape="rect" id="node3" href="$d0/d3f/test_2ctype_2islower_8c.html#ab522d3fa9197cb8d4ecc15e0c62e3fc7" title=" " alt="" coords="390,5,489,31"/>
+<area shape="rect" id="node4" href="$d9/dd4/libc_2test_2tests_8h.html#af49417e778176ba8be2b8a155997ca44" title=" " alt="" coords="104,44,192,69"/>
+<area shape="rect" id="node5" href="$d1/d54/libc_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="5,44,56,69"/>
+<area shape="rect" id="node8" href="$da/d17/test_2ctype_2toupper_8c.html#ab1eedc462ab7313795509ab230a28988" title=" " alt="" coords="396,55,483,80"/>
+<area shape="rect" id="node10" href="$da/d17/test_2ctype_2toupper_8c.html#a1d1fa00d6a023a83586e1d1e2796740b" title=" " alt="" coords="400,104,480,129"/>
+<area shape="rect" id="node11" href="$d2/d5f/towupper_8c.html#aaf8d2b2d230df873695d41757d5889f9" title=" " alt="" coords="402,153,478,179"/>
+<area shape="rect" id="node9" href="$da/d17/test_2ctype_2toupper_8c.html#a5bfb754e17566c5b11fa2ab5113a2d4e" title=" " alt="" coords="240,56,342,81"/>
+<area shape="rect" id="node12" href="$de/db3/iswlower_8c.html#a92c2a9aad2bf7e6c56a7c01597f59649" title=" " alt="" coords="255,117,328,143"/>
+<area shape="rect" id="node14" href="$d8/dbe/towctrans_8c.html#a7bf5ecea0641ad3803700c26a307f828" title=" " alt="" coords="252,167,331,192"/>
+<area shape="rect" id="node13" href="$d0/d6a/iswctype_8c.html#a895fea1b38ea206a927d97c2e4543c64" title=" " alt="" coords="112,117,184,143"/>
+</map>

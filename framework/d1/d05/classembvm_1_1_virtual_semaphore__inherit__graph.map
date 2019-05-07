@@ -1,0 +1,5 @@
+<map id="embvm::VirtualSemaphore" name="embvm::VirtualSemaphore">
+<area shape="rect" id="node1" title="Defines the VirtualSemaphore interface." alt="" coords="89,5,268,212"/>
+<area shape="rect" id="node2" href="$d9/dad/group___free_r_t_o_s_o_s.html#d5/d3d/classos_1_1freertos_1_1_semaphore" title="Create a FreeRTOS semaphore (OSX variant)" alt="" coords="5,260,170,413"/>
+<area shape="rect" id="node3" href="$db/dd1/group___p_o_s_i_x_o_s.html#d2/d99/classos_1_1posix_1_1_semaphore" title="Create a POSIX semaphore (OSX variant)" alt="" coords="194,260,344,413"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="strcpy" name="strcpy">
+<area shape="rect" id="node1" title="Copies the null&#45;terminated byte string pointed to by src to the character array whose first element i..." alt="" coords="582,275,639,300"/>
+<area shape="rect" id="node2" href="$d0/d40/test_2stdlib_2heapsort_8c.html#a3f07f063fdf4dd8c60d7cc2d2352c0ca" title=" " alt="" coords="451,39,527,64"/>
+<area shape="rect" id="node5" href="$d0/d1e/test_2string_2strcat_8c.html#ac59c245dc1e98ca3324304c81f67df08" title=" " alt="" coords="448,124,530,149"/>
+<area shape="rect" id="node9" href="$de/d15/test_2string_2strchr_8c.html#a26e2759be0df5c0283d530c02094b1a8" title=" " alt="" coords="447,191,531,216"/>
+<area shape="rect" id="node11" href="$dd/dec/test_2string_2strcpy_8c.html#af797df824218b0bd3721ce8f61d61af6" title=" " alt="" coords="446,249,532,275"/>
+<area shape="rect" id="node13" href="$d5/d1a/test_2string_2strncat_8c.html#a5b3bad561b3384c937941c2590a66d4d" title=" " alt="" coords="444,299,534,324"/>
+<area shape="rect" id="node15" href="$d2/d7f/test_2string_2strrchr_8c.html#a7bae206e6be2998c8219b52664b18549" title=" " alt="" coords="445,348,533,373"/>
+<area shape="rect" id="node17" href="$d6/d19/test_2string_2strtok_8c.html#af8a08eec074293999e6ae380f7e25903" title=" " alt="" coords="448,397,530,423"/>
+<area shape="rect" id="node19" href="$de/d17/strxfrm_8c.html#a3ab9117152125ec5ab3d4486e69b5094" title=" " alt="" coords="458,447,520,472"/>
+<area shape="rect" id="node3" href="$d0/d40/test_2stdlib_2heapsort_8c.html#aaa0b0a9cea7d442b9a0d8bfb0182575f" title=" " alt="" coords="260,29,396,55"/>
+<area shape="rect" id="node4" href="$dd/d23/stdlib__tests_8h.html#adf81be426025c997f5072f8d39f7545a" title=" " alt="" coords="104,29,212,55"/>
+<area shape="rect" id="node6" href="$d0/d43/string__tests_8h.html#a6113d62092884279807a48e71e22953e" title=" " alt="" coords="283,103,373,128"/>
+<area shape="rect" id="node7" href="$d9/dd4/libc_2test_2tests_8h.html#ac387871103b3e95795d33217d0f60f3a" title=" " alt="" coords="113,273,203,299"/>
+<area shape="rect" id="node8" href="$d1/d54/libc_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="5,273,56,299"/>
+<area shape="rect" id="node10" href="$d0/d43/string__tests_8h.html#a70806fef8cbf29e72bcf11afce1507e1" title=" " alt="" coords="283,176,373,201"/>
+<area shape="rect" id="node12" href="$d0/d43/string__tests_8h.html#a6d702982bbd070f32ec75dfd935739dc" title=" " alt="" coords="282,249,374,275"/>
+<area shape="rect" id="node14" href="$d5/d1a/test_2string_2strncat_8c.html#a0ef15e69ae52db63370d9e7337eef4e5" title=" " alt="" coords="280,299,377,324"/>
+<area shape="rect" id="node16" href="$d2/d7f/test_2string_2strrchr_8c.html#a497583b30df19b9f8cb1f9cda2763236" title=" " alt="" coords="281,348,375,373"/>
+<area shape="rect" id="node18" href="$d6/d19/test_2string_2strtok_8c.html#af2f0be9dd6eec707606d060bdc5c68aa" title=" " alt="" coords="283,397,373,423"/>
+</map>
