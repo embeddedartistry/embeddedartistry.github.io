@@ -1,7 +1,9 @@
 <map id="include/malloc.h" name="include/malloc.h">
-<area shape="rect" id="node1" title=" " alt="" coords="265,5,382,31"/>
-<area shape="rect" id="node2" href="$d3/dde/aligned__malloc_8c.html" title=" " alt="" coords="5,79,147,104"/>
-<area shape="rect" id="node3" href="$df/dbe/malloc__freelist_8c.html" title=" " alt="" coords="171,79,310,104"/>
-<area shape="rect" id="node4" href="$de/d01/malloc__freertos_8c.html" title=" " alt="" coords="334,79,478,104"/>
-<area shape="rect" id="node5" href="$d0/d6b/malloc__threadx_8c.html" title=" " alt="" coords="502,79,646,104"/>
+<area shape="rect" id="node1" title=" " alt="" coords="431,5,548,31"/>
+<area shape="rect" id="node2" href="$d3/dde/aligned__malloc_8c.html" title=" " alt="" coords="5,85,147,111"/>
+<area shape="rect" id="node3" href="$d0/da1/malloc__assert_8c.html" title=" " alt="" coords="171,85,307,111"/>
+<area shape="rect" id="node4" href="$de/d36/malloc__framework__rtos_8cpp.html" title=" " alt="" coords="330,79,481,117"/>
+<area shape="rect" id="node5" href="$df/dbe/malloc__freelist_8c.html" title=" " alt="" coords="506,85,644,111"/>
+<area shape="rect" id="node6" href="$de/d01/malloc__freertos_8c.html" title=" " alt="" coords="668,85,813,111"/>
+<area shape="rect" id="node7" href="$d0/d6b/malloc__threadx_8c.html" title=" " alt="" coords="837,85,980,111"/>
 </map>

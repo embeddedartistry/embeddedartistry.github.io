@@ -141,7 +141,7 @@ Functions</h2></td></tr>
 <tr class="memitem:afbedc913aa4651b3c3b4b3aecd9b4711"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbe/malloc__freelist_8c.html#afbedc913aa4651b3c3b4b3aecd9b4711">free</a> (void *ptr)</td></tr>
 <tr class="separator:afbedc913aa4651b3c3b4b3aecd9b4711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefccca545b4f08bf860289c476b51aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dbe/malloc__freelist_8c.html#aefccca545b4f08bf860289c476b51aae">malloc_addblock</a> (void *addr, size_t size)</td></tr>
-<tr class="memdesc:aefccca545b4f08bf860289c476b51aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign blocks of memory for use by <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a>.  <a href="#aefccca545b4f08bf860289c476b51aae">More...</a><br /></td></tr>
+<tr class="memdesc:aefccca545b4f08bf860289c476b51aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign blocks of memory for use by <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a>.  <a href="#aefccca545b4f08bf860289c476b51aae">More...</a><br /></td></tr>
 <tr class="separator:aefccca545b4f08bf860289c476b51aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
@@ -335,8 +335,6 @@ size</td>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a5cc2fdbc1c1898a3578538dabf8e5cb4">defrag_free_list()</a>, and <a class="el" href="../../df/dbe/malloc__freelist_8c.html#af359449981fa921f3bbda370afb5a48a">alloc_node_t::node</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dde/aligned__malloc_8c.html#a274dd8714485eed9c9328973d44ec5dc">aligned_free()</a>.</p>
-
 </div>
 </div>
 <a id="af2086b48fe1aa24cced2c98676aee966"></a>
@@ -392,8 +390,6 @@ size</td>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../df/dbe/malloc__freelist_8c.html#ad7cedda95a9788a1df13133fabd15ce5">align_up</a>, <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a129ab9aaa4b8e1a9585edc0263c6eec5">ALLOC_HEADER_SZ</a>, <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a340d06d3756a2ec2cdd3ca3577250e38">alloc_node_t::block</a>, <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a3b1ea0787ffad991a7abe1716d4084b2">MIN_ALLOC_SZ</a>, <a class="el" href="../../df/dbe/malloc__freelist_8c.html#af359449981fa921f3bbda370afb5a48a">alloc_node_t::node</a>, and <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a821301587ee5fe9acc19c0c51d0bb139">alloc_node_t::size</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dde/aligned__malloc_8c.html#af9d29fa5731420020b36ffbf56e6de97">aligned_malloc()</a>.</p>
-
 </div>
 </div>
 <a id="aefccca545b4f08bf860289c476b51aae"></a>
@@ -422,13 +418,13 @@ size</td>
       </table>
 </div><div class="memdoc">
 
-<p>Assign blocks of memory for use by <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a>. </p>
-<p>Initializes the <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a> backend with a memory address and memory pool size. This memory is assumed to be owned by <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a> and is vended out when memory is requested. Multiple blocks can be added.</p>
-<p>NOTE: This API must be called before <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a> can be used. If you call <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a> before allocating memory, <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a> will return NULL because there is no available memory to provide to the user.</p>
+<p>Assign blocks of memory for use by <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a>. </p>
+<p>Initializes the <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a> backend with a memory address and memory pool size. This memory is assumed to be owned by <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a> and is vended out when memory is requested. Multiple blocks can be added.</p>
+<p>NOTE: This API must be called before <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a> can be used. If you call <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a> before allocating memory, <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a> will return NULL because there is no available memory to provide to the user.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">addr</td><td>Pointer to the memory block address that you are providing to <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a> </td></tr>
-    <tr><td class="paramname">size</td><td>Size of the memory block that you are providing to <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a> </td></tr>
+    <tr><td class="paramname">addr</td><td>Pointer to the memory block address that you are providing to <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a> </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the memory block that you are providing to <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a> </td></tr>
   </table>
   </dd>
 </dl>

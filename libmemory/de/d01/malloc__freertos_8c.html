@@ -129,7 +129,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ab6286f6c5b860452f86cc47c2a93d3e3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d01/malloc__freertos_8c.html#ab6286f6c5b860452f86cc47c2a93d3e3">cmp_heap</a> (const void *a, const void *b)</td></tr>
 <tr class="separator:ab6286f6c5b860452f86cc47c2a93d3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefccca545b4f08bf860289c476b51aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d01/malloc__freertos_8c.html#aefccca545b4f08bf860289c476b51aae">malloc_addblock</a> (void *addr, size_t size)</td></tr>
-<tr class="memdesc:aefccca545b4f08bf860289c476b51aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign blocks of memory for use by <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a>.  <a href="#aefccca545b4f08bf860289c476b51aae">More...</a><br /></td></tr>
+<tr class="memdesc:aefccca545b4f08bf860289c476b51aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign blocks of memory for use by <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a>.  <a href="#aefccca545b4f08bf860289c476b51aae">More...</a><br /></td></tr>
 <tr class="separator:aefccca545b4f08bf860289c476b51aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9aace1b44b73111e15aa39f06f43456"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d01/malloc__freertos_8c.html#af9aace1b44b73111e15aa39f06f43456">__attribute__</a> ((weak))</td></tr>
 <tr class="separator:af9aace1b44b73111e15aa39f06f43456"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,7 +164,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>NOTE: This FreeRTOS malloc implementation requires heap_5.c</p>
-<p>Please define the correct heap_region for your project.Your application can define this macro to increase the </p>
+<p>Please define the correct heap_region for your project.Your application can define this macro to increase the number of heap regions </p>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d01/malloc__freertos_8c_source.html#l00026">26</a> of file <a class="el" href="../../de/d01/malloc__freertos_8c_source.html">malloc_freertos.c</a>.</p>
 
@@ -310,7 +310,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Assign blocks of memory for use by <a class="el" href="../../df/dbe/malloc__freelist_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a>. </p>
+<p>Assign blocks of memory for use by <a class="el" href="../../d0/da1/malloc__assert_8c.html#a7230bcff56a3c6339212b6f14575d1f4">malloc()</a>. </p>
 <p>malloc_addblock must be called before memory allocation calls are made. In this FreeRTOS implementation, <a class="el" href="../../de/d01/malloc__freertos_8c.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a> calls will block until memory has been allocated </p>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d01/malloc__freertos_8c_source.html#l00068">68</a> of file <a class="el" href="../../de/d01/malloc__freertos_8c_source.html">malloc_freertos.c</a>.</p>
