@@ -133,6 +133,7 @@ var searchData=
   ['exp_5fmsk11',['Exp_msk11',['../d4/d5f/gdtoaimp_8h.html#a0997add05e477b3a97fcb24f1600468e',1,'gdtoaimp.h']]],
   ['exp_5fshift',['Exp_shift',['../d4/d5f/gdtoaimp_8h.html#a07374c5f75e3cc6b3698571623a8b2fc',1,'gdtoaimp.h']]],
   ['exp_5fshift1',['Exp_shift1',['../d4/d5f/gdtoaimp_8h.html#ab48843da1ee5cd92ff22ff6f85c87d0b',1,'gdtoaimp.h']]],
+  ['embedded_20artistry_20libc',['Embedded Artistry libc',['../index.html',1,'']]],
   ['embedded_20artistry_20libc',['Embedded Artistry libc',['../d4/db5/md_docs__l_i_c_e_n_s_e_s.html',1,'']]],
   ['expected_20behavior',['Expected Behavior',['../dd/d63/md_src_gdtoa_docs__i_s_s_u_e__t_e_m_p_l_a_t_e.html',1,'']]]
 ];

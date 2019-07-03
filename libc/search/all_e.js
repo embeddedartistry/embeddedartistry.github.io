@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['libc',['libc',['../index.html',1,'']]],
   ['l',['L',['../d4/d5f/gdtoaimp_8h.html#aa72022b00fe1608edcdbc0a12e525164',1,'U']]],
   ['l_5fshift',['L_shift',['../d5/d7b/hexnan_8c.html#a3b069e65d7c8a2e796d4fce5acf88774',1,'hexnan.c']]],
   ['labs',['labs',['../dc/d9c/stdlib_8h.html#a3b270e0b7f5c47e2511ecf21dab24b5b',1,'labs(long n):&#160;labs.c'],['../de/d7c/labs_8c.html#a912277f2dbf3594e958d116ff2b35625',1,'labs(long j):&#160;labs.c']]],

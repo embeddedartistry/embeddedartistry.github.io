@@ -24,7 +24,6 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Embedded Artistry libc", "index.html", [
-    [ "libc", "index.html", null ],
     [ "1. Record architecture decisions", "d9/dbc/md_src_gdtoa_docs_architecture_decisions_0001-record-architecture-decisions.html", null ],
     [ "Contributor Code of Conduct", "d6/de6/md_src_gdtoa_docs__c_o_d_e__o_f__c_o_n_d_u_c_t.html", null ],
     [ "Expected Behavior", "dd/d63/md_src_gdtoa_docs__i_s_s_u_e__t_e_m_p_l_a_t_e.html", null ],
