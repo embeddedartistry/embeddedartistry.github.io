@@ -24,7 +24,6 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Embedded Artistry libmemory", "index.html", [
-    [ "libmemory", "index.html", null ],
     [ "1. Record architecture decisions", "d7/d60/md_docs_architecture_decisions_0001-record-architecture-decisions.html", null ],
     [ "Contributor Code of Conduct", "d6/d5d/md_docs__c_o_d_e__o_f__c_o_n_d_u_c_t.html", null ],
     [ "Contributing Guide", "d5/d69/md_docs__c_o_n_t_r_i_b_u_t_i_n_g.html", null ],
