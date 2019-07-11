@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Embedded Artistry Framework: libmemory</title>
+<title>Embedded Artistry Framework: Embedded Artistry libmemory</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -63,11 +63,11 @@ $(function() {
 </div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">libmemory </div>  </div>
+<div class="title">Embedded Artistry libmemory </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Embedded Artistry's <code>libmemory</code> is a memory management library for embedded systems. If you have a bare metal system and want to use <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code>, this library is for you!</p>
-<p><code>libmemory</code> provides various implemetations of the <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> and <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code> functions. The primary malloc implementation is a freelist allocator which can be used on a bare-metal system. Wrappers for some RTOSes are also provided (and can be added if not already). You wil also find other useful memory functions, such as <code><a class="el" href="../../d6/dfa/aligned__malloc_8h.html#af9d29fa5731420020b36ffbf56e6de97" title="Allocated aligned memory.">aligned_malloc()</a></code>.</p>
+<p><code>libmemory</code> provides various implementations of the <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> and <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code> functions. The primary <code>malloc</code> implementation is a free-list allocator which can be used on a bare-metal system. Wrappers for some RTOSes are also provided (and can be added if not already). You will also find other useful memory functions, such as <code><a class="el" href="../../d6/dfa/aligned__malloc_8h.html#af9d29fa5731420020b36ffbf56e6de97" title="Allocated aligned memory.">aligned_malloc()</a></code>.</p>
 <p>This library is meant to be coupled with a <code>libc</code> implementation (such as the <a href="https://github.com/embeddedartistry/libc">Embedded Artistry <code>libc</code></a>). <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> and <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code> are not redefined in these headers, so you can safely use this library with your platform's existing <code>libc</code>.</p>
 <h2>Table of Contents</h2>
 <ol type="1">
@@ -81,99 +81,142 @@ $(function() {
 </ol>
 </li>
 <li><a href="../../#installation">Installation</a></li>
-<li><a href="../../#usage">Usage</a><ol type="i">
-<li><a href="../../#aligned-malloc">Aligned Malloc</a></li>
-</ol>
-</li>
 <li><a href="../../#testing">Testing</a></li>
 </ol>
 </li>
+<li><a href="../../#configuration-options">Configuration Options</a></li>
+<li><a href="../../#usage">Usage</a><ol type="a">
+<li><a href="../../#aligned-malloc">Aligned <code>malloc</code></a></li>
+</ol>
+</li>
+</ol>
+<ol type="1">
 <li><a href="../../#formatting">Formatting</a></li>
 <li><a href="../../#documentation">Documentation</a></li>
 <li><a href="../../#need-help">Need Help?</a></li>
 <li><a href="../../#contributing">Contributing</a></li>
-<li><a href="../../#further-reading">Futher Reading</a></li>
+<li><a href="../../#further-reading">Further Reading</a></li>
 <li><a href="../../#authors">Authors</a></li>
 <li><a href="../../#license">License</a></li>
-<li><a href="../../#acknowledgements">Acknowledgements</a></li>
+<li><a href="../../#Acknowledgments">Acknowledgments</a></li>
 </ol>
 <h1>About the Project</h1>
 <p>This library is meant to allow developers of embedded systems to utilize the <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> and <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code> functions if their platform does not currently support it. The baseline <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> implementation can be used without an RTOS or any other supporting software. Only a block of memory needs to be assigned.</p>
-<p>Many RTOSes provide dynamic memory allocation functionality, but these functions are not typically called <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> and <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code>. Wrappers can be provdied for these RTOSes to improve code portability.</p>
-<p>A block of memory needs to be initially assigned using the <code><a class="el" href="../../d0/d4c/malloc_8h.html#aefccca545b4f08bf860289c476b51aae" title="Assign blocks of memory for use by malloc().">malloc_addblock()</a></code> function. This tells the malloc implementation what memory address and size to use for the heap.</p>
-<div class="fragment"><div class="line">// Allocate 4MB to the heap starting at memory address 0xDEADBEEF</div><div class="line">malloc_addblock(0xDEADBEEF, 4 * 1024 * 1024);</div></div><!-- fragment --><p>One memory has been allcated to the heap, you can use <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> and <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code> as expected.</p>
+<p>Many RTOSes provide dynamic memory allocation functionality, but these functions are not typically called <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> and <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code>. Wrappers can be provided for these RTOSes to improve code portability.</p>
+<p>A block of memory needs to be initially assigned using the <code><a class="el" href="../../d0/d4c/malloc_8h.html#aefccca545b4f08bf860289c476b51aae" title="Assign blocks of memory for use by malloc().">malloc_addblock()</a></code> function. This tells the <code>malloc</code> implementation what memory address and size to use for the heap.</p>
+<div class="fragment"><div class="line">// Allocate 4MB to the heap starting at memory address 0xDEADBEEF</div><div class="line">malloc_addblock(0xDEADBEEF, 4 * 1024 * 1024);</div></div><!-- fragment --><p>One memory has been allocated to the heap, you can use <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> and <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code> as expected.</p>
 <h1>Project Status</h1>
 <ul>
 <li>Basic memory allocation is implemented using the free-list strategy</li>
-<li>Cross-compiling with the Premake buildsystem is currently not implemented.</li>
-<li>Only the ThreadX RTOS has currenetly been added<ul>
-<li>FreeRTOS is next on the list</li>
-</ul>
-</li>
+<li>x86, x86_64, ARM, and ARM64 compilation is supported</li>
+<li>Example RTOS implementations are provided for FreeRTOS and ThreadX</li>
+<li>An implementation exists that can be used with the Embedded Virtual Machine framework</li>
 <li>Tests are currently in place for <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code>, <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code>, <code><a class="el" href="../../d6/dfa/aligned__malloc_8h.html#af9d29fa5731420020b36ffbf56e6de97" title="Allocated aligned memory.">aligned_malloc()</a></code>, and <code><a class="el" href="../../d6/dfa/aligned__malloc_8h.html#a274dd8714485eed9c9328973d44ec5dc" title="Free aligned memory.">aligned_free()</a></code></li>
-<li>The ThreadX malloc implementation is not tested</li>
-<li>No test for overlapping memory blocks exists</li>
+<li>No test for overlapping memory blocks currently exists</li>
 </ul>
 <h1>Getting Started</h1>
-<h2>Requirements</h2>
+<h3>Requirements</h3>
 <ul>
-<li><a href="https://cmocka.org">CMocka</a> must be installed on your system to compile the unit tests</li>
+<li><a href="https://cmocka.org">CMocka</a> must be installed on your system to compile and run unit tests</li>
 <li><a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a> must be installed to generate documentation</li>
-<li><a href="https://github.com/premake/premake-core/wiki">Premake</a> is used as the buildsystem<ul>
-<li>Binaries are included for Windows, Linux, and OSX</li>
-<li>If yours is not natively supported please download a binary from the website or file a GitHub issue so I can help</li>
+<li><a href="../../#meson-build-system">Meson</a> is the build system</li>
+<li><a href="https://git-lfs.github.com"><code>git-lfs</code></a> is used to store binary files in this repository</li>
+<li><code>make</code> is needed if you want to use the Makefile shims</li>
+<li>You'll need some kind of compiler for your target system.<ul>
+<li>This repository has been tested with:<ul>
+<li>gcc</li>
+<li>arm-none-eabi-gcc</li>
+<li>Apple clang</li>
+<li>Mainline clang</li>
 </ul>
 </li>
-<li><a href="https://git-lfs.github.com"><code>git-lfs</code></a> is used to store binary files</li>
-<li><code>make</code> and <code>gcc</code> should be installed in order to compile the files</li>
 </ul>
-<h3><code>adr-tools</code></h3>
+</li>
+</ul>
+<p>Contributors will also need:</p>
+<ul>
+<li><a href="https://github.com/npryce/adr-tools"><code>adr-tools</code></a> for documenting major project decisions</li>
+<li><a href="https://clang.llvm.org/docs/ClangFormat.html"><code>clang-format</code></a> for code formatting</li>
+</ul>
+<h4>git-lfs</h4>
+<p>This project stores some files using <a href="https://git-lfs.github.com"><code>git-lfs</code></a>.</p>
+<p>To install <code>git-lfs</code> on Linux:</p>
+<div class="fragment"><div class="line">sudo apt install git-lfs</div></div><!-- fragment --><p>To install <code>git-lfs</code> on OS X:</p>
+<div class="fragment"><div class="line">brew install git-lfs</div></div><!-- fragment --><p>Additional installation instructions can be found on the <a href="https://git-lfs.github.com"><code>git-lfs</code> website</a>.</p>
+<h4>Meson Build System</h4>
+<p>The [Meson][meson] build system depends on <code>python3</code> and <code>ninja-build</code>.</p>
+<p>To install on Linux:</p>
+<div class="fragment"><div class="line">sudo apt-get install python3 python3-pip ninja-build</div></div><!-- fragment --><p>To install on OSX:</p>
+<div class="fragment"><div class="line">brew install python3 ninja</div></div><!-- fragment --><p>Meson can be installed through <code>pip3</code>:</p>
+<div class="fragment"><div class="line">pip3 install meson</div></div><!-- fragment --><p>If you want to install Meson globally on Linux, use:</p>
+<div class="fragment"><div class="line">sudo -H pip3 install meson</div></div><!-- fragment --><h4><code>adr-tools</code></h4>
 <p>This repository uses <a href="https://embeddedartistry.com/blog/2018/4/5/documenting-architectural-decisions-within-our-repositories">Architecture Decision Records</a>. Please install <a href="https://github.com/npryce/adr-tools"><code>adr-tools</code></a> to contribute to architecture decisions.</p>
 <p>If you are using OSX, you can install <code>adr-tools</code> through Homebrew:</p>
 <div class="fragment"><div class="line">brew install adr-tools</div></div><!-- fragment --><p>If you are using Windows or Linux, please install <code>adr-tools</code> via <a href="https://github.com/npryce/adr-tools">GitHub</a>.</p>
-<h2>Getting the Source</h2>
-<p>This project uses <code>git-lfs</code>, so please install it before cloning. If you cloned prior to installing <code>git-lfs</code>, simply run <code>git lfs pull</code> after installation.</p>
+<h3>Getting the Source</h3>
+<p>This project uses <a href="https://git-lfs.github.com"><code>git-lfs</code></a>, so please install it before cloning. If you cloned prior to installing <code>git-lfs</code>, simply run <code>git lfs pull</code> after installation.</p>
 <p>This project is <a href="https://github.com/embeddedartistry/libmemory">hosted on GitHub</a>. You can clone the project directly using this command:</p>
-<div class="fragment"><div class="line">git clone --recursive git@github.com:embeddedartistry/libmemory.git</div></div><!-- fragment --><h2>Building</h2>
+<div class="fragment"><div class="line">git clone --recursive git@github.com:embeddedartistry/libmemory.git</div></div><!-- fragment --><p>If you don't clone recursively, be sure to run the following command in the repository or your build will fail:</p>
+<div class="fragment"><div class="line">git submodule update --init</div></div><!-- fragment --><h3>Building</h3>
 <p>The library can be built by issuing the following command:</p>
 <div class="fragment"><div class="line">make</div></div><!-- fragment --><p>This will build all targets for your current architecture.</p>
 <p>You can clean builds using:</p>
-<div class="fragment"><div class="line">make clean</div></div><!-- fragment --><p>And you can completely eliminate the generated <code>Makefile</code>s and buildresults using:</p>
-<div class="fragment"><div class="line">make purify</div></div><!-- fragment --><h3>Cross-compiling</h3>
-<p>Output is currently limited to <code>x86_64</code>, but cross-compiling for ARM will be implemented in the near future.</p>
-<h2>Installation</h2>
-<p>Currently the best method to use this project is to build it separately and copy the contents into your tree. I will improve this method to allow easier usage as a submodule.</p>
-<p>Copy the <code>include/</code> directory contents into your source tree.</p>
-<p>Build artifacts are stored in the <code>buildresults</code> folder. There is a sub-folder for the target architecture (e.g. <code>x86_64</code>). Inside of this architecture you will find folders for ach type of <code>malloc</code> allocator (freelist, threadx, etc.), and a static library will be contained there.</p>
-<p>Copy the desired library to your project and add the library to your link step.</p>
+<div class="fragment"><div class="line">make clean</div></div><!-- fragment --><p>You can eliminate the generated <code>buildresults</code> folder using:</p>
+<div class="fragment"><div class="line">make purify</div></div><!-- fragment --><p>You can also use the <code>meson</code> method for compiling.</p>
+<p>Create a build output folder:</p>
+<div class="fragment"><div class="line">meson buildresults</div></div><!-- fragment --><p>Then change into that folder and build targets by running:</p>
+<div class="fragment"><div class="line">ninja</div></div><!-- fragment --><p>At this point, <code>make</code> would still work.</p>
+<h4>Cross-compiling</h4>
+<p>Cross-compilation is handled using <code>meson</code> cross files. Example files are included in the <a href="../../build/cross/"><code>build/cross</code></a> folder. You can write your own cross files for your specific platform (or open an issue and we can help you).</p>
+<p>Cross-compilation must be configured using the meson command when creating the build output folder. For example:</p>
+<div class="fragment"><div class="line">meson buildresults --cross-file build/cross/gcc/arm/gcc_arm_cortex-m4.txt</div></div><!-- fragment --><p>Following that, you can run <code>make</code> (at the project root) or <code>ninja</code> (within the build output directory) to build the project.</p>
+<p>Tests will not be cross-compiled. They will be built for the native platform. </p><h3>Installation</h3>
+<p>If you don't use <code>meson</code> for your project, the best method to use this project is to build it separately and copy the headers and library contents into your source tree.</p>
+<ul>
+<li>Copy the <code>include/</code> directory contents into your source tree.</li>
+<li>Library artifacts are stored in the <code>buildresults/src</code> folder</li>
+<li>Copy the desired library to your project and add the library to your link step.</li>
+</ul>
 <p>Example linker flags:</p>
-<div class="fragment"><div class="line">-lmemory -Lpath/to/libmemory.a</div></div><!-- fragment --><h2>Usage</h2>
+<div class="fragment"><div class="line">-Lpath/to/libmemory.a -lmemory</div></div><!-- fragment --><p>If you're using <code>meson</code>, you can use <code>libmemory</code> as a subproject. Place it into your subproject directory of choice and add a <code>subproject</code> statement:</p>
+<div class="fragment"><div class="line">libmemory = subproject(&#39;libmemory&#39;)</div></div><!-- fragment --><p>You will need to promote the subproject dependencies to your project:</p>
+<div class="fragment"><div class="line">libmemory_native_dep = libmemory.get_variable(&#39;libmemory_native_dep&#39;)</div><div class="line">libmemory_hosted_dep = libmemory.get_variable(&#39;libmemory_hosted_dep&#39;)</div><div class="line">libmemory_freelist_dep = libmemory.get_variable(&#39;libmemory_freelist_dep&#39;)</div><div class="line">libmemory_threadx_dep = libmemory.get_variable(&#39;libmemory_threadx_dep&#39;)</div><div class="line">libmemory_freertos_dep = libmemory.get_variable(&#39;libmemory_freertos_dep&#39;)</div><div class="line">libmemory_header_include =  libmemory.get_variable(&#39;libmemory_system_includes&#39;)</div><div class="line">libmemory_framework_rtos_dep = libmemory.get_variable(&#39;libmemory_framework_rtos_dep&#39;)</div></div><!-- fragment --><p>You can use the dependency for your target library configuration in your <code>executable</code> declarations(s) or other dependencies. For example:</p>
+<div class="fragment"><div class="line">fwdemo_sim_platform_dep = declare_dependency(</div><div class="line">    include_directories: fwdemo_sim_platform_inc,</div><div class="line">    dependencies: [</div><div class="line">        fwdemo_simulator_hw_platform_dep,</div><div class="line">        posix_os_dep,</div><div class="line">        libmemory_native_dep, # &lt;----- libmemory added here</div><div class="line">        libc_native_dep, </div><div class="line">        libcxxabi_native_dep,</div><div class="line">        libcxx_full_native_dep,</div><div class="line">        logging_subsystem_dep</div><div class="line">    ],</div><div class="line">    sources: files(&#39;platform.cpp&#39;),</div><div class="line">)</div></div><!-- fragment --><h2>Testing</h2>
+<p>The tests for this library are written with <a href="https://cmocka.org">CMocka</a>. You can run the tests by issuing the following command:</p>
+<div class="fragment"><div class="line">make test</div></div><!-- fragment --><p>By default, test results are generated for use by the CI server and are formatted in JUnit XML. The test results XML files can be found in <code>buildresults/test/</code>.</p>
+<h2>Configuration Options</h2>
+<p>The following meson project options can be set for this library when creating the build results directory with <code>meson</code>, or by using <code>meson configure</code>:</p>
+<ul>
+<li><code>enable-werror</code>: Cause the build to fail if warnings are present</li>
+<li><code>enable-pedantic-error</code>: Turn on <code>pedantic</code> warnings and errors</li>
+<li><code>use-ea-libc</code>: If true, the build will set flags to prevent usage of the compiler libc so the <a href="https://github.com/embeddedartistry/libc">Embedded Artistry libc</a> can supply the headers</li>
+<li><code>ea-libc-path</code>: The relative path to the root directory of the <a href="https://github.com/embeddedartistry/libc">Embedded Artistry libc</a> source tree</li>
+</ul>
+<p>Options can be specified using <code>-D</code> and the option name:</p>
+<div class="fragment"><div class="line">meson buildresults -Denable-werror=true</div></div><!-- fragment --><p>The same style works with <code>meson configure</code>:</p>
+<div class="fragment"><div class="line">cd buildresults</div><div class="line">meson configure -Denable-werror=true</div></div><!-- fragment --><h2>Usage</h2>
 <p>A block of memory needs to be initially assigned using the <code><a class="el" href="../../d0/d4c/malloc_8h.html#aefccca545b4f08bf860289c476b51aae" title="Assign blocks of memory for use by malloc().">malloc_addblock()</a></code> function:</p>
-<div class="fragment"><div class="line">void malloc_addblock(void* addr, size_t size);</div></div><!-- fragment --><p>This tells the malloc implementation what memory address and size to use for the heap.</p>
+<div class="fragment"><div class="line">void malloc_addblock(void* addr, size_t size);</div></div><!-- fragment --><p>This tells the <code>malloc</code> implementation what memory address and size to use for the heap.</p>
 <div class="fragment"><div class="line">// Allocate 4MB to the heap starting at memory address 0xDEADBEEF</div><div class="line">malloc_addblock(0xDEADBEEF, 4 * 1024 * 1024);</div></div><!-- fragment --><p><code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> and <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code> will fail (return <code>NULL</code>) if no memory has been allocated. Once memory has been allocated to the heap, you can use <code><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a></code> and <code><a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space.">free()</a></code> as expected.</p>
 <p>Multiple blocks of memory can be added using <code><a class="el" href="../../d0/d4c/malloc_8h.html#aefccca545b4f08bf860289c476b51aae" title="Assign blocks of memory for use by malloc().">malloc_addblock()</a></code>. The memory blocks do not have to be contiguous.</p>
-<h3>Aligned Malloc</h3>
+<h3>Aligned malloc</h3>
 <p>You can allocate aligned memory using <code><a class="el" href="../../d6/dfa/aligned__malloc_8h.html#af9d29fa5731420020b36ffbf56e6de97" title="Allocated aligned memory.">aligned_malloc()</a></code>:</p>
 <div class="fragment"><div class="line">void* aligned_malloc(size_t align, size_t size);</div></div><!-- fragment --><p>Alignment must be a power of two!</p>
 <p>Aligned memory can only be free'd using <code><a class="el" href="../../d6/dfa/aligned__malloc_8h.html#a274dd8714485eed9c9328973d44ec5dc" title="Free aligned memory.">aligned_free()</a></code>:</p>
 <div class="fragment"><div class="line">void aligned_free(void* ptr);</div></div><!-- fragment --><p>For more information, see <code>aligned_memory.h</code>and <a href="https://embeddedartistry.github.io/libmemory/d6/dfa/aligned__malloc_8h.html">the documentation</a>.</p>
-<h2>Testing</h2>
-<p>The tests for this library are written with <a href="https://cmocka.org">CMocka</a>. You can run the tests by issuing the following command:</p>
-<div class="fragment"><div class="line">make test</div></div><!-- fragment --><p>By default, test results are generated for use by the CI server and are formatted in JUnit XML. The test results XML files can be found in <code>buildresults/testresults/</code>.</p>
-<p>If you would prefer to see the test result summary printed to <code>stdout</code> instead, simply use the following command:</p>
-<div class="fragment"><div class="line">CMOCKA_MESSAGE_OUTPUT=stdout make test</div></div><!-- fragment --><h1>Formatting</h1>
+<h1>Formatting</h1>
 <p>This repository enforces formatting using <a href="https://clang.llvm.org/docs/ClangFormat.html"><code>clang-format</code></a>.</p>
 <p>You can auto-format your code to match the style guidelines by issuing the following command:</p>
 <div class="fragment"><div class="line">make format</div></div><!-- fragment --><p>Formatting is enforced by the Jenkins build server which runs continuous integration for this project. Your pull request will not be accepted if the formatting check fails.</p>
 <h1>Documentation</h1>
 <p><a href="https://embeddedartistry.github.io/libmemory/index.html">Documentation for the latest release can always be found here</a>.</p>
 <p>Documentation can be built locally by running the following command:</p>
-<div class="fragment"><div class="line">make doc</div></div><!-- fragment --><p>Documentation can be found in <code>buildresults/doc</code>, and the root page is <code>index.html</code>.</p>
+<div class="fragment"><div class="line">make docs</div></div><!-- fragment --><p>Documentation can be found in <code>buildresults/doc</code>, and the root page is <code>index.html</code>.</p>
 <h1>Need help?</h1>
 <p>If you need further assistance or have any questions, please <a href="https://github.com/embeddedartistry/libmemory/issues/new">file a GitHub Issue</a> or send us an email using the <a href="http://embeddedartistry.com/contact">Embedded Artistry Contact Form</a>.</p>
 <p>You can also reach out on Twitter: <a href="https://twitter.com/mbeddedartistry/">@mbeddedartistry</a>.</p>
 <h1>Contributing</h1>
-<p>If you are intersted in contributing to this project, please read our <a class="el" href="../../d2/d0e/libmemory_2docs_2_c_o_n_t_r_i_b_u_t_i_n_g_8md.html">contributing guidelines</a>.</p>
+<p>If you are interested in contributing to this project, please read our <a class="el" href="../../d2/d0e/libmemory_2docs_2_c_o_n_t_r_i_b_u_t_i_n_g_8md.html">contributing guidelines</a>.</p>
 <h1>Further Reading</h1>
 <ul>
 <li><a href="https://embeddedartistry.github.io/libmemory/index.html"><code>libmemory</code> Documentation</a></li>

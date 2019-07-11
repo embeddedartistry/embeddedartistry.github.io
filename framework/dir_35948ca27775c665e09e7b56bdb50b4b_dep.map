@@ -1,15 +1,15 @@
 <map id="src/stdlibs/libc/openlibm/i387" name="src/stdlibs/libc/openlibm/i387">
 <area shape="rect" id="node1" href="dir_35948ca27775c665e09e7b56bdb50b4b.html" title="i387" alt="" coords="79,51,151,99"/>
 <area shape="rect" id="node2" href="dir_68f5b2396803dc3dba72862d52c865aa.html" title="include" alt="" coords="5,147,77,195"/>
-<area shape="rect" id="edge4-headlabel" href="dir_000102_000108.html" title="1" alt="" coords="74,130,82,144"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000104_000111.html" title="1" alt="" coords="74,130,82,144"/>
 <area shape="rect" id="node3" href="dir_36fcc34c48ee9352976aebbbf07074f6.html" title="include" alt="" coords="25,339,97,387"/>
-<area shape="rect" id="edge5-headlabel" href="dir_000102_000095.html" title="1" alt="" coords="113,335,121,348"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000104_000096.html" title="1" alt="" coords="113,335,121,348"/>
 <area shape="rect" id="node4" href="dir_2e0fc36c319df898281cb955fe26243a.html" title="src" alt="" coords="68,243,140,291"/>
-<area shape="rect" id="edge6-headlabel" href="dir_000102_000109.html" title="4" alt="" coords="111,218,118,232"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000108_000095.html" title="2" alt="" coords="54,313,61,326"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000108_000109.html" title="7" alt="" coords="73,216,80,229"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000095_000108.html" title="3" alt="" coords="41,208,49,221"/>
-<area shape="rect" id="edge7-headlabel" href="dir_000109_000108.html" title="300" alt="" coords="58,208,80,221"/>
-<area shape="rect" id="edge8-headlabel" href="dir_000109_000095.html" title="104" alt="" coords="76,318,98,332"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000104_000112.html" title="4" alt="" coords="111,218,118,232"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000111_000096.html" title="2" alt="" coords="54,313,61,326"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000111_000112.html" title="7" alt="" coords="73,216,80,229"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000096_000111.html" title="3" alt="" coords="41,208,49,221"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000112_000111.html" title="300" alt="" coords="58,208,80,221"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000112_000096.html" title="104" alt="" coords="76,318,98,332"/>
 <area shape="rect" id="clust1" href="dir_9b4f7955106cdcdde34d3242126cac1c.html" title="openlibm" alt="" coords="68,16,161,109"/>
 </map>

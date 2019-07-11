@@ -79,8 +79,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2c6f89ab34c7e5e86b008425c6b8be32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d97/structembvm_1_1_timer_manager_1_1schedule_queue_compare.html#a2c6f89ab34c7e5e86b008425c6b8be32">operator()</a> (const <a class="el" href="../../de/de8/group___framework_hw_platform.html#afd6f9170a17aff131bcb15b0fc36b94e">TQueueHandle</a> &amp;lhs, const <a class="el" href="../../de/de8/group___framework_hw_platform.html#afd6f9170a17aff131bcb15b0fc36b94e">TQueueHandle</a> &amp;rhs)</td></tr>
-<tr class="separator:a2c6f89ab34c7e5e86b008425c6b8be32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10e88785b7d588754f7f51fad87f498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d97/structembvm_1_1_timer_manager_1_1schedule_queue_compare.html#af10e88785b7d588754f7f51fad87f498">operator()</a> (const <a class="el" href="../../de/de8/group___framework_hw_platform.html#afd6f9170a17aff131bcb15b0fc36b94e">TQueueHandle</a> &amp;lhs, const <a class="el" href="../../de/de8/group___framework_hw_platform.html#afd6f9170a17aff131bcb15b0fc36b94e">TQueueHandle</a> &amp;rhs) noexcept</td></tr>
+<tr class="separator:af10e88785b7d588754f7f51fad87f498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;const size_t TMaxTimers = 0, typename TLock = embutil::nop_lock, typename TTimeUnit = embvm::timer::timer_period_t, typename TTimeoutCallback = stdext::inplace_function&lt;void()&gt;, typename TTimerDevice = embvm::timer::Timer&gt;<br />
@@ -89,8 +89,8 @@ struct embvm::TimerManager&lt; TMaxTimers, TLock, TTimeUnit, TTimeoutCallback, T
 <p>Comparator for sorting scheduled timers. </p>
 <p>This comparison operator is used when inserting new timers into the scheduled list. Timers must be sorted so that they execute in proper timeout order. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2c6f89ab34c7e5e86b008425c6b8be32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c6f89ab34c7e5e86b008425c6b8be32">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="af10e88785b7d588754f7f51fad87f498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10e88785b7d588754f7f51fad87f498">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -120,7 +120,7 @@ template&lt;const size_t TMaxTimers = 0, typename TLock = embutil::nop_lock, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

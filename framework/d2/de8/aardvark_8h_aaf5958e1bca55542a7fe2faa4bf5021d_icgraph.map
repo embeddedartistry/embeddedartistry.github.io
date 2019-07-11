@@ -1,8 +1,7 @@
 <map id="aa_i2c_pullup" name="aa_i2c_pullup">
-<area shape="rect" id="node1" title=" " alt="" coords="461,99,565,124"/>
-<area shape="rect" id="node2" href="$d6/d18/group___aardvark_drivers.html#a62a7cfc3444298fc67140b884e9b36ef" title="Query the current i2c pullup setting." alt="" coords="241,36,413,75"/>
-<area shape="rect" id="node5" href="$d4/d9e/aagpio_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="302,99,352,124"/>
-<area shape="rect" id="node6" href="$d6/d18/group___aardvark_drivers.html#ad7588664302daabf0a2fcecf918f7d47" title="Enable/Disable 5V target power output." alt="" coords="241,148,413,187"/>
-<area shape="rect" id="node3" href="$d6/d18/group___aardvark_drivers.html#a1dac2689c25cfef922011d349327e23d" title=" " alt="" coords="5,5,193,44"/>
-<area shape="rect" id="node4" href="$d6/d18/group___aardvark_drivers.html#a0bfa461eab7859b61e3d44f75515a135" title="Configure pull&#45;ups." alt="" coords="6,68,193,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="461,68,565,93"/>
+<area shape="rect" id="node2" href="$d6/d18/group___aardvark_drivers.html#a06e648abd2679337c8816b081975403a" title="Query the current i2c pullup setting." alt="" coords="241,5,413,44"/>
+<area shape="rect" id="node4" href="$d4/d9e/aagpio_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="302,68,352,93"/>
+<area shape="rect" id="node5" href="$d6/d18/group___aardvark_drivers.html#a8b2e9299850b67d7dfb358f0a8711562" title="Enable/Disable 5V target power output." alt="" coords="241,117,413,156"/>
+<area shape="rect" id="node3" href="$d6/d18/group___aardvark_drivers.html#adab9959d27b1e003ed777dcb166b1ec8" title=" " alt="" coords="5,5,193,44"/>
 </map>

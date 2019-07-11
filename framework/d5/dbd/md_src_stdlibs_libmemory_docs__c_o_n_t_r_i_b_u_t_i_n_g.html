@@ -154,19 +154,27 @@ $(function() {
 <p>Install these dependencies:</p>
 <ul>
 <li><a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a> must be installed to generate documentation</li>
-<li><a href="https://github.com/premake/premake-core/wiki">Premake</a> is used as the buildsystem<ul>
-<li>Binaries are included for Windows, Linux, and OSX</li>
-<li>If yours is not natively supported please download a binary from the website or file a GitHub issue so I can help</li>
-</ul>
-</li>
+<li><a href="../../#meson-build-system">Meson</a> is the build system</li>
 <li><a href="https://git-lfs.github.com"><code>git-lfs</code></a> is used to store binary files</li>
-<li><code>make</code> and <code>gcc</code> should be installed in order to compile the files (XCode covers these)</li>
+<li><code>make</code> is required to use Makefile shims</li>
+<li>A compiler should be installed in order to build the project (gcc + clang have been tested)</li>
 </ul>
 <p>You will need to fork the main repository to work on your changes. Simply navigate to our GitHub page and click the "Fork" button at the top. Once you've forked the repository, you can clone your new repository and start making edits.</p>
 <p>When using <code>git</code>, it is best to isolate each topic or feature into a “topic branch”. Branches are a great way to group commits related to one feature together, or to isolate different efforts when you might be working on multiple topics at the same time.</p>
 <p>While it takes some experience to get the right feel about how to break up commits, a topic branch should be limited in scope to a single issue. If you are working on multiple issues, please create multiple branches and submit them for review separately.</p>
 <div class="fragment"><div class="line"># Checkout the master branch - you want your new branch to come from master</div><div class="line">git checkout master</div><div class="line"></div><div class="line"># Create a new branch named newfeature (give your branch its own simple informative name)</div><div class="line">git branch newfeature</div><div class="line"></div><div class="line"># Switch to your new branch</div><div class="line">git checkout newfeature</div></div><!-- fragment --><p>For more information on the GitHub fork and pull-request processes, <a href="https://gist.github.com/Chaser324/ce0505fbed06b947d962">please see this helpful guide</a>.</p>
-<h3><code>adr-tools</code></h3>
+<h4>git-lfs</h4>
+<p>This project stores some files using <a href="https://git-lfs.github.com"><code>git-lfs</code></a>.</p>
+<p>To install <code>git-lfs</code> on Linux:</p>
+<div class="fragment"><div class="line">sudo apt install git-lfs</div></div><!-- fragment --><p>To install <code>git-lfs</code> on OS X:</p>
+<div class="fragment"><div class="line">brew install git-lfs</div></div><!-- fragment --><p>Additional installation instructions can be found on the <a href="https://git-lfs.github.com"><code>git-lfs</code> website</a>.</p>
+<h4>Meson Build System</h4>
+<p>The [Meson][meson] build system depends on <code>python3</code> and <code>ninja-build</code>.</p>
+<p>To install on Linux:</p>
+<div class="fragment"><div class="line">sudo apt-get install python3 python3-pip ninja-build</div></div><!-- fragment --><p>To install on OSX:</p>
+<div class="fragment"><div class="line">brew install python3 ninja</div></div><!-- fragment --><p>Meson can be installed through <code>pip3</code>:</p>
+<div class="fragment"><div class="line">pip3 install meson</div></div><!-- fragment --><p>If you want to install Meson globally on Linux, use:</p>
+<div class="fragment"><div class="line">sudo -H pip3 install meson</div></div><!-- fragment --><h3><code>adr-tools</code></h3>
 <p>This repository uses <a href="https://embeddedartistry.com/blog/2018/4/5/documenting-architectural-decisions-within-our-repositories">Architecture Decision Records</a>. Please install <a href="https://github.com/npryce/adr-tools"><code>adr-tools</code></a> to contribute to architecture decisions.</p>
 <p>If you are using OSX, you can install <code>adr-tools</code> through Homebrew:</p>
 <div class="fragment"><div class="line">brew install adr-tools</div></div><!-- fragment --><p>If you are using Windows or Linux, please install <code>adr-tools</code> via <a href="https://github.com/npryce/adr-tools">GitHub</a>.</p>
@@ -178,18 +186,18 @@ $(function() {
 <li><a href="https://github.com/embeddedartistry/libmemory/issues?q=is%3Aissue+is%3Aopen+label%3ADocumentation_"><code>Documentation</code></a> labeled issues apply to new documents</li>
 </ul>
 <h3>Development Process</h3>
-<p>This project is still a work-in-progress and does not have a strict development model. <code>master</code> contains the latest code, and new versions are tagged nightly.</p>
-<p>Please branch from <code>master</code> for any new changes.</p>
+<p><code>master</code> contains the latest code, and new versions are tagged nightly.</p>
+<p>Please branch from <code>master</code> for any new changes. Once you are ready to merge changes, open a pull request. The build server will test and analyze the branch to ensure it can be safely merged.</p>
 <h3>Building the Project</h3>
 <p>To run the build, simply call:</p>
-<div class="fragment"><div class="line">$ make</div></div><!-- fragment --><p>This will build the library and tests. You can build individual projects by navigating to <code>build/gen</code>. You will need to run <code>make build_gen</code> before this directory is populated.</p>
-<p>If you area adding new files to the library that will apply across RTOSes, you will need to modify <code>premake5.lua</code> and add the new file to each target that is not suffixed with <code>_UnitTests</code>. Modify the <code>files</code> blocks to add your file:</p>
-<div class="fragment"><div class="line">files</div><div class="line">{</div><div class="line">  SourceDir .. &quot;**.h&quot;,</div><div class="line">  LibDir .. &quot;**.h&quot;,</div><div class="line">  SourceDir .. &quot;malloc_freelist.c&quot;,</div><div class="line">  SourceDir .. &quot;aligned_malloc.c&quot;</div><div class="line">}</div></div><!-- fragment --><p>If you would like to create a <code>malloc</code>/<code>free</code> implementation for a new RTOS:</p><ul>
-<li>Copy the <code>libmemory_threadx</code> target</li>
-<li>Rename the build target and library output</li>
+<div class="fragment"><div class="line">$ make</div></div><!-- fragment --><p>This will build the library and tests. You can build individual projects by navigating to <code>buildresults</code> and using the <code>ninja</code> interface.</p>
+<p>If you area adding new files to the library that will apply across RTOSes, you will need to modify <a href="../../../src/meson.build"><code>src/meson.build</code></a> and add the new file to the <code>common_files</code> list.</p>
+<div class="fragment"><div class="line">common_files = [</div><div class="line">    &#39;aligned_malloc.c&#39;,</div><div class="line">    &#39;posix_memalign.c&#39;</div><div class="line">]</div></div><!-- fragment --><p>If you would like to create a <code>malloc</code>/<code>free</code> implementation for a new RTOS:</p><ul>
+<li>Copy the <code>libmemory_threadx</code> library target and dependency</li>
+<li>Rename the build target and library output to match the RTOS</li>
 <li>Add the relevant RTOS headers to the <code>dependencies/rtos</code> folder</li>
 <li>Update include paths if necessary</li>
-<li>Add your <code>malloc_*rtos*.c</code> file to the build list</li>
+<li>Add your <code>malloc_*rtos*.c</code> file to that RTOS's build list</li>
 </ul>
 <p>If you have any questions, please don't hesitate to ask for assistance.</p>
 <h3>Testing</h3>
@@ -232,7 +240,7 @@ $(function() {
 <p>Please follow the <a class="el" href="../../de/d35/libmemory_2docs_2_p_u_l_l___r_e_q_u_e_s_t___t_e_m_p_l_a_t_e_8md.html">Pull Request Template</a> for this project. GitHub will automatically populate the pull request description with this template.</p>
 <h3>Review Process</h3>
 <p>Changes must build correctly on the Jenkins CI server, be free of formatting errors, and pass tests.</p>
-<p>One the changes pass the CI process, I will reveiw the source code and provide feedback. I work on a variety of projects, so please expect some delay in getting back to you with a code review. I will notify you as soon as I have seen the PR and provide insight into the expected review timeline.</p>
+<p>One the changes pass the CI process, I will review the source code and provide feedback. I work on a variety of projects, so please expect some delay in getting back to you with a code review. I will notify you as soon as I have seen the PR and provide insight into the expected review timeline.</p>
 <h3>Addressing Feedback</h3>
 <p>Once a PR has been submitted, your changes will be reviewed and constructive feedback may be provided. Feedback isn't meant as an attack, but to help make sure the highest-quality code makes it into our project. Changes will be approved once required feedback has been addressed.</p>
 <p>If a maintainer asks you to "rebase" your PR, they're saying that a lot of code has changed, and that you need to update your fork so it's easier to merge.</p>

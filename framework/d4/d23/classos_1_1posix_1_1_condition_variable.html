@@ -90,8 +90,8 @@ Inheritance diagram for os::posix::ConditionVariable:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aacf0abd171b10b6be683c6f4af176a37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#aacf0abd171b10b6be683c6f4af176a37">ConditionVariable</a> ()=default</td></tr>
 <tr class="separator:aacf0abd171b10b6be683c6f4af176a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fec42f3de23905b7de77d4d23ef9b2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a6fec42f3de23905b7de77d4d23ef9b2a">~ConditionVariable</a> ()</td></tr>
-<tr class="separator:a6fec42f3de23905b7de77d4d23ef9b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcecc78909db0273fac5f7699d2a725"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a5fcecc78909db0273fac5f7699d2a725">~ConditionVariable</a> () noexcept</td></tr>
+<tr class="separator:a5fcecc78909db0273fac5f7699d2a725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36715c0f7a50c3f1d3aa88a0b7ead33c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a36715c0f7a50c3f1d3aa88a0b7ead33c">wait</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex">embvm::VirtualMutex</a> *mutex) noexcept final</td></tr>
 <tr class="memdesc:a36715c0f7a50c3f1d3aa88a0b7ead33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks the current thread until the condition variable is woken up or after the specified timeout duration.  <a href="#a36715c0f7a50c3f1d3aa88a0b7ead33c">More...</a><br /></td></tr>
 <tr class="separator:a36715c0f7a50c3f1d3aa88a0b7ead33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,8 +149,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6fec42f3de23905b7de77d4d23ef9b2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fec42f3de23905b7de77d4d23ef9b2a">&#9670;&nbsp;</a></span>~ConditionVariable()</h2>
+<a id="a5fcecc78909db0273fac5f7699d2a725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcecc78909db0273fac5f7699d2a725">&#9670;&nbsp;</a></span>~ConditionVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,12 +167,12 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a4198b938b53f37b4d265361de08f5500">handle_</a>, and <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a4198b938b53f37b4d265361de08f5500">handle_</a>, and <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>.</p>
 
 </div>
 </div>
@@ -204,9 +204,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d3b/group___framework_o_s.html#a06461889d6ada02856cc3825dbd2a0b1">embvm::VirtualConditionVariable</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a4198b938b53f37b4d265361de08f5500">handle_</a>, and <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a4198b938b53f37b4d265361de08f5500">handle_</a>, and <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a9009cb8d429ba6e939242dfe4ed86609">os::posix::EventFlag::set()</a>, and <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a717fafa71b9ae163b479c46381b13605">os::posix::EventFlag::setFromISR()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a5ddd62584115c99a860b3cca2b0bcea4">os::posix::EventFlag::set()</a>, and <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#aae1b6cb045f53a95dddb813eb038a163">os::posix::EventFlag::setFromISR()</a>.</p>
 
 </div>
 </div>
@@ -324,7 +324,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d3b/group___framework_o_s.html#ab57125c6a4b93918f16ee2d75589ae07">embvm::VirtualConditionVariable</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a4198b938b53f37b4d265361de08f5500">handle_</a>, and <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a4198b938b53f37b4d265361de08f5500">handle_</a>, and <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>.</p>
 
 </div>
 </div>
@@ -396,9 +396,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d3b/group___framework_o_s.html#aa6eb81ff40ca07f7e61f4e50c883c19e">embvm::VirtualConditionVariable</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a4198b938b53f37b4d265361de08f5500">handle_</a>, and <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a4198b938b53f37b4d265361de08f5500">handle_</a>, and <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a0eecbea5e7857c3c00749b7498a90b0f">os::posix::EventFlag::get()</a>, and <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#ab63e89164fb62f6acad59aa8c3c8dd1e">wait()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a01c9572afe5678f1b5348425261029e9">os::posix::EventFlag::get()</a>, and <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#ab63e89164fb62f6acad59aa8c3c8dd1e">wait()</a>.</p>
 
 </div>
 </div>
@@ -438,7 +438,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d3b/group___framework_o_s.html#aa2a7891964c8bd4a0a8ea9b732661c65">embvm::VirtualConditionVariable</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d3b/group___framework_o_s.html#ga2aaa9257780be7831db1172854f85aa1">embvm::OS_WAIT_FOREVER</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#aae1e920407d421c50523fdf02d5650b4">timed_wait()</a>, <a class="el" href="../../d1/d85/group___time_util.html#ga1c97508f275e58179e62df256f1efdbc">embutil::timepointToTimespec()</a>, and <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a36715c0f7a50c3f1d3aa88a0b7ead33c">wait()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d3b/group___framework_o_s.html#ga2aaa9257780be7831db1172854f85aa1">embvm::OS_WAIT_FOREVER</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#aae1e920407d421c50523fdf02d5650b4">timed_wait()</a>, <a class="el" href="../../d1/d85/group___time_util.html#ga66d915bf043f89ceeb8df70512443c59">embutil::timepointToTimespec()</a>, and <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a36715c0f7a50c3f1d3aa88a0b7ead33c">wait()</a>.</p>
 
 </div>
 </div>
@@ -546,7 +546,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#aff9338b96593bdf9c49cc40e747a9699">broadcast()</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a81cb477c5557aa1d89a081135ff65c85">native_handle()</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#af888c6704cb5f02e2550f78b7c94e964">signal()</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#aae1e920407d421c50523fdf02d5650b4">timed_wait()</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a36715c0f7a50c3f1d3aa88a0b7ead33c">wait()</a>, and <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a6fec42f3de23905b7de77d4d23ef9b2a">~ConditionVariable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#aff9338b96593bdf9c49cc40e747a9699">broadcast()</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a81cb477c5557aa1d89a081135ff65c85">native_handle()</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#af888c6704cb5f02e2550f78b7c94e964">signal()</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#aae1e920407d421c50523fdf02d5650b4">timed_wait()</a>, <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a36715c0f7a50c3f1d3aa88a0b7ead33c">wait()</a>, and <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#a5fcecc78909db0273fac5f7699d2a725">~ConditionVariable()</a>.</p>
 
 </div>
 </div>

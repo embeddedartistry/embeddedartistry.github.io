@@ -488,7 +488,7 @@ template&lt;typename TFuncOp &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"><h3>template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc = stdext::inplace_function&lt;void()&gt;&gt;<br />
+<div class="textblock"><h3>template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc = stdext::inplace_function&lt;void()&gt;&gt;<br />
 class embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;</h3>
 
 <p>Static-memory function queue that accepts functors of multiple sizes. </p>
@@ -496,16 +496,16 @@ class embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;<
 <p>If you want a dynamic memory alternative, use <code>std::queue&lt;std::function&gt;</code>.</p>
 <h1>Using a Function Queue</h1>
 <p>This class is intended to be used with functions of type <code>void(void)</code>. You can store functions with arguments in the queue, but you must use a std::bind expression to reduce the arguments.</p>
-<p>Functors can be pushed to the queue using <a class="el" href="../../d1/de1/group___function_queue.html#ad9757d92bbfa3a1b1e74bf7fdafb9f0a" title="Add a function to the queue.">push()</a>. This API creates a <a class="el" href="../../d1/de1/group___function_queue.html#dd/d91/classembutil_1_1_func_op_bound" title="Represents a bound function object.">FuncOpBound</a> object and stores the element for future processing.</p>
+<p>Functors can be pushed to the queue using <a class="el" href="../../d1/de1/group___function_queue.html#a9b240436c483ac6ebce1a99da3fa2716" title="Add a function to the queue.">push()</a>. This API creates a <a class="el" href="../../d1/de1/group___function_queue.html#dd/d91/classembutil_1_1_func_op_bound" title="Represents a bound function object.">FuncOpBound</a> object and stores the element for future processing.</p>
 <dl class="section note"><dt>Note</dt><dd>After the function is stored in the queue, it cannot be recreated explicitly. It is only accessible as a pointer to a <a class="el" href="../../d1/de1/group___function_queue.html#d6/d41/classembutil_1_1_func_op" title="Base Class for storing functions.">FuncOp</a> object.</dd></dl>
-<p>Elements can be removed from the queue using <a class="el" href="../../d1/de1/group___function_queue.html#ab98d63c0a2d336d9b7de9e0688f61501" title="Get a copy of the functor at the front of the queue.">front()</a>. A std::unique_ptr is returned, ensuring that the memory will be returned to the function queue's pool once the caller is done with the function. This means that <a class="el" href="../../d1/de1/group___function_queue.html#ab98d63c0a2d336d9b7de9e0688f61501" title="Get a copy of the functor at the front of the queue.">front()</a> can only be called once per queue element - there is no peeking. <a class="el" href="../../d1/de1/group___function_queue.html#a731d2f6656bdeceaf717a8111803c6fd" title="Remove the element at the front of the queue.">pop()</a> can then be called to remove the element from the front of the queue.</p>
-<p>Invoking the function after <a class="el" href="../../d1/de1/group___function_queue.html#a731d2f6656bdeceaf717a8111803c6fd" title="Remove the element at the front of the queue.">pop()</a> ensures two things:</p><ol type="1">
+<p>Elements can be removed from the queue using <a class="el" href="../../d1/de1/group___function_queue.html#a33b28387b888b42fdc78b3bdc8ba3744" title="Get a copy of the functor at the front of the queue.">front()</a>. A std::unique_ptr is returned, ensuring that the memory will be returned to the function queue's pool once the caller is done with the function. This means that <a class="el" href="../../d1/de1/group___function_queue.html#a33b28387b888b42fdc78b3bdc8ba3744" title="Get a copy of the functor at the front of the queue.">front()</a> can only be called once per queue element - there is no peeking. <a class="el" href="../../d1/de1/group___function_queue.html#a75df7f31f6e11c704fbac829eb45accd" title="Remove the element at the front of the queue.">pop()</a> can then be called to remove the element from the front of the queue.</p>
+<p>Invoking the function after <a class="el" href="../../d1/de1/group___function_queue.html#a75df7f31f6e11c704fbac829eb45accd" title="Remove the element at the front of the queue.">pop()</a> ensures two things:</p><ol type="1">
 <li>The element is removed, enabling another thread to pop off the next function immediately.</li>
 <li>The queue is not blocked while the function is executing.</li>
 </ol>
-<dl class="section note"><dt>Note</dt><dd>Elements returned through <a class="el" href="../../d1/de1/group___function_queue.html#ab98d63c0a2d336d9b7de9e0688f61501" title="Get a copy of the functor at the front of the queue.">front()</a> cannot be directly invoked with operator(). Instead, the exec() API must be used.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Elements returned through <a class="el" href="../../d1/de1/group___function_queue.html#a33b28387b888b42fdc78b3bdc8ba3744" title="Get a copy of the functor at the front of the queue.">front()</a> cannot be directly invoked with operator(). Instead, the exec() API must be used.</dd></dl>
 <p>Here is an example flow for removing elements from the function queue:</p>
-<div class="fragment"><div class="line"><span class="keyword">auto</span> op = std::move(q_.front());</div><div class="line">q_.pop();</div><div class="line"></div><div class="line">op-&gt;exec();</div></div><!-- fragment --><p>If a single thread is managing the queue, <a class="el" href="../../d1/de1/group___function_queue.html#a1b1d65d08702bbdef317dcc7356c5c6a" title="Remove the next functor from the front of the queue and execute it.">popAndExec()</a> can be used to remove the function from the queue and execute it.</p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> op = std::move(q_.front());</div><div class="line">q_.pop();</div><div class="line"></div><div class="line">op-&gt;exec();</div></div><!-- fragment --><p>If a single thread is managing the queue, <a class="el" href="../../d1/de1/group___function_queue.html#a74503bd66e5b25698437d1a9284c6187" title="Remove the next functor from the front of the queue and execute it.">popAndExec()</a> can be used to remove the function from the queue and execute it.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TFunc</td><td>The functor storage type, such as std::function or stdext::inplace_function. </td></tr>
@@ -535,34 +535,34 @@ class embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;<
 <tr class="memitem:a98db410978a103ae7abac3fe4652dc5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de1/group___function_queue.html#db/d7b/classembutil_1_1_static_function_queue">StaticFunctionQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a98db410978a103ae7abac3fe4652dc5a">operator=</a> (<a class="el" href="../../d1/de1/group___function_queue.html#db/d7b/classembutil_1_1_static_function_queue">StaticFunctionQueue</a> &amp;&amp;)=delete</td></tr>
 <tr class="memdesc:a98db410978a103ae7abac3fe4652dc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted move assignment operator.  <a href="#a98db410978a103ae7abac3fe4652dc5a">More...</a><br /></td></tr>
 <tr class="separator:a98db410978a103ae7abac3fe4652dc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9757d92bbfa3a1b1e74bf7fdafb9f0a"><td class="memTemplParams" colspan="2">template&lt;typename TFuncOp &gt; </td></tr>
-<tr class="memitem:ad9757d92bbfa3a1b1e74bf7fdafb9f0a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#ad9757d92bbfa3a1b1e74bf7fdafb9f0a">push</a> (const TFuncOp &amp;op)</td></tr>
-<tr class="memdesc:ad9757d92bbfa3a1b1e74bf7fdafb9f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a function to the queue.  <a href="#ad9757d92bbfa3a1b1e74bf7fdafb9f0a">More...</a><br /></td></tr>
-<tr class="separator:ad9757d92bbfa3a1b1e74bf7fdafb9f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a240e5497803a10955ff4670f458f8770"><td class="memTemplParams" colspan="2">template&lt;typename TFuncOp &gt; </td></tr>
-<tr class="memitem:a240e5497803a10955ff4670f458f8770"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a240e5497803a10955ff4670f458f8770">push</a> (TFuncOp &amp;&amp;op)</td></tr>
-<tr class="separator:a240e5497803a10955ff4670f458f8770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b1d65d08702bbdef317dcc7356c5c6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a1b1d65d08702bbdef317dcc7356c5c6a">popAndExec</a> ()</td></tr>
-<tr class="memdesc:a1b1d65d08702bbdef317dcc7356c5c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the next functor from the front of the queue and execute it.  <a href="#a1b1d65d08702bbdef317dcc7356c5c6a">More...</a><br /></td></tr>
-<tr class="separator:a1b1d65d08702bbdef317dcc7356c5c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab98d63c0a2d336d9b7de9e0688f61501"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#ab98d63c0a2d336d9b7de9e0688f61501">front</a> ()</td></tr>
-<tr class="memdesc:ab98d63c0a2d336d9b7de9e0688f61501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of the functor at the front of the queue.  <a href="#ab98d63c0a2d336d9b7de9e0688f61501">More...</a><br /></td></tr>
-<tr class="separator:ab98d63c0a2d336d9b7de9e0688f61501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a731d2f6656bdeceaf717a8111803c6fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a731d2f6656bdeceaf717a8111803c6fd">pop</a> ()</td></tr>
-<tr class="memdesc:a731d2f6656bdeceaf717a8111803c6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the element at the front of the queue.  <a href="#a731d2f6656bdeceaf717a8111803c6fd">More...</a><br /></td></tr>
-<tr class="separator:a731d2f6656bdeceaf717a8111803c6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af51be50cf161cc77b14b1defe6202d00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#af51be50cf161cc77b14b1defe6202d00">empty</a> () const</td></tr>
-<tr class="memdesc:af51be50cf161cc77b14b1defe6202d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the queue is empty.  <a href="#af51be50cf161cc77b14b1defe6202d00">More...</a><br /></td></tr>
-<tr class="separator:af51be50cf161cc77b14b1defe6202d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b2420fb691ad94032d0e719a361a210"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a0b2420fb691ad94032d0e719a361a210">size</a> () const</td></tr>
-<tr class="memdesc:a0b2420fb691ad94032d0e719a361a210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the current number of elements in the queue.  <a href="#a0b2420fb691ad94032d0e719a361a210">More...</a><br /></td></tr>
-<tr class="separator:a0b2420fb691ad94032d0e719a361a210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20ea7a9b167f768176a1fb9755a5a5b3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a20ea7a9b167f768176a1fb9755a5a5b3">capacity</a> ()</td></tr>
-<tr class="memdesc:a20ea7a9b167f768176a1fb9755a5a5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the capacity in elements.  <a href="#a20ea7a9b167f768176a1fb9755a5a5b3">More...</a><br /></td></tr>
-<tr class="separator:a20ea7a9b167f768176a1fb9755a5a5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6342972bdded4a8381d140e5a123df62"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a6342972bdded4a8381d140e5a123df62">capacity_bytes</a> ()</td></tr>
-<tr class="memdesc:a6342972bdded4a8381d140e5a123df62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total memory consumed by this queue in bytes.  <a href="#a6342972bdded4a8381d140e5a123df62">More...</a><br /></td></tr>
-<tr class="separator:a6342972bdded4a8381d140e5a123df62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b240436c483ac6ebce1a99da3fa2716"><td class="memTemplParams" colspan="2">template&lt;typename TFuncOp &gt; </td></tr>
+<tr class="memitem:a9b240436c483ac6ebce1a99da3fa2716"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a9b240436c483ac6ebce1a99da3fa2716">push</a> (const TFuncOp &amp;op) noexcept</td></tr>
+<tr class="memdesc:a9b240436c483ac6ebce1a99da3fa2716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a function to the queue.  <a href="#a9b240436c483ac6ebce1a99da3fa2716">More...</a><br /></td></tr>
+<tr class="separator:a9b240436c483ac6ebce1a99da3fa2716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fd8921dda6d1285377426a603a3d6b"><td class="memTemplParams" colspan="2">template&lt;typename TFuncOp &gt; </td></tr>
+<tr class="memitem:ad8fd8921dda6d1285377426a603a3d6b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#ad8fd8921dda6d1285377426a603a3d6b">push</a> (TFuncOp &amp;&amp;op) noexcept</td></tr>
+<tr class="separator:ad8fd8921dda6d1285377426a603a3d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74503bd66e5b25698437d1a9284c6187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a74503bd66e5b25698437d1a9284c6187">popAndExec</a> () noexcept</td></tr>
+<tr class="memdesc:a74503bd66e5b25698437d1a9284c6187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the next functor from the front of the queue and execute it.  <a href="#a74503bd66e5b25698437d1a9284c6187">More...</a><br /></td></tr>
+<tr class="separator:a74503bd66e5b25698437d1a9284c6187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b28387b888b42fdc78b3bdc8ba3744"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a33b28387b888b42fdc78b3bdc8ba3744">front</a> () noexcept</td></tr>
+<tr class="memdesc:a33b28387b888b42fdc78b3bdc8ba3744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of the functor at the front of the queue.  <a href="#a33b28387b888b42fdc78b3bdc8ba3744">More...</a><br /></td></tr>
+<tr class="separator:a33b28387b888b42fdc78b3bdc8ba3744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75df7f31f6e11c704fbac829eb45accd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a75df7f31f6e11c704fbac829eb45accd">pop</a> () noexcept</td></tr>
+<tr class="memdesc:a75df7f31f6e11c704fbac829eb45accd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the element at the front of the queue.  <a href="#a75df7f31f6e11c704fbac829eb45accd">More...</a><br /></td></tr>
+<tr class="separator:a75df7f31f6e11c704fbac829eb45accd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed8c5ecfc5bb180dc730c16b10d3830"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a1ed8c5ecfc5bb180dc730c16b10d3830">empty</a> () const noexcept</td></tr>
+<tr class="memdesc:a1ed8c5ecfc5bb180dc730c16b10d3830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the queue is empty.  <a href="#a1ed8c5ecfc5bb180dc730c16b10d3830">More...</a><br /></td></tr>
+<tr class="separator:a1ed8c5ecfc5bb180dc730c16b10d3830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aed6b1d605293891eac53ecff8c6dc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#a5aed6b1d605293891eac53ecff8c6dc5">size</a> () const noexcept</td></tr>
+<tr class="memdesc:a5aed6b1d605293891eac53ecff8c6dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the current number of elements in the queue.  <a href="#a5aed6b1d605293891eac53ecff8c6dc5">More...</a><br /></td></tr>
+<tr class="separator:a5aed6b1d605293891eac53ecff8c6dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acabcbbc32198cb967f1631b930ed9994"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#acabcbbc32198cb967f1631b930ed9994">capacity</a> () const noexcept</td></tr>
+<tr class="memdesc:acabcbbc32198cb967f1631b930ed9994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the capacity in elements.  <a href="#acabcbbc32198cb967f1631b930ed9994">More...</a><br /></td></tr>
+<tr class="separator:acabcbbc32198cb967f1631b930ed9994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb81165041ca746367e56f72be2f82ec"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#adb81165041ca746367e56f72be2f82ec">capacity_bytes</a> () const noexcept</td></tr>
+<tr class="memdesc:adb81165041ca746367e56f72be2f82ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total memory consumed by this queue in bytes.  <a href="#adb81165041ca746367e56f72be2f82ec">More...</a><br /></td></tr>
+<tr class="separator:adb81165041ca746367e56f72be2f82ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Types</h3></td></tr>
 <tr class="memitem:ac12dd6af95b67566bc76bb0f3ffc695f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/group___function_queue.html#ac12dd6af95b67566bc76bb0f3ffc695f">UniqueElementPtr_t</a> = typename std::unique_ptr&lt; <a class="el" href="../../d1/de1/group___function_queue.html#d6/d41/classembutil_1_1_func_op">FuncOp</a>, stdext::inplace_function&lt; void(<a class="el" href="../../d1/de1/group___function_queue.html#d6/d41/classembutil_1_1_func_op">FuncOp</a> *), 3 *sizeof(void *)&gt; &gt;</td></tr>
 <tr class="memdesc:ac12dd6af95b67566bc76bb0f3ffc695f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience alias for the unique pointer to the element We return functors to the client as a std::unique_ptr&lt;FuncOp&gt;.  <a href="#ac12dd6af95b67566bc76bb0f3ffc695f">More...</a><br /></td></tr>
@@ -592,7 +592,7 @@ class embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;<
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -619,7 +619,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -645,7 +645,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -673,7 +673,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -702,7 +702,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -731,7 +731,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -761,7 +761,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -786,13 +786,13 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 </div>
 </div>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="a20ea7a9b167f768176a1fb9755a5a5b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20ea7a9b167f768176a1fb9755a5a5b3">&#9670;&nbsp;</a></span>capacity()</h2>
+<a id="acabcbbc32198cb967f1631b930ed9994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acabcbbc32198cb967f1631b930ed9994">&#9670;&nbsp;</a></span>capacity()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -801,12 +801,12 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
           <td class="memname">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/de1/group___function_queue.html#db/d7b/classembutil_1_1_static_function_queue">embutil::StaticFunctionQueue</a>&lt; TQueueElements, TLargestSize, TFunc &gt;::capacity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -818,13 +818,13 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 
 </div>
 </div>
-<a id="a6342972bdded4a8381d140e5a123df62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6342972bdded4a8381d140e5a123df62">&#9670;&nbsp;</a></span>capacity_bytes()</h2>
+<a id="adb81165041ca746367e56f72be2f82ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb81165041ca746367e56f72be2f82ec">&#9670;&nbsp;</a></span>capacity_bytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -833,12 +833,12 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
           <td class="memname">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/de1/group___function_queue.html#db/d7b/classembutil_1_1_static_function_queue">embutil::StaticFunctionQueue</a>&lt; TQueueElements, TLargestSize, TFunc &gt;::capacity_bytes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -854,7 +854,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -879,17 +879,17 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 
 <p class="reference">References <a class="el" href="../../d1/de1/group___function_queue.html#a1b958ae9a3c68f4ef56f8e15dc9411ae">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::mem_pool_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/de1/group___function_queue.html#ab98d63c0a2d336d9b7de9e0688f61501">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::front()</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#a1b1d65d08702bbdef317dcc7356c5c6a">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::popAndExec()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/de1/group___function_queue.html#a33b28387b888b42fdc78b3bdc8ba3744">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::front()</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#a74503bd66e5b25698437d1a9284c6187">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::popAndExec()</a>.</p>
 
 </div>
 </div>
-<a id="af51be50cf161cc77b14b1defe6202d00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af51be50cf161cc77b14b1defe6202d00">&#9670;&nbsp;</a></span>empty()</h2>
+<a id="a1ed8c5ecfc5bb180dc730c16b10d3830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ed8c5ecfc5bb180dc730c16b10d3830">&#9670;&nbsp;</a></span>empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -903,7 +903,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -911,17 +911,17 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <p>Check if the queue is empty. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the queue is empty, false otherwise. </dd></dl>
 
-<p class="reference">References <a class="el" href="../../d1/de1/group___function_queue.html#a0b2420fb691ad94032d0e719a361a210">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/de1/group___function_queue.html#a5aed6b1d605293891eac53ecff8c6dc5">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::size()</a>.</p>
 
 </div>
 </div>
-<a id="ab98d63c0a2d336d9b7de9e0688f61501"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab98d63c0a2d336d9b7de9e0688f61501">&#9670;&nbsp;</a></span>front()</h2>
+<a id="a33b28387b888b42fdc78b3bdc8ba3744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33b28387b888b42fdc78b3bdc8ba3744">&#9670;&nbsp;</a></span>front()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -935,15 +935,15 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Get a copy of the functor at the front of the queue. </p>
-<p>For efficient queue usage, clients will want to get the element from the front of the queue, call <a class="el" href="../../d1/de1/group___function_queue.html#a731d2f6656bdeceaf717a8111803c6fd" title="Remove the element at the front of the queue.">pop()</a> to remove it from the queue, and then execute the function. This flow will ensure that the queue is not locked while the function is running (which happens with <a class="el" href="../../d1/de1/group___function_queue.html#a1b1d65d08702bbdef317dcc7356c5c6a" title="Remove the next functor from the front of the queue and execute it.">popAndExec()</a>).</p>
-<dl class="section note"><dt>Note</dt><dd>Because we have a std::unique_ptr, <a class="el" href="../../d1/de1/group___function_queue.html#ab98d63c0a2d336d9b7de9e0688f61501" title="Get a copy of the functor at the front of the queue.">front()</a> can only be called once per functor.</dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="../../d1/de1/group___function_queue.html#ab98d63c0a2d336d9b7de9e0688f61501" title="Get a copy of the functor at the front of the queue.">front()</a> has not been previously called for this element. </dd></dl>
+<p>For efficient queue usage, clients will want to get the element from the front of the queue, call <a class="el" href="../../d1/de1/group___function_queue.html#a75df7f31f6e11c704fbac829eb45accd" title="Remove the element at the front of the queue.">pop()</a> to remove it from the queue, and then execute the function. This flow will ensure that the queue is not locked while the function is running (which happens with <a class="el" href="../../d1/de1/group___function_queue.html#a74503bd66e5b25698437d1a9284c6187" title="Remove the next functor from the front of the queue and execute it.">popAndExec()</a>).</p>
+<dl class="section note"><dt>Note</dt><dd>Because we have a std::unique_ptr, <a class="el" href="../../d1/de1/group___function_queue.html#a33b28387b888b42fdc78b3bdc8ba3744" title="Get a copy of the functor at the front of the queue.">front()</a> can only be called once per functor.</dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><a class="el" href="../../d1/de1/group___function_queue.html#a33b28387b888b42fdc78b3bdc8ba3744" title="Get a copy of the functor at the front of the queue.">front()</a> has not been previously called for this element. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>a UniqueElementPtr_t to the functor at the front of the queue. Once the UniqueElementPtr_t goes out of scope, the function queue will recover the memory automatically. </dd></dl>
 
 <p class="reference">References <a class="el" href="../../d1/de1/group___function_queue.html#a0856bcf8afa066e9ff8483cc2bb1c0a1">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::deleter()</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#a30c3f1ecdc8f11c9e30ba1f0f3dccbb1">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::queue_</a>.</p>
@@ -956,7 +956,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -986,7 +986,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1010,13 +1010,13 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 
 </div>
 </div>
-<a id="a731d2f6656bdeceaf717a8111803c6fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a731d2f6656bdeceaf717a8111803c6fd">&#9670;&nbsp;</a></span>pop()</h2>
+<a id="a75df7f31f6e11c704fbac829eb45accd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75df7f31f6e11c704fbac829eb45accd">&#9670;&nbsp;</a></span>pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1030,7 +1030,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1043,13 +1043,13 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 
 </div>
 </div>
-<a id="a1b1d65d08702bbdef317dcc7356c5c6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b1d65d08702bbdef317dcc7356c5c6a">&#9670;&nbsp;</a></span>popAndExec()</h2>
+<a id="a74503bd66e5b25698437d1a9284c6187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74503bd66e5b25698437d1a9284c6187">&#9670;&nbsp;</a></span>popAndExec()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1063,7 +1063,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1074,13 +1074,13 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 
 </div>
 </div>
-<a id="ad9757d92bbfa3a1b1e74bf7fdafb9f0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9757d92bbfa3a1b1e74bf7fdafb9f0a">&#9670;&nbsp;</a></span>push() <span class="overload">[1/2]</span></h2>
+<a id="a9b240436c483ac6ebce1a99da3fa2716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b240436c483ac6ebce1a99da3fa2716">&#9670;&nbsp;</a></span>push() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename TFuncOp &gt; </div>
 <table class="mlabels">
@@ -1097,12 +1097,13 @@ template&lt;typename TFuncOp &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Add a function to the queue. </p>
+<p>This function is noexcept because we want our program to abort if we are out of memory. Depending on the underlying queue type, it is certainly likely that there is throw support.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TFuncOp</td><td>The type of the functor to add to the queue. This template parameter is automatically deduced by the compiler. </td></tr>
@@ -1116,17 +1117,17 @@ template&lt;typename TFuncOp &gt; </div>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d1/de1/group___function_queue.html#a1b958ae9a3c68f4ef56f8e15dc9411ae">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::mem_pool_</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#a30c3f1ecdc8f11c9e30ba1f0f3dccbb1">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::queue_</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d1/de1/group___function_queue.html#a1b958ae9a3c68f4ef56f8e15dc9411ae">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::mem_pool_</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#a30c3f1ecdc8f11c9e30ba1f0f3dccbb1">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::queue_</a>.</p>
 
 </div>
 </div>
-<a id="a240e5497803a10955ff4670f458f8770"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a240e5497803a10955ff4670f458f8770">&#9670;&nbsp;</a></span>push() <span class="overload">[2/2]</span></h2>
+<a id="ad8fd8921dda6d1285377426a603a3d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8fd8921dda6d1285377426a603a3d6b">&#9670;&nbsp;</a></span>push() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename TFuncOp &gt; </div>
 <table class="mlabels">
@@ -1143,23 +1144,23 @@ template&lt;typename TFuncOp &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d1/de1/group___function_queue.html#a1b958ae9a3c68f4ef56f8e15dc9411ae">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::mem_pool_</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#a30c3f1ecdc8f11c9e30ba1f0f3dccbb1">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::queue_</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d1/de1/group___function_queue.html#a1b958ae9a3c68f4ef56f8e15dc9411ae">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::mem_pool_</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#a30c3f1ecdc8f11c9e30ba1f0f3dccbb1">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::queue_</a>.</p>
 
 </div>
 </div>
-<a id="a0b2420fb691ad94032d0e719a361a210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b2420fb691ad94032d0e719a361a210">&#9670;&nbsp;</a></span>size()</h2>
+<a id="a5aed6b1d605293891eac53ecff8c6dc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aed6b1d605293891eac53ecff8c6dc5">&#9670;&nbsp;</a></span>size()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1173,7 +1174,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1183,7 +1184,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 
 <p class="reference">References <a class="el" href="../../d1/de1/group___function_queue.html#a30c3f1ecdc8f11c9e30ba1f0f3dccbb1">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::queue_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/de1/group___function_queue.html#af51be50cf161cc77b14b1defe6202d00">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::empty()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/de1/group___function_queue.html#a1ed8c5ecfc5bb180dc730c16b10d3830">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::empty()</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1195,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1212,7 +1213,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 
 <p>Memory storage for FuncElement types We utilize a memory pool to allocate <a class="el" href="../../d1/de1/group___function_queue.html#dd/d91/classembutil_1_1_func_op_bound" title="Represents a bound function object.">FuncOpBound</a> objects for storage. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/de1/group___function_queue.html#a0856bcf8afa066e9ff8483cc2bb1c0a1">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::deleter()</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#ad9757d92bbfa3a1b1e74bf7fdafb9f0a">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::push()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/de1/group___function_queue.html#a0856bcf8afa066e9ff8483cc2bb1c0a1">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::deleter()</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#a9b240436c483ac6ebce1a99da3fa2716">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::push()</a>.</p>
 
 </div>
 </div>
@@ -1222,7 +1223,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
+template&lt;const size_t TQueueElements, const size_t TLargestSize = DefaultStaticQueueLargestSize, typename TFunc  = stdext::inplace_function&lt;void()&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1240,7 +1241,7 @@ template&lt;const size_t TQueueElements, const size_t TLargestSize = 128, typena
 
 <p>Queue which stores function objects. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/de1/group___function_queue.html#a20ea7a9b167f768176a1fb9755a5a5b3">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::capacity()</a>, <a class="el" href="../../d1/de1/group___function_queue.html#ab98d63c0a2d336d9b7de9e0688f61501">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::front()</a>, <a class="el" href="../../d1/de1/group___function_queue.html#a731d2f6656bdeceaf717a8111803c6fd">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::pop()</a>, <a class="el" href="../../d1/de1/group___function_queue.html#a1b1d65d08702bbdef317dcc7356c5c6a">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::popAndExec()</a>, <a class="el" href="../../d1/de1/group___function_queue.html#ad9757d92bbfa3a1b1e74bf7fdafb9f0a">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::push()</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#a0b2420fb691ad94032d0e719a361a210">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::size()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/de1/group___function_queue.html#acabcbbc32198cb967f1631b930ed9994">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::capacity()</a>, <a class="el" href="../../d1/de1/group___function_queue.html#a33b28387b888b42fdc78b3bdc8ba3744">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::front()</a>, <a class="el" href="../../d1/de1/group___function_queue.html#a75df7f31f6e11c704fbac829eb45accd">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::pop()</a>, <a class="el" href="../../d1/de1/group___function_queue.html#a74503bd66e5b25698437d1a9284c6187">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::popAndExec()</a>, <a class="el" href="../../d1/de1/group___function_queue.html#a9b240436c483ac6ebce1a99da3fa2716">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::push()</a>, and <a class="el" href="../../d1/de1/group___function_queue.html#a5aed6b1d605293891eac53ecff8c6dc5">embutil::StaticFunctionQueue&lt; TQueueElements, TLargestSize, TFunc &gt;::size()</a>.</p>
 
 </div>
 </div>

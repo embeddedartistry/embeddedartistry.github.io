@@ -13,7 +13,7 @@ var searchData=
   ['libm_2dtest_2ec',['libm-test.c',['../d3/d37/libm-test_8c.html',1,'']]],
   ['license_2emd',['LICENSE.md',['../da/de1/stdlibs_2libc_2openlibm_2_l_i_c_e_n_s_e_8md.html',1,'(Global Namespace)'],['../d5/d5e/utilities_2modm_2_l_i_c_e_n_s_e_8md.html',1,'(Global Namespace)']]],
   ['licenses_2emd',['LICENSES.md',['../dd/d25/_l_i_c_e_n_s_e_s_8md.html',1,'']]],
-  ['limits_2eh',['limits.h',['../d9/d86/limits_8h.html',1,'']]],
+  ['limits_2eh',['limits.h',['../de/d3b/include_2limits_8h.html',1,'(Global Namespace)'],['../dc/db3/openlibm_2wasm32_2limits_8h.html',1,'(Global Namespace)']]],
   ['ll_2eh',['ll.h',['../d6/d91/ll_8h.html',1,'']]],
   ['llabs_2ec',['llabs.c',['../de/d10/src_2stdlib_2llabs_8c.html',1,'(Global Namespace)'],['../d4/d4f/test_2stdlib_2llabs_8c.html',1,'(Global Namespace)']]],
   ['lldiv_2ec',['lldiv.c',['../d2/d19/src_2stdlib_2lldiv_8c.html',1,'(Global Namespace)'],['../d1/d12/test_2stdlib_2lldiv_8c.html',1,'(Global Namespace)']]],

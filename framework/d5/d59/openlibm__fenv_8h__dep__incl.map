@@ -1,21 +1,22 @@
 <map id="src/stdlibs/libc/openlibm/include/openlibm_fenv.h" name="src/stdlibs/libc/openlibm/include/openlibm_fenv.h">
-<area shape="rect" id="node1" title=" " alt="" coords="6839,5,7007,44"/>
+<area shape="rect" id="node1" title=" " alt="" coords="6886,5,7053,44"/>
 <area shape="rect" id="node2" href="$df/db1/math_8h.html" title=" " alt="" coords="2838,92,2989,131"/>
-<area shape="rect" id="node54" href="$df/de3/aarch64_2fenv_8c.html" title=" " alt="" coords="5628,92,5791,131"/>
-<area shape="rect" id="node55" href="$db/d3d/amd64_2fenv_8c.html" title=" " alt="" coords="5815,92,5977,131"/>
-<area shape="rect" id="node56" href="$d2/d7c/arm_2fenv_8c.html" title=" " alt="" coords="6002,92,6164,131"/>
-<area shape="rect" id="node57" href="$d6/d27/i387_2fenv_8c.html" title=" " alt="" coords="6188,92,6351,131"/>
-<area shape="rect" id="node58" href="$dd/d4a/openlibm_8h.html" title=" " alt="" coords="6375,92,6537,131"/>
-<area shape="rect" id="node62" href="$d9/db9/mips_2fenv_8c.html" title=" " alt="" coords="6562,92,6724,131"/>
-<area shape="rect" id="node63" href="$dc/d61/powerpc_2fenv_8c.html" title=" " alt="" coords="6748,92,6911,131"/>
-<area shape="rect" id="node64" href="$d3/d46/e__sqrtl_8c.html" title=" " alt="" coords="6935,92,7097,131"/>
-<area shape="rect" id="node65" href="$d2/d93/s__fma_8c.html" title=" " alt="" coords="7122,92,7284,131"/>
-<area shape="rect" id="node66" href="$df/d4c/s__fmaf_8c.html" title=" " alt="" coords="7308,92,7471,131"/>
-<area shape="rect" id="node67" href="$d6/d52/s__fmal_8c.html" title=" " alt="" coords="7495,92,7657,131"/>
-<area shape="rect" id="node68" href="$da/d48/s__lrint_8c.html" title=" " alt="" coords="7682,92,7844,131"/>
-<area shape="rect" id="node74" href="$df/d17/s__lround_8c.html" title=" " alt="" coords="8055,92,8217,131"/>
-<area shape="rect" id="node80" href="$db/d30/s__nearbyint_8c.html" title=" " alt="" coords="8242,92,8404,131"/>
-<area shape="rect" id="node81" href="$d9/d4e/s__rintl_8c.html" title=" " alt="" coords="8428,92,8591,131"/>
+<area shape="rect" id="node54" href="$df/de3/aarch64_2fenv_8c.html" title=" " alt="" coords="5582,92,5744,131"/>
+<area shape="rect" id="node55" href="$db/d3d/amd64_2fenv_8c.html" title=" " alt="" coords="5768,92,5931,131"/>
+<area shape="rect" id="node56" href="$d2/d7c/arm_2fenv_8c.html" title=" " alt="" coords="5955,92,6117,131"/>
+<area shape="rect" id="node57" href="$d6/d27/i387_2fenv_8c.html" title=" " alt="" coords="6142,92,6304,131"/>
+<area shape="rect" id="node58" href="$dd/d4a/openlibm_8h.html" title=" " alt="" coords="6328,92,6491,131"/>
+<area shape="rect" id="node62" href="$d9/db9/mips_2fenv_8c.html" title=" " alt="" coords="6515,92,6677,131"/>
+<area shape="rect" id="node63" href="$dc/d61/powerpc_2fenv_8c.html" title=" " alt="" coords="6702,92,6864,131"/>
+<area shape="rect" id="node64" href="$de/d2b/s390_2fenv_8c.html" title=" " alt="" coords="6888,92,7051,131"/>
+<area shape="rect" id="node65" href="$d3/d46/e__sqrtl_8c.html" title=" " alt="" coords="7075,92,7237,131"/>
+<area shape="rect" id="node66" href="$d2/d93/s__fma_8c.html" title=" " alt="" coords="7262,92,7424,131"/>
+<area shape="rect" id="node67" href="$df/d4c/s__fmaf_8c.html" title=" " alt="" coords="7448,92,7611,131"/>
+<area shape="rect" id="node68" href="$d6/d52/s__fmal_8c.html" title=" " alt="" coords="7635,92,7797,131"/>
+<area shape="rect" id="node69" href="$da/d48/s__lrint_8c.html" title=" " alt="" coords="7822,92,7984,131"/>
+<area shape="rect" id="node75" href="$df/d17/s__lround_8c.html" title=" " alt="" coords="8195,92,8357,131"/>
+<area shape="rect" id="node81" href="$db/d30/s__nearbyint_8c.html" title=" " alt="" coords="8382,92,8544,131"/>
+<area shape="rect" id="node82" href="$d9/d4e/s__rintl_8c.html" title=" " alt="" coords="8568,92,8731,131"/>
 <area shape="rect" id="node3" href="$d8/d00/inf__torture_8c.html" title=" " alt="" coords="2366,179,2528,217"/>
 <area shape="rect" id="node4" href="$d4/d03/libm-bench_8cpp.html" title=" " alt="" coords="2552,179,2715,217"/>
 <area shape="rect" id="node5" href="$dc/d6c/test__suite_8cpp.html" title=" " alt="" coords="2738,179,2876,217"/>
@@ -70,14 +71,14 @@
 <area shape="rect" id="node59" href="$d3/d37/libm-test_8c.html" title=" " alt="" coords="6608,179,6771,217"/>
 <area shape="rect" id="node60" href="$df/d55/test-double_8c.html" title=" " alt="" coords="6608,265,6771,304"/>
 <area shape="rect" id="node61" href="$d5/dee/test-float_8c.html" title=" " alt="" coords="6795,265,6957,304"/>
-<area shape="rect" id="node69" href="$d4/d33/s__llrint_8c.html" title=" " alt="" coords="7215,179,7377,217"/>
-<area shape="rect" id="node70" href="$de/d55/s__llrintf_8c.html" title=" " alt="" coords="7402,179,7564,217"/>
-<area shape="rect" id="node71" href="$d4/d8d/s__llrintl_8c.html" title=" " alt="" coords="7588,179,7751,217"/>
-<area shape="rect" id="node72" href="$da/d75/s__lrintf_8c.html" title=" " alt="" coords="7775,179,7937,217"/>
-<area shape="rect" id="node73" href="$d6/d73/s__lrintl_8c.html" title=" " alt="" coords="7028,179,7191,217"/>
-<area shape="rect" id="node75" href="$da/dc4/s__llround_8c.html" title=" " alt="" coords="8148,179,8311,217"/>
-<area shape="rect" id="node76" href="$d7/d95/s__llroundf_8c.html" title=" " alt="" coords="8335,179,8497,217"/>
-<area shape="rect" id="node77" href="$d9/d1d/s__llroundl_8c.html" title=" " alt="" coords="8522,179,8684,217"/>
-<area shape="rect" id="node78" href="$d8/d85/s__lroundf_8c.html" title=" " alt="" coords="8708,179,8871,217"/>
-<area shape="rect" id="node79" href="$d8/d14/s__lroundl_8c.html" title=" " alt="" coords="7962,179,8124,217"/>
+<area shape="rect" id="node70" href="$d4/d33/s__llrint_8c.html" title=" " alt="" coords="7355,179,7517,217"/>
+<area shape="rect" id="node71" href="$de/d55/s__llrintf_8c.html" title=" " alt="" coords="7542,179,7704,217"/>
+<area shape="rect" id="node72" href="$d4/d8d/s__llrintl_8c.html" title=" " alt="" coords="7728,179,7891,217"/>
+<area shape="rect" id="node73" href="$da/d75/s__lrintf_8c.html" title=" " alt="" coords="7915,179,8077,217"/>
+<area shape="rect" id="node74" href="$d6/d73/s__lrintl_8c.html" title=" " alt="" coords="7168,179,7331,217"/>
+<area shape="rect" id="node76" href="$da/dc4/s__llround_8c.html" title=" " alt="" coords="8288,179,8451,217"/>
+<area shape="rect" id="node77" href="$d7/d95/s__llroundf_8c.html" title=" " alt="" coords="8475,179,8637,217"/>
+<area shape="rect" id="node78" href="$d9/d1d/s__llroundl_8c.html" title=" " alt="" coords="8662,179,8824,217"/>
+<area shape="rect" id="node79" href="$d8/d85/s__lroundf_8c.html" title=" " alt="" coords="8848,179,9011,217"/>
+<area shape="rect" id="node80" href="$d8/d14/s__lroundl_8c.html" title=" " alt="" coords="8102,179,8264,217"/>
 </map>

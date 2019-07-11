@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Embedded Artistry Framework: src/utilities/csbrm/csbrm.hpp File Reference</title>
+<title>Embedded Artistry Framework: src/utilities/sbrm/csbrm.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_7b5d38f1875f1b693f62ca6a108a1129.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_c13cb258f45bf8f867a1494d19ac2da8.html">csbrm</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_7b5d38f1875f1b693f62ca6a108a1129.html">utilities</a></li><li class="navelem"><a class="el" href="../../dir_04da35fa82cb7eca4fa74102ec99efc6.html">sbrm</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,10 +77,10 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for csbrm.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../d6/d87/csbrm_8hpp__incl.jpg" border="0" usemap="#src_2utilities_2csbrm_2csbrm_8hpp" alt=""/></div>
-<map name="src_2utilities_2csbrm_2csbrm_8hpp" id="src_2utilities_2csbrm_2csbrm_8hpp">
-<area shape="rect"  title=" " alt="" coords="5,5,129,44"/>
-<area shape="rect"  title=" " alt="" coords="32,92,102,117"/>
+<div class="center"><img src="../../d6/d87/csbrm_8hpp__incl.jpg" border="0" usemap="#src_2utilities_2sbrm_2csbrm_8hpp" alt=""/></div>
+<map name="src_2utilities_2sbrm_2csbrm_8hpp" id="src_2utilities_2sbrm_2csbrm_8hpp">
+<area shape="rect"  title=" " alt="" coords="5,5,122,44"/>
+<area shape="rect"  title=" " alt="" coords="29,92,99,117"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -92,14 +92,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typename... Args&gt; </td></tr>
-<tr class="memitem:ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>, ReleaseFunc &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9">embutil::unique_resource</a> (AcquisitionFunc acquire, ReleaseFunc release, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant).  <a href="../../d5/d7b/group___s_b_r_m.html#ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9">More...</a><br /></td></tr>
-<tr class="separator:ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f715bd30e54d8a578335b9f23f7e1c7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typename... Args&gt; </td></tr>
-<tr class="memitem:ga8f715bd30e54d8a578335b9f23f7e1c7"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga8f715bd30e54d8a578335b9f23f7e1c7">embutil::shared_resource</a> (AcquisitionFunc acquire, ReleaseFunc release, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:ga8f715bd30e54d8a578335b9f23f7e1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant).  <a href="../../d5/d7b/group___s_b_r_m.html#ga8f715bd30e54d8a578335b9f23f7e1c7">More...</a><br /></td></tr>
-<tr class="separator:ga8f715bd30e54d8a578335b9f23f7e1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49df65ef7183a769e766d62dd3b4ac7f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typename... Args&gt; </td></tr>
+<tr class="memitem:ga49df65ef7183a769e766d62dd3b4ac7f"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>, ReleaseFunc &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga49df65ef7183a769e766d62dd3b4ac7f">embutil::unique_resource</a> (AcquisitionFunc acquire, ReleaseFunc release, Args &amp;&amp;... args) noexcept</td></tr>
+<tr class="memdesc:ga49df65ef7183a769e766d62dd3b4ac7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant).  <a href="../../d5/d7b/group___s_b_r_m.html#ga49df65ef7183a769e766d62dd3b4ac7f">More...</a><br /></td></tr>
+<tr class="separator:ga49df65ef7183a769e766d62dd3b4ac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23babf64ce31a9ed7daa8b86c47d3095"><td class="memTemplParams" colspan="2">template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typename... Args&gt; </td></tr>
+<tr class="memitem:ga23babf64ce31a9ed7daa8b86c47d3095"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga23babf64ce31a9ed7daa8b86c47d3095">embutil::shared_resource</a> (AcquisitionFunc acquire, ReleaseFunc release, Args &amp;&amp;... args) noexcept</td></tr>
+<tr class="memdesc:ga23babf64ce31a9ed7daa8b86c47d3095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant).  <a href="../../d5/d7b/group___s_b_r_m.html#ga23babf64ce31a9ed7daa8b86c47d3095">More...</a><br /></td></tr>
+<tr class="separator:ga23babf64ce31a9ed7daa8b86c47d3095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

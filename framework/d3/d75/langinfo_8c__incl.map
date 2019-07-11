@@ -1,11 +1,11 @@
 <map id="src/stdlibs/libc/src/locale/langinfo.c" name="src/stdlibs/libc/src/locale/langinfo.c">
 <area shape="rect" id="node1" title=" " alt="" coords="335,5,461,44"/>
-<area shape="rect" id="node2" href="$dc/da7/assert_8h.html" title=" " alt="" coords="219,92,287,117"/>
+<area shape="rect" id="node2" href="$d1/da3/include_2assert_8h.html" title=" " alt="" coords="219,92,287,117"/>
 <area shape="rect" id="node3" href="$d1/d80/langinfo_8h.html" title=" " alt="" coords="311,92,390,117"/>
 <area shape="rect" id="node5" href="$db/d9f/locale_8h.html" title=" " alt="" coords="414,92,481,117"/>
-<area shape="rect" id="node6" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="888,92,952,117"/>
+<area shape="rect" id="node6" href="$dc/d69/include_2stdint_8h.html" title=" " alt="" coords="888,92,952,117"/>
 <area shape="rect" id="node4" href="$d0/d2a/nl__types_8h.html" title=" " alt="" coords="5,165,87,191"/>
-<area shape="rect" id="node7" href="$d9/d86/limits_8h.html" title=" " alt="" coords="111,165,174,191"/>
+<area shape="rect" id="node7" href="$de/d3b/include_2limits_8h.html" title=" " alt="" coords="111,165,174,191"/>
 <area shape="rect" id="node9" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="198,165,321,191"/>
 <area shape="rect" id="node10" href="$da/d57/x86__64_2include_2__types_2__int32__t_8h.html" title=" " alt="" coords="345,165,468,191"/>
 <area shape="rect" id="node11" href="$d5/d63/x86__64_2include_2__types_2__int64__t_8h.html" title=" " alt="" coords="492,165,615,191"/>

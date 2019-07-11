@@ -1,8 +1,8 @@
 <map id="src/stdlibs/libc/openlibm/amd64/bsd_fpu.h" name="src/stdlibs/libc/openlibm/amd64/bsd_fpu.h">
 <area shape="rect" id="node1" title=" " alt="" coords="387,5,550,44"/>
 <area shape="rect" id="node2" href="$d0/dcb/types-compat_8h.html" title=" " alt="" coords="412,92,525,117"/>
-<area shape="rect" id="node3" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="786,165,850,191"/>
-<area shape="rect" id="node4" href="$d9/d86/limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
+<area shape="rect" id="node3" href="$dc/d69/include_2stdint_8h.html" title=" " alt="" coords="786,165,850,191"/>
+<area shape="rect" id="node4" href="$de/d3b/include_2limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
 <area shape="rect" id="node6" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="96,239,219,264"/>
 <area shape="rect" id="node7" href="$da/d57/x86__64_2include_2__types_2__int32__t_8h.html" title=" " alt="" coords="243,239,366,264"/>
 <area shape="rect" id="node8" href="$d5/d63/x86__64_2include_2__types_2__int64__t_8h.html" title=" " alt="" coords="390,239,513,264"/>

@@ -1,8 +1,8 @@
 <map id="src/stdlibs/libc/src/string/strspn.c" name="src/stdlibs/libc/src/string/strspn.c">
 <area shape="rect" id="node1" title=" " alt="" coords="944,5,1070,44"/>
-<area shape="rect" id="node2" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="940,165,1005,191"/>
+<area shape="rect" id="node2" href="$dc/d69/include_2stdint_8h.html" title=" " alt="" coords="940,165,1005,191"/>
 <area shape="rect" id="node17" href="$da/d66/string_8h.html" title=" " alt="" coords="1009,92,1074,117"/>
-<area shape="rect" id="node3" href="$d9/d86/limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
+<area shape="rect" id="node3" href="$de/d3b/include_2limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
 <area shape="rect" id="node5" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="96,239,219,264"/>
 <area shape="rect" id="node6" href="$da/d57/x86__64_2include_2__types_2__int32__t_8h.html" title=" " alt="" coords="243,239,366,264"/>
 <area shape="rect" id="node7" href="$d5/d63/x86__64_2include_2__types_2__int64__t_8h.html" title=" " alt="" coords="390,239,513,264"/>

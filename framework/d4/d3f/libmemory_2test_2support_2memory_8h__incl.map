@@ -1,9 +1,9 @@
 <map id="src/stdlibs/libmemory/test/support/memory.h" name="src/stdlibs/libmemory/test/support/memory.h">
 <area shape="rect" id="node1" title=" " alt="" coords="1393,5,1549,44"/>
-<area shape="rect" id="node2" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="940,92,1005,117"/>
+<area shape="rect" id="node2" href="$dc/d69/include_2stdint_8h.html" title=" " alt="" coords="940,92,1005,117"/>
 <area shape="rect" id="node17" href="$d9/d5e/stdbool_8h.html" title=" " alt="" coords="1433,92,1509,117"/>
 <area shape="rect" id="node18" href="$d3/dce/stddef_8h.html" title=" " alt="" coords="1938,92,2007,117"/>
-<area shape="rect" id="node3" href="$d9/d86/limits_8h.html" title=" " alt="" coords="9,165,72,191"/>
+<area shape="rect" id="node3" href="$de/d3b/include_2limits_8h.html" title=" " alt="" coords="9,165,72,191"/>
 <area shape="rect" id="node5" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="96,165,219,191"/>
 <area shape="rect" id="node6" href="$da/d57/x86__64_2include_2__types_2__int32__t_8h.html" title=" " alt="" coords="243,165,366,191"/>
 <area shape="rect" id="node7" href="$d5/d63/x86__64_2include_2__types_2__int64__t_8h.html" title=" " alt="" coords="390,165,513,191"/>

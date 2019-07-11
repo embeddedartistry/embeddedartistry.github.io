@@ -1,6 +1,26 @@
 var searchData=
 [
-  ['op_5ft',['op_t',['../d9/d8e/namespaceembvm_1_1i2c.html#de/d72/structembvm_1_1i2c_1_1op__t',1,'embvm::i2c::op_t'],['../d4/d68/namespaceembvm_1_1spi.html#d5/d30/structembvm_1_1spi_1_1op__t',1,'embvm::spi::op_t']]],
-  ['out_5ffct_5fwrap_5ftype',['out_fct_wrap_type',['../d9/db5/structout__fct__wrap__type.html',1,'out_fct_wrap_type'],['../d5/dc7/structtest_1_1out__fct__wrap__type.html',1,'test::out_fct_wrap_type']]],
-  ['output',['output',['../d9/d02/classembvm_1_1gpio_1_1output.html',1,'embvm::gpio']]]
+  ['nop_5flock',['nop_lock',['../d7/db0/classembutil_1_1nop__lock.html',1,'embutil']]],
+  ['nordicnvic',['NordicNVIC',['../d7/dc9/class_nordic_n_v_i_c.html',1,'']]],
+  ['nrf51i2cmaster_5fblocking',['nRF51i2cMaster_Blocking',['../d1/d85/classn_r_f51i2c_master___blocking.html',1,'']]],
+  ['nrf52840',['nRF52840',['../d0/d12/classn_r_f52840.html',1,'']]],
+  ['nrf52dk_5fframeworkdemoplatform',['nRF52DK_FrameworkDemoPlatform',['../de/dfa/classn_r_f52_d_k___framework_demo_platform.html',1,'']]],
+  ['nrf52dkhwplatform',['NRF52DKHWPlatform',['../de/d3c/class_n_r_f52_d_k_h_w_platform.html',1,'']]],
+  ['nrf52donglehwplatform',['NRF52DongleHWPlatform',['../d0/d85/class_n_r_f52_dongle_h_w_platform.html',1,'']]],
+  ['nrfgpiooutput',['nRFGPIOOutput',['../d4/dfa/classn_r_f_g_p_i_o_output.html',1,'']]],
+  ['nrfgpiooutput_3c_200_2c_2012_20_3e',['nRFGPIOOutput&lt; 0, 12 &gt;',['../d4/dfa/classn_r_f_g_p_i_o_output.html',1,'']]],
+  ['nrfgpiooutput_3c_200_2c_2013_20_3e',['nRFGPIOOutput&lt; 0, 13 &gt;',['../d4/dfa/classn_r_f_g_p_i_o_output.html',1,'']]],
+  ['nrfgpiooutput_3c_200_2c_2014_20_3e',['nRFGPIOOutput&lt; 0, 14 &gt;',['../d4/dfa/classn_r_f_g_p_i_o_output.html',1,'']]],
+  ['nrfgpiooutput_3c_200_2c_2015_20_3e',['nRFGPIOOutput&lt; 0, 15 &gt;',['../d4/dfa/classn_r_f_g_p_i_o_output.html',1,'']]],
+  ['nrfgpiooutput_3c_200_2c_2016_20_3e',['nRFGPIOOutput&lt; 0, 16 &gt;',['../d4/dfa/classn_r_f_g_p_i_o_output.html',1,'']]],
+  ['nrfgpiooutput_3c_200_2c_206_20_3e',['nRFGPIOOutput&lt; 0, 6 &gt;',['../d4/dfa/classn_r_f_g_p_i_o_output.html',1,'']]],
+  ['nrfgpiooutput_3c_200_2c_208_20_3e',['nRFGPIOOutput&lt; 0, 8 &gt;',['../d4/dfa/classn_r_f_g_p_i_o_output.html',1,'']]],
+  ['nrfgpiooutput_3c_201_2c_209_20_3e',['nRFGPIOOutput&lt; 1, 9 &gt;',['../d4/dfa/classn_r_f_g_p_i_o_output.html',1,'']]],
+  ['nrfgpiotranslator',['nRFGPIOTranslator',['../db/df8/classn_r_f_g_p_i_o_translator.html',1,'']]],
+  ['nrfi2cmaster',['nRFi2cMaster',['../dd/dd6/classn_r_fi2c_master.html',1,'']]],
+  ['nrfi2cmaster_3c_20nordictwim0_2c_20nrfpinid_3c_200_2c_2027_20_3e_2c_20nrfpinid_3c_200_2c_2026_20_3e_20_3e',['nRFi2cMaster&lt; NordicTWIM0, nRFPinID&lt; 0, 27 &gt;, nRFPinID&lt; 0, 26 &gt; &gt;',['../dd/dd6/classn_r_fi2c_master.html',1,'']]],
+  ['nrfpinid',['nRFPinID',['../da/df8/classn_r_f_pin_i_d.html',1,'']]],
+  ['nrftwimtranslator',['nRFTWIMTranslator',['../d2/dea/classn_r_f_t_w_i_m_translator.html',1,'']]],
+  ['nrftwitranslator',['nRFTWITranslator',['../dd/dc5/classn_r_f_t_w_i_translator.html',1,'']]],
+  ['nviccontrol',['NVICControl',['../d2/d0c/class_n_v_i_c_control.html',1,'']]]
 ];

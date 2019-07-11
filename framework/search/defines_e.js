@@ -2,6 +2,7 @@ var searchData=
 [
   ['offsetof',['offsetof',['../d3/dce/stddef_8h.html#afd049f7ad59dbe455f460807475c2841',1,'offsetof():&#160;test_suite.cpp'],['../dc/d6c/test__suite_8cpp.html#afd049f7ad59dbe455f460807475c2841',1,'offsetof():&#160;test_suite.cpp']]],
   ['olm_5fdllexport',['OLM_DLLEXPORT',['../dd/d60/openlibm__math_8h.html#a1f74bd5115955e86bc1032b0ba55be3e',1,'OLM_DLLEXPORT():&#160;openlibm_math.h'],['../d2/dbf/math__private_8h.html#a1f74bd5115955e86bc1032b0ba55be3e',1,'OLM_DLLEXPORT():&#160;math_private.h']]],
+  ['olm_5flong_5fdouble',['OLM_LONG_DOUBLE',['../dd/d60/openlibm__math_8h.html#a159941cb8ad32a4d5ef08c55ff0d96be',1,'openlibm_math.h']]],
   ['one',['one',['../d3/d0d/k__tan_8c.html#a7cf126dbeb6f30c606e3b42fea65cfef',1,'k_tan.c']]],
   ['ones',['ONES',['../d9/dd9/memchr_8c.html#a55ead18ae83ed081acdd195a593d0bc3',1,'ONES():&#160;memchr.c'],['../d3/d56/strchrnul_8c.html#a55ead18ae83ed081acdd195a593d0bc3',1,'ONES():&#160;strchrnul.c']]],
   ['openlibm_5fcomplex_5fh',['OPENLIBM_COMPLEX_H',['../d4/d66/openlibm__complex_8h.html#a423619494f2920abdcf3d88957e1a8e2',1,'openlibm_complex.h']]],

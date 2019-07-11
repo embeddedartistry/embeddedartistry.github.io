@@ -99,6 +99,8 @@ Variables</h2></td></tr>
 <tr class="memitem:a952aea77487ddd18b0df60988325531b"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a952aea77487ddd18b0df60988325531b">abort_program_</a> = <a class="el" href="../../dc/d6c/test__suite_8cpp.html#a65e9886d74aaee76545e83dd09011727">false</a></td></tr>
 <tr class="memdesc:a952aea77487ddd18b0df60988325531b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal variable to exit the <a class="el" href="../../d7/d8e/blinky_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a> loop Declared in main.c, set in Sim Platform's boot.cpp using std::signal.  <a href="#a952aea77487ddd18b0df60988325531b">More...</a><br /></td></tr>
 <tr class="separator:a952aea77487ddd18b0df60988325531b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e9f2dac7cee906ff9278a53442473d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#af6e9f2dac7cee906ff9278a53442473d">DEFAULT_TOF_READ_DELAY</a> = std::chrono::milliseconds(500)</td></tr>
+<tr class="separator:af6e9f2dac7cee906ff9278a53442473d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -117,7 +119,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../df/d0a/main_8cpp.html#a952aea77487ddd18b0df60988325531b">abort_program_</a>, <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d3/de7/group___framework_platform.html#a9f7d2ee25193cd4eeb167d68381d01e2">embvm::VirtualPlatformBase&lt; BlinkyDemoPlatform&lt; THWPlatform, TDriverRegistry &gt;, TDriverRegistry &gt;::inst()</a>, <a class="el" href="../../dd/d45/group___logging_subsystem.html#ga2e818b40d6d2375ce17edf9e4c1577df">logdebug</a>, <a class="el" href="../../d3/d6b/printf_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>, <a class="el" href="../../d9/d2d/namespaceembvm_1_1this__thread.html#a79ba5b604039b8a8930ff4cc3ecc2628">embvm::this_thread::sleep_for()</a>, and <a class="el" href="../../d4/d96/test_2stdlib_2atof_8c.html#a02afd118ac068d38a901d1b848528e55">t</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d0a/main_8cpp.html#a952aea77487ddd18b0df60988325531b">abort_program_</a>, <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../df/d0a/main_8cpp.html#af6e9f2dac7cee906ff9278a53442473d">DEFAULT_TOF_READ_DELAY</a>, <a class="el" href="../../d3/de7/group___framework_platform.html#aa00eca9eccb3b417707e4250b36c416c">embvm::VirtualPlatformBase&lt; BlinkyDemoPlatform&lt; THWPlatform, TDriverRegistry &gt;, TDriverRegistry &gt;::inst()</a>, <a class="el" href="../../dd/d45/group___logging_subsystem.html#ga2e818b40d6d2375ce17edf9e4c1577df">logdebug</a>, <a class="el" href="../../d3/d6b/printf_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>, <a class="el" href="../../d9/d2d/namespaceembvm_1_1this__thread.html#ae31943fd178f8f0b0072ea4a40e15bdb">embvm::this_thread::sleep_for()</a>, and <a class="el" href="../../d4/d96/test_2stdlib_2atof_8c.html#a41ea810237375d5dce2818269ca36a05">t</a>.</p>
 
 </div>
 </div>
@@ -135,6 +137,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Signal variable to exit the <a class="el" href="../../d7/d8e/blinky_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a> loop Declared in main.c, set in Sim Platform's boot.cpp using std::signal. </p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+
+</div>
+</div>
+<a id="af6e9f2dac7cee906ff9278a53442473d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e9f2dac7cee906ff9278a53442473d">&#9670;&nbsp;</a></span>DEFAULT_TOF_READ_DELAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto DEFAULT_TOF_READ_DELAY = std::chrono::milliseconds(500)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 <p class="reference">Referenced by <a class="el" href="../../df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
 

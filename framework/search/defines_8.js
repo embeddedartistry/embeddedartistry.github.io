@@ -19,7 +19,7 @@ var searchData=
   ['htole32',['htole32',['../d1/d84/endian_8h.html#a9bea1e76e277f13ae39ac86095510bfa',1,'endian.h']]],
   ['htole64',['htole64',['../d1/d84/endian_8h.html#a3070a5f8867dbc37bdafcb1a7cd491bf',1,'endian.h']]],
   ['htonl',['htonl',['../d1/d84/endian_8h.html#ae4027a6ad07f13aa12eab285a1b46019',1,'htonl():&#160;endian.h'],['../d1/d84/endian_8h.html#abd1249696a0fa7574b8a9f3e8a9e6e17',1,'HTONL():&#160;endian.h']]],
-  ['htonll',['HTONLL',['../d1/d84/endian_8h.html#a806795ac46f7f8b024b4d5686c74074f',1,'HTONLL():&#160;endian.h'],['../d1/d84/endian_8h.html#a9f4bf0773c45ad9a9753a1b784a13fbb',1,'htonll():&#160;endian.h']]],
+  ['htonll',['htonll',['../d1/d84/endian_8h.html#a9f4bf0773c45ad9a9753a1b784a13fbb',1,'htonll():&#160;endian.h'],['../d1/d84/endian_8h.html#a806795ac46f7f8b024b4d5686c74074f',1,'HTONLL():&#160;endian.h']]],
   ['htons',['htons',['../d1/d84/endian_8h.html#a51799f5ebb4c7228ef7e95c247030f42',1,'htons():&#160;endian.h'],['../d1/d84/endian_8h.html#a3f238b7fb42a7acac31b428c4d292188',1,'HTONS():&#160;endian.h']]],
   ['huge_5fval',['HUGE_VAL',['../dd/d60/openlibm__math_8h.html#af2164b2db92d8a0ed3838ad5c28db971',1,'openlibm_math.h']]],
   ['huge_5fvalf',['HUGE_VALF',['../dd/d60/openlibm__math_8h.html#acd69981d54c27fe0ff514645dbfc6359',1,'openlibm_math.h']]],

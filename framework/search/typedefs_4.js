@@ -6,7 +6,7 @@ var searchData=
   ['double_5ft',['double_t',['../df/db1/math_8h.html#ac340fde9f4743ef7a9398b79d7bea8bd',1,'math.h']]],
   ['drivertype_5ft',['DriverType_t',['../d1/dc2/group___framework_driver.html#gab080d1ffd9eaaddfe5cc7f59df79b915',1,'embvm']]],
   ['dynamicdispatchqueue',['DynamicDispatchQueue',['../d1/d15/group___dispatch_queue.html#gacab6e8043611db736ce6383bbd5cfc6a',1,'embutil']]],
-  ['dynamicdriverregistry',['DynamicDriverRegistry',['../d1/dc2/group___framework_driver.html#gab0c8065c354188cd662131f4be4c9c99',1,'embvm']]],
+  ['dynamicdriverregistry',['DynamicDriverRegistry',['../d1/dc2/group___framework_driver.html#ga44edd59911da5139ab42e8ac4481912c',1,'embvm']]],
   ['dynamiceventcenter',['DynamicEventCenter',['../d3/de7/group___framework_platform.html#ga91939cdc1bc42e38bec15acc303b18b4',1,'embvm']]],
   ['dynamicinstancelist',['DynamicInstanceList',['../d7/d8c/group___instance_list.html#ga44e77ccd5225d0224b6a23c316c5dbf3',1,'embutil']]]
 ];

@@ -73,10 +73,10 @@ $(function() {
 <div class="title">malloc_threadx.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../dc/da7/assert_8h.html">assert.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d1/da3/include_2assert_8h.html">assert.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d0/d4c/malloc_8h.html">malloc.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d9/d5e/stdbool_8h.html">stdbool.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../df/dd8/stdint_8h.html">stdint.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dc/d69/include_2stdint_8h.html">stdint.h</a>&gt;</code><br />
 <code>#include &lt;threadx/tx_api.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for malloc_threadx.c:</div>
@@ -84,9 +84,9 @@ Include dependency graph for malloc_threadx.c:</div>
 <div class="center"><img src="../../dc/dbc/malloc__threadx_8c__incl.jpg" border="0" usemap="#src_2stdlibs_2libmemory_2src_2malloc__threadx_8c" alt=""/></div>
 <map name="src_2stdlibs_2libmemory_2src_2malloc__threadx_8c" id="src_2stdlibs_2libmemory_2src_2malloc__threadx_8c">
 <area shape="rect"  title=" " alt="" coords="1086,5,1233,44"/>
-<area shape="rect"  href="../../dc/da7/assert_8h.html" title=" " alt="" coords="958,92,1027,117"/>
+<area shape="rect"  href="../../d1/da3/include_2assert_8h.html" title=" " alt="" coords="958,92,1027,117"/>
 <area shape="rect"  href="../../d0/d4c/malloc_8h.html" title=" " alt="" coords="1051,92,1122,117"/>
-<area shape="rect"  href="../../df/dd8/stdint_8h.html" title=" " alt="" coords="1231,239,1296,264"/>
+<area shape="rect"  href="../../dc/d69/include_2stdint_8h.html" title=" " alt="" coords="1231,239,1296,264"/>
 <area shape="rect"  href="../../d9/d5e/stdbool_8h.html" title=" " alt="" coords="1196,92,1272,117"/>
 <area shape="rect"  title=" " alt="" coords="1296,92,1412,117"/>
 <area shape="rect"  href="../../dc/d9c/stdlib_8h.html" title=" " alt="" coords="952,165,1015,191"/>
@@ -94,7 +94,7 @@ Include dependency graph for malloc_threadx.c:</div>
 <area shape="rect"  href="../../da/dcf/wctype_8h.html" title=" " alt="" coords="533,239,607,264"/>
 <area shape="rect"  href="../../de/d5d/x86__64_2include_2__types_2__ptrdiff__t_8h.html" title=" " alt="" coords="5,312,132,337"/>
 <area shape="rect"  href="../../d1/dbb/x86__64_2include_2__types_2__size__t_8h.html" title=" " alt="" coords="157,312,274,337"/>
-<area shape="rect"  href="../../d9/d86/limits_8h.html" title=" " alt="" coords="1972,312,2035,337"/>
+<area shape="rect"  href="../../de/d3b/include_2limits_8h.html" title=" " alt="" coords="1972,312,2035,337"/>
 <area shape="rect"  href="../../df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="2059,312,2182,337"/>
 <area shape="rect"  href="../../da/d57/x86__64_2include_2__types_2__int32__t_8h.html" title=" " alt="" coords="2206,312,2329,337"/>
 <area shape="rect"  href="../../d5/d63/x86__64_2include_2__types_2__int64__t_8h.html" title=" " alt="" coords="453,312,576,337"/>
@@ -175,7 +175,7 @@ Variables</h2></td></tr>
 <dd>
 <a class="el" href="../../dc/d9c/stdlib_8h.html#a7b3d8b7cea59b137b167878ec88eb8d6" title="Allocates memory for an array of given number objects of size and initializes all bytes in the alloca...">calloc</a>, </dd>
 <dd>
-<a class="el" href="../../dc/d9c/stdlib_8h.html#a1a6b5e8d2f1c37e5b43e4345586075be" title="Reallocates the given area of memory.">realloc</a>. If ptr is <a class="el" href="../../d4/d03/libm-bench_8cpp.html#a1459acff5521623150808315fbe1b76d">a</a> null pointer, the <a class="el" href="../../dc/da7/assert_8h.html#a39ce293f55fd7b157cfe94121b23f4eb">function</a> does nothing.</dd></dl>
+<a class="el" href="../../dc/d9c/stdlib_8h.html#a1a6b5e8d2f1c37e5b43e4345586075be" title="Reallocates the given area of memory.">realloc</a>. If ptr is <a class="el" href="../../d4/d03/libm-bench_8cpp.html#a1459acff5521623150808315fbe1b76d">a</a> null pointer, the <a class="el" href="../../d1/da3/include_2assert_8h.html#a39ce293f55fd7b157cfe94121b23f4eb">function</a> does nothing.</dd></dl>
 <p>The behavior is undefined if the value of ptr does not equal a value returned earlier by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc</a>, </dd>
 <dd>
 <a class="el" href="../../dc/d9c/stdlib_8h.html#a7b3d8b7cea59b137b167878ec88eb8d6" title="Allocates memory for an array of given number objects of size and initializes all bytes in the alloca...">calloc</a>, </dd>
@@ -191,55 +191,57 @@ Variables</h2></td></tr>
 </dl>
 <p>free should NEVER be called before malloc is init'd </p>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d0/d6b/malloc__threadx_8c.html#a154cee9e831e0cb610e68c0855a6d5c8">initialized_</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>, <a class="el" href="../../d7/d79/tx__api_8h.html#a15f2972d9d023b583d2a76956df215e5">tx_byte_release()</a>, and <a class="el" href="../../d7/d79/tx__api_8h.html#a380ecaa0581b9c44e69a85d3eac3d726">TX_SUCCESS</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d0/d6b/malloc__threadx_8c.html#a154cee9e831e0cb610e68c0855a6d5c8">initialized_</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>, <a class="el" href="../../d7/d79/tx__api_8h.html#a15f2972d9d023b583d2a76956df215e5">tx_byte_release()</a>, and <a class="el" href="../../d7/d79/tx__api_8h.html#a380ecaa0581b9c44e69a85d3eac3d726">TX_SUCCESS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d58/aai2c__eeprom_8c.html#aadfb20a470e821951d35d1b76162153c">_readMemory()</a>, <a class="el" href="../../d2/dfb/src_2aligned__malloc_8c.html#a274dd8714485eed9c9328973d44ec5dc">aligned_free()</a>, <a class="el" href="../../d4/d84/test_2stdlib_2calloc_8c.html#a8d565c0428f150760cd7bfa5adf831ab">calloc_test()</a>, <a class="el" href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a3f07f063fdf4dd8c60d7cc2d2352c0ca">char_test()</a>, <a class="el" href="../../d6/de0/src_2stdlib_2heapsort_8c.html#a2e21bd02f544c4431d9a3a197154bdc3">heapsort()</a>, <a class="el" href="../../d7/d7f/src_2stdlib_2heapsort__r_8c.html#ae452b57b75075261a70569e143de3fc8">heapsort_r()</a>, <a class="el" href="../../d3/d81/src_2stdlib_2realloc_8c.html#a1a6b5e8d2f1c37e5b43e4345586075be">realloc()</a>, <a class="el" href="../../d3/d81/src_2stdlib_2realloc_8c.html#a4a046ddd68dd117c794f1f52df5dad33">reallocf()</a>, <a class="el" href="../../de/dc1/test_2string_2strdup_8c.html#aa42ca8cbf8293b2681e973e7847a9873">strdup_test()</a>, <a class="el" href="../../d3/dc2/test_2string_2strndup_8c.html#ac66cec944eb825d7fe02a8dd5d249846">strndup_test()</a>, and <a class="el" href="../../d2/ddc/test_8h.html#a43f9478768d2eb5eff8e5ae815c47398">t_choose()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d58/aai2c__eeprom_8c.html#aadfb20a470e821951d35d1b76162153c">_readMemory()</a>, <a class="el" href="../../d2/dfb/src_2aligned__malloc_8c.html#a274dd8714485eed9c9328973d44ec5dc">aligned_free()</a>, <a class="el" href="../../d4/d84/test_2stdlib_2calloc_8c.html#a8d565c0428f150760cd7bfa5adf831ab">calloc_test()</a>, <a class="el" href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a3f07f063fdf4dd8c60d7cc2d2352c0ca">char_test()</a>, <a class="el" href="../../d2/d3b/group___framework_o_s.html#a9db9241688a171281f8c61f8c9084002">embvm::VirtualHeap&lt; THeapImpl &gt;::free()</a>, <a class="el" href="../../d6/de0/src_2stdlib_2heapsort_8c.html#a2e21bd02f544c4431d9a3a197154bdc3">heapsort()</a>, <a class="el" href="../../d7/d7f/src_2stdlib_2heapsort__r_8c.html#ae452b57b75075261a70569e143de3fc8">heapsort_r()</a>, <a class="el" href="../../d3/d81/src_2stdlib_2realloc_8c.html#a1a6b5e8d2f1c37e5b43e4345586075be">realloc()</a>, <a class="el" href="../../d3/d81/src_2stdlib_2realloc_8c.html#a4a046ddd68dd117c794f1f52df5dad33">reallocf()</a>, <a class="el" href="../../de/dc1/test_2string_2strdup_8c.html#aa42ca8cbf8293b2681e973e7847a9873">strdup_test()</a>, <a class="el" href="../../d3/dc2/test_2string_2strndup_8c.html#ac66cec944eb825d7fe02a8dd5d249846">strndup_test()</a>, and <a class="el" href="../../d2/ddc/test_8h.html#a43f9478768d2eb5eff8e5ae815c47398">t_choose()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d0/d6b/malloc__threadx_8c_afbedc913aa4651b3c3b4b3aecd9b4711_icgraph.jpg" border="0" usemap="#d0/d6b/malloc__threadx_8c_afbedc913aa4651b3c3b4b3aecd9b4711_icgraph" alt=""/></div>
 <map name="d0/d6b/malloc__threadx_8c_afbedc913aa4651b3c3b4b3aecd9b4711_icgraph" id="d0/d6b/malloc__threadx_8c_afbedc913aa4651b3c3b4b3aecd9b4711_icgraph">
-<area shape="rect"  title="Deallocates allocated memory space." alt="" coords="1251,577,1296,603"/>
-<area shape="rect"  href="../../d7/d58/aai2c__eeprom_8c.html#aadfb20a470e821951d35d1b76162153c" title=" " alt="" coords="1100,55,1203,80"/>
-<area shape="rect"  href="../../d2/dfb/src_2aligned__malloc_8c.html#a274dd8714485eed9c9328973d44ec5dc" title="aligned_free works like free(), but we work backwards from the returned pointer to find the correct o..." alt="" coords="1104,153,1199,179"/>
-<area shape="rect"  href="../../d4/d84/test_2stdlib_2calloc_8c.html#a8d565c0428f150760cd7bfa5adf831ab" title=" " alt="" coords="1109,300,1194,325"/>
-<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a3f07f063fdf4dd8c60d7cc2d2352c0ca" title=" " alt="" coords="940,325,1017,351"/>
-<area shape="rect"  href="../../d6/de0/src_2stdlib_2heapsort_8c.html#a2e21bd02f544c4431d9a3a197154bdc3" title=" " alt="" coords="1115,427,1188,452"/>
-<area shape="rect"  href="../../d7/d7f/src_2stdlib_2heapsort__r_8c.html#ae452b57b75075261a70569e143de3fc8" title=" " alt="" coords="1109,577,1194,603"/>
-<area shape="rect"  href="../../d3/d81/src_2stdlib_2realloc_8c.html#a1a6b5e8d2f1c37e5b43e4345586075be" title="Reallocates the given area of memory." alt="" coords="1121,627,1182,652"/>
-<area shape="rect"  href="../../d3/d81/src_2stdlib_2realloc_8c.html#a4a046ddd68dd117c794f1f52df5dad33" title="Reallocates the given area of memory." alt="" coords="946,728,1011,753"/>
-<area shape="rect"  href="../../de/dc1/test_2string_2strdup_8c.html#aa42ca8cbf8293b2681e973e7847a9873" title=" " alt="" coords="1108,728,1195,753"/>
-<area shape="rect"  href="../../d3/dc2/test_2string_2strndup_8c.html#ac66cec944eb825d7fe02a8dd5d249846" title=" " alt="" coords="1104,777,1199,803"/>
-<area shape="rect"  href="../../d2/ddc/test_8h.html#a43f9478768d2eb5eff8e5ae815c47398" title=" " alt="" coords="1114,827,1189,852"/>
+<area shape="rect"  title="Deallocates allocated memory space." alt="" coords="1290,567,1334,592"/>
+<area shape="rect"  href="../../d7/d58/aai2c__eeprom_8c.html#aadfb20a470e821951d35d1b76162153c" title=" " alt="" coords="1119,55,1222,80"/>
+<area shape="rect"  href="../../d2/dfb/src_2aligned__malloc_8c.html#a274dd8714485eed9c9328973d44ec5dc" title="aligned_free works like free(), but we work backwards from the returned pointer to find the correct o..." alt="" coords="1123,153,1218,179"/>
+<area shape="rect"  href="../../d4/d84/test_2stdlib_2calloc_8c.html#a8d565c0428f150760cd7bfa5adf831ab" title=" " alt="" coords="1129,320,1213,345"/>
+<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a3f07f063fdf4dd8c60d7cc2d2352c0ca" title=" " alt="" coords="940,528,1017,553"/>
+<area shape="rect"  href="../../d2/d3b/group___framework_o_s.html#a9db9241688a171281f8c61f8c9084002" title=" " alt="" coords="1100,392,1242,431"/>
+<area shape="rect"  href="../../d6/de0/src_2stdlib_2heapsort_8c.html#a2e21bd02f544c4431d9a3a197154bdc3" title=" " alt="" coords="1134,477,1207,503"/>
+<area shape="rect"  href="../../d7/d7f/src_2stdlib_2heapsort__r_8c.html#ae452b57b75075261a70569e143de3fc8" title=" " alt="" coords="1128,616,1213,641"/>
+<area shape="rect"  href="../../d3/d81/src_2stdlib_2realloc_8c.html#a1a6b5e8d2f1c37e5b43e4345586075be" title="Reallocates the given area of memory." alt="" coords="1140,665,1201,691"/>
+<area shape="rect"  href="../../d3/d81/src_2stdlib_2realloc_8c.html#a4a046ddd68dd117c794f1f52df5dad33" title="Reallocates the given area of memory." alt="" coords="946,779,1011,804"/>
+<area shape="rect"  href="../../de/dc1/test_2string_2strdup_8c.html#aa42ca8cbf8293b2681e973e7847a9873" title=" " alt="" coords="1127,767,1214,792"/>
+<area shape="rect"  href="../../d3/dc2/test_2string_2strndup_8c.html#ac66cec944eb825d7fe02a8dd5d249846" title=" " alt="" coords="1123,816,1218,841"/>
+<area shape="rect"  href="../../d2/ddc/test_8h.html#a43f9478768d2eb5eff8e5ae815c47398" title=" " alt="" coords="1133,865,1208,891"/>
 <area shape="rect"  href="../../d7/d58/aai2c__eeprom_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="953,5,1004,31"/>
-<area shape="rect"  href="../../db/d8f/test_2src_2aligned__malloc_8c.html#a9ec335ea531aa0256fe0a0b5d04171d3" title=" " alt="" coords="909,55,1048,80"/>
-<area shape="rect"  href="../../d5/d7b/group___s_b_r_m.html#ga585e70b89827a5ea2f14a1037c92c549" title="Create a shared pointer to aligned memory." alt="" coords="906,104,1051,129"/>
-<area shape="rect"  href="../../d5/d7b/group___s_b_r_m.html#ga4c70e65b5f4bef136004c307f5342ca1" title="Create a unique pointer to aligned memory." alt="" coords="906,153,1051,179"/>
-<area shape="rect"  href="../../db/d8f/test_2src_2aligned__malloc_8c.html#a4c2565d5730de48dafabed8d1e125815" title=" " alt="" coords="905,203,1052,228"/>
+<area shape="rect"  href="../../db/d8f/test_2src_2aligned__malloc_8c.html#a9ec335ea531aa0256fe0a0b5d04171d3" title=" " alt="" coords="909,153,1048,179"/>
+<area shape="rect"  href="../../d5/d7b/group___s_b_r_m.html#gaadef2a53a30fba3cc46519d71039ecbf" title="Create a shared pointer to aligned memory." alt="" coords="906,203,1051,228"/>
+<area shape="rect"  href="../../d5/d7b/group___s_b_r_m.html#gaba2c36f422a8bd78fd825a19c7ed1495" title="Create a unique pointer to aligned memory." alt="" coords="906,55,1051,80"/>
+<area shape="rect"  href="../../db/d8f/test_2src_2aligned__malloc_8c.html#a4c2565d5730de48dafabed8d1e125815" title=" " alt="" coords="905,104,1052,129"/>
 <area shape="rect"  href="../../da/da6/libmemory_2test_2tests_8h.html#aab9bed67ef0fd42b7111a860f4d0113a" title=" " alt="" coords="705,129,851,155"/>
 <area shape="rect"  href="../../d9/d1b/libmemory_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="566,129,616,155"/>
-<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga31518afcb6f9b88831152868d7f322f3" title="Default Framework Boot Strategy." alt="" coords="305,67,470,105"/>
-<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga24570e05d9cbd38e7dbb6bc36b5780ac" title=" " alt="" coords="324,129,452,155"/>
-<area shape="rect"  href="../../d0/d06/group___framework_boot.html#gaf8fdd3f323c465a60916ff75c91b71b6" title="OSX Simulator Boot Strategy." alt="" coords="293,179,483,217"/>
-<area shape="rect"  href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#aa631c956bf766a788cff820807a6a78d" title=" " alt="" coords="5,123,245,161"/>
+<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga532370aacb6889e4d2565739b1f6fd71" title="Default Framework Boot Strategy." alt="" coords="305,67,470,105"/>
+<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga15b89f61c25426f872c6df504ef0182f" title=" " alt="" coords="324,129,452,155"/>
+<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga6f57fe37cb1de92eccefcd2cb93dd2fd" title="OSX Simulator Boot Strategy." alt="" coords="293,179,483,217"/>
+<area shape="rect"  href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#a38d6ccb10f4986624646bec2cd093a15" title=" " alt="" coords="5,123,245,161"/>
 <area shape="rect"  href="../../dd/d23/stdlib__tests_8h.html#a3f63b9a5fa9e5fc1f93787aced3a2604" title=" " alt="" coords="933,276,1024,301"/>
-<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#aaa0b0a9cea7d442b9a0d8bfb0182575f" title=" " alt="" coords="711,325,846,351"/>
-<area shape="rect"  href="../../dd/d23/stdlib__tests_8h.html#adf81be426025c997f5072f8d39f7545a" title=" " alt="" coords="537,401,646,427"/>
-<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a9f6b78d625ef6a488fcae6ffc46d48fd" title=" " alt="" coords="717,376,840,401"/>
-<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a5865a2d229d5bad51f988339e39bf9df" title=" " alt="" coords="707,425,849,451"/>
-<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a0c1b68cebf69519ab15389e0297a650a" title=" " alt="" coords="935,477,1022,503"/>
-<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a33d1153a9b55e58aeaf866065583690e" title=" " alt="" coords="705,476,851,501"/>
-<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#a3f07f063fdf4dd8c60d7cc2d2352c0ca" title=" " alt="" coords="940,527,1017,552"/>
-<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#a1102fe47975cc232ee6e140901f00306" title=" " alt="" coords="711,577,846,603"/>
-<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#acd7b047cc81212e6790d7f0d6f0f7cfd" title=" " alt="" coords="701,627,855,652"/>
-<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#a0c1b68cebf69519ab15389e0297a650a" title=" " alt="" coords="935,679,1022,704"/>
-<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#a032ba7bd47caa40c41d3c81b2449c530" title=" " alt="" coords="705,527,852,552"/>
-<area shape="rect"  href="../../dd/d23/stdlib__tests_8h.html#a6082792bbd5b23d41077952405397b44" title=" " alt="" coords="531,603,651,628"/>
-<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#adf1c71308ee3db815bbfd7664f58b65e" title=" " alt="" coords="699,677,857,703"/>
-<area shape="rect"  href="../../d0/d43/string__tests_8h.html#a9107e7982858131f47d8083684ac6150" title=" " alt="" coords="931,801,1025,827"/>
-<area shape="rect"  href="../../d9/dd4/libc_2test_2tests_8h.html#ac387871103b3e95795d33217d0f60f3a" title=" " alt="" coords="734,825,823,851"/>
-<area shape="rect"  href="../../d1/d54/libc_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="566,825,616,851"/>
-<area shape="rect"  href="../../d3/dc2/test_2string_2strndup_8c.html#ade41f177b2aa6318856736c54ad2f282" title=" " alt="" coords="928,851,1029,876"/>
+<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#aaa0b0a9cea7d442b9a0d8bfb0182575f" title=" " alt="" coords="711,527,846,552"/>
+<area shape="rect"  href="../../dd/d23/stdlib__tests_8h.html#adf81be426025c997f5072f8d39f7545a" title=" " alt="" coords="537,452,646,477"/>
+<area shape="rect"  href="../../de/d36/malloc__framework__rtos_8cpp.html#afbedc913aa4651b3c3b4b3aecd9b4711" title="Deallocates allocated memory space." alt="" coords="956,325,1001,351"/>
+<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a9f6b78d625ef6a488fcae6ffc46d48fd" title=" " alt="" coords="717,476,840,501"/>
+<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a5865a2d229d5bad51f988339e39bf9df" title=" " alt="" coords="707,376,849,401"/>
+<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a0c1b68cebf69519ab15389e0297a650a" title=" " alt="" coords="935,427,1022,452"/>
+<area shape="rect"  href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a33d1153a9b55e58aeaf866065583690e" title=" " alt="" coords="705,427,851,452"/>
+<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#a3f07f063fdf4dd8c60d7cc2d2352c0ca" title=" " alt="" coords="940,577,1017,603"/>
+<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#a1102fe47975cc232ee6e140901f00306" title=" " alt="" coords="711,628,846,653"/>
+<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#acd7b047cc81212e6790d7f0d6f0f7cfd" title=" " alt="" coords="701,677,855,703"/>
+<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#a0c1b68cebf69519ab15389e0297a650a" title=" " alt="" coords="935,729,1022,755"/>
+<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#a032ba7bd47caa40c41d3c81b2449c530" title=" " alt="" coords="705,577,852,603"/>
+<area shape="rect"  href="../../dd/d23/stdlib__tests_8h.html#a6082792bbd5b23d41077952405397b44" title=" " alt="" coords="531,653,651,679"/>
+<area shape="rect"  href="../../d7/d4e/test_2stdlib_2heapsort__r_8c.html#adf1c71308ee3db815bbfd7664f58b65e" title=" " alt="" coords="699,728,857,753"/>
+<area shape="rect"  href="../../d0/d43/string__tests_8h.html#a9107e7982858131f47d8083684ac6150" title=" " alt="" coords="931,852,1025,877"/>
+<area shape="rect"  href="../../d9/dd4/libc_2test_2tests_8h.html#ac387871103b3e95795d33217d0f60f3a" title=" " alt="" coords="734,876,823,901"/>
+<area shape="rect"  href="../../d1/d54/libc_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="566,876,616,901"/>
+<area shape="rect"  href="../../d3/dc2/test_2string_2strndup_8c.html#ade41f177b2aa6318856736c54ad2f282" title=" " alt="" coords="928,901,1029,927"/>
 </map>
 </div>
 
@@ -275,7 +277,7 @@ Here is the caller graph for this function:</div>
 <a class="el" href="../../dc/d9c/stdlib_8h.html#a1a6b5e8d2f1c37e5b43e4345586075be" title="Reallocates the given area of memory.">realloc()</a>. On failure, returns <a class="el" href="../../d4/d03/libm-bench_8cpp.html#a1459acff5521623150808315fbe1b76d">a</a> null pointer. </dd></dl>
 <p>In the ThreadX implementaiton, we make sure the ThreadX pool has been created before we try to allocate memory, or there will be an error. We sleep our threads until memory has been added.</p>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d0/d6b/malloc__threadx_8c.html#a154cee9e831e0cb610e68c0855a6d5c8">initialized_</a>, <a class="el" href="../../d0/d6b/malloc__threadx_8c.html#afa8a86271b94d6b3381d5564ba2ba001">malloc_pool_</a>, <a class="el" href="../../d3/dce/stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>, <a class="el" href="../../d7/d79/tx__api_8h.html#aa4145175ddd40235ea81142a4d0bec82">tx_byte_allocate()</a>, <a class="el" href="../../d7/d79/tx__api_8h.html#a380ecaa0581b9c44e69a85d3eac3d726">TX_SUCCESS</a>, <a class="el" href="../../d7/d79/tx__api_8h.html#a99bb3870341a3442c7d2c7f1459b59f9">tx_thread_sleep()</a>, and <a class="el" href="../../d7/d79/tx__api_8h.html#af56db64978595f4e645b4b23b1e7d15e">TX_WAIT_FOREVER</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d0/d6b/malloc__threadx_8c.html#a154cee9e831e0cb610e68c0855a6d5c8">initialized_</a>, <a class="el" href="../../d0/d6b/malloc__threadx_8c.html#afa8a86271b94d6b3381d5564ba2ba001">malloc_pool_</a>, <a class="el" href="../../d3/dce/stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>, <a class="el" href="../../d7/d79/tx__api_8h.html#aa4145175ddd40235ea81142a4d0bec82">tx_byte_allocate()</a>, <a class="el" href="../../d7/d79/tx__api_8h.html#a380ecaa0581b9c44e69a85d3eac3d726">TX_SUCCESS</a>, <a class="el" href="../../d7/d79/tx__api_8h.html#a99bb3870341a3442c7d2c7f1459b59f9">tx_thread_sleep()</a>, and <a class="el" href="../../d7/d79/tx__api_8h.html#af56db64978595f4e645b4b23b1e7d15e">TX_WAIT_FOREVER</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d58/aai2c__eeprom_8c.html#aadfb20a470e821951d35d1b76162153c">_readMemory()</a>, <a class="el" href="../../d2/dfb/src_2aligned__malloc_8c.html#af9d29fa5731420020b36ffbf56e6de97">aligned_malloc()</a>, <a class="el" href="../../d6/da5/src_2stdlib_2calloc_8c.html#a7b3d8b7cea59b137b167878ec88eb8d6">calloc()</a>, <a class="el" href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a3f07f063fdf4dd8c60d7cc2d2352c0ca">char_test()</a>, <a class="el" href="../../d6/de0/src_2stdlib_2heapsort_8c.html#a2e21bd02f544c4431d9a3a197154bdc3">heapsort()</a>, <a class="el" href="../../d7/d7f/src_2stdlib_2heapsort__r_8c.html#ae452b57b75075261a70569e143de3fc8">heapsort_r()</a>, <a class="el" href="../../d3/d81/src_2stdlib_2realloc_8c.html#a1a6b5e8d2f1c37e5b43e4345586075be">realloc()</a>, <a class="el" href="../../d0/dda/src_2string_2strdup_8c.html#a2c4f14c424a31db9c57fd046c3b9f0df">strdup()</a>, <a class="el" href="../../d3/d7d/src_2string_2strndup_8c.html#a9dd8c380e1619571aa097b2119a9bca9">strndup()</a>, <a class="el" href="../../d2/ddc/test_8h.html#a43f9478768d2eb5eff8e5ae815c47398">t_choose()</a>, and <a class="el" href="../../d7/dd9/vasprintf_8c.html#a388c4ede888a51399da4c60616ec0eb6">vasprintf()</a>.</p>
 <div class="dynheader">
@@ -297,15 +299,15 @@ Here is the caller graph for this function:</div>
 <area shape="rect"  href="../../d7/dd9/vasprintf_8c.html#a388c4ede888a51399da4c60616ec0eb6" title=" " alt="" coords="1241,897,1313,923"/>
 <area shape="rect"  href="../../d7/d58/aai2c__eeprom_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="1076,5,1126,31"/>
 <area shape="rect"  href="../../db/d8f/test_2src_2aligned__malloc_8c.html#a9ec335ea531aa0256fe0a0b5d04171d3" title=" " alt="" coords="832,76,971,101"/>
-<area shape="rect"  href="../../d5/d7b/group___s_b_r_m.html#ga585e70b89827a5ea2f14a1037c92c549" title="Create a shared pointer to aligned memory." alt="" coords="1029,107,1173,132"/>
-<area shape="rect"  href="../../d5/d7b/group___s_b_r_m.html#ga4c70e65b5f4bef136004c307f5342ca1" title="Create a unique pointer to aligned memory." alt="" coords="1029,156,1174,181"/>
+<area shape="rect"  href="../../d5/d7b/group___s_b_r_m.html#gaadef2a53a30fba3cc46519d71039ecbf" title="Create a shared pointer to aligned memory." alt="" coords="1029,107,1173,132"/>
+<area shape="rect"  href="../../d5/d7b/group___s_b_r_m.html#gaba2c36f422a8bd78fd825a19c7ed1495" title="Create a unique pointer to aligned memory." alt="" coords="1029,156,1174,181"/>
 <area shape="rect"  href="../../d7/d69/posix__memalign_8c.html#a120e64e22bc82d4930f98147eee3e85f" title="Posix Memory Alignment Extension." alt="" coords="1042,205,1160,231"/>
 <area shape="rect"  href="../../da/da6/libmemory_2test_2tests_8h.html#aab9bed67ef0fd42b7111a860f4d0113a" title=" " alt="" coords="629,111,775,136"/>
 <area shape="rect"  href="../../d9/d1b/libmemory_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="531,111,581,136"/>
-<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga31518afcb6f9b88831152868d7f322f3" title="Default Framework Boot Strategy." alt="" coords="305,48,470,87"/>
-<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga24570e05d9cbd38e7dbb6bc36b5780ac" title=" " alt="" coords="324,111,452,136"/>
-<area shape="rect"  href="../../d0/d06/group___framework_boot.html#gaf8fdd3f323c465a60916ff75c91b71b6" title="OSX Simulator Boot Strategy." alt="" coords="293,160,483,199"/>
-<area shape="rect"  href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#aa631c956bf766a788cff820807a6a78d" title=" " alt="" coords="5,104,245,143"/>
+<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga532370aacb6889e4d2565739b1f6fd71" title="Default Framework Boot Strategy." alt="" coords="305,48,470,87"/>
+<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga15b89f61c25426f872c6df504ef0182f" title=" " alt="" coords="324,111,452,136"/>
+<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga6f57fe37cb1de92eccefcd2cb93dd2fd" title="OSX Simulator Boot Strategy." alt="" coords="293,160,483,199"/>
+<area shape="rect"  href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#a38d6ccb10f4986624646bec2cd093a15" title=" " alt="" coords="5,104,245,143"/>
 <area shape="rect"  href="../../db/d8f/test_2src_2aligned__malloc_8c.html#a4c2565d5730de48dafabed8d1e125815" title=" " alt="" coords="828,144,975,169"/>
 <area shape="rect"  href="../../d4/d84/test_2stdlib_2calloc_8c.html#a8d565c0428f150760cd7bfa5adf831ab" title=" " alt="" coords="1059,255,1143,280"/>
 <area shape="rect"  href="../../dd/d23/stdlib__tests_8h.html#a3f63b9a5fa9e5fc1f93787aced3a2604" title=" " alt="" coords="856,255,947,280"/>
@@ -365,9 +367,9 @@ Here is the caller graph for this function:</div>
 <p>Assign blocks of memory for use by <a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a>.</p>
 <p>In this ThreadX implementation, <a class="el" href="../../dc/d9c/stdlib_8h.html#a7ac38fce3243a7dcf448301ee9ffd392" title="Allocates size bytes of uninitialized storage.">malloc()</a> calls will block until memory has been allocated </p>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d0/d6b/malloc__threadx_8c.html#a154cee9e831e0cb610e68c0855a6d5c8">initialized_</a>, <a class="el" href="../../d0/d6b/malloc__threadx_8c.html#afa8a86271b94d6b3381d5564ba2ba001">malloc_pool_</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>, <a class="el" href="../../d7/d79/tx__api_8h.html#a6eb3c7d68df169a170f4254859f2fdac">tx_byte_pool_create</a>, and <a class="el" href="../../d7/d79/tx__api_8h.html#a380ecaa0581b9c44e69a85d3eac3d726">TX_SUCCESS</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d0/d6b/malloc__threadx_8c.html#a154cee9e831e0cb610e68c0855a6d5c8">initialized_</a>, <a class="el" href="../../d0/d6b/malloc__threadx_8c.html#afa8a86271b94d6b3381d5564ba2ba001">malloc_pool_</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>, <a class="el" href="../../d7/d79/tx__api_8h.html#a6eb3c7d68df169a170f4254859f2fdac">tx_byte_pool_create</a>, and <a class="el" href="../../d7/d79/tx__api_8h.html#a380ecaa0581b9c44e69a85d3eac3d726">TX_SUCCESS</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d67/libmemory_2test_2support_2memory_8h.html#a7fe5e304baaf5f418a22fef9a9cc02c7">allocate_memory()</a>, <a class="el" href="../../d0/d85/class_n_r_f52_dongle_h_w_platform.html#a7519fd020f8177af86328adac38d3730">NRF52DongleHWPlatform::earlyInitHook_()</a>, and <a class="el" href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#a164c061a22bdcec6e24661e0c72efd45">nRF52DK_FrameworkDemoPlatform::earlyInitHook_()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d67/libmemory_2test_2support_2memory_8h.html#a7fe5e304baaf5f418a22fef9a9cc02c7">allocate_memory()</a>, <a class="el" href="../../d0/d85/class_n_r_f52_dongle_h_w_platform.html#a84fb73dc50282840a9dcc7f5ee1e776b">NRF52DongleHWPlatform::earlyInitHook_()</a>, and <a class="el" href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#aaed1272c2793d5269a52a3adfa53cd1f">nRF52DK_FrameworkDemoPlatform::earlyInitHook_()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -375,16 +377,16 @@ Here is the caller graph for this function:</div>
 <map name="d0/d6b/malloc__threadx_8c_aefccca545b4f08bf860289c476b51aae_icgraph" id="d0/d6b/malloc__threadx_8c_aefccca545b4f08bf860289c476b51aae_icgraph">
 <area shape="rect"  title="malloc_addblock must be called before memory allocation calls are made." alt="" coords="1297,136,1418,161"/>
 <area shape="rect"  href="../../d1/d67/libmemory_2test_2support_2memory_8h.html#a7fe5e304baaf5f418a22fef9a9cc02c7" title=" " alt="" coords="1068,80,1191,105"/>
-<area shape="rect"  href="../../d0/d85/class_n_r_f52_dongle_h_w_platform.html#a7519fd020f8177af86328adac38d3730" title=" " alt="" coords="1041,129,1218,168"/>
-<area shape="rect"  href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#a164c061a22bdcec6e24661e0c72efd45" title=" " alt="" coords="1010,192,1249,231"/>
+<area shape="rect"  href="../../d0/d85/class_n_r_f52_dongle_h_w_platform.html#a84fb73dc50282840a9dcc7f5ee1e776b" title=" " alt="" coords="1041,129,1218,168"/>
+<area shape="rect"  href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#aaed1272c2793d5269a52a3adfa53cd1f" title=" " alt="" coords="1010,192,1249,231"/>
 <area shape="rect"  href="../../db/d8f/test_2src_2aligned__malloc_8c.html#a9ec335ea531aa0256fe0a0b5d04171d3" title=" " alt="" coords="823,29,962,55"/>
 <area shape="rect"  href="../../d9/d1b/libmemory_2test_2main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Function for application main entry." alt="" coords="531,80,581,105"/>
 <area shape="rect"  href="../../d4/dfa/test_2src_2malloc__freelist_8c.html#a562faebf0768e65cb3198396b509b4dc" title=" " alt="" coords="848,131,937,156"/>
 <area shape="rect"  href="../../da/da6/libmemory_2test_2tests_8h.html#aab9bed67ef0fd42b7111a860f4d0113a" title=" " alt="" coords="629,29,775,55"/>
-<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga31518afcb6f9b88831152868d7f322f3" title="Default Framework Boot Strategy." alt="" coords="305,17,470,56"/>
-<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga24570e05d9cbd38e7dbb6bc36b5780ac" title=" " alt="" coords="324,80,452,105"/>
-<area shape="rect"  href="../../d0/d06/group___framework_boot.html#gaf8fdd3f323c465a60916ff75c91b71b6" title="OSX Simulator Boot Strategy." alt="" coords="293,129,483,168"/>
-<area shape="rect"  href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#aa631c956bf766a788cff820807a6a78d" title=" " alt="" coords="5,73,245,112"/>
+<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga532370aacb6889e4d2565739b1f6fd71" title="Default Framework Boot Strategy." alt="" coords="305,17,470,56"/>
+<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga15b89f61c25426f872c6df504ef0182f" title=" " alt="" coords="324,80,452,105"/>
+<area shape="rect"  href="../../d0/d06/group___framework_boot.html#ga6f57fe37cb1de92eccefcd2cb93dd2fd" title="OSX Simulator Boot Strategy." alt="" coords="293,129,483,168"/>
+<area shape="rect"  href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#a38d6ccb10f4986624646bec2cd093a15" title=" " alt="" coords="5,73,245,112"/>
 <area shape="rect"  href="../../da/da6/libmemory_2test_2tests_8h.html#a3a0a21ad78fa5ff88b194a8a4c0303f6" title=" " alt="" coords="654,131,750,156"/>
 </map>
 </div>

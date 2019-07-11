@@ -1,7 +1,7 @@
 <map id="src/stdlibs/libc/src/string/memchr.c" name="src/stdlibs/libc/src/string/memchr.c">
 <area shape="rect" id="node1" title=" " alt="" coords="794,5,919,44"/>
-<area shape="rect" id="node2" href="$d9/d86/limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
-<area shape="rect" id="node4" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="863,165,927,191"/>
+<area shape="rect" id="node2" href="$de/d3b/include_2limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
+<area shape="rect" id="node4" href="$dc/d69/include_2stdint_8h.html" title=" " alt="" coords="863,165,927,191"/>
 <area shape="rect" id="node17" href="$da/d66/string_8h.html" title=" " alt="" coords="893,92,958,117"/>
 <area shape="rect" id="node3" href="$d3/d22/x86__64_2include_2__limits_8h.html" title=" " alt="" coords="5,312,76,337"/>
 <area shape="rect" id="node5" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="96,239,219,264"/>

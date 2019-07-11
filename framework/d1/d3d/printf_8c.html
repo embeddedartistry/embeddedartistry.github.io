@@ -76,18 +76,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="../../d9/d5e/stdbool_8h.html">stdbool.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../df/dd8/stdint_8h.html">stdint.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dc/d69/include_2stdint_8h.html">stdint.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/d6b/printf_8h.html">printf.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="../../d7/d26/include_2float_8h.html">float.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for printf.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d22/printf_8c__incl.jpg" border="0" usemap="#src_2stdlibs_2libc_2printf_2printf_8c" alt=""/></div>
 <map name="src_2stdlibs_2libc_2printf_2printf_8c" id="src_2stdlibs_2libc_2printf_2printf_8c">
-<area shape="rect"  title=" " alt="" coords="904,5,1041,44"/>
-<area shape="rect"  href="../../d9/d5e/stdbool_8h.html" title=" " alt="" coords="841,92,917,117"/>
-<area shape="rect"  href="../../df/dd8/stdint_8h.html" title=" " alt="" coords="940,92,1005,117"/>
+<area shape="rect"  title=" " alt="" coords="1428,5,1565,44"/>
+<area shape="rect"  href="../../d9/d5e/stdbool_8h.html" title=" " alt="" coords="919,92,994,117"/>
+<area shape="rect"  href="../../dc/d69/include_2stdint_8h.html" title=" " alt="" coords="1018,92,1082,117"/>
 <area shape="rect"  href="../../d3/d6b/printf_8h.html" title=" " alt="" coords="1913,92,1975,117"/>
-<area shape="rect"  href="../../d9/d86/limits_8h.html" title=" " alt="" coords="9,165,72,191"/>
+<area shape="rect"  href="../../d7/d26/include_2float_8h.html" title=" " alt="" coords="2060,92,2117,117"/>
+<area shape="rect"  href="../../de/d3b/include_2limits_8h.html" title=" " alt="" coords="9,165,72,191"/>
 <area shape="rect"  href="../../df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="96,165,219,191"/>
 <area shape="rect"  href="../../da/d57/x86__64_2include_2__types_2__int32__t_8h.html" title=" " alt="" coords="243,165,366,191"/>
 <area shape="rect"  href="../../d5/d63/x86__64_2include_2__types_2__int64__t_8h.html" title=" " alt="" coords="390,165,513,191"/>
@@ -105,6 +107,7 @@ Include dependency graph for printf.c:</div>
 <area shape="rect"  href="../../d3/dce/stddef_8h.html" title=" " alt="" coords="2003,165,2072,191"/>
 <area shape="rect"  href="../../de/d5d/x86__64_2include_2__types_2__ptrdiff__t_8h.html" title=" " alt="" coords="1901,239,2028,264"/>
 <area shape="rect"  href="../../d1/dbb/x86__64_2include_2__types_2__size__t_8h.html" title=" " alt="" coords="2052,239,2170,264"/>
+<area shape="rect"  href="../../d2/d83/x86__64_2include_2__types_2__float_8h.html" title=" " alt="" coords="2096,165,2204,191"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -130,6 +133,12 @@ Macros</h2></td></tr>
 <tr class="separator:af7aeb1c970d5c2bf5fada4eaca516a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac65831bb84fde6008edd159836e82eed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#ac65831bb84fde6008edd159836e82eed">PRINTF_SUPPORT_FLOAT</a></td></tr>
 <tr class="separator:ac65831bb84fde6008edd159836e82eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7698906c40c5f8210d173b278625feaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#a7698906c40c5f8210d173b278625feaa">PRINTF_SUPPORT_EXPONENTIAL</a></td></tr>
+<tr class="separator:a7698906c40c5f8210d173b278625feaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f8f053fe123435128cfcff1d407d75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#ab6f8f053fe123435128cfcff1d407d75">PRINTF_DEFAULT_FLOAT_PRECISION</a>&#160;&#160;&#160;6U</td></tr>
+<tr class="separator:ab6f8f053fe123435128cfcff1d407d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efdab8617b9e4d7f01a570ce44e8d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#a3efdab8617b9e4d7f01a570ce44e8d2d">PRINTF_MAX_FLOAT</a>&#160;&#160;&#160;1e9</td></tr>
+<tr class="separator:a3efdab8617b9e4d7f01a570ce44e8d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34aa02fd74c9f366b87312cf708dc9e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#a34aa02fd74c9f366b87312cf708dc9e1">PRINTF_SUPPORT_LONG_LONG</a></td></tr>
 <tr class="separator:a34aa02fd74c9f366b87312cf708dc9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af341191ed47c98ec35beaa7bb8db8e75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#af341191ed47c98ec35beaa7bb8db8e75">PRINTF_SUPPORT_PTRDIFF_T</a></td></tr>
@@ -156,8 +165,12 @@ Macros</h2></td></tr>
 <tr class="separator:a4ac2d97fe74925064a50628a469403d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ffc74d008f9e494649d270668555dd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#a7ffc74d008f9e494649d270668555dd1">FLAGS_PRECISION</a>&#160;&#160;&#160;(1U &lt;&lt; 10U)</td></tr>
 <tr class="separator:a7ffc74d008f9e494649d270668555dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65b16dab08c378eb12307e41cedb696"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#ac65b16dab08c378eb12307e41cedb696">FLAGS_ADAPT_EXP</a>&#160;&#160;&#160;(1U &lt;&lt; 11U)</td></tr>
+<tr class="separator:ac65b16dab08c378eb12307e41cedb696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac65831bb84fde6008edd159836e82eed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6c/test__suite_8cpp.html#ac65831bb84fde6008edd159836e82eed">PRINTF_SUPPORT_FLOAT</a></td></tr>
 <tr class="separator:ac65831bb84fde6008edd159836e82eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7698906c40c5f8210d173b278625feaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6c/test__suite_8cpp.html#a7698906c40c5f8210d173b278625feaa">PRINTF_SUPPORT_EXPONENTIAL</a></td></tr>
+<tr class="separator:a7698906c40c5f8210d173b278625feaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34aa02fd74c9f366b87312cf708dc9e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6c/test__suite_8cpp.html#a34aa02fd74c9f366b87312cf708dc9e1">PRINTF_SUPPORT_LONG_LONG</a></td></tr>
 <tr class="separator:a34aa02fd74c9f366b87312cf708dc9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af341191ed47c98ec35beaa7bb8db8e75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6c/test__suite_8cpp.html#af341191ed47c98ec35beaa7bb8db8e75">PRINTF_SUPPORT_PTRDIFF_T</a></td></tr>
@@ -184,6 +197,8 @@ Macros</h2></td></tr>
 <tr class="separator:a4ac2d97fe74925064a50628a469403d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ffc74d008f9e494649d270668555dd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6c/test__suite_8cpp.html#a7ffc74d008f9e494649d270668555dd1">FLAGS_PRECISION</a>&#160;&#160;&#160;(1U &lt;&lt; 10U)</td></tr>
 <tr class="separator:a7ffc74d008f9e494649d270668555dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65b16dab08c378eb12307e41cedb696"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6c/test__suite_8cpp.html#ac65b16dab08c378eb12307e41cedb696">FLAGS_ADAPT_EXP</a>&#160;&#160;&#160;(1U &lt;&lt; 11U)</td></tr>
+<tr class="separator:ac65b16dab08c378eb12307e41cedb696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -206,12 +221,16 @@ Functions</h2></td></tr>
 <tr class="separator:a3b3255e97ad723d1af56cc336b9ba0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee89701d5bf35415505f4412ed9d8df"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#a3ee89701d5bf35415505f4412ed9d8df">_atoi</a> (const char **str)</td></tr>
 <tr class="separator:a3ee89701d5bf35415505f4412ed9d8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa382f455ad26a4ffdc0fdb652a5edd9d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#aa382f455ad26a4ffdc0fdb652a5edd9d">_out_rev</a> (<a class="el" href="../../d1/d3d/printf_8c.html#ac4a1ad6d5e0eae2f65ab59703847359a">out_fct_type</a> out, char *buffer, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> idx, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> maxlen, const char *<a class="el" href="../../da/dcb/test_2string_2memset_8c.html#ad858d50988d2fd899dff0fd071ff7953">buf</a>, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> len, unsigned int width, unsigned int flags)</td></tr>
+<tr class="separator:aa382f455ad26a4ffdc0fdb652a5edd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd89d7f040822741e36375ba7bbb2d74"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#acd89d7f040822741e36375ba7bbb2d74">_ntoa_format</a> (<a class="el" href="../../d1/d3d/printf_8c.html#ac4a1ad6d5e0eae2f65ab59703847359a">out_fct_type</a> out, char *buffer, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> idx, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> maxlen, char *<a class="el" href="../../da/dcb/test_2string_2memset_8c.html#ad858d50988d2fd899dff0fd071ff7953">buf</a>, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> len, <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> negative, unsigned int base, unsigned int prec, unsigned int width, unsigned int flags)</td></tr>
 <tr class="separator:acd89d7f040822741e36375ba7bbb2d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef1143febac07b5961075f4d76b6cc75"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#aef1143febac07b5961075f4d76b6cc75">_ntoa_long</a> (<a class="el" href="../../d1/d3d/printf_8c.html#ac4a1ad6d5e0eae2f65ab59703847359a">out_fct_type</a> out, char *buffer, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> idx, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> maxlen, unsigned long value, <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> negative, unsigned long base, unsigned int prec, unsigned int width, unsigned int flags)</td></tr>
 <tr class="separator:aef1143febac07b5961075f4d76b6cc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf2e41c6171fe92b66260c643098fae2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#acf2e41c6171fe92b66260c643098fae2">_ntoa_long_long</a> (<a class="el" href="../../d1/d3d/printf_8c.html#ac4a1ad6d5e0eae2f65ab59703847359a">out_fct_type</a> out, char *buffer, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> idx, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> maxlen, unsigned long long value, <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> negative, unsigned long long base, unsigned int prec, unsigned int width, unsigned int flags)</td></tr>
 <tr class="separator:acf2e41c6171fe92b66260c643098fae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23691c6d6c56ceeb323ce2005ea6a244"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#a23691c6d6c56ceeb323ce2005ea6a244">_etoa</a> (<a class="el" href="../../d1/d3d/printf_8c.html#ac4a1ad6d5e0eae2f65ab59703847359a">out_fct_type</a> out, char *buffer, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> idx, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> maxlen, double value, unsigned int prec, unsigned int width, unsigned int flags)</td></tr>
+<tr class="separator:a23691c6d6c56ceeb323ce2005ea6a244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c0991970c9075b6e6197c313a1203fc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#a2c0991970c9075b6e6197c313a1203fc">_ftoa</a> (<a class="el" href="../../d1/d3d/printf_8c.html#ac4a1ad6d5e0eae2f65ab59703847359a">out_fct_type</a> out, char *buffer, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> idx, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> maxlen, double value, unsigned int prec, unsigned int width, unsigned int flags)</td></tr>
 <tr class="separator:a2c0991970c9075b6e6197c313a1203fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bad5a18d0dcf3bbf70d0eb1b2797044"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#a2bad5a18d0dcf3bbf70d0eb1b2797044">_vsnprintf</a> (<a class="el" href="../../d1/d3d/printf_8c.html#ac4a1ad6d5e0eae2f65ab59703847359a">out_fct_type</a> out, char *buffer, const <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> maxlen, const char *format, <a class="el" href="../../d1/d2d/stdarg_8h.html#af53f622e3b6c080daeb167c1955d7ec1">va_list</a> va)</td></tr>
@@ -222,15 +241,43 @@ Functions</h2></td></tr>
 <tr class="separator:a989410555ef35cd646c15d51e649faaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b16fca837f5301cb0c01fa668f044f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#a5b16fca837f5301cb0c01fa668f044f4">snprintf_</a> (char *buffer, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> count, const char *format,...)</td></tr>
 <tr class="separator:a5b16fca837f5301cb0c01fa668f044f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa199d9388f8dcddcda1a0451315cae89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#aa199d9388f8dcddcda1a0451315cae89">vprintf_</a> (const char *format, <a class="el" href="../../d1/d2d/stdarg_8h.html#af53f622e3b6c080daeb167c1955d7ec1">va_list</a> va)</td></tr>
+<tr class="separator:aa199d9388f8dcddcda1a0451315cae89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af37254f8c6a2d9d51e82c85fd666f88e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#af37254f8c6a2d9d51e82c85fd666f88e">vsnprintf_</a> (char *buffer, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> count, const char *format, <a class="el" href="../../d1/d2d/stdarg_8h.html#af53f622e3b6c080daeb167c1955d7ec1">va_list</a> va)</td></tr>
 <tr class="separator:af37254f8c6a2d9d51e82c85fd666f88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16cdc6ff34afc2122ae164d4ee3a8c50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#a16cdc6ff34afc2122ae164d4ee3a8c50">fctprintf</a> (void(*out)(char character, void *arg), void *arg, const char *format,...)</td></tr>
 <tr class="memdesc:a16cdc6ff34afc2122ae164d4ee3a8c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">printf with output function You may use this as dynamic alternative to <a class="el" href="../../d3/d6b/printf_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9" title="Tiny printf implementation You have to implement putchar if you use printf() To avoid conflicts with ...">printf()</a> with its fixed <a class="el" href="../../d3/d6b/printf_8h.html#a223496da92021626a4430fed0af667bd" title="Output a character to a custom device like UART, used by the printf() function This function is decla...">_putchar()</a> output  <a href="#a16cdc6ff34afc2122ae164d4ee3a8c50">More...</a><br /></td></tr>
 <tr class="separator:a16cdc6ff34afc2122ae164d4ee3a8c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa199d9388f8dcddcda1a0451315cae89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3d/printf_8c.html#aa199d9388f8dcddcda1a0451315cae89">vprintf_</a> (const char *format, <a class="el" href="../../d1/d2d/stdarg_8h.html#af53f622e3b6c080daeb167c1955d7ec1">va_list</a> va)</td></tr>
-<tr class="separator:aa199d9388f8dcddcda1a0451315cae89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ac65b16dab08c378eb12307e41cedb696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac65b16dab08c378eb12307e41cedb696">&#9670;&nbsp;</a></span>FLAGS_ADAPT_EXP <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_ADAPT_EXP&#160;&#160;&#160;(1U &lt;&lt; 11U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac65b16dab08c378eb12307e41cedb696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac65b16dab08c378eb12307e41cedb696">&#9670;&nbsp;</a></span>FLAGS_ADAPT_EXP <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_ADAPT_EXP&#160;&#160;&#160;(1U &lt;&lt; 11U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5584c6d116b42ffdf2c2b7b72209cb25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5584c6d116b42ffdf2c2b7b72209cb25">&#9670;&nbsp;</a></span>FLAGS_CHAR <span class="overload">[1/2]</span></h2>
 
@@ -539,6 +586,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab6f8f053fe123435128cfcff1d407d75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f8f053fe123435128cfcff1d407d75">&#9670;&nbsp;</a></span>PRINTF_DEFAULT_FLOAT_PRECISION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PRINTF_DEFAULT_FLOAT_PRECISION&#160;&#160;&#160;6U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af7aeb1c970d5c2bf5fada4eaca516a25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7aeb1c970d5c2bf5fada4eaca516a25">&#9670;&nbsp;</a></span>PRINTF_FTOA_BUFFER_SIZE</h2>
 
@@ -553,6 +614,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3efdab8617b9e4d7f01a570ce44e8d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3efdab8617b9e4d7f01a570ce44e8d2d">&#9670;&nbsp;</a></span>PRINTF_MAX_FLOAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PRINTF_MAX_FLOAT&#160;&#160;&#160;1e9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4278b980717163a8ef983ce3fbf0b9db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4278b980717163a8ef983ce3fbf0b9db">&#9670;&nbsp;</a></span>PRINTF_NTOA_BUFFER_SIZE</h2>
 
@@ -561,6 +636,34 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define PRINTF_NTOA_BUFFER_SIZE&#160;&#160;&#160;32U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7698906c40c5f8210d173b278625feaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7698906c40c5f8210d173b278625feaa">&#9670;&nbsp;</a></span>PRINTF_SUPPORT_EXPONENTIAL <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PRINTF_SUPPORT_EXPONENTIAL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7698906c40c5f8210d173b278625feaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7698906c40c5f8210d173b278625feaa">&#9670;&nbsp;</a></span>PRINTF_SUPPORT_EXPONENTIAL <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PRINTF_SUPPORT_EXPONENTIAL</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -697,6 +800,82 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a23691c6d6c56ceeb323ce2005ea6a244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23691c6d6c56ceeb323ce2005ea6a244">&#9670;&nbsp;</a></span>_etoa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> _etoa </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d3d/printf_8c.html#ac4a1ad6d5e0eae2f65ab59703847359a">out_fct_type</a>&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>maxlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>prec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d1/d3d/printf_8c.html#a2c0991970c9075b6e6197c313a1203fc">_ftoa()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#aef1143febac07b5961075f4d76b6cc75">_ntoa_long()</a>, <a class="el" href="../../d7/d26/include_2float_8h.html#af78670ee54c1203d613f8fb0e022d214">DBL_MAX</a>, <a class="el" href="../../dd/d60/openlibm__math_8h.html#a96a7f4b23429f47788eb308cb221d51a">exp2()</a>, <a class="el" href="../../de/d6c/ld80_2e__powl_8c.html#a42257a545daf5b7933d6e8f96adc74f2">F</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ac65b16dab08c378eb12307e41cedb696">FLAGS_ADAPT_EXP</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ac6c26878acb903cb07de2b9552fec26b">FLAGS_LEFT</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a3d8b1bd3dd657ac7856e8aa67b170fee">FLAGS_PLUS</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a7ffc74d008f9e494649d270668555dd1">FLAGS_PRECISION</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a738a48de177a2e385f66995685334761">FLAGS_UPPERCASE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ad7b04ce70e8c9e609f02c796be254062">FLAGS_ZEROPAD</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ab6f8f053fe123435128cfcff1d407d75">PRINTF_DEFAULT_FLOAT_PRECISION</a>, and <a class="el" href="../../de/d6c/ld80_2e__powl_8c.html#ada9f5eb10774077068658da568843fbb">z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d3d/printf_8c.html#a2c0991970c9075b6e6197c313a1203fc">_ftoa()</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#a2bad5a18d0dcf3bbf70d0eb1b2797044">_vsnprintf()</a>.</p>
+
+</div>
+</div>
 <a id="a2c0991970c9075b6e6197c313a1203fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c0991970c9075b6e6197c313a1203fc">&#9670;&nbsp;</a></span>_ftoa()</h2>
 
@@ -767,9 +946,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../d3/d49/test_2string_2memcpy_8c.html#a78a05cf530dddc61e7a26aefe187bd31">buf</a>, <a class="el" href="../../d0/ddb/misc_8c.html#abd4bc68c4df4c548fe5e2524f47f598d">diff()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ac6c26878acb903cb07de2b9552fec26b">FLAGS_LEFT</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a3d8b1bd3dd657ac7856e8aa67b170fee">FLAGS_PLUS</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a7ffc74d008f9e494649d270668555dd1">FLAGS_PRECISION</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a2c249ce13d36626995f96880028b3d0a">FLAGS_SPACE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ad7b04ce70e8c9e609f02c796be254062">FLAGS_ZEROPAD</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#af7aeb1c970d5c2bf5fada4eaca516a25">PRINTF_FTOA_BUFFER_SIZE</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d3d/printf_8c.html#a23691c6d6c56ceeb323ce2005ea6a244">_etoa()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#aa382f455ad26a4ffdc0fdb652a5edd9d">_out_rev()</a>, <a class="el" href="../../d3/d49/test_2string_2memcpy_8c.html#a78a05cf530dddc61e7a26aefe187bd31">buf</a>, <a class="el" href="../../d7/d26/include_2float_8h.html#af78670ee54c1203d613f8fb0e022d214">DBL_MAX</a>, <a class="el" href="../../d0/ddb/misc_8c.html#abd4bc68c4df4c548fe5e2524f47f598d">diff()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ac6c26878acb903cb07de2b9552fec26b">FLAGS_LEFT</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a3d8b1bd3dd657ac7856e8aa67b170fee">FLAGS_PLUS</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a7ffc74d008f9e494649d270668555dd1">FLAGS_PRECISION</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a2c249ce13d36626995f96880028b3d0a">FLAGS_SPACE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ad7b04ce70e8c9e609f02c796be254062">FLAGS_ZEROPAD</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ab6f8f053fe123435128cfcff1d407d75">PRINTF_DEFAULT_FLOAT_PRECISION</a>, <a class="el" href="../../d1/d3d/printf_8c.html#af7aeb1c970d5c2bf5fada4eaca516a25">PRINTF_FTOA_BUFFER_SIZE</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#a3efdab8617b9e4d7f01a570ce44e8d2d">PRINTF_MAX_FLOAT</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d3d/printf_8c.html#a2bad5a18d0dcf3bbf70d0eb1b2797044">_vsnprintf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d3d/printf_8c.html#a23691c6d6c56ceeb323ce2005ea6a244">_etoa()</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#a2bad5a18d0dcf3bbf70d0eb1b2797044">_vsnprintf()</a>.</p>
 
 </div>
 </div>
@@ -889,7 +1068,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../d3/d49/test_2string_2memcpy_8c.html#a78a05cf530dddc61e7a26aefe187bd31">buf</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a4e4ed2c9a700bf9cfddabb05debd4790">FLAGS_HASH</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ac6c26878acb903cb07de2b9552fec26b">FLAGS_LEFT</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a3d8b1bd3dd657ac7856e8aa67b170fee">FLAGS_PLUS</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a7ffc74d008f9e494649d270668555dd1">FLAGS_PRECISION</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a2c249ce13d36626995f96880028b3d0a">FLAGS_SPACE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a738a48de177a2e385f66995685334761">FLAGS_UPPERCASE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ad7b04ce70e8c9e609f02c796be254062">FLAGS_ZEROPAD</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#a4278b980717163a8ef983ce3fbf0b9db">PRINTF_NTOA_BUFFER_SIZE</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d3d/printf_8c.html#aa382f455ad26a4ffdc0fdb652a5edd9d">_out_rev()</a>, <a class="el" href="../../d3/d49/test_2string_2memcpy_8c.html#a78a05cf530dddc61e7a26aefe187bd31">buf</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a4e4ed2c9a700bf9cfddabb05debd4790">FLAGS_HASH</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ac6c26878acb903cb07de2b9552fec26b">FLAGS_LEFT</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a3d8b1bd3dd657ac7856e8aa67b170fee">FLAGS_PLUS</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a7ffc74d008f9e494649d270668555dd1">FLAGS_PRECISION</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a2c249ce13d36626995f96880028b3d0a">FLAGS_SPACE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a738a48de177a2e385f66995685334761">FLAGS_UPPERCASE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ad7b04ce70e8c9e609f02c796be254062">FLAGS_ZEROPAD</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#a4278b980717163a8ef983ce3fbf0b9db">PRINTF_NTOA_BUFFER_SIZE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d3d/printf_8c.html#aef1143febac07b5961075f4d76b6cc75">_ntoa_long()</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#acf2e41c6171fe92b66260c643098fae2">_ntoa_long_long()</a>.</p>
 
@@ -979,7 +1158,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d1/d3d/printf_8c.html#acd89d7f040822741e36375ba7bbb2d74">_ntoa_format()</a>, <a class="el" href="../../d3/d49/test_2string_2memcpy_8c.html#a78a05cf530dddc61e7a26aefe187bd31">buf</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a4e4ed2c9a700bf9cfddabb05debd4790">FLAGS_HASH</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a7ffc74d008f9e494649d270668555dd1">FLAGS_PRECISION</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a738a48de177a2e385f66995685334761">FLAGS_UPPERCASE</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#a4278b980717163a8ef983ce3fbf0b9db">PRINTF_NTOA_BUFFER_SIZE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d3d/printf_8c.html#a2bad5a18d0dcf3bbf70d0eb1b2797044">_vsnprintf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d3d/printf_8c.html#a23691c6d6c56ceeb323ce2005ea6a244">_etoa()</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#a2bad5a18d0dcf3bbf70d0eb1b2797044">_vsnprintf()</a>.</p>
 
 </div>
 </div>
@@ -1273,6 +1452,82 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa382f455ad26a4ffdc0fdb652a5edd9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa382f455ad26a4ffdc0fdb652a5edd9d">&#9670;&nbsp;</a></span>_out_rev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> _out_rev </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d3d/printf_8c.html#ac4a1ad6d5e0eae2f65ab59703847359a">out_fct_type</a>&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>maxlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d3/d49/test_2string_2memcpy_8c.html#a78a05cf530dddc61e7a26aefe187bd31">buf</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ac6c26878acb903cb07de2b9552fec26b">FLAGS_LEFT</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#ad7b04ce70e8c9e609f02c796be254062">FLAGS_ZEROPAD</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d3d/printf_8c.html#a2c0991970c9075b6e6197c313a1203fc">_ftoa()</a>, and <a class="el" href="../../d1/d3d/printf_8c.html#acd89d7f040822741e36375ba7bbb2d74">_ntoa_format()</a>.</p>
+
+</div>
+</div>
 <a id="acb33d6749e14e5f14e00b9b947302280"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb33d6749e14e5f14e00b9b947302280">&#9670;&nbsp;</a></span>_strnlen_s()</h2>
 
@@ -1365,7 +1620,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../d1/d3d/printf_8c.html#a3ee89701d5bf35415505f4412ed9d8df">_atoi()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a2c0991970c9075b6e6197c313a1203fc">_ftoa()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a3b3255e97ad723d1af56cc336b9ba0ff">_is_digit()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#aef1143febac07b5961075f4d76b6cc75">_ntoa_long()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#acf2e41c6171fe92b66260c643098fae2">_ntoa_long_long()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ab7af60ce6079dfaea8e8589e47eeb8f0">_out_null()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#acb33d6749e14e5f14e00b9b947302280">_strnlen_s()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a5584c6d116b42ffdf2c2b7b72209cb25">FLAGS_CHAR</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a4e4ed2c9a700bf9cfddabb05debd4790">FLAGS_HASH</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ac6c26878acb903cb07de2b9552fec26b">FLAGS_LEFT</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a15a50af941ea5ca0a9517faf2f90b524">FLAGS_LONG</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a4ac2d97fe74925064a50628a469403d3">FLAGS_LONG_LONG</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a3d8b1bd3dd657ac7856e8aa67b170fee">FLAGS_PLUS</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a7ffc74d008f9e494649d270668555dd1">FLAGS_PRECISION</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a4e289a20e315f0a470da3f149d33c7a5">FLAGS_SHORT</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a2c249ce13d36626995f96880028b3d0a">FLAGS_SPACE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a738a48de177a2e385f66995685334761">FLAGS_UPPERCASE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ad7b04ce70e8c9e609f02c796be254062">FLAGS_ZEROPAD</a>, <a class="el" href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a4ee32b092e68c7a43abb455e5c146695">n</a>, <a class="el" href="../../d4/dfa/test_2src_2malloc__freelist_8c.html#a8e3a3e55f9448a87da5720ae4c8b00c6">p</a>, <a class="el" href="../../d1/d2d/stdarg_8h.html#a9cfd655f1203c9a345ddd90446f0bcee">va_arg</a>, and <a class="el" href="../../de/d6c/ld80_2e__powl_8c.html#ad8550f754ac947795e087acdfe02cfd9">w</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d3d/printf_8c.html#a3ee89701d5bf35415505f4412ed9d8df">_atoi()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a23691c6d6c56ceeb323ce2005ea6a244">_etoa()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a2c0991970c9075b6e6197c313a1203fc">_ftoa()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a3b3255e97ad723d1af56cc336b9ba0ff">_is_digit()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#aef1143febac07b5961075f4d76b6cc75">_ntoa_long()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#acf2e41c6171fe92b66260c643098fae2">_ntoa_long_long()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ab7af60ce6079dfaea8e8589e47eeb8f0">_out_null()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#acb33d6749e14e5f14e00b9b947302280">_strnlen_s()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ac65b16dab08c378eb12307e41cedb696">FLAGS_ADAPT_EXP</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a5584c6d116b42ffdf2c2b7b72209cb25">FLAGS_CHAR</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a4e4ed2c9a700bf9cfddabb05debd4790">FLAGS_HASH</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ac6c26878acb903cb07de2b9552fec26b">FLAGS_LEFT</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a15a50af941ea5ca0a9517faf2f90b524">FLAGS_LONG</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a4ac2d97fe74925064a50628a469403d3">FLAGS_LONG_LONG</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a3d8b1bd3dd657ac7856e8aa67b170fee">FLAGS_PLUS</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a7ffc74d008f9e494649d270668555dd1">FLAGS_PRECISION</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a4e289a20e315f0a470da3f149d33c7a5">FLAGS_SHORT</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a2c249ce13d36626995f96880028b3d0a">FLAGS_SPACE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a738a48de177a2e385f66995685334761">FLAGS_UPPERCASE</a>, <a class="el" href="../../d1/d3d/printf_8c.html#ad7b04ce70e8c9e609f02c796be254062">FLAGS_ZEROPAD</a>, <a class="el" href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a4ee32b092e68c7a43abb455e5c146695">n</a>, <a class="el" href="../../d4/dfa/test_2src_2malloc__freelist_8c.html#a8e3a3e55f9448a87da5720ae4c8b00c6">p</a>, <a class="el" href="../../d1/d2d/stdarg_8h.html#a9cfd655f1203c9a345ddd90446f0bcee">va_arg</a>, and <a class="el" href="../../de/d6c/ld80_2e__powl_8c.html#ad8550f754ac947795e087acdfe02cfd9">w</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d3/d6b/printf_8h.html#a16cdc6ff34afc2122ae164d4ee3a8c50">fctprintf()</a>, <a class="el" href="../../d3/d6b/printf_8h.html#a770cb7c9f4a7b37dc5b49c4c68a8308e">printf_()</a>, <a class="el" href="../../d3/d6b/printf_8h.html#a5b16fca837f5301cb0c01fa668f044f4">snprintf_()</a>, <a class="el" href="../../d3/d6b/printf_8h.html#a989410555ef35cd646c15d51e649faaa">sprintf_()</a>, <a class="el" href="../../d3/d6b/printf_8h.html#aa199d9388f8dcddcda1a0451315cae89">vprintf_()</a>, and <a class="el" href="../../d3/d6b/printf_8h.html#af37254f8c6a2d9d51e82c85fd666f88e">vsnprintf_()</a>.</p>
 
@@ -1420,14 +1675,14 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of characters that are sent to the output function, not counting the terminating null character </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d45/group___logging_subsystem.html#a8c0ca591802803fa29f6bb57b7906624">embvm::LoggerBase&lt; TLock &gt;::log()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d45/group___logging_subsystem.html#a3055153cb76d5d0f40146ce24d613c5f">embvm::LoggerBase&lt; TLock &gt;::log()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d3d/printf_8c_a16cdc6ff34afc2122ae164d4ee3a8c50_icgraph.jpg" border="0" usemap="#d1/d3d/printf_8c_a16cdc6ff34afc2122ae164d4ee3a8c50_icgraph" alt=""/></div>
 <map name="d1/d3d/printf_8c_a16cdc6ff34afc2122ae164d4ee3a8c50_icgraph" id="d1/d3d/printf_8c_a16cdc6ff34afc2122ae164d4ee3a8c50_icgraph">
 <area shape="rect"  title="printf with output function You may use this as dynamic alternative to printf() with its fixed _putch..." alt="" coords="223,5,288,31"/>
-<area shape="rect"  href="../../dd/d45/group___logging_subsystem.html#a8c0ca591802803fa29f6bb57b7906624" title="Add data to the log buffer." alt="" coords="5,5,175,31"/>
+<area shape="rect"  href="../../dd/d45/group___logging_subsystem.html#a3055153cb76d5d0f40146ce24d613c5f" title="Add data to the log buffer." alt="" coords="5,5,175,31"/>
 </map>
 </div>
 

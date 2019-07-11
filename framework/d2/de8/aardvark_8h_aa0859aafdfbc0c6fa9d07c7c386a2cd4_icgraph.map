@@ -1,7 +1,5 @@
 <map id="aa_spi_configure" name="aa_spi_configure">
-<area shape="rect" id="node1" title=" " alt="" coords="476,71,599,96"/>
-<area shape="rect" id="node2" href="$d6/d18/group___aardvark_drivers.html#aae49008139c1fa7c4f252c9f7e70fab8" title="Configure the SPI bus for operation." alt="" coords="241,36,428,75"/>
-<area shape="rect" id="node5" href="$d0/d84/aaspi__eeprom_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="309,99,359,124"/>
-<area shape="rect" id="node3" href="$d6/d18/group___aardvark_drivers.html#ab1c572f72ec6229b1a4db867a1f864d4" title="Set the SPI bus mode." alt="" coords="5,5,193,44"/>
-<area shape="rect" id="node4" href="$d6/d18/group___aardvark_drivers.html#aa49cf984ba76a8cd45890edde55850c0" title="Set the SPI bus byte order." alt="" coords="5,68,193,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="241,40,364,65"/>
+<area shape="rect" id="node2" href="$d6/d18/group___aardvark_drivers.html#a83ec6571607172b447d638667a69104d" title="Configure the SPI bus for operation." alt="" coords="5,5,193,44"/>
+<area shape="rect" id="node3" href="$d0/d84/aaspi__eeprom_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="74,68,124,93"/>
 </map>

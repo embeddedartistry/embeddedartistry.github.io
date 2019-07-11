@@ -101,51 +101,39 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0c401900d2cecd252d096b3baf063bf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a0c401900d2cecd252d096b3baf063bf8">sensor</a> ()</td></tr>
-<tr class="memdesc:a0c401900d2cecd252d096b3baf063bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a0c401900d2cecd252d096b3baf063bf8">More...</a><br /></td></tr>
-<tr class="separator:a0c401900d2cecd252d096b3baf063bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a883e96bdb0e2b93d42773c085d6abbe9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a883e96bdb0e2b93d42773c085d6abbe9">sensor</a> (const char *<a class="el" href="../../d1/dc2/group___framework_driver.html#ae860062cec176fd6d0f27c3444005524">name</a>)</td></tr>
-<tr class="memdesc:a883e96bdb0e2b93d42773c085d6abbe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html" title="This class defines common time-of-flight (ToF) sensor interfaces.">tof::sensor</a> with a C-string name.  <a href="#a883e96bdb0e2b93d42773c085d6abbe9">More...</a><br /></td></tr>
-<tr class="separator:a883e96bdb0e2b93d42773c085d6abbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6027608210ced748e893c9188a3f48b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a6027608210ced748e893c9188a3f48b5">sensor</a> (const std::string &amp;<a class="el" href="../../d1/dc2/group___framework_driver.html#ae860062cec176fd6d0f27c3444005524">name</a>)</td></tr>
-<tr class="memdesc:a6027608210ced748e893c9188a3f48b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html" title="This class defines common time-of-flight (ToF) sensor interfaces.">tof::sensor</a> with a std::string name.  <a href="#a6027608210ced748e893c9188a3f48b5">More...</a><br /></td></tr>
-<tr class="separator:a6027608210ced748e893c9188a3f48b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe235339ec07e5469ce81533a9ee07b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#afe235339ec07e5469ce81533a9ee07b2">sensor</a> (const std::string_view &amp;<a class="el" href="../../d1/dc2/group___framework_driver.html#ae860062cec176fd6d0f27c3444005524">name</a>)</td></tr>
-<tr class="memdesc:afe235339ec07e5469ce81533a9ee07b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html" title="This class defines common time-of-flight (ToF) sensor interfaces.">tof::sensor</a> with a std::string_view name.  <a href="#afe235339ec07e5469ce81533a9ee07b2">More...</a><br /></td></tr>
-<tr class="separator:afe235339ec07e5469ce81533a9ee07b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e5937ceb90ca8f0bdea76c68d333ce5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#afa1745944979150d317b2be59932c63f">tof::distance_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a0e5937ceb90ca8f0bdea76c68d333ce5">getMaxRangeForModeDark</a> (<a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#af8ad6393b67a8a57b13b2bd0c2667521">tof::mode</a> m) const =0</td></tr>
-<tr class="memdesc:a0e5937ceb90ca8f0bdea76c68d333ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the maximum range in the dark.  <a href="#a0e5937ceb90ca8f0bdea76c68d333ce5">More...</a><br /></td></tr>
-<tr class="separator:a0e5937ceb90ca8f0bdea76c68d333ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fab1f828a1cbf9317d95df16eb2d48c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#afa1745944979150d317b2be59932c63f">tof::distance_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a8fab1f828a1cbf9317d95df16eb2d48c">getMaxRangeForModeStrongLight</a> (<a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#af8ad6393b67a8a57b13b2bd0c2667521">tof::mode</a> m) const =0</td></tr>
-<tr class="memdesc:a8fab1f828a1cbf9317d95df16eb2d48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the maximum range in strong light conditions.  <a href="#a8fab1f828a1cbf9317d95df16eb2d48c">More...</a><br /></td></tr>
-<tr class="separator:a8fab1f828a1cbf9317d95df16eb2d48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0a8d55ac3c622e090939c7b13d51d9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#afa1745944979150d317b2be59932c63f">tof::distance_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a5c0a8d55ac3c622e090939c7b13d51d9">getMaxRangeForModeDark</a> (<a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#af8ad6393b67a8a57b13b2bd0c2667521">tof::mode</a> m) const noexcept=0</td></tr>
+<tr class="memdesc:a5c0a8d55ac3c622e090939c7b13d51d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the maximum range in the dark.  <a href="#a5c0a8d55ac3c622e090939c7b13d51d9">More...</a><br /></td></tr>
+<tr class="separator:a5c0a8d55ac3c622e090939c7b13d51d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6401bd420d62be92607211452320c3f9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#afa1745944979150d317b2be59932c63f">tof::distance_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a6401bd420d62be92607211452320c3f9">getMaxRangeForModeStrongLight</a> (<a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#af8ad6393b67a8a57b13b2bd0c2667521">tof::mode</a> m) const noexcept=0</td></tr>
+<tr class="memdesc:a6401bd420d62be92607211452320c3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the maximum range in strong light conditions.  <a href="#a6401bd420d62be92607211452320c3f9">More...</a><br /></td></tr>
+<tr class="separator:a6401bd420d62be92607211452320c3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20fc3561664b8620030ddcb62aa61780"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#af8ad6393b67a8a57b13b2bd0c2667521">tof::mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a20fc3561664b8620030ddcb62aa61780">mode</a> () const noexcept</td></tr>
 <tr class="memdesc:a20fc3561664b8620030ddcb62aa61780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ToF ranging mode.  <a href="#a20fc3561664b8620030ddcb62aa61780">More...</a><br /></td></tr>
 <tr class="separator:a20fc3561664b8620030ddcb62aa61780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63856a9df9cc708f81775f602d827040"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#af8ad6393b67a8a57b13b2bd0c2667521">tof::mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a63856a9df9cc708f81775f602d827040">mode</a> (<a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#af8ad6393b67a8a57b13b2bd0c2667521">tof::mode</a> m)=0</td></tr>
-<tr class="memdesc:a63856a9df9cc708f81775f602d827040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ToF ranging mode.  <a href="#a63856a9df9cc708f81775f602d827040">More...</a><br /></td></tr>
-<tr class="separator:a63856a9df9cc708f81775f602d827040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e613aa490539a91445a8bda784d11c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a5e613aa490539a91445a8bda784d11c2">registerReadCallback</a> (const <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a077fa952691b29772f4f056760b0d509">read_cb_t</a> &amp;cb)=0</td></tr>
-<tr class="memdesc:a5e613aa490539a91445a8bda784d11c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback for the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> function.  <a href="#a5e613aa490539a91445a8bda784d11c2">More...</a><br /></td></tr>
-<tr class="separator:a5e613aa490539a91445a8bda784d11c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a467cb228c964ec1d039083a274992613"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a467cb228c964ec1d039083a274992613">registerReadCallback</a> (<a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a077fa952691b29772f4f056760b0d509">read_cb_t</a> &amp;&amp;cb)=0</td></tr>
-<tr class="memdesc:a467cb228c964ec1d039083a274992613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback for the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> function.  <a href="#a467cb228c964ec1d039083a274992613">More...</a><br /></td></tr>
-<tr class="separator:a467cb228c964ec1d039083a274992613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac17353a7ab2189a1642f4a41eb3c2a37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37">read</a> ()=0</td></tr>
-<tr class="memdesc:ac17353a7ab2189a1642f4a41eb3c2a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a sensor read.  <a href="#ac17353a7ab2189a1642f4a41eb3c2a37">More...</a><br /></td></tr>
-<tr class="separator:ac17353a7ab2189a1642f4a41eb3c2a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e2cf1729f5984155c085d24186ac74"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a20e2cf1729f5984155c085d24186ac74">reset</a> ()=0</td></tr>
-<tr class="memdesc:a20e2cf1729f5984155c085d24186ac74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the ToF sensor.  <a href="#a20e2cf1729f5984155c085d24186ac74">More...</a><br /></td></tr>
-<tr class="separator:a20e2cf1729f5984155c085d24186ac74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cb73607fbb78a35198fb108dbdb10f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#a8cb73607fbb78a35198fb108dbdb10f9">start</a> ()</td></tr>
-<tr class="memdesc:a8cb73607fbb78a35198fb108dbdb10f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the driver.  <a href="#a8cb73607fbb78a35198fb108dbdb10f9">More...</a><br /></td></tr>
-<tr class="separator:a8cb73607fbb78a35198fb108dbdb10f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfe3314846cae5f2a92f9c6963f99b56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#abfe3314846cae5f2a92f9c6963f99b56">stop</a> ()</td></tr>
-<tr class="memdesc:abfe3314846cae5f2a92f9c6963f99b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the driver.  <a href="#abfe3314846cae5f2a92f9c6963f99b56">More...</a><br /></td></tr>
-<tr class="separator:abfe3314846cae5f2a92f9c6963f99b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28a966055134b1233887f7c55337deea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#a28a966055134b1233887f7c55337deea">restart</a> ()</td></tr>
-<tr class="memdesc:a28a966055134b1233887f7c55337deea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restart the driver.  <a href="#a28a966055134b1233887f7c55337deea">More...</a><br /></td></tr>
-<tr class="separator:a28a966055134b1233887f7c55337deea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea71540fa65f29c9309d0df9a9138caf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#af8ad6393b67a8a57b13b2bd0c2667521">tof::mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#aea71540fa65f29c9309d0df9a9138caf">mode</a> (<a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#af8ad6393b67a8a57b13b2bd0c2667521">tof::mode</a> m) noexcept=0</td></tr>
+<tr class="memdesc:aea71540fa65f29c9309d0df9a9138caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ToF ranging mode.  <a href="#aea71540fa65f29c9309d0df9a9138caf">More...</a><br /></td></tr>
+<tr class="separator:aea71540fa65f29c9309d0df9a9138caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a0b30fb060c7adf85121e5266bf12c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac5a0b30fb060c7adf85121e5266bf12c">registerReadCallback</a> (const <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a077fa952691b29772f4f056760b0d509">read_cb_t</a> &amp;cb) noexcept=0</td></tr>
+<tr class="memdesc:ac5a0b30fb060c7adf85121e5266bf12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback for the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> function.  <a href="#ac5a0b30fb060c7adf85121e5266bf12c">More...</a><br /></td></tr>
+<tr class="separator:ac5a0b30fb060c7adf85121e5266bf12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6451e1ef0c84b54422ca7be4181ab335"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a6451e1ef0c84b54422ca7be4181ab335">registerReadCallback</a> (<a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a077fa952691b29772f4f056760b0d509">read_cb_t</a> &amp;&amp;cb) noexcept=0</td></tr>
+<tr class="memdesc:a6451e1ef0c84b54422ca7be4181ab335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback for the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> function.  <a href="#a6451e1ef0c84b54422ca7be4181ab335">More...</a><br /></td></tr>
+<tr class="separator:a6451e1ef0c84b54422ca7be4181ab335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f260ab38fad80f5902b3a5ead3de81"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81">read</a> () noexcept=0</td></tr>
+<tr class="memdesc:ad2f260ab38fad80f5902b3a5ead3de81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a sensor read.  <a href="#ad2f260ab38fad80f5902b3a5ead3de81">More...</a><br /></td></tr>
+<tr class="separator:ad2f260ab38fad80f5902b3a5ead3de81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bbde6b2906583776adac3629d71e0af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a3bbde6b2906583776adac3629d71e0af">reset</a> () noexcept=0</td></tr>
+<tr class="memdesc:a3bbde6b2906583776adac3629d71e0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the ToF sensor.  <a href="#a3bbde6b2906583776adac3629d71e0af">More...</a><br /></td></tr>
+<tr class="separator:a3bbde6b2906583776adac3629d71e0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa287e02a3ec4fbd9e97508c4c9fb8f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#aaa287e02a3ec4fbd9e97508c4c9fb8f9">start</a> () noexcept</td></tr>
+<tr class="memdesc:aaa287e02a3ec4fbd9e97508c4c9fb8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the driver.  <a href="#aaa287e02a3ec4fbd9e97508c4c9fb8f9">More...</a><br /></td></tr>
+<tr class="separator:aaa287e02a3ec4fbd9e97508c4c9fb8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaebcecbe8194c8e644cfa1a579c808c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#adaebcecbe8194c8e644cfa1a579c808c">stop</a> () noexcept</td></tr>
+<tr class="memdesc:adaebcecbe8194c8e644cfa1a579c808c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the driver.  <a href="#adaebcecbe8194c8e644cfa1a579c808c">More...</a><br /></td></tr>
+<tr class="separator:adaebcecbe8194c8e644cfa1a579c808c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ef4047fa20ec89cdaf4663f61bedd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#af5ef4047fa20ec89cdaf4663f61bedd9">restart</a> () noexcept</td></tr>
+<tr class="memdesc:af5ef4047fa20ec89cdaf4663f61bedd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restart the driver.  <a href="#af5ef4047fa20ec89cdaf4663f61bedd9">More...</a><br /></td></tr>
+<tr class="separator:af5ef4047fa20ec89cdaf4663f61bedd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01670f19d5b777d92139ff80523c1f4c"><td class="memItemLeft" align="right" valign="top">type_safe::boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#a01670f19d5b777d92139ff80523c1f4c">started</a> () const noexcept</td></tr>
 <tr class="memdesc:a01670f19d5b777d92139ff80523c1f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the driver has been started.  <a href="#a01670f19d5b777d92139ff80523c1f4c">More...</a><br /></td></tr>
 <tr class="separator:a01670f19d5b777d92139ff80523c1f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,21 +152,33 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a245f0836bde28277777ebc8bd9e62e23"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/dc2/group___framework_driver.html#ga92dffcfd32d2dee7a13ab04beb3f4b33">embvm::DriverType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a245f0836bde28277777ebc8bd9e62e23">type</a> ()</td></tr>
-<tr class="memdesc:a245f0836bde28277777ebc8bd9e62e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">ToF Driver Type ID.  <a href="#a245f0836bde28277777ebc8bd9e62e23">More...</a><br /></td></tr>
-<tr class="separator:a245f0836bde28277777ebc8bd9e62e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cceaea9c10f0c13711314d42b420fbb"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d1/dc2/group___framework_driver.html#ga92dffcfd32d2dee7a13ab04beb3f4b33">embvm::DriverType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a6cceaea9c10f0c13711314d42b420fbb">type</a> () noexcept</td></tr>
+<tr class="memdesc:a6cceaea9c10f0c13711314d42b420fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ToF Driver Type ID.  <a href="#a6cceaea9c10f0c13711314d42b420fbb">More...</a><br /></td></tr>
+<tr class="separator:a6cceaea9c10f0c13711314d42b420fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a469ca821325191b9fbf8d567cd7d75f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a469ca821325191b9fbf8d567cd7d75f7">~sensor</a> () override</td></tr>
-<tr class="memdesc:a469ca821325191b9fbf8d567cd7d75f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#a469ca821325191b9fbf8d567cd7d75f7">More...</a><br /></td></tr>
-<tr class="separator:a469ca821325191b9fbf8d567cd7d75f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a541ff6af8a5202dc23222976d23110ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a541ff6af8a5202dc23222976d23110ce">start_</a> () override=0</td></tr>
-<tr class="memdesc:a541ff6af8a5202dc23222976d23110ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes override the start_ method to control driver-specific startup behavior.  <a href="#a541ff6af8a5202dc23222976d23110ce">More...</a><br /></td></tr>
-<tr class="separator:a541ff6af8a5202dc23222976d23110ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae34b22bdd7597e6643b8f030b2aedc55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ae34b22bdd7597e6643b8f030b2aedc55">stop_</a> () override=0</td></tr>
-<tr class="memdesc:ae34b22bdd7597e6643b8f030b2aedc55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes override the start_ method to control driver-specific startup behavior.  <a href="#ae34b22bdd7597e6643b8f030b2aedc55">More...</a><br /></td></tr>
-<tr class="separator:ae34b22bdd7597e6643b8f030b2aedc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253cf46ca157fe1a7c1ea3c6462871b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a253cf46ca157fe1a7c1ea3c6462871b6">sensor</a> () noexcept</td></tr>
+<tr class="memdesc:a253cf46ca157fe1a7c1ea3c6462871b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a253cf46ca157fe1a7c1ea3c6462871b6">More...</a><br /></td></tr>
+<tr class="separator:a253cf46ca157fe1a7c1ea3c6462871b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af44b045da92c73dcc532705848978f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a5af44b045da92c73dcc532705848978f">sensor</a> (const char *<a class="el" href="../../d1/dc2/group___framework_driver.html#ae860062cec176fd6d0f27c3444005524">name</a>) noexcept</td></tr>
+<tr class="memdesc:a5af44b045da92c73dcc532705848978f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html" title="This class defines common time-of-flight (ToF) sensor interfaces.">tof::sensor</a> with a C-string name.  <a href="#a5af44b045da92c73dcc532705848978f">More...</a><br /></td></tr>
+<tr class="separator:a5af44b045da92c73dcc532705848978f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9adb8bf43599fbfb27810604c122708f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a9adb8bf43599fbfb27810604c122708f">sensor</a> (const std::string &amp;<a class="el" href="../../d1/dc2/group___framework_driver.html#ae860062cec176fd6d0f27c3444005524">name</a>) noexcept</td></tr>
+<tr class="memdesc:a9adb8bf43599fbfb27810604c122708f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html" title="This class defines common time-of-flight (ToF) sensor interfaces.">tof::sensor</a> with a std::string name.  <a href="#a9adb8bf43599fbfb27810604c122708f">More...</a><br /></td></tr>
+<tr class="separator:a9adb8bf43599fbfb27810604c122708f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb84236909360f1730f2351d262d3d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a8cb84236909360f1730f2351d262d3d2">sensor</a> (const std::string_view &amp;<a class="el" href="../../d1/dc2/group___framework_driver.html#ae860062cec176fd6d0f27c3444005524">name</a>) noexcept</td></tr>
+<tr class="memdesc:a8cb84236909360f1730f2351d262d3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html" title="This class defines common time-of-flight (ToF) sensor interfaces.">tof::sensor</a> with a std::string_view name.  <a href="#a8cb84236909360f1730f2351d262d3d2">More...</a><br /></td></tr>
+<tr class="separator:a8cb84236909360f1730f2351d262d3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b2a251dcc938108c7ed6e630358b8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad3b2a251dcc938108c7ed6e630358b8c">~sensor</a> () noexcept override</td></tr>
+<tr class="memdesc:ad3b2a251dcc938108c7ed6e630358b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#ad3b2a251dcc938108c7ed6e630358b8c">More...</a><br /></td></tr>
+<tr class="separator:ad3b2a251dcc938108c7ed6e630358b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4889efd217d1c1d6d72675f5b67e8933"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a4889efd217d1c1d6d72675f5b67e8933">start_</a> () noexcept override=0</td></tr>
+<tr class="memdesc:a4889efd217d1c1d6d72675f5b67e8933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes override the start_ method to control driver-specific startup behavior.  <a href="#a4889efd217d1c1d6d72675f5b67e8933">More...</a><br /></td></tr>
+<tr class="separator:a4889efd217d1c1d6d72675f5b67e8933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5251e058a3bf0f8703342e8268bc281e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a5251e058a3bf0f8703342e8268bc281e">stop_</a> () noexcept override=0</td></tr>
+<tr class="memdesc:a5251e058a3bf0f8703342e8268bc281e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes override the start_ method to control driver-specific startup behavior.  <a href="#a5251e058a3bf0f8703342e8268bc281e">More...</a><br /></td></tr>
+<tr class="separator:a5251e058a3bf0f8703342e8268bc281e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -201,22 +201,22 @@ Protected Attributes</h2></td></tr>
 <h1>Define a ToF Driver</h1>
 <p>To define a ToF driver, derive from the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html" title="This class defines common time-of-flight (ToF) sensor interfaces.">tof::sensor</a> object:</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>vl53l1x final : <span class="keyword">public</span> tof::sensor</div><div class="line">{ ... };</div></div><!-- fragment --><p>Derived classes must implement the following functions:</p><ul>
-<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a></li>
-<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a20e2cf1729f5984155c085d24186ac74" title="Reset the ToF sensor.">reset()</a></li>
-<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a5e613aa490539a91445a8bda784d11c2" title="Register a callback for the read() function.">registerReadCallback()</a></li>
+<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a></li>
+<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a3bbde6b2906583776adac3629d71e0af" title="Reset the ToF sensor.">reset()</a></li>
+<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac5a0b30fb060c7adf85121e5266bf12c" title="Register a callback for the read() function.">registerReadCallback()</a></li>
 <li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a20fc3561664b8620030ddcb62aa61780" title="Get the ToF ranging mode.">mode()</a></li>
-<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a0e5937ceb90ca8f0bdea76c68d333ce5" title="Check the maximum range in the dark.">getMaxRangeForModeDark()</a></li>
-<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a8fab1f828a1cbf9317d95df16eb2d48c" title="Check the maximum range in strong light conditions.">getMaxRangeForModeStrongLight()</a></li>
+<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a5c0a8d55ac3c622e090939c7b13d51d9" title="Check the maximum range in the dark.">getMaxRangeForModeDark()</a></li>
+<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a6401bd420d62be92607211452320c3f9" title="Check the maximum range in strong light conditions.">getMaxRangeForModeStrongLight()</a></li>
 </ul>
 <p>Additional sensor-specific functions may be defined. They are simply not available in the public/common interface.</p>
 <p>Derived classes must also implement pure virtual <a class="el" href="../../d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers.">embvm::DriverBase</a> functions:</p><ul>
-<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a541ff6af8a5202dc23222976d23110ce" title="Derived classes override the start_ method to control driver-specific startup behavior.">start_()</a></li>
-<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ae34b22bdd7597e6643b8f030b2aedc55" title="Derived classes override the start_ method to control driver-specific startup behavior.">stop_()</a></li>
+<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a4889efd217d1c1d6d72675f5b67e8933" title="Derived classes override the start_ method to control driver-specific startup behavior.">start_()</a></li>
+<li><a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a5251e058a3bf0f8703342e8268bc281e" title="Derived classes override the start_ method to control driver-specific startup behavior.">stop_()</a></li>
 </ul>
 <h1>Using a ToF driver</h1>
 <p>The ToF driver should be configured with the desired ranging mode (<a class="el" href="../../dd/d6e/namespaceembvm_1_1tof.html#af8ad6393b67a8a57b13b2bd0c2667521" title="ToF ranging mode options.">tof::mode</a>) using the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a20fc3561664b8620030ddcb62aa61780" title="Get the ToF ranging mode.">mode()</a> function.</p>
-<p>Once the sensor is configured, a callback should be registered via <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a5e613aa490539a91445a8bda784d11c2" title="Register a callback for the read() function.">registerReadCallback()</a>. The callback is required in order to receive results from the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> command.</p>
-<p>To get a range result from the sensor, call the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> function. The function operates asynchronously and will return immediately. When the read operation completes, registered callbacks will be called. </p>
+<p>Once the sensor is configured, a callback should be registered via <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac5a0b30fb060c7adf85121e5266bf12c" title="Register a callback for the read() function.">registerReadCallback()</a>. The callback is required in order to receive results from the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> command.</p>
+<p>To get a range result from the sensor, call the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> function. The function operates asynchronously and will return immediately. When the read operation completes, registered callbacks will be called. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a077fa952691b29772f4f056760b0d509"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a077fa952691b29772f4f056760b0d509">&#9670;&nbsp;</a></span>read_cb_t</h2>
@@ -235,8 +235,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0c401900d2cecd252d096b3baf063bf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c401900d2cecd252d096b3baf063bf8">&#9670;&nbsp;</a></span>sensor() <span class="overload">[1/4]</span></h2>
+<a id="a253cf46ca157fe1a7c1ea3c6462871b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a253cf46ca157fe1a7c1ea3c6462871b6">&#9670;&nbsp;</a></span>sensor() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +253,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -263,8 +263,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a883e96bdb0e2b93d42773c085d6abbe9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a883e96bdb0e2b93d42773c085d6abbe9">&#9670;&nbsp;</a></span>sensor() <span class="overload">[2/4]</span></h2>
+<a id="a5af44b045da92c73dcc532705848978f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af44b045da92c73dcc532705848978f">&#9670;&nbsp;</a></span>sensor() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,7 +282,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -298,8 +298,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6027608210ced748e893c9188a3f48b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6027608210ced748e893c9188a3f48b5">&#9670;&nbsp;</a></span>sensor() <span class="overload">[3/4]</span></h2>
+<a id="a9adb8bf43599fbfb27810604c122708f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9adb8bf43599fbfb27810604c122708f">&#9670;&nbsp;</a></span>sensor() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,7 +317,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -333,8 +333,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afe235339ec07e5469ce81533a9ee07b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe235339ec07e5469ce81533a9ee07b2">&#9670;&nbsp;</a></span>sensor() <span class="overload">[4/4]</span></h2>
+<a id="a8cb84236909360f1730f2351d262d3d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb84236909360f1730f2351d262d3d2">&#9670;&nbsp;</a></span>sensor() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +352,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -368,8 +368,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a469ca821325191b9fbf8d567cd7d75f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a469ca821325191b9fbf8d567cd7d75f7">&#9670;&nbsp;</a></span>~sensor()</h2>
+<a id="ad3b2a251dcc938108c7ed6e630358b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b2a251dcc938108c7ed6e630358b8c">&#9670;&nbsp;</a></span>~sensor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,7 +386,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -428,8 +428,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e5937ceb90ca8f0bdea76c68d333ce5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e5937ceb90ca8f0bdea76c68d333ce5">&#9670;&nbsp;</a></span>getMaxRangeForModeDark()</h2>
+<a id="a5c0a8d55ac3c622e090939c7b13d51d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0a8d55ac3c622e090939c7b13d51d9">&#9670;&nbsp;</a></span>getMaxRangeForModeDark()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -447,7 +447,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -455,12 +455,12 @@ Protected Attributes</h2></td></tr>
 <p>Check the maximum range in the dark. </p>
 <dl class="section return"><dt>Returns</dt><dd>the sensor's maximum distance capability (in mm) in the dark. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#aaaab661c8488020fde6a370a65b1cb3d">embdrv::vl53l1x</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#ae4a74fcbbc0b40f228738d681d1f3eae">embdrv::vl53l1x</a>.</p>
 
 </div>
 </div>
-<a id="a8fab1f828a1cbf9317d95df16eb2d48c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fab1f828a1cbf9317d95df16eb2d48c">&#9670;&nbsp;</a></span>getMaxRangeForModeStrongLight()</h2>
+<a id="a6401bd420d62be92607211452320c3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6401bd420d62be92607211452320c3f9">&#9670;&nbsp;</a></span>getMaxRangeForModeStrongLight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,7 +478,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -486,7 +486,7 @@ Protected Attributes</h2></td></tr>
 <p>Check the maximum range in strong light conditions. </p>
 <dl class="section return"><dt>Returns</dt><dd>the sensor's maximum distance capability (in mm) in strong light. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#a7f2654dc9628ee49214dec6055cdde74">embdrv::vl53l1x</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#a101a112902a6fbdac3ac1bf572b8b72e">embdrv::vl53l1x</a>.</p>
 
 </div>
 </div>
@@ -520,8 +520,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a63856a9df9cc708f81775f602d827040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63856a9df9cc708f81775f602d827040">&#9670;&nbsp;</a></span>mode() <span class="overload">[2/2]</span></h2>
+<a id="aea71540fa65f29c9309d0df9a9138caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea71540fa65f29c9309d0df9a9138caf">&#9670;&nbsp;</a></span>mode() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,7 +539,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -553,7 +553,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the active ToF mode. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#a2d66787ead7896d85f3c85e2ce713a6b">embdrv::vl53l1x</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#a2f3d0fdad00abb83c5420defe1518827">embdrv::vl53l1x</a>.</p>
 
 </div>
 </div>
@@ -644,8 +644,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac17353a7ab2189a1642f4a41eb3c2a37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac17353a7ab2189a1642f4a41eb3c2a37">&#9670;&nbsp;</a></span>read()</h2>
+<a id="ad2f260ab38fad80f5902b3a5ead3de81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f260ab38fad80f5902b3a5ead3de81">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -662,20 +662,20 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Trigger a sensor read. </p>
-<p>Trigger an asynchronous read of the ToF sensor. The result will be provided to consumers through a callback function. When the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> operation completes, the callback will be invoked with the result. </p>
+<p>Trigger an asynchronous read of the ToF sensor. The result will be provided to consumers through a callback function. When the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> operation completes, the callback will be invoked with the result. </p>
 
-<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#a871a554cfa456cc6b655667def8864ef">embdrv::vl53l1x</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#a16ec4da9e47b579ba048fe515c473862">embdrv::vl53l1x</a>.</p>
 
 </div>
 </div>
-<a id="a5e613aa490539a91445a8bda784d11c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e613aa490539a91445a8bda784d11c2">&#9670;&nbsp;</a></span>registerReadCallback() <span class="overload">[1/2]</span></h2>
+<a id="ac5a0b30fb060c7adf85121e5266bf12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a0b30fb060c7adf85121e5266bf12c">&#9670;&nbsp;</a></span>registerReadCallback() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -693,29 +693,29 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Register a callback for the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> function. </p>
-<p>The <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> function works asynchronously, and the result will be provided to consumers through a callback function. When the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> operation completes, the callback will be invoked with the result.</p>
+<p>Register a callback for the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> function. </p>
+<p>The <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> function works asynchronously, and the result will be provided to consumers through a callback function. When the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> operation completes, the callback will be invoked with the result.</p>
 <p>This function must be implemented by the derived class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb</td><td>The functor which will be called when <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> completes. </td></tr>
+    <tr><td class="paramname">cb</td><td>The functor which will be called when <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> completes. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#aeb07f140f6f8e24d986dc11f59f25238">embdrv::vl53l1x</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#a195a80c1423be0483839d4546f89a454">embdrv::vl53l1x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/dfd/class_framework_demo_sim_platform.html#a7a9e0a07b9f739190c72b93b4a8b15f5">FrameworkDemoSimPlatform::init_()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/dfd/class_framework_demo_sim_platform.html#a5f91cdb634954527b87def2a049cf6f6">FrameworkDemoSimPlatform::init_()</a>.</p>
 
 </div>
 </div>
-<a id="a467cb228c964ec1d039083a274992613"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a467cb228c964ec1d039083a274992613">&#9670;&nbsp;</a></span>registerReadCallback() <span class="overload">[2/2]</span></h2>
+<a id="a6451e1ef0c84b54422ca7be4181ab335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6451e1ef0c84b54422ca7be4181ab335">&#9670;&nbsp;</a></span>registerReadCallback() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -733,27 +733,27 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Register a callback for the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> function. </p>
-<p>The <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> function works asynchronously, and the result will be provided to consumers through a callback function. When the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> operation completes, the callback will be invoked with the result.</p>
+<p>Register a callback for the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> function. </p>
+<p>The <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> function works asynchronously, and the result will be provided to consumers through a callback function. When the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> operation completes, the callback will be invoked with the result.</p>
 <p>This function must be implemented by the derived class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb</td><td>The functor which will be called when <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ac17353a7ab2189a1642f4a41eb3c2a37" title="Trigger a sensor read.">read()</a> completes. </td></tr>
+    <tr><td class="paramname">cb</td><td>The functor which will be called when <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ad2f260ab38fad80f5902b3a5ead3de81" title="Trigger a sensor read.">read()</a> completes. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#a4c7e4251c928be6c3c2467973322526f">embdrv::vl53l1x</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#ad77587947419fc6c7ed9e088a15fb57f">embdrv::vl53l1x</a>.</p>
 
 </div>
 </div>
-<a id="a20e2cf1729f5984155c085d24186ac74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20e2cf1729f5984155c085d24186ac74">&#9670;&nbsp;</a></span>reset()</h2>
+<a id="a3bbde6b2906583776adac3629d71e0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bbde6b2906583776adac3629d71e0af">&#9670;&nbsp;</a></span>reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -770,19 +770,19 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reset the ToF sensor. </p>
 
-<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#aab8dcf3b6b1dbc650cc839bbbfa3e5c3">embdrv::vl53l1x</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#aeb4f025c8302609acf0457d8618339aa">embdrv::vl53l1x</a>.</p>
 
 </div>
 </div>
-<a id="a28a966055134b1233887f7c55337deea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28a966055134b1233887f7c55337deea">&#9670;&nbsp;</a></span>restart()</h2>
+<a id="af5ef4047fa20ec89cdaf4663f61bedd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ef4047fa20ec89cdaf4663f61bedd9">&#9670;&nbsp;</a></span>restart()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -799,20 +799,20 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Restart the driver. </p>
-<p>Calls <a class="el" href="../../d1/dc2/group___framework_driver.html#abfe3314846cae5f2a92f9c6963f99b56" title="Stop the driver.">stop()</a> and then <a class="el" href="../../d1/dc2/group___framework_driver.html#a8cb73607fbb78a35198fb108dbdb10f9" title="Start the driver.">start()</a> on the driver. If the driver is not started, then it will be started after the <a class="el" href="../../d1/dc2/group___framework_driver.html#a8cb73607fbb78a35198fb108dbdb10f9" title="Start the driver.">start()</a> function is invoked. </p>
+<p>Calls <a class="el" href="../../d1/dc2/group___framework_driver.html#adaebcecbe8194c8e644cfa1a579c808c" title="Stop the driver.">stop()</a> and then <a class="el" href="../../d1/dc2/group___framework_driver.html#aaa287e02a3ec4fbd9e97508c4c9fb8f9" title="Start the driver.">start()</a> on the driver. If the driver is not started, then it will be started after the <a class="el" href="../../d1/dc2/group___framework_driver.html#aaa287e02a3ec4fbd9e97508c4c9fb8f9" title="Start the driver.">start()</a> function is invoked. </p>
 
-<p class="reference">References <a class="el" href="../../d1/dc2/group___framework_driver.html#a8cb73607fbb78a35198fb108dbdb10f9">embvm::DriverBase::start()</a>, and <a class="el" href="../../d1/dc2/group___framework_driver.html#abfe3314846cae5f2a92f9c6963f99b56">embvm::DriverBase::stop()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dc2/group___framework_driver.html#aaa287e02a3ec4fbd9e97508c4c9fb8f9">embvm::DriverBase::start()</a>, and <a class="el" href="../../d1/dc2/group___framework_driver.html#adaebcecbe8194c8e644cfa1a579c808c">embvm::DriverBase::stop()</a>.</p>
 
 </div>
 </div>
-<a id="a8cb73607fbb78a35198fb108dbdb10f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cb73607fbb78a35198fb108dbdb10f9">&#9670;&nbsp;</a></span>start()</h2>
+<a id="aaa287e02a3ec4fbd9e97508c4c9fb8f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa287e02a3ec4fbd9e97508c4c9fb8f9">&#9670;&nbsp;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -829,22 +829,22 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Start the driver. </p>
-<p>If the driver is not started, call the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a541ff6af8a5202dc23222976d23110ce" title="Derived classes override the start_ method to control driver-specific startup behavior.">start_()</a> function defined by the derived class. (Template Method Pattern) </p>
+<p>If the driver is not started, call the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a4889efd217d1c1d6d72675f5b67e8933" title="Derived classes override the start_ method to control driver-specific startup behavior.">start_()</a> function defined by the derived class. (Template Method Pattern) </p>
 
-<p class="reference">References <a class="el" href="../../d1/dc2/group___framework_driver.html#a4d484c9eebf87493faf777f7cbf8ba96">embvm::DriverBase::start_()</a>, and <a class="el" href="../../d1/dc2/group___framework_driver.html#a403d296e5ae7c65ea7d6faf57c0386a8">embvm::DriverBase::started_</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dc2/group___framework_driver.html#af11adc89aa0aee240c752affa6e8c49a">embvm::DriverBase::start_()</a>, and <a class="el" href="../../d1/dc2/group___framework_driver.html#a403d296e5ae7c65ea7d6faf57c0386a8">embvm::DriverBase::started_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/d85/class_n_r_f52_dongle_h_w_platform.html#a13525b421e52b58640183434cdf3468b">NRF52DongleHWPlatform::init_()</a>, <a class="el" href="../../de/d3c/class_n_r_f52_d_k_h_w_platform.html#ab1e1f3f7df87ef96bcceb4afd929830f">NRF52DKHWPlatform::init_()</a>, <a class="el" href="../../d5/d37/class_blinky_simulator_h_w_platform.html#aa0891b56ee07f2dded7c82aba70ae8c1">BlinkySimulatorHWPlatform::init_()</a>, <a class="el" href="../../de/de5/class_f_w_demo_simulator_h_w_platform.html#a7a9ee6d01a5738387fb60c899f2f6edb">FWDemoSimulatorHWPlatform::init_()</a>, <a class="el" href="../../d9/dfd/class_framework_demo_sim_platform.html#a9a9952d256366e3aeba0d124bfeec43a">FrameworkDemoSimPlatform::initHWPlatform_()</a>, <a class="el" href="../../d1/dc2/group___framework_driver.html#a28a966055134b1233887f7c55337deea">embvm::DriverBase::restart()</a>, <a class="el" href="../../d4/d88/classembvm_1_1timer_1_1_timer.html#a2ad9d2fae12edaf465dbc556c9c762e6">embvm::timer::Timer::restart()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#aae4695fd0005ea67648b79b4bb9699a8">embdrv::ssd1306::scrollLeft()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#a15b66de7dc815d02a4bc801228502055">embdrv::ssd1306::scrollRight()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#a98a6925f77dd4164e73f003f3ec3d7b8">embdrv::ssd1306::scrollVertLeft()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#a079f764dfc3ce58f663f2b7505c514b9">embdrv::ssd1306::scrollVertRight()</a>, <a class="el" href="../../d2/d2e/classembvm_1_1spi_1_1active_master.html#aae60cc1f7d7c8cee3b9e0aecef3b7c9f">embvm::spi::activeMaster&lt; TQueueSize, TLock, TCond &gt;::start_()</a>, <a class="el" href="../../dc/dd6/classembvm_1_1i2c_1_1active_master.html#a33adcccb792d1b789cfd285b7b92b126">embvm::i2c::activeMaster&lt; 128 &gt;::start_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#afba4e3f428705ddb9ba8ca411f705745">embdrv::aardvarkSPIMaster::start_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a589ee73b24323ef1964c766d9f3f76c9">embdrv::aardvarkI2CMaster::start_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a1dac2689c25cfef922011d349327e23d">embdrv::aardvarkGPIOInput&lt; 4 &gt;::start_()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#a7439fbfcd751246aa3f5a8366f9f8852">embdrv::vl53l1x::start_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a907d72e073a955b54057b072829bfe18">embdrv::aardvarkGPIOOutput&lt; 5 &gt;::start_()</a>, <a class="el" href="../../d0/d18/classembvm_1_1led_1_1gpio.html#a8fb557af6d0a80e704b5f60dce802959">embvm::led::gpio&lt; TActiveHigh &gt;::start_()</a>, <a class="el" href="../../d5/d37/class_blinky_simulator_h_w_platform.html#ad9be60dd19adcd7c3174e0c7a430b600">BlinkySimulatorHWPlatform::startBlink()</a>, and <a class="el" href="../../de/de5/class_f_w_demo_simulator_h_w_platform.html#ae0a49a01dc7acf84dcb1954f1e94be13">FWDemoSimulatorHWPlatform::startLEDTimer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/d85/class_n_r_f52_dongle_h_w_platform.html#afd19e214b2c27c14af92424231b5f67f">NRF52DongleHWPlatform::init_()</a>, <a class="el" href="../../de/d3c/class_n_r_f52_d_k_h_w_platform.html#aa4e949af0b3ea1854f5ff6f3e3f7dd31">NRF52DKHWPlatform::init_()</a>, <a class="el" href="../../d5/d37/class_blinky_simulator_h_w_platform.html#adfea87ef9107ac7af78fd727ac6da03e">BlinkySimulatorHWPlatform::init_()</a>, <a class="el" href="../../de/de5/class_f_w_demo_simulator_h_w_platform.html#a1750ab0d50f63d9464d4ee4b92ed44e4">FWDemoSimulatorHWPlatform::init_()</a>, <a class="el" href="../../d9/dfd/class_framework_demo_sim_platform.html#a8b9203b7a676567a4ff20b02d1b0f729">FrameworkDemoSimPlatform::initHWPlatform_()</a>, <a class="el" href="../../d1/dc2/group___framework_driver.html#af5ef4047fa20ec89cdaf4663f61bedd9">embvm::DriverBase::restart()</a>, <a class="el" href="../../d4/d88/classembvm_1_1timer_1_1_timer.html#a9f6011279ceecdbdba518bdc2328d67a">embvm::timer::Timer::restart()</a>, <a class="el" href="../../d2/d2e/classembvm_1_1spi_1_1active_master.html#a44b91f29cebaf6d3778462978c46e70c">embvm::spi::activeMaster&lt; TQueueSize, TLock, TCond &gt;::start_()</a>, <a class="el" href="../../dc/dd6/classembvm_1_1i2c_1_1active_master.html#a47cf965cf695620d27dce28c0cd7bff2">embvm::i2c::activeMaster&lt; 128 &gt;::start_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a448fb7db042a03f3d91c850901ee21bf">embdrv::aardvarkSPIMaster::start_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#adb82efc85a59f38eb0147228bf3faa22">embdrv::aardvarkI2CMaster::start_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#adab9959d27b1e003ed777dcb166b1ec8">embdrv::aardvarkGPIOInput&lt; 4 &gt;::start_()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#a428d48d26d1e1c4fd8897b14745b13c6">embdrv::vl53l1x::start_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a11cd0f00c9dda3cc15a09f47fe3c3c30">embdrv::aardvarkGPIOOutput&lt; 5 &gt;::start_()</a>, <a class="el" href="../../d5/d37/class_blinky_simulator_h_w_platform.html#a267a8d631c8ed68523c180c47fc7c3d5">BlinkySimulatorHWPlatform::startBlink()</a>, and <a class="el" href="../../de/de5/class_f_w_demo_simulator_h_w_platform.html#a9516946a19941f7fc2173481644fd8b2">FWDemoSimulatorHWPlatform::startLEDTimer()</a>.</p>
 
 </div>
 </div>
-<a id="a541ff6af8a5202dc23222976d23110ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a541ff6af8a5202dc23222976d23110ce">&#9670;&nbsp;</a></span>start_()</h2>
+<a id="a4889efd217d1c1d6d72675f5b67e8933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4889efd217d1c1d6d72675f5b67e8933">&#9670;&nbsp;</a></span>start_()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -861,7 +861,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -869,9 +869,9 @@ Protected Attributes</h2></td></tr>
 <p>Derived classes override the start_ method to control driver-specific startup behavior. </p>
 <p>(Template Method Pattern) </p>
 
-<p>Implements <a class="el" href="../../d1/dc2/group___framework_driver.html#a4d484c9eebf87493faf777f7cbf8ba96">embvm::DriverBase</a>.</p>
+<p>Implements <a class="el" href="../../d1/dc2/group___framework_driver.html#af11adc89aa0aee240c752affa6e8c49a">embvm::DriverBase</a>.</p>
 
-<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#a7439fbfcd751246aa3f5a8366f9f8852">embdrv::vl53l1x</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#a428d48d26d1e1c4fd8897b14745b13c6">embdrv::vl53l1x</a>.</p>
 
 </div>
 </div>
@@ -903,12 +903,12 @@ Protected Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d1/dc2/group___framework_driver.html#a403d296e5ae7c65ea7d6faf57c0386a8">embvm::DriverBase::started_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d18/group___aardvark_drivers.html#aae49008139c1fa7c4f252c9f7e70fab8">embdrv::aardvarkSPIMaster::configure_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a51bb2de0bcf5c2acf1e295889113983f">embdrv::aardvarkGPIOInput&lt; 4 &gt;::get()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a8b2b0326e689dce72978335b535d2d39">embdrv::aardvarkGPIOOutput&lt; 5 &gt;::set()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#a7439fbfcd751246aa3f5a8366f9f8852">embdrv::vl53l1x::start_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a29f5ef4effc7c1b19254fe7b2c13a139">embdrv::aardvarkAdapter::start_()</a>, and <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a57a849388769b7bdfa4cf058cdf39843">embdrv::aardvarkAdapter::stop_()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a83ec6571607172b447d638667a69104d">embdrv::aardvarkSPIMaster::configure_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a1972d4c07c314eb650a2b079ec42c378">embdrv::aardvarkGPIOInput&lt; 4 &gt;::get()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a83cc218bd33d1f758392debe2cfc2712">embdrv::aardvarkGPIOOutput&lt; 5 &gt;::set()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#a428d48d26d1e1c4fd8897b14745b13c6">embdrv::vl53l1x::start_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a6c62e11fdabf4ca9d3f3fe28b12888aa">embdrv::aardvarkAdapter::start_()</a>, and <a class="el" href="../../d6/d18/group___aardvark_drivers.html#aa34e430f2be7edf8991b31dc1c1bdd01">embdrv::aardvarkAdapter::stop_()</a>.</p>
 
 </div>
 </div>
-<a id="abfe3314846cae5f2a92f9c6963f99b56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfe3314846cae5f2a92f9c6963f99b56">&#9670;&nbsp;</a></span>stop()</h2>
+<a id="adaebcecbe8194c8e644cfa1a579c808c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaebcecbe8194c8e644cfa1a579c808c">&#9670;&nbsp;</a></span>stop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -925,22 +925,22 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Stop the driver. </p>
-<p>If the driver has been started, call the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#ae34b22bdd7597e6643b8f030b2aedc55" title="Derived classes override the start_ method to control driver-specific startup behavior.">stop_()</a> function defined by the derived class. (Template Method Pattern) </p>
+<p>If the driver has been started, call the <a class="el" href="../../d0/dcd/classembvm_1_1tof_1_1sensor.html#a5251e058a3bf0f8703342e8268bc281e" title="Derived classes override the start_ method to control driver-specific startup behavior.">stop_()</a> function defined by the derived class. (Template Method Pattern) </p>
 
-<p class="reference">References <a class="el" href="../../d1/dc2/group___framework_driver.html#a403d296e5ae7c65ea7d6faf57c0386a8">embvm::DriverBase::started_</a>, and <a class="el" href="../../d1/dc2/group___framework_driver.html#a434a7dcba7ab963e3f82e7d61a3cfe58">embvm::DriverBase::stop_()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/dc2/group___framework_driver.html#a403d296e5ae7c65ea7d6faf57c0386a8">embvm::DriverBase::started_</a>, and <a class="el" href="../../d1/dc2/group___framework_driver.html#a6b5f7c46031fd1bffa6e4f366b79edbc">embvm::DriverBase::stop_()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/dc2/group___framework_driver.html#a28a966055134b1233887f7c55337deea">embvm::DriverBase::restart()</a>, <a class="el" href="../../d4/d88/classembvm_1_1timer_1_1_timer.html#a2ad9d2fae12edaf465dbc556c9c762e6">embvm::timer::Timer::restart()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#aae4695fd0005ea67648b79b4bb9699a8">embdrv::ssd1306::scrollLeft()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#a15b66de7dc815d02a4bc801228502055">embdrv::ssd1306::scrollRight()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#a98a6925f77dd4164e73f003f3ec3d7b8">embdrv::ssd1306::scrollVertLeft()</a>, <a class="el" href="../../de/d39/group___framework_drivers.html#a079f764dfc3ce58f663f2b7505c514b9">embdrv::ssd1306::scrollVertRight()</a>, <a class="el" href="../../d2/d2e/classembvm_1_1spi_1_1active_master.html#ab011c1ac5458fbd53dbeb188f8ef8dd0">embvm::spi::activeMaster&lt; TQueueSize, TLock, TCond &gt;::stop_()</a>, <a class="el" href="../../dc/dd6/classembvm_1_1i2c_1_1active_master.html#a328e8b6d9dcd4f44c63bb0dd91bda25e">embvm::i2c::activeMaster&lt; 128 &gt;::stop_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a087d666299929c9bb68a7a3edfd1244f">embdrv::aardvarkSPIMaster::stop_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a8df5ec34c22f4caa8fd9566e2a399951">embdrv::aardvarkI2CMaster::stop_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a09f641c47dfe75c0f02c3fd99d7de178">embdrv::aardvarkGPIOInput&lt; 4 &gt;::stop_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a84cd38f22d55b64be38d657494228c7b">embdrv::aardvarkGPIOOutput&lt; 5 &gt;::stop_()</a>, <a class="el" href="../../d0/d18/classembvm_1_1led_1_1gpio.html#aea35315d4604b8b55b2d9eb7c0fb91c0">embvm::led::gpio&lt; TActiveHigh &gt;::stop_()</a>, <a class="el" href="../../de/de5/class_f_w_demo_simulator_h_w_platform.html#ad733f1fb0a75149461ed283a7e4fdb76">FWDemoSimulatorHWPlatform::~FWDemoSimulatorHWPlatform()</a>, and <a class="el" href="../../db/d9d/group___simulator_drivers.html#a1ccbce7f08b9c2de26605622adaf6ce1">embdrv::SimulatorTimer::~SimulatorTimer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/dc2/group___framework_driver.html#af5ef4047fa20ec89cdaf4663f61bedd9">embvm::DriverBase::restart()</a>, <a class="el" href="../../d4/d88/classembvm_1_1timer_1_1_timer.html#a9f6011279ceecdbdba518bdc2328d67a">embvm::timer::Timer::restart()</a>, <a class="el" href="../../d2/d2e/classembvm_1_1spi_1_1active_master.html#a3c2a66c260ceb8d262ea1ee2ea42d718">embvm::spi::activeMaster&lt; TQueueSize, TLock, TCond &gt;::stop_()</a>, <a class="el" href="../../dc/dd6/classembvm_1_1i2c_1_1active_master.html#a113f21df4d6f1f88575eea079de1e0f4">embvm::i2c::activeMaster&lt; 128 &gt;::stop_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a89f5dca70672ff2d3b221212ba94ff26">embdrv::aardvarkSPIMaster::stop_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#ab713e2000cdb48bf913f8cb057a6a8eb">embdrv::aardvarkI2CMaster::stop_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a037ce0b5b703714ee7c2cf973833e019">embdrv::aardvarkGPIOInput&lt; 4 &gt;::stop_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#aecda78e431cac64e54fd5f9e1e6af015">embdrv::aardvarkGPIOOutput&lt; 5 &gt;::stop_()</a>, <a class="el" href="../../de/de5/class_f_w_demo_simulator_h_w_platform.html#a15b7deb18822bcc5fdac38736567a771">FWDemoSimulatorHWPlatform::~FWDemoSimulatorHWPlatform()</a>, and <a class="el" href="../../db/d9d/group___simulator_drivers.html#a0670cb396d8d9af823a1abf213d4a5eb">embdrv::SimulatorTimer::~SimulatorTimer()</a>.</p>
 
 </div>
 </div>
-<a id="ae34b22bdd7597e6643b8f030b2aedc55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae34b22bdd7597e6643b8f030b2aedc55">&#9670;&nbsp;</a></span>stop_()</h2>
+<a id="a5251e058a3bf0f8703342e8268bc281e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5251e058a3bf0f8703342e8268bc281e">&#9670;&nbsp;</a></span>stop_()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -957,7 +957,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -965,14 +965,14 @@ Protected Attributes</h2></td></tr>
 <p>Derived classes override the start_ method to control driver-specific startup behavior. </p>
 <p>(Template Method Pattern) </p>
 
-<p>Implements <a class="el" href="../../d1/dc2/group___framework_driver.html#a434a7dcba7ab963e3f82e7d61a3cfe58">embvm::DriverBase</a>.</p>
+<p>Implements <a class="el" href="../../d1/dc2/group___framework_driver.html#a6b5f7c46031fd1bffa6e4f366b79edbc">embvm::DriverBase</a>.</p>
 
-<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#acebe03aa89b3fd696c615cdaa950a216">embdrv::vl53l1x</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d39/group___framework_drivers.html#ae99ecd2d3a9596c647efb70056711cdb">embdrv::vl53l1x</a>.</p>
 
 </div>
 </div>
-<a id="a245f0836bde28277777ebc8bd9e62e23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a245f0836bde28277777ebc8bd9e62e23">&#9670;&nbsp;</a></span>type()</h2>
+<a id="a6cceaea9c10f0c13711314d42b420fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cceaea9c10f0c13711314d42b420fbb">&#9670;&nbsp;</a></span>type()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -989,7 +989,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1050,7 +1050,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Name of the driver instance. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/dc2/group___framework_driver.html#a47d141430b9830c7ca0c1e274b69e497">embvm::DriverBase::DriverBase()</a>, <a class="el" href="../../d1/dc2/group___framework_driver.html#ae860062cec176fd6d0f27c3444005524">embvm::DriverBase::name()</a>, and <a class="el" href="../../d1/dc2/group___framework_driver.html#ad0238f8ee997b79a1678bea9cb6154fd">embvm::DriverBase::name_cstr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/dc2/group___framework_driver.html#ae860062cec176fd6d0f27c3444005524">embvm::DriverBase::name()</a>, and <a class="el" href="../../d1/dc2/group___framework_driver.html#ad0238f8ee997b79a1678bea9cb6154fd">embvm::DriverBase::name_cstr()</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1077,7 @@ Protected Attributes</h2></td></tr>
 <p>Tracks the driver state. </p>
 <p>True if the driver has been started, false if it has been stopped or not yet started. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a28c16353c09ef245c2687678b6cc1256">embdrv::aardvarkI2CMaster::baudrate_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a901aab0ef375f9f3b24d20bbffc7425a">embdrv::aardvarkI2CMaster::configure_()</a>, <a class="el" href="../../d6/d18/group___aardvark_drivers.html#a0bfa461eab7859b61e3d44f75515a135">embdrv::aardvarkI2CMaster::setPullups_()</a>, <a class="el" href="../../d1/dc2/group___framework_driver.html#a8cb73607fbb78a35198fb108dbdb10f9">embvm::DriverBase::start()</a>, <a class="el" href="../../d1/dc2/group___framework_driver.html#a01670f19d5b777d92139ff80523c1f4c">embvm::DriverBase::started()</a>, and <a class="el" href="../../d1/dc2/group___framework_driver.html#abfe3314846cae5f2a92f9c6963f99b56">embvm::DriverBase::stop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/dc2/group___framework_driver.html#aaa287e02a3ec4fbd9e97508c4c9fb8f9">embvm::DriverBase::start()</a>, <a class="el" href="../../d1/dc2/group___framework_driver.html#a01670f19d5b777d92139ff80523c1f4c">embvm::DriverBase::started()</a>, and <a class="el" href="../../d1/dc2/group___framework_driver.html#adaebcecbe8194c8e644cfa1a579c808c">embvm::DriverBase::stop()</a>.</p>
 
 </div>
 </div>

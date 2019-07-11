@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['e',['e',['../db/d1e/powerpc__fpmath_8h.html#adb932579cbb1f00d419a6e805afd66dc',1,'IEEEl2bits']]],
+  ['e',['e',['../dc/d1f/s390__fpmath_8h.html#adb932579cbb1f00d419a6e805afd66dc',1,'IEEEl2bits']]],
   ['echo_5f',['echo_',['../dd/d45/group___logging_subsystem.html#a4233c990dad8702e7a45264ecbe318eb',1,'embvm::LoggerBase']]],
   ['efx',['efx',['../d8/df8/ld128_2s__erfl_8c.html#a5a7cdd950340699ffc4cc32863680bec',1,'efx():&#160;s_erfl.c'],['../d3/db7/ld80_2s__erfl_8c.html#a5a7cdd950340699ffc4cc32863680bec',1,'efx():&#160;s_erfl.c'],['../d9/de6/s__erf_8c.html#ae506f26169acf551c91b9bfdda0995c2',1,'efx():&#160;s_erf.c'],['../df/d94/s__erff_8c.html#a58f584ea0d02dc6907a1d79bb5e3e087',1,'efx():&#160;s_erff.c']]],
   ['efx8',['efx8',['../d8/df8/ld128_2s__erfl_8c.html#a6b9e64d9b4b92700657e31b7091fc522',1,'efx8():&#160;s_erfl.c'],['../d3/db7/ld80_2s__erfl_8c.html#a6b9e64d9b4b92700657e31b7091fc522',1,'efx8():&#160;s_erfl.c'],['../d9/de6/s__erf_8c.html#af74c8358c219827f3193cb43204062be',1,'efx8():&#160;s_erf.c'],['../df/d94/s__erff_8c.html#a16a1fac29019a6c42375d5049fdad826',1,'efx8():&#160;s_erff.c']]],

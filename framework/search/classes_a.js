@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['master',['master',['../d4/da2/classembvm_1_1spi_1_1master.html',1,'embvm::spi::master'],['../dd/d35/classembvm_1_1i2c_1_1master.html',1,'embvm::i2c::master']]],
-  ['mbstate_5ft',['mbstate_t',['../d9/dae/wchar_8h.html#db/d77/structmbstate__t',1,'']]],
-  ['messagequeue',['MessageQueue',['../d9/dad/group___free_r_t_o_s_o_s.html#d7/da0/classos_1_1freertos_1_1_message_queue',1,'os::freertos::MessageQueue&lt; TType &gt;'],['../db/dd1/group___p_o_s_i_x_o_s.html#d4/de6/classos_1_1posix_1_1_message_queue',1,'os::posix::MessageQueue&lt; TType &gt;']]],
-  ['messagequeuemediator',['MessageQueueMediator',['../d5/de8/classos_1_1freertos_1_1details_1_1_message_queue_mediator.html',1,'os::freertos::details']]],
-  ['mutex',['Mutex',['../d9/dad/group___free_r_t_o_s_o_s.html#d9/d3b/classos_1_1freertos_1_1_mutex',1,'os::freertos::Mutex'],['../db/dd1/group___p_o_s_i_x_o_s.html#d3/dda/classos_1_1posix_1_1_mutex',1,'os::posix::Mutex']]]
+  ['lconv',['lconv',['../db/d9f/locale_8h.html#d8/dba/structlconv',1,'']]],
+  ['ldiv_5ft',['ldiv_t',['../dc/d9c/stdlib_8h.html#d2/dfe/structldiv__t',1,'']]],
+  ['ll_5fhead',['ll_head',['../df/d5e/group__linkedlist-_c.html#d4/d48/structll__head',1,'']]],
+  ['lldiv_5ft',['lldiv_t',['../dc/d9c/stdlib_8h.html#de/db3/structlldiv__t',1,'']]],
+  ['log_5fbuffer_5ft',['log_buffer_t',['../d7/d7f/log_8h.html#d6/ded/structlog__buffer__t',1,'']]],
+  ['loggerbase',['LoggerBase',['../dd/d45/group___logging_subsystem.html#d1/d37/classembvm_1_1_logger_base',1,'embvm']]]
 ];

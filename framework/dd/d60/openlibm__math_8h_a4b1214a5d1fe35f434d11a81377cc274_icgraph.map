@@ -1,13 +1,12 @@
 <map id="copysignl" name="copysignl">
-<area shape="rect" id="node1" title=" " alt="" coords="455,80,532,105"/>
-<area shape="rect" id="node2" href="$de/db4/s__cprojl_8c.html#a0bae838a93d3e2798f7857cadbcd52a5" title=" " alt="" coords="349,5,403,31"/>
-<area shape="rect" id="node3" href="$df/d14/s__csqrtl_8c.html#af537727170eb212f0af162075830c2b3" title=" " alt="" coords="349,55,403,80"/>
-<area shape="rect" id="node8" href="$d6/d52/s__fmal_8c.html#abfcc7b9ec2a01f03b3fd18df36923f5e" title=" " alt="" coords="353,104,399,129"/>
-<area shape="rect" id="node9" href="$da/d9e/s__scalbnl_8c.html#a725d1fa003977a50db7a4abecd39517b" title=" " alt="" coords="345,153,407,179"/>
-<area shape="rect" id="node4" href="$d4/da9/s__casinl_8c.html#a8770350a79904ac151ebb3eebd736188" title=" " alt="" coords="236,55,291,80"/>
+<area shape="rect" id="node1" title=" " alt="" coords="445,80,522,105"/>
+<area shape="rect" id="node2" href="$de/db4/s__cprojl_8c.html#a0bae838a93d3e2798f7857cadbcd52a5" title=" " alt="" coords="339,5,392,31"/>
+<area shape="rect" id="node3" href="$df/d14/s__csqrtl_8c.html#af537727170eb212f0af162075830c2b3" title=" " alt="" coords="339,55,392,80"/>
+<area shape="rect" id="node8" href="$d6/d52/s__fmal_8c.html#abfcc7b9ec2a01f03b3fd18df36923f5e" title=" " alt="" coords="342,104,389,129"/>
+<area shape="rect" id="node9" href="$da/d9e/s__scalbnl_8c.html#a725d1fa003977a50db7a4abecd39517b" title=" " alt="" coords="334,153,397,179"/>
+<area shape="rect" id="node4" href="$d4/da9/s__casinl_8c.html#a8770350a79904ac151ebb3eebd736188" title=" " alt="" coords="231,55,286,80"/>
 <area shape="rect" id="node5" href="$dc/dfc/s__cacosl_8c.html#a789143f2859142f58590b2726328025f" title=" " alt="" coords="122,31,181,56"/>
 <area shape="rect" id="node7" href="$d3/dbe/s__casinhl_8c.html#a174b8f2a00e771dbbad06fdf0e0ee449" title=" " alt="" coords="120,80,183,105"/>
 <area shape="rect" id="node6" href="$df/d6d/s__cacoshl_8c.html#ad8e03bbb434b8a9af73e0e3daec045ac" title=" " alt="" coords="5,31,72,56"/>
-<area shape="rect" id="node10" href="$d7/d47/ld128_2e__powl_8c.html#a2f4830e468138e1513b55ca6a92a0f9a" title=" " alt="" coords="239,128,288,153"/>
-<area shape="rect" id="node11" href="$de/d20/s__scalbln_8c.html#ac79c8ed3500ac762a65bf8141ada005e" title=" " alt="" coords="231,177,297,203"/>
+<area shape="rect" id="node10" href="$d7/d47/ld128_2e__powl_8c.html#a2f4830e468138e1513b55ca6a92a0f9a" title=" " alt="" coords="234,153,283,179"/>
 </map>

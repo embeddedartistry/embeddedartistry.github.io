@@ -92,8 +92,8 @@ Inheritance diagram for os::freertos::ConditionVariable:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abf1f33ec74ee63b91d9c986853fe4ad5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#abf1f33ec74ee63b91d9c986853fe4ad5">ConditionVariable</a> ()=default</td></tr>
 <tr class="separator:abf1f33ec74ee63b91d9c986853fe4ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a568cfba2cd88d436203deaffaa6eef2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a568cfba2cd88d436203deaffaa6eef2e">~ConditionVariable</a> ()</td></tr>
-<tr class="separator:a568cfba2cd88d436203deaffaa6eef2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a681a1b34d32f80689485888e4d21c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#af3a681a1b34d32f80689485888e4d21c">~ConditionVariable</a> () noexcept</td></tr>
+<tr class="separator:af3a681a1b34d32f80689485888e4d21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcd8ee842fc6d417ee34f66ea3a388e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#abcd8ee842fc6d417ee34f66ea3a388e3">wait</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex">embvm::VirtualMutex</a> *mutex) noexcept final</td></tr>
 <tr class="memdesc:abcd8ee842fc6d417ee34f66ea3a388e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks the current thread until the condition variable is woken up or after the specified timeout duration.  <a href="#abcd8ee842fc6d417ee34f66ea3a388e3">More...</a><br /></td></tr>
 <tr class="separator:abcd8ee842fc6d417ee34f66ea3a388e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,10 +127,10 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ade97280f8ce8f81a9c68128e08009e77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade97280f8ce8f81a9c68128e08009e77">freertos_wait</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex">embvm::VirtualMutex</a> *mutex, <a class="el" href="../../df/d92/aarch64_2include_2__types_2__uint32__t_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ticks_timeout)</td></tr>
-<tr class="separator:ade97280f8ce8f81a9c68128e08009e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a3d76e1f5f65025e2e0fb67b620145"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a16a3d76e1f5f65025e2e0fb67b620145">pop_and_notify</a> ()</td></tr>
-<tr class="separator:a16a3d76e1f5f65025e2e0fb67b620145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48724eea0e6145089240502bcc8c184d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a48724eea0e6145089240502bcc8c184d">freertos_wait</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex">embvm::VirtualMutex</a> *mutex, <a class="el" href="../../df/d92/aarch64_2include_2__types_2__uint32__t_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> ticks_timeout) noexcept</td></tr>
+<tr class="separator:a48724eea0e6145089240502bcc8c184d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227189324fca92ad6d8995e3a13567f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a227189324fca92ad6d8995e3a13567f8">pop_and_notify</a> () noexcept</td></tr>
+<tr class="separator:a227189324fca92ad6d8995e3a13567f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -188,11 +188,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a568cfba2cd88d436203deaffaa6eef2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a568cfba2cd88d436203deaffaa6eef2e">&#9670;&nbsp;</a></span>~ConditionVariable()</h2>
+<a id="af3a681a1b34d32f80689485888e4d21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a681a1b34d32f80689485888e4d21c">&#9670;&nbsp;</a></span>~ConditionVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ConditionVariable::~ConditionVariable </td>
@@ -201,9 +204,14 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, and <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a4a83f142e60ff6cc2f64c6cfe1b258d3">q_</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, and <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a4a83f142e60ff6cc2f64c6cfe1b258d3">q_</a>.</p>
 
 </div>
 </div>
@@ -235,12 +243,12 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d3b/group___framework_o_s.html#a06461889d6ada02856cc3825dbd2a0b1">embvm::VirtualConditionVariable</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a6810c936fbe78c01e933a135aaf7948c">os::freertos::Semaphore::give()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a16a3d76e1f5f65025e2e0fb67b620145">pop_and_notify()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a4a83f142e60ff6cc2f64c6cfe1b258d3">q_</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade06945f00e8c7bc8913cc06c3b5b293">sem_</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#ad86d063bce2e40061b6f3ef60f3d1bc0">os::freertos::Semaphore::take()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a080e0aeef7a2df3066a87a0f68cde8ce">os::freertos::Semaphore::give()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a227189324fca92ad6d8995e3a13567f8">pop_and_notify()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a4a83f142e60ff6cc2f64c6cfe1b258d3">q_</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade06945f00e8c7bc8913cc06c3b5b293">sem_</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#aaa1d33c70ed40e3524cff60cf1884ec7">os::freertos::Semaphore::take()</a>.</p>
 
 </div>
 </div>
-<a id="ade97280f8ce8f81a9c68128e08009e77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade97280f8ce8f81a9c68128e08009e77">&#9670;&nbsp;</a></span>freertos_wait()</h2>
+<a id="a48724eea0e6145089240502bcc8c184d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48724eea0e6145089240502bcc8c184d">&#9670;&nbsp;</a></span>freertos_wait()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,12 +276,12 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../d9/d2d/namespaceembvm_1_1this__thread.html#a48713f1b4d80d93cbf80e2732cc9657f">embvm::this_thread::get_handle()</a>, <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a6810c936fbe78c01e933a135aaf7948c">os::freertos::Semaphore::give()</a>, <a class="el" href="../../d2/d3b/group___framework_o_s.html#a403a2fd74e206e3d0c784009228632d9">embvm::VirtualMutex::lock()</a>, <a class="el" href="../../d3/dce/stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="el" href="../../d2/d19/nrf51_2portmacro__cmsis_8h.html#a72723ba1e4a85ca14f25c2b9e066613d">portMAX_DELAY</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a4a83f142e60ff6cc2f64c6cfe1b258d3">q_</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade06945f00e8c7bc8913cc06c3b5b293">sem_</a>, <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#ad86d063bce2e40061b6f3ef60f3d1bc0">os::freertos::Semaphore::take()</a>, and <a class="el" href="../../d2/d3b/group___framework_o_s.html#a2791ae18033d4b99e5c019234e5b47c7">embvm::VirtualMutex::unlock()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d2d/namespaceembvm_1_1this__thread.html#a93334fe3785520de1175bcfa656b671e">embvm::this_thread::get_handle()</a>, <a class="el" href="../../d2/d19/nrf51_2portmacro__cmsis_8h.html#a72723ba1e4a85ca14f25c2b9e066613d">portMAX_DELAY</a>, and <a class="el" href="../../d4/d03/libm-bench_8cpp.html#abc7cd2b0d3943fe380f2d539ea295c87">r</a>.</p>
 
 </div>
 </div>
@@ -302,7 +310,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d3b/group___framework_o_s.html#adeb19f9f4e1c10ee6a8f174c69987c9e">embvm::VirtualConditionVariable</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a4de9641855574fbae30e1f7afdfee0dc">os::freertos::Semaphore::native_handle()</a>, and <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade06945f00e8c7bc8913cc06c3b5b293">sem_</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#af662d69efc0f6a7a176a1c4c74026191">os::freertos::Semaphore::native_handle()</a>, and <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade06945f00e8c7bc8913cc06c3b5b293">sem_</a>.</p>
 
 </div>
 </div>
@@ -364,8 +372,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a16a3d76e1f5f65025e2e0fb67b620145"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16a3d76e1f5f65025e2e0fb67b620145">&#9670;&nbsp;</a></span>pop_and_notify()</h2>
+<a id="a227189324fca92ad6d8995e3a13567f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a227189324fca92ad6d8995e3a13567f8">&#9670;&nbsp;</a></span>pop_and_notify()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -382,7 +390,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -420,7 +428,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d3b/group___framework_o_s.html#ab57125c6a4b93918f16ee2d75589ae07">embvm::VirtualConditionVariable</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a6810c936fbe78c01e933a135aaf7948c">os::freertos::Semaphore::give()</a>, <a class="el" href="../../d3/dce/stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a16a3d76e1f5f65025e2e0fb67b620145">pop_and_notify()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a4a83f142e60ff6cc2f64c6cfe1b258d3">q_</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade06945f00e8c7bc8913cc06c3b5b293">sem_</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#ad86d063bce2e40061b6f3ef60f3d1bc0">os::freertos::Semaphore::take()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a080e0aeef7a2df3066a87a0f68cde8ce">os::freertos::Semaphore::give()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a227189324fca92ad6d8995e3a13567f8">pop_and_notify()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a4a83f142e60ff6cc2f64c6cfe1b258d3">q_</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade06945f00e8c7bc8913cc06c3b5b293">sem_</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#aaa1d33c70ed40e3524cff60cf1884ec7">os::freertos::Semaphore::take()</a>.</p>
 
 </div>
 </div>
@@ -492,7 +500,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d2/d3b/group___framework_o_s.html#aa2a7891964c8bd4a0a8ea9b732661c65">embvm::VirtualConditionVariable</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d83/namespaceos_1_1freertos.html#a9136b420219b723eb13ebdb60ccefeb2">os::freertos::frameworkTimeoutToTicks()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d83/namespaceos_1_1freertos.html#a0267477e3ab7e1d9590e246a23001bc1">os::freertos::frameworkTimeoutToTicks()</a>.</p>
 
 </div>
 </div>
@@ -530,7 +538,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="../../dc/d83/namespaceos_1_1freertos.html#a9136b420219b723eb13ebdb60ccefeb2">os::freertos::frameworkTimeoutToTicks()</a>, and <a class="el" href="../../d1/d85/group___time_util.html#gaa1d9630d0f8b9908e34af4acdfbd1ca9">embutil::timespecToDuration()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d83/namespaceos_1_1freertos.html#a0267477e3ab7e1d9590e246a23001bc1">os::freertos::frameworkTimeoutToTicks()</a>, and <a class="el" href="../../d1/d85/group___time_util.html#ga5574274b735dcfbb0f44bda8e9339d99">embutil::timespecToDuration()</a>.</p>
 
 </div>
 </div>
@@ -638,7 +646,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a56c70cc121bc4d93ebbaac9b4ff697b1">broadcast()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade97280f8ce8f81a9c68128e08009e77">freertos_wait()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a16a3d76e1f5f65025e2e0fb67b620145">pop_and_notify()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a7d3db9d48f5bbef112d9d268fd747a8b">signal()</a>, and <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a568cfba2cd88d436203deaffaa6eef2e">~ConditionVariable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a56c70cc121bc4d93ebbaac9b4ff697b1">broadcast()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a227189324fca92ad6d8995e3a13567f8">pop_and_notify()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a7d3db9d48f5bbef112d9d268fd747a8b">signal()</a>, and <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#af3a681a1b34d32f80689485888e4d21c">~ConditionVariable()</a>.</p>
 
 </div>
 </div>
@@ -662,7 +670,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a56c70cc121bc4d93ebbaac9b4ff697b1">broadcast()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade97280f8ce8f81a9c68128e08009e77">freertos_wait()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ac1d23a47f02f864f0b676c85d52418fb">native_handle()</a>, and <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a7d3db9d48f5bbef112d9d268fd747a8b">signal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a56c70cc121bc4d93ebbaac9b4ff697b1">broadcast()</a>, <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ac1d23a47f02f864f0b676c85d52418fb">native_handle()</a>, and <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a7d3db9d48f5bbef112d9d268fd747a8b">signal()</a>.</p>
 
 </div>
 </div>

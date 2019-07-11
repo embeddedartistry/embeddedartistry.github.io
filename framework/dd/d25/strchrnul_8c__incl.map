@@ -1,8 +1,8 @@
 <map id="src/stdlibs/libc/src/string/strchrnul.c" name="src/stdlibs/libc/src/string/strchrnul.c">
 <area shape="rect" id="node1" title=" " alt="" coords="763,5,889,44"/>
 <area shape="rect" id="node2" href="$df/d2a/strchrnul_8h.html" title=" " alt="" coords="680,92,764,117"/>
-<area shape="rect" id="node3" href="$d9/d86/limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
-<area shape="rect" id="node5" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="863,165,927,191"/>
+<area shape="rect" id="node3" href="$de/d3b/include_2limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
+<area shape="rect" id="node5" href="$dc/d69/include_2stdint_8h.html" title=" " alt="" coords="863,165,927,191"/>
 <area shape="rect" id="node18" href="$da/d66/string_8h.html" title=" " alt="" coords="888,92,953,117"/>
 <area shape="rect" id="node4" href="$d3/d22/x86__64_2include_2__limits_8h.html" title=" " alt="" coords="5,312,76,337"/>
 <area shape="rect" id="node6" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="96,239,219,264"/>

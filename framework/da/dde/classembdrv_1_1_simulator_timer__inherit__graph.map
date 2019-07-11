@@ -1,5 +1,6 @@
 <map id="embdrv::SimulatorTimer" name="embdrv::SimulatorTimer">
-<area shape="rect" id="node1" title="Simulator timer driver." alt="" coords="5,768,168,1041"/>
-<area shape="rect" id="node2" href="$d4/d88/classembvm_1_1timer_1_1_timer.html" title="This class provides generic Timer interface definitions." alt="" coords="15,380,158,720"/>
-<area shape="rect" id="node3" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="18,5,156,332"/>
+<area shape="rect" id="node1" title="Simulator timer driver." alt="" coords="90,768,253,1068"/>
+<area shape="rect" id="node2" href="$d4/d88/classembvm_1_1timer_1_1_timer.html" title="This class provides generic Timer interface definitions." alt="" coords="5,380,148,720"/>
+<area shape="rect" id="node3" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="8,5,146,332"/>
+<area shape="rect" id="node4" href="$d3/d68/classembvm_1_1_h_a_l_driver_base.html" title=" " alt="" coords="173,473,362,627"/>
 </map>

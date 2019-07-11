@@ -14,5 +14,6 @@ var searchData=
   ['values',['values',['../d7/d79/tx__api_8h.html#a4f75c77d0036df3e58e4dda9d3a5fde4',1,'TX_THREAD_SPECIFIC_STRUCT']]],
   ['vax',['VAX',['../d4/d5f/gdtoaimp_8h.html#a6f5065da6f30a7ecf67f3a22bb215adb',1,'VAX():&#160;gdtoaimp.h'],['../da/db6/arithchk_8c.html#a72fa4fdd0adb8702efe94e74e05e3850',1,'VAX():&#160;arithchk.c']]],
   ['verbose',['verbose',['../d3/d37/libm-test_8c.html#a0b2caeb4b6f130be43e5a2f0267dd453',1,'libm-test.c']]],
-  ['version',['version',['../d2/de8/aardvark_8h.html#a418995c5659745f4124a645ddafcd887',1,'AardvarkExt']]]
+  ['version',['version',['../d2/de8/aardvark_8h.html#a418995c5659745f4124a645ddafcd887',1,'AardvarkExt']]],
+  ['vl53l1x_5fdefault_5fi2c_5faddr',['VL53L1X_DEFAULT_I2C_ADDR',['../dd/d2d/namespaceembdrv.html#a903c21274a06aff7bb0b5695825847b1',1,'embdrv']]]
 ];

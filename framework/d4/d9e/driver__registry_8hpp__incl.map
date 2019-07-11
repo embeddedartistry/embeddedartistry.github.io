@@ -1,7 +1,8 @@
 <map id="src/core/driver/driver_registry.hpp" name="src/core/driver/driver_registry.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="101,5,244,44"/>
+<area shape="rect" id="node1" title=" " alt="" coords="237,5,380,44"/>
 <area shape="rect" id="node2" href="$d8/dd9/driver__type_8hpp.html" title=" " alt="" coords="39,99,152,124"/>
 <area shape="rect" id="node4" href="$db/d03/instance__list_8hpp.html" title=" " alt="" coords="235,92,383,131"/>
+<area shape="rect" id="node11" href="$de/de9/nop__lock_8hpp.html" title=" " alt="" coords="407,99,565,124"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,185,65,211"/>
 <area shape="rect" id="node5" title=" " alt="" coords="89,185,155,211"/>
 <area shape="rect" id="node6" title=" " alt="" coords="179,185,265,211"/>

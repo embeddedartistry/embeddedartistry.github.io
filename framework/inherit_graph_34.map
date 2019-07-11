@@ -1,5 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,68,96"/>
-<area shape="rect" id="node2" href="$dd/d52/group___s_f_r.html#d0/d1a/classembutil_1_1sfr_3_01_t_perm_00_01_t_00_01_t_addr_00_01typename_01std_1_1enable__if_3_01_t_addr_0A_0A0_01_4_1_1type_01_4" title="SFR Class which supports address assignment with a constructor." alt="" coords="122,5,273,71"/>
-<area shape="rect" id="node3" href="$dd/d52/group___s_f_r.html#de/d6e/classembutil_1_1sfr_3_01_t_perm_00_01_t_00_01_t_addr_00_01typename_01std_1_1enable__if__t_3_01_t11d13ff4f836dced7932a8afbb9930a5" title="This variant of the SFR class is used when the address is known at compile&#45;time." alt="" coords="116,95,278,160"/>
+<area shape="rect" id="node1" href="$dd/d52/group___s_f_r.html#d4/dba/structembutil_1_1ro" title="Read&#45;only access permission tag." alt="" coords="5,5,89,31"/>
 </map>

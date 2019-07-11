@@ -1,7 +1,8 @@
 <map id="nRFi2cMaster&lt; TTWIIndex, TSclPin, TSdaPin, TBlocking &gt;" name="nRFi2cMaster&lt; TTWIIndex, TSclPin, TSdaPin, TBlocking &gt;">
-<area shape="rect" id="node1" title="DMA&#45;capable I2C master (TBlocking)" alt="" coords="43,731,250,1044"/>
-<area shape="rect" id="node5" href="$dd/dd6/classn_r_fi2c_master.html" title=" " alt="" coords="46,1132,247,1459"/>
+<area shape="rect" id="node1" title="DMA&#45;capable I2C master (TBlocking)" alt="" coords="137,731,343,1044"/>
+<area shape="rect" id="node6" href="$dd/dd6/classn_r_fi2c_master.html" title=" " alt="" coords="139,1132,340,1459"/>
 <area shape="rect" id="node2" href="$dd/d35/classembvm_1_1i2c_1_1master.html" title="This class provides the I2C master interface definition." alt="" coords="78,381,215,681"/>
 <area shape="rect" id="node3" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="5,5,144,332"/>
 <area shape="rect" id="node4" title=" " alt="" coords="167,132,272,205"/>
+<area shape="rect" id="node5" href="$d3/d68/classembvm_1_1_h_a_l_driver_base.html" title=" " alt="" coords="240,455,429,608"/>
 </map>

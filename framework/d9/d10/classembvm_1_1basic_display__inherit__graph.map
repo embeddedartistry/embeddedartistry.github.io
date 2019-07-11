@@ -1,5 +1,5 @@
 <map id="embvm::basicDisplay" name="embvm::basicDisplay">
-<area shape="rect" id="node1" title="This class provides an interface for a basic 2&#45;color display device." alt="" coords="23,380,170,653"/>
-<area shape="rect" id="node3" href="$de/d39/group___framework_drivers.html#df/d04/classembdrv_1_1ssd1306" title="Driver for the SSD1306 Display Driver." alt="" coords="5,701,188,1295"/>
+<area shape="rect" id="node1" title="This class provides an interface for a basic 2&#45;color display device." alt="" coords="23,380,170,707"/>
+<area shape="rect" id="node3" href="$de/d39/group___framework_drivers.html#df/d04/classembdrv_1_1ssd1306" title="Driver for the SSD1306 Display Driver." alt="" coords="5,755,188,1348"/>
 <area shape="rect" id="node2" href="$d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers." alt="" coords="28,5,166,332"/>
 </map>

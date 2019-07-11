@@ -72,18 +72,21 @@ $(function() {
 <div class="title">platform_options.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d0/d5a/virtual__platform_8hpp.html">platform/virtual_platform.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d0/d5a/virtual__platform_8hpp.html">platform/virtual_platform.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for platform_options.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d7/dcf/fwdemo_2fwdemo__sim_2platform__options_8hpp__incl.jpg" border="0" usemap="#src_2platforms_2fwdemo_2fwdemo__sim_2platform__options_8hpp" alt=""/></div>
 <map name="src_2platforms_2fwdemo_2fwdemo__sim_2platform__options_8hpp" id="src_2platforms_2fwdemo_2fwdemo__sim_2platform__options_8hpp">
-<area shape="rect"  title=" " alt="" coords="338,5,490,57"/>
-<area shape="rect"  href="../../d0/d5a/virtual__platform_8hpp.html" title=" " alt="" coords="319,105,509,131"/>
-<area shape="rect"  href="../../de/d2c/driver__registry_8hpp.html" title=" " alt="" coords="270,179,438,204"/>
+<area shape="rect"  title=" " alt="" coords="355,5,507,57"/>
+<area shape="rect"  title=" " alt="" coords="329,105,387,131"/>
+<area shape="rect"  href="../../d0/d5a/virtual__platform_8hpp.html" title=" " alt="" coords="411,105,601,131"/>
+<area shape="rect"  href="../../de/d2c/driver__registry_8hpp.html" title=" " alt="" coords="319,179,487,204"/>
 <area shape="rect"  title=" " alt="" coords="587,345,641,371"/>
-<area shape="rect"  href="../../d8/dd9/driver__type_8hpp.html" title=" " alt="" coords="84,259,197,284"/>
-<area shape="rect"  href="../../db/d03/instance__list_8hpp.html" title=" " alt="" coords="280,252,428,291"/>
+<area shape="rect"  href="../../d8/dd9/driver__type_8hpp.html" title=" " alt="" coords="41,259,155,284"/>
+<area shape="rect"  href="../../db/d03/instance__list_8hpp.html" title=" " alt="" coords="237,252,385,291"/>
+<area shape="rect"  href="../../de/de9/nop__lock_8hpp.html" title=" " alt="" coords="410,259,567,284"/>
 <area shape="rect"  title=" " alt="" coords="5,345,65,371"/>
 <area shape="rect"  title=" " alt="" coords="89,345,155,371"/>
 <area shape="rect"  title=" " alt="" coords="179,345,265,371"/>
@@ -105,18 +108,18 @@ This graph shows which files directly or indirectly include this file:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a89dadc3e9077b20b5980c6ef4eaedd3c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d7a/fwdemo_2fwdemo__sim_2platform__options_8hpp.html#a89dadc3e9077b20b5980c6ef4eaedd3c">PlatformDriverRegistry</a> = <a class="el" href="../../d1/dc2/group___framework_driver.html#gab0c8065c354188cd662131f4be4c9c99">embvm::DynamicDriverRegistry</a></td></tr>
-<tr class="separator:a89dadc3e9077b20b5980c6ef4eaedd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b192dfaefdc740ad554044762454bb9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d7a/fwdemo_2fwdemo__sim_2platform__options_8hpp.html#a5b192dfaefdc740ad554044762454bb9">PlatformDriverRegistry</a> = <a class="el" href="../../d1/dc2/group___framework_driver.html#ga44edd59911da5139ab42e8ac4481912c">embvm::DynamicDriverRegistry</a>&lt; std::mutex &gt;</td></tr>
+<tr class="separator:a5b192dfaefdc740ad554044762454bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a89dadc3e9077b20b5980c6ef4eaedd3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89dadc3e9077b20b5980c6ef4eaedd3c">&#9670;&nbsp;</a></span>PlatformDriverRegistry</h2>
+<a id="a5b192dfaefdc740ad554044762454bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b192dfaefdc740ad554044762454bb9">&#9670;&nbsp;</a></span>PlatformDriverRegistry</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d5/dcc/blinky_2blinky__nrf52dk_2platform__options_8hpp.html#abc9ae9ed4b30fd523c94940c78da21d4">PlatformDriverRegistry</a> =  <a class="el" href="../../d1/dc2/group___framework_driver.html#gab0c8065c354188cd662131f4be4c9c99">embvm::DynamicDriverRegistry</a></td>
+          <td class="memname">using <a class="el" href="../../d5/dcc/blinky_2blinky__nrf52dk_2platform__options_8hpp.html#abc9ae9ed4b30fd523c94940c78da21d4">PlatformDriverRegistry</a> =  <a class="el" href="../../d1/dc2/group___framework_driver.html#ga44edd59911da5139ab42e8ac4481912c">embvm::DynamicDriverRegistry</a>&lt;std::mutex&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

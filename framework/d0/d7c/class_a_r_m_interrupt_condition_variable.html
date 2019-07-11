@@ -77,19 +77,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7962fd5bc52f16a1533ef35952fc754a"><td class="memTemplParams" colspan="2">template&lt;typename TLock &gt; </td></tr>
-<tr class="memitem:a7962fd5bc52f16a1533ef35952fc754a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d7c/class_a_r_m_interrupt_condition_variable.html#a7962fd5bc52f16a1533ef35952fc754a">wait</a> (TLock &amp;lock)</td></tr>
-<tr class="separator:a7962fd5bc52f16a1533ef35952fc754a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8ed468e3d611e0ab070036012ec88ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7c/class_a_r_m_interrupt_condition_variable.html#ad8ed468e3d611e0ab070036012ec88ff">notify_one</a> ()</td></tr>
-<tr class="separator:ad8ed468e3d611e0ab070036012ec88ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a012ad2ffd6dd084f7d185bcc0af820a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7c/class_a_r_m_interrupt_condition_variable.html#a012ad2ffd6dd084f7d185bcc0af820a9">notify_all</a> ()</td></tr>
-<tr class="separator:a012ad2ffd6dd084f7d185bcc0af820a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e56e552cf9a0271eeeb4c9b98242681"><td class="memTemplParams" colspan="2">template&lt;typename TLock &gt; </td></tr>
+<tr class="memitem:a1e56e552cf9a0271eeeb4c9b98242681"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d7c/class_a_r_m_interrupt_condition_variable.html#a1e56e552cf9a0271eeeb4c9b98242681">wait</a> (TLock &amp;lock) noexcept</td></tr>
+<tr class="separator:a1e56e552cf9a0271eeeb4c9b98242681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad964d00f8299d01dcb0f5c61bc0afa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7c/class_a_r_m_interrupt_condition_variable.html#aad964d00f8299d01dcb0f5c61bc0afa9">notify_one</a> () const noexcept</td></tr>
+<tr class="separator:aad964d00f8299d01dcb0f5c61bc0afa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b43784f29aa5933cdb1e09887f13bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7c/class_a_r_m_interrupt_condition_variable.html#ad3b43784f29aa5933cdb1e09887f13bc">notify_all</a> () const noexcept</td></tr>
+<tr class="separator:ad3b43784f29aa5933cdb1e09887f13bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interrupt Condition specialized for ARM processors. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a012ad2ffd6dd084f7d185bcc0af820a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a012ad2ffd6dd084f7d185bcc0af820a9">&#9670;&nbsp;</a></span>notify_all()</h2>
+<a id="ad3b43784f29aa5933cdb1e09887f13bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b43784f29aa5933cdb1e09887f13bc">&#9670;&nbsp;</a></span>notify_all()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -101,20 +101,20 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void ARMInterruptConditionVariable::notify_all </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad8ed468e3d611e0ab070036012ec88ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8ed468e3d611e0ab070036012ec88ff">&#9670;&nbsp;</a></span>notify_one()</h2>
+<a id="aad964d00f8299d01dcb0f5c61bc0afa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad964d00f8299d01dcb0f5c61bc0afa9">&#9670;&nbsp;</a></span>notify_one()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,20 +126,20 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void ARMInterruptConditionVariable::notify_one </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7962fd5bc52f16a1533ef35952fc754a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7962fd5bc52f16a1533ef35952fc754a">&#9670;&nbsp;</a></span>wait()</h2>
+<a id="a1e56e552cf9a0271eeeb4c9b98242681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e56e552cf9a0271eeeb4c9b98242681">&#9670;&nbsp;</a></span>wait()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +159,7 @@ template&lt;typename TLock &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

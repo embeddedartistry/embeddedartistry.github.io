@@ -1,6 +1,16 @@
 <map id="exp2" name="exp2">
-<area shape="rect" id="node1" title=" " alt="" coords="231,31,281,56"/>
-<area shape="rect" id="node2" href="$d3/d37/libm-test_8c.html#a71520b54cdfc4ac787a5c4a0a48cee5f" title=" " alt="" coords="104,5,183,31"/>
-<area shape="rect" id="node4" href="$d5/dfc/ld80_2s__exp2l_8c.html#ab3d3c9b9c025ef1cbb3d9b87f69e6bd6" title=" " alt="" coords="117,55,170,80"/>
-<area shape="rect" id="node3" href="$d3/d37/libm-test_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,31"/>
+<area shape="rect" id="node1" title=" " alt="" coords="703,179,754,204"/>
+<area shape="rect" id="node2" href="$d1/d3d/printf_8c.html#a23691c6d6c56ceeb323ce2005ea6a244" title=" " alt="" coords="588,129,643,155"/>
+<area shape="rect" id="node12" href="$d3/d37/libm-test_8c.html#a71520b54cdfc4ac787a5c4a0a48cee5f" title=" " alt="" coords="576,179,655,204"/>
+<area shape="rect" id="node14" href="$d5/dfc/ld80_2s__exp2l_8c.html#ab3d3c9b9c025ef1cbb3d9b87f69e6bd6" title=" " alt="" coords="589,228,642,253"/>
+<area shape="rect" id="node3" href="$d1/d3d/printf_8c.html#a2c0991970c9075b6e6197c313a1203fc" title=" " alt="" coords="477,104,528,129"/>
+<area shape="rect" id="node4" href="$d1/d3d/printf_8c.html#a2bad5a18d0dcf3bbf70d0eb1b2797044" title=" " alt="" coords="350,129,429,155"/>
+<area shape="rect" id="node5" href="$d3/d6b/printf_8h.html#a770cb7c9f4a7b37dc5b49c4c68a8308e" title=" " alt="" coords="233,5,292,31"/>
+<area shape="rect" id="node6" href="$d3/d6b/printf_8h.html#a989410555ef35cd646c15d51e649faaa" title=" " alt="" coords="230,55,295,80"/>
+<area shape="rect" id="node7" href="$d3/d6b/printf_8h.html#a5b16fca837f5301cb0c01fa668f044f4" title=" " alt="" coords="226,104,299,129"/>
+<area shape="rect" id="node8" href="$d3/d6b/printf_8h.html#aa199d9388f8dcddcda1a0451315cae89" title=" " alt="" coords="230,153,295,179"/>
+<area shape="rect" id="node9" href="$d3/d6b/printf_8h.html#af37254f8c6a2d9d51e82c85fd666f88e" title=" " alt="" coords="223,203,302,228"/>
+<area shape="rect" id="node10" href="$d3/d6b/printf_8h.html#a16cdc6ff34afc2122ae164d4ee3a8c50" title="printf with output function You may use this as dynamic alternative to printf() with its fixed _putch..." alt="" coords="230,252,295,277"/>
+<area shape="rect" id="node11" href="$dd/d45/group___logging_subsystem.html#a3055153cb76d5d0f40146ce24d613c5f" title="Add data to the log buffer." alt="" coords="5,252,175,277"/>
+<area shape="rect" id="node13" href="$d3/d37/libm-test_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="478,205,528,231"/>
 </map>

@@ -1,14 +1,14 @@
 <map id="src/stdlibs/libc/openlibm/src/s_lround.c" name="src/stdlibs/libc/openlibm/src/s_lround.c">
 <area shape="rect" id="node1" title=" " alt="" coords="127,5,290,44"/>
 <area shape="rect" id="node2" href="$d5/d05/cdefs-compat_8h.html" title=" " alt="" coords="78,165,190,191"/>
-<area shape="rect" id="node3" href="$d9/d86/limits_8h.html" title=" " alt="" coords="9,312,72,337"/>
+<area shape="rect" id="node3" href="$de/d3b/include_2limits_8h.html" title=" " alt="" coords="9,312,72,337"/>
 <area shape="rect" id="node5" href="$d1/dc3/openlibm__fenv_8h.html" title=" " alt="" coords="149,92,268,117"/>
 <area shape="rect" id="node6" href="$dd/d60/openlibm__math_8h.html" title=" " alt="" coords="292,92,416,117"/>
 <area shape="rect" id="node7" href="$d2/dbf/math__private_8h.html" title=" " alt="" coords="439,92,549,117"/>
 <area shape="rect" id="node4" href="$d3/d22/x86__64_2include_2__limits_8h.html" title=" " alt="" coords="5,385,76,411"/>
 <area shape="rect" id="node8" href="$d4/d66/openlibm__complex_8h.html" title=" " alt="" coords="639,165,783,191"/>
 <area shape="rect" id="node9" href="$d0/dcb/types-compat_8h.html" title=" " alt="" coords="214,165,326,191"/>
-<area shape="rect" id="node10" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="788,239,853,264"/>
+<area shape="rect" id="node10" href="$dc/d69/include_2stdint_8h.html" title=" " alt="" coords="788,239,853,264"/>
 <area shape="rect" id="node23" href="$de/d59/fpmath_8h.html" title=" " alt="" coords="351,165,424,191"/>
 <area shape="rect" id="node24" href="$d3/d9a/math__private__openbsd_8h.html" title=" " alt="" coords="447,165,615,191"/>
 <area shape="rect" id="node11" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="96,312,219,337"/>

@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d4/d68/namespaceembvm_1_1spi.html#d5/d30/structembvm_1_1spi_1_1op__t" title="SPI operation definition." alt="" coords="5,5,128,31"/>
+<area shape="rect" id="node1" href="$dd/d45/group___logging_subsystem.html#d1/d37/classembvm_1_1_logger_base" title="Base class for logger implementations." alt="" coords="5,5,157,44"/>
+<area shape="rect" id="node2" href="$dd/d45/group___logging_subsystem.html#dd/d96/classembvm_1_1_circular_log_buffer_logger" title="Circular log buffer." alt="" coords="205,5,404,44"/>
 </map>

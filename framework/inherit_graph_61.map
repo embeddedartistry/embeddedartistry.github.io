@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$de/de8/group___framework_hw_platform.html" title=" " alt="" coords="5,5,236,44"/>
-<area shape="rect" id="node2" href="$d0/d85/class_n_r_f52_dongle_h_w_platform.html" title=" " alt="" coords="284,12,462,37"/>
+<area shape="rect" id="node1" href="$d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag" title="Defines the VirtualEventFlag interface." alt="" coords="5,31,175,56"/>
+<area shape="rect" id="node2" href="$d9/dad/group___free_r_t_o_s_o_s.html#d7/dfb/classos_1_1freertos_1_1_event_flag" title="FreeRTOS Event Flag Implementation." alt="" coords="223,5,379,31"/>
+<area shape="rect" id="node3" href="$db/dd1/group___p_o_s_i_x_o_s.html#db/d48/classos_1_1posix_1_1_event_flag" title="POSIX Event Flag Implementation." alt="" coords="230,55,372,80"/>
 </map>

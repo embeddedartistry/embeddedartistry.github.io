@@ -1,4 +1,0 @@
-<map id="InterruptQueue&lt; TLockType, TSize &gt;" name="InterruptQueue&lt; TLockType, TSize &gt;">
-<area shape="rect" id="node1" title="IRQ safe dispatch queue (For running application&#45;level (bottom&#45;half) interrupt handlers)" alt="" coords="16,5,208,332"/>
-<area shape="rect" id="node2" href="$d3/dd5/group___framework_utils.html" title=" " alt="" coords="5,407,219,733"/>
-</map>

@@ -9,8 +9,8 @@ var searchData=
   ['fp_5frn',['FP_RN',['../d7/d84/amd64_2bsd__ieeefp_8h.html#a4e16b7586792f409b05570886560db8da660bf185f71ff1e7c7ee0fc8b402b853',1,'FP_RN():&#160;bsd_ieeefp.h'],['../d8/d05/i387_2bsd__ieeefp_8h.html#a4e16b7586792f409b05570886560db8da660bf185f71ff1e7c7ee0fc8b402b853',1,'FP_RN():&#160;bsd_ieeefp.h']]],
   ['fp_5frp',['FP_RP',['../d7/d84/amd64_2bsd__ieeefp_8h.html#a4e16b7586792f409b05570886560db8da67ce8602c87dcd053c6f3efd3b9c8388',1,'FP_RP():&#160;bsd_ieeefp.h'],['../d8/d05/i387_2bsd__ieeefp_8h.html#a4e16b7586792f409b05570886560db8da67ce8602c87dcd053c6f3efd3b9c8388',1,'FP_RP():&#160;bsd_ieeefp.h']]],
   ['fp_5frz',['FP_RZ',['../d7/d84/amd64_2bsd__ieeefp_8h.html#a4e16b7586792f409b05570886560db8da77e1e9e8af825d378cfd1e98a55ba4cd',1,'FP_RZ():&#160;bsd_ieeefp.h'],['../d8/d05/i387_2bsd__ieeefp_8h.html#a4e16b7586792f409b05570886560db8da77e1e9e8af825d378cfd1e98a55ba4cd',1,'FP_RZ():&#160;bsd_ieeefp.h']]],
-  ['fpi_5fround_5fdown',['FPI_Round_down',['../d5/dec/gdtoa_8h.html#a4caf8d8f829279fba122163d961608a4ab540258e72d2492220c3dac18e367c7f',1,'gdtoa.h']]],
-  ['fpi_5fround_5fnear',['FPI_Round_near',['../d5/dec/gdtoa_8h.html#a4caf8d8f829279fba122163d961608a4a5818afc789dd5934d52e292b0870cad6',1,'gdtoa.h']]],
-  ['fpi_5fround_5fup',['FPI_Round_up',['../d5/dec/gdtoa_8h.html#a4caf8d8f829279fba122163d961608a4a28d0049999e18060cc904b9960801ea8',1,'gdtoa.h']]],
-  ['fpi_5fround_5fzero',['FPI_Round_zero',['../d5/dec/gdtoa_8h.html#a4caf8d8f829279fba122163d961608a4a64dda70d95906234e7236342d9e38dcc',1,'gdtoa.h']]]
+  ['fpi_5fround_5fdown',['FPI_Round_down',['../d5/dec/gdtoa_8h.html#a96a58e29e8dbf2b5bdeb775cba46556eab540258e72d2492220c3dac18e367c7f',1,'gdtoa.h']]],
+  ['fpi_5fround_5fnear',['FPI_Round_near',['../d5/dec/gdtoa_8h.html#a96a58e29e8dbf2b5bdeb775cba46556ea5818afc789dd5934d52e292b0870cad6',1,'gdtoa.h']]],
+  ['fpi_5fround_5fup',['FPI_Round_up',['../d5/dec/gdtoa_8h.html#a96a58e29e8dbf2b5bdeb775cba46556ea28d0049999e18060cc904b9960801ea8',1,'gdtoa.h']]],
+  ['fpi_5fround_5fzero',['FPI_Round_zero',['../d5/dec/gdtoa_8h.html#a96a58e29e8dbf2b5bdeb775cba46556ea64dda70d95906234e7236342d9e38dcc',1,'gdtoa.h']]]
 ];

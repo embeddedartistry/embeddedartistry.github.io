@@ -84,29 +84,32 @@ Collaboration diagram for Endian Swap:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5998b48f8bbef877fb0bdd85ab92e495"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ga5998b48f8bbef877fb0bdd85ab92e495"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if&lt; std::is_unsigned&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &gt;::value, <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &gt;::<a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d01/group___endian_swap.html#ga5998b48f8bbef877fb0bdd85ab92e495">embutil::byteswap</a> (<a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> i, <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> j=0u, std::size_t n=0u)</td></tr>
-<tr class="memdesc:ga5998b48f8bbef877fb0bdd85ab92e495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive constexpr byteswap implementation without C++17 fold expressions.  <a href="../../d3/d01/group___endian_swap.html#ga5998b48f8bbef877fb0bdd85ab92e495">More...</a><br /></td></tr>
-<tr class="separator:ga5998b48f8bbef877fb0bdd85ab92e495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga02823ecc1daf9c9fa03fd9890d041e46"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga02823ecc1daf9c9fa03fd9890d041e46"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d01/group___endian_swap.html#ga02823ecc1daf9c9fa03fd9890d041e46">embutil::SwapEndian</a> (<a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &amp;val, typename std::enable_if&lt; std::is_arithmetic&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &gt;::value, std::nullptr_t &gt;::<a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a> unused=nullptr)</td></tr>
-<tr class="memdesc:ga02823ecc1daf9c9fa03fd9890d041e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-constexpr Robust Endian Swap.  <a href="../../d3/d01/group___endian_swap.html#ga02823ecc1daf9c9fa03fd9890d041e46">More...</a><br /></td></tr>
-<tr class="separator:ga02823ecc1daf9c9fa03fd9890d041e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b11ee2f19613b7f94dcf500fd1e455b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga2b11ee2f19613b7f94dcf500fd1e455b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d01/group___endian_swap.html#ga2b11ee2f19613b7f94dcf500fd1e455b">embutil::SwapEndian_UB</a> (<a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &amp;val)</td></tr>
-<tr class="memdesc:ga2b11ee2f19613b7f94dcf500fd1e455b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Endian swap using undefined behavior.  <a href="../../d3/d01/group___endian_swap.html#ga2b11ee2f19613b7f94dcf500fd1e455b">More...</a><br /></td></tr>
-<tr class="separator:ga2b11ee2f19613b7f94dcf500fd1e455b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01bd1a477c9ad9858a0ebe15c1b9b22f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ga01bd1a477c9ad9858a0ebe15c1b9b22f"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if&lt; std::is_unsigned&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &gt;::value, <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &gt;::<a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d01/group___endian_swap.html#ga01bd1a477c9ad9858a0ebe15c1b9b22f">embutil::byteswap</a> (<a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> i, <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> j=0u, std::size_t n=0u) noexcept</td></tr>
+<tr class="memdesc:ga01bd1a477c9ad9858a0ebe15c1b9b22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive constexpr byteswap implementation without C++17 fold expressions.  <a href="../../d3/d01/group___endian_swap.html#ga01bd1a477c9ad9858a0ebe15c1b9b22f">More...</a><br /></td></tr>
+<tr class="separator:ga01bd1a477c9ad9858a0ebe15c1b9b22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81674c0059cdcbe1518f72ce747de5ed"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga81674c0059cdcbe1518f72ce747de5ed"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d01/group___endian_swap.html#ga81674c0059cdcbe1518f72ce747de5ed">embutil::SwapEndian</a> (<a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &amp;val, typename std::enable_if&lt; std::is_arithmetic&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &gt;::value, std::nullptr_t &gt;::<a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a> unused=nullptr) noexcept</td></tr>
+<tr class="memdesc:ga81674c0059cdcbe1518f72ce747de5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-constexpr Robust Endian Swap.  <a href="../../d3/d01/group___endian_swap.html#ga81674c0059cdcbe1518f72ce747de5ed">More...</a><br /></td></tr>
+<tr class="separator:ga81674c0059cdcbe1518f72ce747de5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06dc513a0761cc0179d97388e7bb9bcc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga06dc513a0761cc0179d97388e7bb9bcc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d01/group___endian_swap.html#ga06dc513a0761cc0179d97388e7bb9bcc">embutil::SwapEndian_UB</a> (<a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &amp;val) noexcept</td></tr>
+<tr class="memdesc:ga06dc513a0761cc0179d97388e7bb9bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Endian swap using undefined behavior.  <a href="../../d3/d01/group___endian_swap.html#ga06dc513a0761cc0179d97388e7bb9bcc">More...</a><br /></td></tr>
+<tr class="separator:ga06dc513a0761cc0179d97388e7bb9bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Functions that can be used to swap the endianness of a value. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5998b48f8bbef877fb0bdd85ab92e495"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5998b48f8bbef877fb0bdd85ab92e495">&#9670;&nbsp;</a></span>byteswap()</h2>
+<a id="ga01bd1a477c9ad9858a0ebe15c1b9b22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01bd1a477c9ad9858a0ebe15c1b9b22f">&#9670;&nbsp;</a></span>byteswap()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">constexpr std::enable_if&lt;std::is_unsigned&lt;<a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>&gt;::value, <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>&gt;::<a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a> embutil::byteswap </td>
@@ -132,6 +135,11 @@ template&lt;class T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Recursive constexpr byteswap implementation without C++17 fold expressions. </p>
@@ -152,19 +160,22 @@ template&lt;class T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Endian swapped value. </dd></dl>
 
-<p class="reference">References <a class="el" href="../../d9/d86/limits_8h.html#a308d9dd2c0028ddb184b455bbd7865de">CHAR_BIT</a>, <a class="el" href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a4ee32b092e68c7a43abb455e5c146695">n</a>, and <a class="el" href="../../d3/d0d/k__tan_8c.html#a0acb682b8260ab1c60b918599864e2e5">T</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d3b/include_2limits_8h.html#a308d9dd2c0028ddb184b455bbd7865de">CHAR_BIT</a>, <a class="el" href="../../d0/d40/test_2stdlib_2heapsort_8c.html#a4ee32b092e68c7a43abb455e5c146695">n</a>, and <a class="el" href="../../d3/d0d/k__tan_8c.html#a0acb682b8260ab1c60b918599864e2e5">T</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d39/group___framework_drivers.html#ad206df2e2ee71707fec11bf839bdd08e">embdrv::vl53l1x::readTrim()</a>, and <a class="el" href="../../de/d39/group___framework_drivers.html#a7b53deef15d36f2f23f03b2c552a4277">embdrv::vl53l1x::writeReg()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d39/group___framework_drivers.html#afa7a222c8942233977d801581ebb2b58">embdrv::vl53l1x::readTrim()</a>, and <a class="el" href="../../de/d39/group___framework_drivers.html#abc1ff4f43373742959806f317d53ad20">embdrv::vl53l1x::writeReg()</a>.</p>
 
 </div>
 </div>
-<a id="ga02823ecc1daf9c9fa03fd9890d041e46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga02823ecc1daf9c9fa03fd9890d041e46">&#9670;&nbsp;</a></span>SwapEndian()</h2>
+<a id="ga81674c0059cdcbe1518f72ce747de5ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81674c0059cdcbe1518f72ce747de5ed">&#9670;&nbsp;</a></span>SwapEndian()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void embutil::SwapEndian </td>
@@ -184,6 +195,11 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Non-constexpr Robust Endian Swap. </p>
@@ -209,13 +225,16 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ga2b11ee2f19613b7f94dcf500fd1e455b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2b11ee2f19613b7f94dcf500fd1e455b">&#9670;&nbsp;</a></span>SwapEndian_UB()</h2>
+<a id="ga06dc513a0761cc0179d97388e7bb9bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06dc513a0761cc0179d97388e7bb9bcc">&#9670;&nbsp;</a></span>SwapEndian_UB()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void embutil::SwapEndian_UB </td>
@@ -225,10 +244,15 @@ template&lt;typename T &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Endian swap using undefined behavior. </p>
-<p>Original version of <a class="el" href="../../d3/d01/group___endian_swap.html#ga02823ecc1daf9c9fa03fd9890d041e46" title="Non-constexpr Robust Endian Swap.">SwapEndian()</a>. The undefined behavior is due to the use of an inactive member of the union. This function is efficient, but the undefined behavior makes it risky.</p>
+<p>Original version of <a class="el" href="../../d3/d01/group___endian_swap.html#ga81674c0059cdcbe1518f72ce747de5ed" title="Non-constexpr Robust Endian Swap.">SwapEndian()</a>. The undefined behavior is due to the use of an inactive member of the union. This function is efficient, but the undefined behavior makes it risky.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Type of integer to perform the swap on. This value is (typically) deduced by the compiler. </td></tr>

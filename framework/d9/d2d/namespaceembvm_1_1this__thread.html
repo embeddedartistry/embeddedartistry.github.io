@@ -78,25 +78,28 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a79ba5b604039b8a8930ff4cc3ecc2628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2d/namespaceembvm_1_1this__thread.html#a79ba5b604039b8a8930ff4cc3ecc2628">sleep_for</a> (const <a class="el" href="../../d2/d3b/group___framework_o_s.html#ga262cb9ffbc7d2a7fdf42deb7528060b2">embvm::os_timeout_t</a> &amp;delay)</td></tr>
-<tr class="memdesc:a79ba5b604039b8a8930ff4cc3ecc2628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleep the currently running thread for a set amount of time The thread will sleep for <em>at least</em> the specified time, but may sleep longer depending on the scheduler.  <a href="#a79ba5b604039b8a8930ff4cc3ecc2628">More...</a><br /></td></tr>
-<tr class="separator:a79ba5b604039b8a8930ff4cc3ecc2628"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94783574e3e3511d3e41c14147bf2630"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2d/namespaceembvm_1_1this__thread.html#a94783574e3e3511d3e41c14147bf2630">yield</a> ()</td></tr>
-<tr class="memdesc:a94783574e3e3511d3e41c14147bf2630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields execution of the current thread so other threads can run.  <a href="#a94783574e3e3511d3e41c14147bf2630">More...</a><br /></td></tr>
-<tr class="separator:a94783574e3e3511d3e41c14147bf2630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48713f1b4d80d93cbf80e2732cc9657f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#abafb4c4ff2ca8cfadedae4baf0b92396">embvm::thread::handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2d/namespaceembvm_1_1this__thread.html#a48713f1b4d80d93cbf80e2732cc9657f">get_handle</a> ()</td></tr>
-<tr class="memdesc:a48713f1b4d80d93cbf80e2732cc9657f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the native handle for the currently active thread.  <a href="#a48713f1b4d80d93cbf80e2732cc9657f">More...</a><br /></td></tr>
-<tr class="separator:a48713f1b4d80d93cbf80e2732cc9657f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31943fd178f8f0b0072ea4a40e15bdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2d/namespaceembvm_1_1this__thread.html#ae31943fd178f8f0b0072ea4a40e15bdb">sleep_for</a> (const <a class="el" href="../../d2/d3b/group___framework_o_s.html#ga262cb9ffbc7d2a7fdf42deb7528060b2">embvm::os_timeout_t</a> &amp;delay) noexcept</td></tr>
+<tr class="memdesc:ae31943fd178f8f0b0072ea4a40e15bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sleep the currently running thread for a set amount of time The thread will sleep for <em>at least</em> the specified time, but may sleep longer depending on the scheduler.  <a href="#ae31943fd178f8f0b0072ea4a40e15bdb">More...</a><br /></td></tr>
+<tr class="separator:ae31943fd178f8f0b0072ea4a40e15bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28635645167775b9292bfe23e2405c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2d/namespaceembvm_1_1this__thread.html#af28635645167775b9292bfe23e2405c2">yield</a> () noexcept</td></tr>
+<tr class="memdesc:af28635645167775b9292bfe23e2405c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yields execution of the current thread so other threads can run.  <a href="#af28635645167775b9292bfe23e2405c2">More...</a><br /></td></tr>
+<tr class="separator:af28635645167775b9292bfe23e2405c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93334fe3785520de1175bcfa656b671e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#abafb4c4ff2ca8cfadedae4baf0b92396">embvm::thread::handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2d/namespaceembvm_1_1this__thread.html#a93334fe3785520de1175bcfa656b671e">get_handle</a> () noexcept</td></tr>
+<tr class="memdesc:a93334fe3785520de1175bcfa656b671e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the native handle for the currently active thread.  <a href="#a93334fe3785520de1175bcfa656b671e">More...</a><br /></td></tr>
+<tr class="separator:a93334fe3785520de1175bcfa656b671e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions that operate on the currently active thread. </p>
-<p>These static functions must be implemented for each OS so the linker has an active definition. If the function is not supported, you should call <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert()</a> or <a class="el" href="../../dc/d9c/stdlib_8h.html#ac15f85bbe9d27c028a07835b8947dceb">abort()</a>. </p>
+<p>These static functions must be implemented for each OS so the linker has an active definition. If the function is not supported, you should call <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert()</a> or <a class="el" href="../../dc/d9c/stdlib_8h.html#ac15f85bbe9d27c028a07835b8947dceb">abort()</a>. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a48713f1b4d80d93cbf80e2732cc9657f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48713f1b4d80d93cbf80e2732cc9657f">&#9670;&nbsp;</a></span>get_handle()</h2>
+<a id="a93334fe3785520de1175bcfa656b671e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93334fe3785520de1175bcfa656b671e">&#9670;&nbsp;</a></span>get_handle()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#abafb4c4ff2ca8cfadedae4baf0b92396">embvm::thread::handle_t</a> embvm::this_thread::get_handle </td>
@@ -105,21 +108,29 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the native handle for the currently active thread. </p>
 <p>If custom extensions or behaviors are needed, the thread handle can be retrieved and manipulated directly.</p>
 <dl class="section return"><dt>Returns</dt><dd>the native thread object handle as a <code>void*</code>. The user must cast appropriately. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade97280f8ce8f81a9c68128e08009e77">os::freertos::ConditionVariable::freertos_wait()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#a48724eea0e6145089240502bcc8c184d">os::freertos::ConditionVariable::freertos_wait()</a>.</p>
 
 </div>
 </div>
-<a id="a79ba5b604039b8a8930ff4cc3ecc2628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79ba5b604039b8a8930ff4cc3ecc2628">&#9670;&nbsp;</a></span>sleep_for()</h2>
+<a id="ae31943fd178f8f0b0072ea4a40e15bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31943fd178f8f0b0072ea4a40e15bdb">&#9670;&nbsp;</a></span>sleep_for()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void embvm::this_thread::sleep_for </td>
@@ -129,6 +140,11 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Sleep the currently running thread for a set amount of time The thread will sleep for <em>at least</em> the specified time, but may sleep longer depending on the scheduler. </p>
@@ -139,17 +155,20 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#adf7767cf4452743ee498ae90cd450581">os::freertos::Thread::delay_for()</a>, and <a class="el" href="../../dc/d83/namespaceos_1_1freertos.html#a9136b420219b723eb13ebdb60ccefeb2">os::freertos::frameworkTimeoutToTicks()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a63efef9b044f4fce65d45480b4c1ebc4">os::freertos::Thread::delay_for()</a>, and <a class="el" href="../../dc/d83/namespaceos_1_1freertos.html#a0267477e3ab7e1d9590e246a23001bc1">os::freertos::frameworkTimeoutToTicks()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#ae6dae49fd3d1a21130caea4985dea84b">nRF52DK_FrameworkDemoPlatform::led_blink_thread_()</a>, <a class="el" href="../../df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, <a class="el" href="../../dc/dd6/classembvm_1_1i2c_1_1active_master.html#a1f39aaddf6b1a1419d39946adf36627d">embvm::i2c::activeMaster&lt; 128 &gt;::process_()</a>, <a class="el" href="../../d2/d2e/classembvm_1_1spi_1_1active_master.html#a5003c69152b5aab0f1fbc4cdb31f0c0c">embvm::spi::activeMaster&lt; TQueueSize, TLock, TCond &gt;::process_()</a>, <a class="el" href="../../db/d9d/group___simulator_drivers.html#ac66b4c6ab13f4029bb745e22e075a534">embdrv::SimulatorSystemClock::spin()</a>, and <a class="el" href="../../db/d9d/group___simulator_drivers.html#a1ccbce7f08b9c2de26605622adaf6ce1">embdrv::SimulatorTimer::~SimulatorTimer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#a6e46c540160fa99152e813542593e868">nRF52DK_FrameworkDemoPlatform::led_blink_thread_()</a>, <a class="el" href="../../df/d0a/main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, <a class="el" href="../../dc/dd6/classembvm_1_1i2c_1_1active_master.html#a8c862c23becc1bc4e9f1041c420180c3">embvm::i2c::activeMaster&lt; 128 &gt;::process_()</a>, <a class="el" href="../../d2/d2e/classembvm_1_1spi_1_1active_master.html#a60b9c108c1157086cbb627960176678f">embvm::spi::activeMaster&lt; TQueueSize, TLock, TCond &gt;::process_()</a>, <a class="el" href="../../db/d9d/group___simulator_drivers.html#a0641a81b7f20645c258769ef7af7fb73">embdrv::SimulatorSystemClock::spin()</a>, and <a class="el" href="../../db/d9d/group___simulator_drivers.html#a0670cb396d8d9af823a1abf213d4a5eb">embdrv::SimulatorTimer::~SimulatorTimer()</a>.</p>
 
 </div>
 </div>
-<a id="a94783574e3e3511d3e41c14147bf2630"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94783574e3e3511d3e41c14147bf2630">&#9670;&nbsp;</a></span>yield()</h2>
+<a id="af28635645167775b9292bfe23e2405c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28635645167775b9292bfe23e2405c2">&#9670;&nbsp;</a></span>yield()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void embvm::this_thread::yield </td>
@@ -158,11 +177,16 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Yields execution of the current thread so other threads can run. </p>
 
-<p class="reference">References <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#adf7767cf4452743ee498ae90cd450581">os::freertos::Thread::delay_for()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a63efef9b044f4fce65d45480b4c1ebc4">os::freertos::Thread::delay_for()</a>.</p>
 
 </div>
 </div>

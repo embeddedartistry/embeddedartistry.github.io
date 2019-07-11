@@ -86,9 +86,9 @@ Collaboration diagram for Scope-bound Resource Management:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:dd/d04/class_scope_guard"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard&lt; TFunc &gt;</a></td></tr>
-<tr class="memdesc:dd/d04/class_scope_guard"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a scope guard idiom to enable custom SBRM behaviors.  <a href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">More...</a><br /></td></tr>
-<tr class="separator:dd/d04/class_scope_guard"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/da8/classembutil_1_1_scope_guard"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">embutil::ScopeGuard&lt; TFunc &gt;</a></td></tr>
+<tr class="memdesc:d0/da8/classembutil_1_1_scope_guard"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a scope guard idiom to enable custom SBRM behaviors.  <a href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">More...</a><br /></td></tr>
+<tr class="separator:d0/da8/classembutil_1_1_scope_guard"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -99,55 +99,55 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4c70e65b5f4bef136004c307f5342ca1"><td class="memTemplParams" colspan="2">template&lt;typename TType &gt; </td></tr>
-<tr class="memitem:ga4c70e65b5f4bef136004c307f5342ca1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#gaa3ad2d904fdd999253a49380fabcaf97">unique_ptr_aligned</a>&lt; TType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga4c70e65b5f4bef136004c307f5342ca1">embutil::aligned_uptr</a> (<a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> align, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> size)</td></tr>
-<tr class="memdesc:ga4c70e65b5f4bef136004c307f5342ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a unique pointer to aligned memory.  <a href="../../d5/d7b/group___s_b_r_m.html#ga4c70e65b5f4bef136004c307f5342ca1">More...</a><br /></td></tr>
-<tr class="separator:ga4c70e65b5f4bef136004c307f5342ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga585e70b89827a5ea2f14a1037c92c549"><td class="memTemplParams" colspan="2">template&lt;typename TType &gt; </td></tr>
-<tr class="memitem:ga585e70b89827a5ea2f14a1037c92c549"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; TType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga585e70b89827a5ea2f14a1037c92c549">embutil::aligned_sptr</a> (<a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> align, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> size)</td></tr>
-<tr class="memdesc:ga585e70b89827a5ea2f14a1037c92c549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a shared pointer to aligned memory.  <a href="../../d5/d7b/group___s_b_r_m.html#ga585e70b89827a5ea2f14a1037c92c549">More...</a><br /></td></tr>
-<tr class="separator:ga585e70b89827a5ea2f14a1037c92c549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typename... Args&gt; </td></tr>
-<tr class="memitem:ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>, ReleaseFunc &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9">embutil::unique_resource</a> (AcquisitionFunc acquire, ReleaseFunc release, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant).  <a href="../../d5/d7b/group___s_b_r_m.html#ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9">More...</a><br /></td></tr>
-<tr class="separator:ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f715bd30e54d8a578335b9f23f7e1c7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typename... Args&gt; </td></tr>
-<tr class="memitem:ga8f715bd30e54d8a578335b9f23f7e1c7"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga8f715bd30e54d8a578335b9f23f7e1c7">embutil::shared_resource</a> (AcquisitionFunc acquire, ReleaseFunc release, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:ga8f715bd30e54d8a578335b9f23f7e1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant).  <a href="../../d5/d7b/group___s_b_r_m.html#ga8f715bd30e54d8a578335b9f23f7e1c7">More...</a><br /></td></tr>
-<tr class="separator:ga8f715bd30e54d8a578335b9f23f7e1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab28065061c97acdea5eb567b64ed6a89"><td class="memTemplParams" colspan="2">template&lt;typename TFunctor &gt; </td></tr>
-<tr class="memitem:gab28065061c97acdea5eb567b64ed6a89"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunctor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#gab28065061c97acdea5eb567b64ed6a89">makeScopeGuard</a> (TFunctor &amp;&amp;func)</td></tr>
-<tr class="memdesc:gab28065061c97acdea5eb567b64ed6a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create scope guard with provided functor.  <a href="#gab28065061c97acdea5eb567b64ed6a89">More...</a><br /></td></tr>
-<tr class="separator:gab28065061c97acdea5eb567b64ed6a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79869db9aadf7c2f365f6728a7fbb9a2"><td class="memTemplParams" colspan="2">template&lt;typename TFunc , typename... TParams&gt; </td></tr>
-<tr class="memitem:ga79869db9aadf7c2f365f6728a7fbb9a2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga79869db9aadf7c2f365f6728a7fbb9a2">makeScopeGuard</a> (TFunc &amp;&amp;func, TParams... args) -&gt; <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; decltype(std::bind(std::forward&lt; TFunc &gt;(func), std::forward&lt; TParams &gt;(args)...))&gt;</td></tr>
-<tr class="memdesc:ga79869db9aadf7c2f365f6728a7fbb9a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create scope guard by binding the provided function and all the arguments.  <a href="#ga79869db9aadf7c2f365f6728a7fbb9a2">More...</a><br /></td></tr>
-<tr class="separator:ga79869db9aadf7c2f365f6728a7fbb9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba2c36f422a8bd78fd825a19c7ed1495"><td class="memTemplParams" colspan="2">template&lt;typename TType &gt; </td></tr>
+<tr class="memitem:gaba2c36f422a8bd78fd825a19c7ed1495"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#gaa3ad2d904fdd999253a49380fabcaf97">unique_ptr_aligned</a>&lt; TType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#gaba2c36f422a8bd78fd825a19c7ed1495">embutil::aligned_uptr</a> (<a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> align, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> size) noexcept</td></tr>
+<tr class="memdesc:gaba2c36f422a8bd78fd825a19c7ed1495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a unique pointer to aligned memory.  <a href="../../d5/d7b/group___s_b_r_m.html#gaba2c36f422a8bd78fd825a19c7ed1495">More...</a><br /></td></tr>
+<tr class="separator:gaba2c36f422a8bd78fd825a19c7ed1495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadef2a53a30fba3cc46519d71039ecbf"><td class="memTemplParams" colspan="2">template&lt;typename TType &gt; </td></tr>
+<tr class="memitem:gaadef2a53a30fba3cc46519d71039ecbf"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; TType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#gaadef2a53a30fba3cc46519d71039ecbf">embutil::aligned_sptr</a> (<a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> align, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> size) noexcept</td></tr>
+<tr class="memdesc:gaadef2a53a30fba3cc46519d71039ecbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a shared pointer to aligned memory.  <a href="../../d5/d7b/group___s_b_r_m.html#gaadef2a53a30fba3cc46519d71039ecbf">More...</a><br /></td></tr>
+<tr class="separator:gaadef2a53a30fba3cc46519d71039ecbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49df65ef7183a769e766d62dd3b4ac7f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typename... Args&gt; </td></tr>
+<tr class="memitem:ga49df65ef7183a769e766d62dd3b4ac7f"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>, ReleaseFunc &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga49df65ef7183a769e766d62dd3b4ac7f">embutil::unique_resource</a> (AcquisitionFunc acquire, ReleaseFunc release, Args &amp;&amp;... args) noexcept</td></tr>
+<tr class="memdesc:ga49df65ef7183a769e766d62dd3b4ac7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant).  <a href="../../d5/d7b/group___s_b_r_m.html#ga49df65ef7183a769e766d62dd3b4ac7f">More...</a><br /></td></tr>
+<tr class="separator:ga49df65ef7183a769e766d62dd3b4ac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23babf64ce31a9ed7daa8b86c47d3095"><td class="memTemplParams" colspan="2">template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typename... Args&gt; </td></tr>
+<tr class="memitem:ga23babf64ce31a9ed7daa8b86c47d3095"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga23babf64ce31a9ed7daa8b86c47d3095">embutil::shared_resource</a> (AcquisitionFunc acquire, ReleaseFunc release, Args &amp;&amp;... args) noexcept</td></tr>
+<tr class="memdesc:ga23babf64ce31a9ed7daa8b86c47d3095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant).  <a href="../../d5/d7b/group___s_b_r_m.html#ga23babf64ce31a9ed7daa8b86c47d3095">More...</a><br /></td></tr>
+<tr class="separator:ga23babf64ce31a9ed7daa8b86c47d3095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga308ef46f67b8bc2ad8de22ca103c5ebd"><td class="memTemplParams" colspan="2">template&lt;typename TFunctor &gt; </td></tr>
+<tr class="memitem:ga308ef46f67b8bc2ad8de22ca103c5ebd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a>&lt; TFunctor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga308ef46f67b8bc2ad8de22ca103c5ebd">makeScopeGuard</a> (TFunctor &amp;&amp;func) noexcept</td></tr>
+<tr class="memdesc:ga308ef46f67b8bc2ad8de22ca103c5ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create scope guard with provided functor.  <a href="#ga308ef46f67b8bc2ad8de22ca103c5ebd">More...</a><br /></td></tr>
+<tr class="separator:ga308ef46f67b8bc2ad8de22ca103c5ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaced7c39ba9367c23d3296036e601bef7"><td class="memTemplParams" colspan="2">template&lt;typename TFunc , typename... TParams&gt; </td></tr>
+<tr class="memitem:gaced7c39ba9367c23d3296036e601bef7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#gaced7c39ba9367c23d3296036e601bef7">makeScopeGuard</a> (TFunc &amp;&amp;func, TParams... args) noexcept -&gt; <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a>&lt; decltype(std::bind(std::forward&lt; TFunc &gt;(func), std::forward&lt; TParams &gt;(args)...))&gt;</td></tr>
+<tr class="memdesc:gaced7c39ba9367c23d3296036e601bef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create scope guard by binding the provided function and all the arguments.  <a href="#gaced7c39ba9367c23d3296036e601bef7">More...</a><br /></td></tr>
+<tr class="separator:gaced7c39ba9367c23d3296036e601bef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Utilties that enable SBRM techniques. </p>
 <hr/><h2 class="groupheader">Class Documentation</h2>
-<a name="dd/d04/class_scope_guard" id="dd/d04/class_scope_guard"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#dd/d04/class_scope_guard">&#9670;&nbsp;</a></span>ScopeGuard</h2>
+<a name="d0/da8/classembutil_1_1_scope_guard" id="d0/da8/classembutil_1_1_scope_guard"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d0/da8/classembutil_1_1_scope_guard">&#9670;&nbsp;</a></span>embutil::ScopeGuard</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">class ScopeGuard</td>
+          <td class="memname">class embutil::ScopeGuard</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><h3>template&lt;typename TFunc&gt;<br />
-class ScopeGuard&lt; TFunc &gt;</h3>
+class embutil::ScopeGuard&lt; TFunc &gt;</h3>
 
 <p>Provides a scope guard idiom to enable custom SBRM behaviors. </p>
 <p>The scope guard idiom allows a user to call a function when the guard object is destructed. The guard class enables developes to implement custom SBRM behaviors.</p>
 <p>The scope guard uses static memory allocation on the stack. The guard takes as much space on the stack as needed to bind the provided function with all its arguments.</p>
 <h1>Using the scope guard</h1>
-<p>In order to properly create a scope guard, you must use the <code><a class="el" href="../../d5/d7b/group___s_b_r_m.html#gab28065061c97acdea5eb567b64ed6a89" title="Create scope guard with provided functor.">makeScopeGuard()</a></code> function.</p>
-<div class="fragment"><div class="line"><span class="comment">// Binding function with parameters:</span></div><div class="line"><span class="keyword">auto</span> guard = <a class="code" href="../../d5/d7b/group___s_b_r_m.html#gab28065061c97acdea5eb567b64ed6a89">makeScopeGuard</a>(&amp;func, std::ref(arg1), arg2);</div><div class="line"></div><div class="line"><span class="comment">// Binding lamda function:</span></div><div class="line"><span class="keyword">auto</span> guard = <a class="code" href="../../d5/d7b/group___s_b_r_m.html#gab28065061c97acdea5eb567b64ed6a89">makeScopeGuard</a>([&amp;argByRef, argByValue]()</div><div class="line">{</div><div class="line">    <span class="comment">//guard code goes here</span></div><div class="line">});</div></div><!-- fragment --><p>Note that all the bound parameters are passed by value. To use references with the bound object, use std::ref() (or std::cref() for <code>const</code> reference).</p>
-<p>The guard function can be manually called using the <code><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a8e752168baccab6527fd58b7d1cedd39" title="Release the bound functor.">release()</a></code> function.</p>
+<p>In order to properly create a scope guard, you must use the <code><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga308ef46f67b8bc2ad8de22ca103c5ebd" title="Create scope guard with provided functor.">makeScopeGuard()</a></code> function.</p>
+<div class="fragment"><div class="line"><span class="comment">// Binding function with parameters:</span></div><div class="line"><span class="keyword">auto</span> guard = <a class="code" href="../../d5/d7b/group___s_b_r_m.html#ga308ef46f67b8bc2ad8de22ca103c5ebd">makeScopeGuard</a>(&amp;func, std::ref(arg1), arg2);</div><div class="line"></div><div class="line"><span class="comment">// Binding lamda function:</span></div><div class="line"><span class="keyword">auto</span> guard = <a class="code" href="../../d5/d7b/group___s_b_r_m.html#ga308ef46f67b8bc2ad8de22ca103c5ebd">makeScopeGuard</a>([&amp;argByRef, argByValue]()</div><div class="line">{</div><div class="line">    <span class="comment">//guard code goes here</span></div><div class="line">});</div></div><!-- fragment --><p>Note that all the bound parameters are passed by value. To use references with the bound object, use std::ref() (or std::cref() for <code>const</code> reference).</p>
+<p>The guard function can be manually called using the <code><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a9e86712966092268c49d56d29073ed38" title="Release the bound functor.">release()</a></code> function.</p>
 <p>A guard object only supports move semantics.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -157,47 +157,47 @@ class ScopeGuard&lt; TFunc &gt;</h3>
 </dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
-<tr class="memitem:a3c00924f32796d8fe05fdaa4a087165c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a3c00924f32796d8fe05fdaa4a087165c">ScopeGuard</a> (TFunc &amp;&amp;func)</td></tr>
-<tr class="memdesc:a3c00924f32796d8fe05fdaa4a087165c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a3c00924f32796d8fe05fdaa4a087165c">More...</a><br /></td></tr>
-<tr class="separator:a3c00924f32796d8fe05fdaa4a087165c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a204baa185e82fbd02e2bf478cd40b479"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a204baa185e82fbd02e2bf478cd40b479">ScopeGuard</a> (<a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a> &amp;&amp;guard)</td></tr>
-<tr class="memdesc:a204baa185e82fbd02e2bf478cd40b479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a204baa185e82fbd02e2bf478cd40b479">More...</a><br /></td></tr>
-<tr class="separator:a204baa185e82fbd02e2bf478cd40b479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee25633e61e0602e15b44fed2e38211"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a6ee25633e61e0602e15b44fed2e38211">ScopeGuard</a> (const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a> &amp;)=delete</td></tr>
-<tr class="memdesc:a6ee25633e61e0602e15b44fed2e38211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy constructor.  <a href="#a6ee25633e61e0602e15b44fed2e38211">More...</a><br /></td></tr>
-<tr class="separator:a6ee25633e61e0602e15b44fed2e38211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56de2625159005933dd2d4d198f5fd81"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a56de2625159005933dd2d4d198f5fd81">operator=</a> (const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a> &amp;)=delete</td></tr>
-<tr class="memdesc:a56de2625159005933dd2d4d198f5fd81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy assignment operator.  <a href="#a56de2625159005933dd2d4d198f5fd81">More...</a><br /></td></tr>
-<tr class="separator:a56de2625159005933dd2d4d198f5fd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59132b37d3e58cfea6bebfdde1a8063f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a59132b37d3e58cfea6bebfdde1a8063f">~ScopeGuard</a> ()</td></tr>
-<tr class="memdesc:a59132b37d3e58cfea6bebfdde1a8063f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a59132b37d3e58cfea6bebfdde1a8063f">More...</a><br /></td></tr>
-<tr class="separator:a59132b37d3e58cfea6bebfdde1a8063f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e752168baccab6527fd58b7d1cedd39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a8e752168baccab6527fd58b7d1cedd39">release</a> ()</td></tr>
-<tr class="memdesc:a8e752168baccab6527fd58b7d1cedd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the bound functor.  <a href="#a8e752168baccab6527fd58b7d1cedd39">More...</a><br /></td></tr>
-<tr class="separator:a8e752168baccab6527fd58b7d1cedd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9a540692c051ef55bd347c367720cb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#af9a540692c051ef55bd347c367720cb6">isReleased</a> ()</td></tr>
-<tr class="memdesc:af9a540692c051ef55bd347c367720cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the functor is released.  <a href="#af9a540692c051ef55bd347c367720cb6">More...</a><br /></td></tr>
-<tr class="separator:af9a540692c051ef55bd347c367720cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e8792daf33081429c1ac42cbadde53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ab7e8792daf33081429c1ac42cbadde53">ScopeGuard</a> (TFunc &amp;&amp;func) noexcept</td></tr>
+<tr class="memdesc:ab7e8792daf33081429c1ac42cbadde53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ab7e8792daf33081429c1ac42cbadde53">More...</a><br /></td></tr>
+<tr class="separator:ab7e8792daf33081429c1ac42cbadde53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335b7591973b1277f7647fce8ddd342f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a335b7591973b1277f7647fce8ddd342f">ScopeGuard</a> (<a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a> &amp;&amp;guard) noexcept</td></tr>
+<tr class="memdesc:a335b7591973b1277f7647fce8ddd342f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a335b7591973b1277f7647fce8ddd342f">More...</a><br /></td></tr>
+<tr class="separator:a335b7591973b1277f7647fce8ddd342f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6a985e7e5830dc912acec9b26779a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#adf6a985e7e5830dc912acec9b26779a0">ScopeGuard</a> (const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a> &amp;)=delete</td></tr>
+<tr class="memdesc:adf6a985e7e5830dc912acec9b26779a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy constructor.  <a href="#adf6a985e7e5830dc912acec9b26779a0">More...</a><br /></td></tr>
+<tr class="separator:adf6a985e7e5830dc912acec9b26779a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0756c0198f758468ded1b525c9454ae9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a0756c0198f758468ded1b525c9454ae9">operator=</a> (const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a0756c0198f758468ded1b525c9454ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy assignment operator.  <a href="#a0756c0198f758468ded1b525c9454ae9">More...</a><br /></td></tr>
+<tr class="separator:a0756c0198f758468ded1b525c9454ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f160f03d832fa634ae341cb10799da7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a2f160f03d832fa634ae341cb10799da7">~ScopeGuard</a> () noexcept</td></tr>
+<tr class="memdesc:a2f160f03d832fa634ae341cb10799da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a2f160f03d832fa634ae341cb10799da7">More...</a><br /></td></tr>
+<tr class="separator:a2f160f03d832fa634ae341cb10799da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e86712966092268c49d56d29073ed38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a9e86712966092268c49d56d29073ed38">release</a> () noexcept</td></tr>
+<tr class="memdesc:a9e86712966092268c49d56d29073ed38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the bound functor.  <a href="#a9e86712966092268c49d56d29073ed38">More...</a><br /></td></tr>
+<tr class="separator:a9e86712966092268c49d56d29073ed38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561ce9d0076e77f608950dac4ecd9666"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a561ce9d0076e77f608950dac4ecd9666">isReleased</a> () const noexcept</td></tr>
+<tr class="memdesc:a561ce9d0076e77f608950dac4ecd9666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the functor is released.  <a href="#a561ce9d0076e77f608950dac4ecd9666">More...</a><br /></td></tr>
+<tr class="separator:a561ce9d0076e77f608950dac4ecd9666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Attributes</h3></td></tr>
-<tr class="memitem:a79f8ce141faed960432a8ccee03537e9"><td class="memItemLeft" align="right" valign="top">std::remove_reference&lt; TFunc &gt;::<a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a79f8ce141faed960432a8ccee03537e9">func_</a></td></tr>
-<tr class="separator:a79f8ce141faed960432a8ccee03537e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac127279ef22995cc9814013a598cdb5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ac127279ef22995cc9814013a598cdb5c">active_</a></td></tr>
-<tr class="separator:ac127279ef22995cc9814013a598cdb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b785c0de92074fecd32497b806ed9c0"><td class="memItemLeft" align="right" valign="top">std::remove_reference&lt; TFunc &gt;::<a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a3b785c0de92074fecd32497b806ed9c0">func_</a></td></tr>
+<tr class="separator:a3b785c0de92074fecd32497b806ed9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c249e911dab5b5452d0cbb26fc743a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a9c249e911dab5b5452d0cbb26fc743a5">active_</a></td></tr>
+<tr class="separator:a9c249e911dab5b5452d0cbb26fc743a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Related Functions</h3></td></tr>
 <tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
 </td></tr>
-<tr class="memitem:gab28065061c97acdea5eb567b64ed6a89"><td class="memTemplParams" colspan="2">template&lt;typename TFunctor &gt; </td></tr>
-<tr class="memitem:gab28065061c97acdea5eb567b64ed6a89"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunctor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#gab28065061c97acdea5eb567b64ed6a89">makeScopeGuard</a> (TFunctor &amp;&amp;func)</td></tr>
-<tr class="memdesc:gab28065061c97acdea5eb567b64ed6a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create scope guard with provided functor.  <a href="../../d5/d7b/group___s_b_r_m.html#gab28065061c97acdea5eb567b64ed6a89">More...</a><br /></td></tr>
-<tr class="separator:gab28065061c97acdea5eb567b64ed6a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79869db9aadf7c2f365f6728a7fbb9a2"><td class="memTemplParams" colspan="2">template&lt;typename TFunc , typename... TParams&gt; </td></tr>
-<tr class="memitem:ga79869db9aadf7c2f365f6728a7fbb9a2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga79869db9aadf7c2f365f6728a7fbb9a2">makeScopeGuard</a> (TFunc &amp;&amp;func, TParams... args) -&gt; <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; decltype(std::bind(std::forward&lt; TFunc &gt;(func), std::forward&lt; TParams &gt;(args)...))&gt;</td></tr>
-<tr class="memdesc:ga79869db9aadf7c2f365f6728a7fbb9a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create scope guard by binding the provided function and all the arguments.  <a href="../../d5/d7b/group___s_b_r_m.html#ga79869db9aadf7c2f365f6728a7fbb9a2">More...</a><br /></td></tr>
-<tr class="separator:ga79869db9aadf7c2f365f6728a7fbb9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga308ef46f67b8bc2ad8de22ca103c5ebd"><td class="memTemplParams" colspan="2">template&lt;typename TFunctor &gt; </td></tr>
+<tr class="memitem:ga308ef46f67b8bc2ad8de22ca103c5ebd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a>&lt; TFunctor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga308ef46f67b8bc2ad8de22ca103c5ebd">makeScopeGuard</a> (TFunctor &amp;&amp;func) noexcept</td></tr>
+<tr class="memdesc:ga308ef46f67b8bc2ad8de22ca103c5ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create scope guard with provided functor.  <a href="../../d5/d7b/group___s_b_r_m.html#ga308ef46f67b8bc2ad8de22ca103c5ebd">More...</a><br /></td></tr>
+<tr class="separator:ga308ef46f67b8bc2ad8de22ca103c5ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaced7c39ba9367c23d3296036e601bef7"><td class="memTemplParams" colspan="2">template&lt;typename TFunc , typename... TParams&gt; </td></tr>
+<tr class="memitem:gaced7c39ba9367c23d3296036e601bef7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#gaced7c39ba9367c23d3296036e601bef7">makeScopeGuard</a> (TFunc &amp;&amp;func, TParams... args) noexcept -&gt; <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a>&lt; decltype(std::bind(std::forward&lt; TFunc &gt;(func), std::forward&lt; TParams &gt;(args)...))&gt;</td></tr>
+<tr class="memdesc:gaced7c39ba9367c23d3296036e601bef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create scope guard by binding the provided function and all the arguments.  <a href="../../d5/d7b/group___s_b_r_m.html#gaced7c39ba9367c23d3296036e601bef7">More...</a><br /></td></tr>
+<tr class="separator:gaced7c39ba9367c23d3296036e601bef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Constructor &amp; Destructor Documentation</h4>
-<a id="a3c00924f32796d8fe05fdaa4a087165c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c00924f32796d8fe05fdaa4a087165c">&#9670;&nbsp;</a></span>ScopeGuard() <span class="overload">[1/3]</span></h2>
+<a id="ab7e8792daf33081429c1ac42cbadde53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e8792daf33081429c1ac42cbadde53">&#9670;&nbsp;</a></span>ScopeGuard() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,7 +208,7 @@ template&lt;typename TFunc &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt;::<a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a> </td>
+          <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">embutil::ScopeGuard</a>&lt; TFunc &gt;::<a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a> </td>
           <td>(</td>
           <td class="paramtype">TFunc &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
@@ -217,7 +217,7 @@ template&lt;typename TFunc &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -235,8 +235,8 @@ Exception guarantee: nothrow if copy/move constructors of the bind arguments do 
 
 </div>
 </div>
-<a id="a204baa185e82fbd02e2bf478cd40b479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a204baa185e82fbd02e2bf478cd40b479">&#9670;&nbsp;</a></span>ScopeGuard() <span class="overload">[2/3]</span></h2>
+<a id="a335b7591973b1277f7647fce8ddd342f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a335b7591973b1277f7647fce8ddd342f">&#9670;&nbsp;</a></span>ScopeGuard() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,16 +247,16 @@ template&lt;typename TFunc &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt;::<a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a> </td>
+          <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">embutil::ScopeGuard</a>&lt; TFunc &gt;::<a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a>&lt; TFunc &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>guard</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -275,8 +275,8 @@ Exception guarantee: nothrow if copy/move constructors of the bind arguments do 
 
 </div>
 </div>
-<a id="a6ee25633e61e0602e15b44fed2e38211"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ee25633e61e0602e15b44fed2e38211">&#9670;&nbsp;</a></span>ScopeGuard() <span class="overload">[3/3]</span></h2>
+<a id="adf6a985e7e5830dc912acec9b26779a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6a985e7e5830dc912acec9b26779a0">&#9670;&nbsp;</a></span>ScopeGuard() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,9 +287,9 @@ template&lt;typename TFunc &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt;::<a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a> </td>
+          <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">embutil::ScopeGuard</a>&lt; TFunc &gt;::<a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a>&lt; TFunc &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -305,8 +305,8 @@ template&lt;typename TFunc &gt; </div>
 
 </div>
 </div>
-<a id="a59132b37d3e58cfea6bebfdde1a8063f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59132b37d3e58cfea6bebfdde1a8063f">&#9670;&nbsp;</a></span>~ScopeGuard()</h2>
+<a id="a2f160f03d832fa634ae341cb10799da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f160f03d832fa634ae341cb10799da7">&#9670;&nbsp;</a></span>~ScopeGuard()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,7 +317,7 @@ template&lt;typename TFunc &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt;::~<a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a> </td>
+          <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">embutil::ScopeGuard</a>&lt; TFunc &gt;::~<a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -325,21 +325,22 @@ template&lt;typename TFunc &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
-<dl class="section post"><dt>Postcondition</dt><dd>The functor is called unless it was released with the <code><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a8e752168baccab6527fd58b7d1cedd39" title="Release the bound functor.">release()</a></code> function prior to destruction. </dd></dl>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call.</p>
+<dl class="section post"><dt>Postcondition</dt><dd>The functor is called unless it was released with the <code><a class="el" href="../../d5/d7b/group___s_b_r_m.html#a9e86712966092268c49d56d29073ed38" title="Release the bound functor.">release()</a></code> function prior to destruction. </dd></dl>
 
-<p class="reference">References <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a79f8ce141faed960432a8ccee03537e9">ScopeGuard&lt; TFunc &gt;::func_</a>, and <a class="el" href="../../d5/d7b/group___s_b_r_m.html#af9a540692c051ef55bd347c367720cb6">ScopeGuard&lt; TFunc &gt;::isReleased()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a3b785c0de92074fecd32497b806ed9c0">embutil::ScopeGuard&lt; TFunc &gt;::func_</a>, and <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a561ce9d0076e77f608950dac4ecd9666">embutil::ScopeGuard&lt; TFunc &gt;::isReleased()</a>.</p>
 
 </div>
 </div>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="af9a540692c051ef55bd347c367720cb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9a540692c051ef55bd347c367720cb6">&#9670;&nbsp;</a></span>isReleased()</h2>
+<a id="a561ce9d0076e77f608950dac4ecd9666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a561ce9d0076e77f608950dac4ecd9666">&#9670;&nbsp;</a></span>isReleased()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,15 +351,15 @@ template&lt;typename TFunc &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt;::isReleased </td>
+          <td class="memname"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">embutil::ScopeGuard</a>&lt; TFunc &gt;::isReleased </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -369,14 +370,14 @@ template&lt;typename TFunc &gt; </div>
 <dd>
 Exception guarantee: No throw </dd></dl>
 
-<p class="reference">References <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ac127279ef22995cc9814013a598cdb5c">ScopeGuard&lt; TFunc &gt;::active_</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a9c249e911dab5b5452d0cbb26fc743a5">embutil::ScopeGuard&lt; TFunc &gt;::active_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a59132b37d3e58cfea6bebfdde1a8063f">ScopeGuard&lt; TFunc &gt;::~ScopeGuard()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a2f160f03d832fa634ae341cb10799da7">embutil::ScopeGuard&lt; TFunc &gt;::~ScopeGuard()</a>.</p>
 
 </div>
 </div>
-<a id="a56de2625159005933dd2d4d198f5fd81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56de2625159005933dd2d4d198f5fd81">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a0756c0198f758468ded1b525c9454ae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0756c0198f758468ded1b525c9454ae9">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,9 +388,9 @@ template&lt;typename TFunc &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&amp; <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt;::operator= </td>
+          <td class="memname">const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a>&amp; <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">embutil::ScopeGuard</a>&lt; TFunc &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a>&lt; TFunc &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -405,8 +406,8 @@ template&lt;typename TFunc &gt; </div>
 
 </div>
 </div>
-<a id="a8e752168baccab6527fd58b7d1cedd39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e752168baccab6527fd58b7d1cedd39">&#9670;&nbsp;</a></span>release()</h2>
+<a id="a9e86712966092268c49d56d29073ed38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e86712966092268c49d56d29073ed38">&#9670;&nbsp;</a></span>release()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,7 +418,7 @@ template&lt;typename TFunc &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt;::release </td>
+          <td class="memname">void <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">embutil::ScopeGuard</a>&lt; TFunc &gt;::release </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -425,7 +426,7 @@ template&lt;typename TFunc &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -436,13 +437,13 @@ template&lt;typename TFunc &gt; </div>
 <dd>
 Exception guarantee: No throw. </dd></dl>
 
-<p class="reference">References <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ac127279ef22995cc9814013a598cdb5c">ScopeGuard&lt; TFunc &gt;::active_</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a9c249e911dab5b5452d0cbb26fc743a5">embutil::ScopeGuard&lt; TFunc &gt;::active_</a>.</p>
 
 </div>
 </div>
 <h4 class="groupheader">Member Data Documentation</h4>
-<a id="ac127279ef22995cc9814013a598cdb5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac127279ef22995cc9814013a598cdb5c">&#9670;&nbsp;</a></span>active_</h2>
+<a id="a9c249e911dab5b5452d0cbb26fc743a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c249e911dab5b5452d0cbb26fc743a5">&#9670;&nbsp;</a></span>active_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -453,7 +454,7 @@ template&lt;typename TFunc &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt;::active_</td>
+          <td class="memname"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">embutil::ScopeGuard</a>&lt; TFunc &gt;::active_</td>
         </tr>
       </table>
   </td>
@@ -463,12 +464,12 @@ template&lt;typename TFunc &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d7b/group___s_b_r_m.html#af9a540692c051ef55bd347c367720cb6">ScopeGuard&lt; TFunc &gt;::isReleased()</a>, and <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a8e752168baccab6527fd58b7d1cedd39">ScopeGuard&lt; TFunc &gt;::release()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a561ce9d0076e77f608950dac4ecd9666">embutil::ScopeGuard&lt; TFunc &gt;::isReleased()</a>, and <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a9e86712966092268c49d56d29073ed38">embutil::ScopeGuard&lt; TFunc &gt;::release()</a>.</p>
 
 </div>
 </div>
-<a id="a79f8ce141faed960432a8ccee03537e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79f8ce141faed960432a8ccee03537e9">&#9670;&nbsp;</a></span>func_</h2>
+<a id="a3b785c0de92074fecd32497b806ed9c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b785c0de92074fecd32497b806ed9c0">&#9670;&nbsp;</a></span>func_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -479,7 +480,7 @@ template&lt;typename TFunc &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::remove_reference&lt;TFunc&gt;::<a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a> <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunc &gt;::func_</td>
+          <td class="memname">std::remove_reference&lt;TFunc&gt;::<a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a> <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">embutil::ScopeGuard</a>&lt; TFunc &gt;::func_</td>
         </tr>
       </table>
   </td>
@@ -489,7 +490,7 @@ template&lt;typename TFunc &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a59132b37d3e58cfea6bebfdde1a8063f">ScopeGuard&lt; TFunc &gt;::~ScopeGuard()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/d7b/group___s_b_r_m.html#a2f160f03d832fa634ae341cb10799da7">embutil::ScopeGuard&lt; TFunc &gt;::~ScopeGuard()</a>.</p>
 
 </div>
 </div>
@@ -523,13 +524,16 @@ template&lt;typename TType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga585e70b89827a5ea2f14a1037c92c549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga585e70b89827a5ea2f14a1037c92c549">&#9670;&nbsp;</a></span>aligned_sptr()</h2>
+<a id="gaadef2a53a30fba3cc46519d71039ecbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadef2a53a30fba3cc46519d71039ecbf">&#9670;&nbsp;</a></span>aligned_sptr()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::shared_ptr&lt;TType&gt; embutil::aligned_sptr </td>
@@ -549,6 +553,11 @@ template&lt;typename TType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Create a shared pointer to aligned memory. </p>
@@ -573,13 +582,16 @@ template&lt;typename TType &gt; </div>
 
 </div>
 </div>
-<a id="ga4c70e65b5f4bef136004c307f5342ca1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4c70e65b5f4bef136004c307f5342ca1">&#9670;&nbsp;</a></span>aligned_uptr()</h2>
+<a id="gaba2c36f422a8bd78fd825a19c7ed1495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba2c36f422a8bd78fd825a19c7ed1495">&#9670;&nbsp;</a></span>aligned_uptr()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#gaa3ad2d904fdd999253a49380fabcaf97">unique_ptr_aligned</a>&lt;TType&gt; embutil::aligned_uptr </td>
@@ -599,6 +611,11 @@ template&lt;typename TType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Create a unique pointer to aligned memory. </p>
@@ -622,8 +639,8 @@ template&lt;typename TType &gt; </div>
 
 </div>
 </div>
-<a id="gab28065061c97acdea5eb567b64ed6a89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab28065061c97acdea5eb567b64ed6a89">&#9670;&nbsp;</a></span>makeScopeGuard() <span class="overload">[1/2]</span></h2>
+<a id="ga308ef46f67b8bc2ad8de22ca103c5ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga308ef46f67b8bc2ad8de22ca103c5ebd">&#9670;&nbsp;</a></span>makeScopeGuard() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -634,7 +651,7 @@ template&lt;typename TFunctor &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt; TFunctor &gt; makeScopeGuard </td>
+          <td class="memname"><a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a>&lt; TFunctor &gt; makeScopeGuard </td>
           <td>(</td>
           <td class="paramtype">TFunctor &amp;&amp;&#160;</td>
           <td class="paramname"><em>func</em></td><td>)</td>
@@ -669,8 +686,8 @@ Exception guarantee: nothrow in case copy/move constructors of the bind argument
 
 </div>
 </div>
-<a id="ga79869db9aadf7c2f365f6728a7fbb9a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga79869db9aadf7c2f365f6728a7fbb9a2">&#9670;&nbsp;</a></span>makeScopeGuard() <span class="overload">[2/2]</span></h2>
+<a id="gaced7c39ba9367c23d3296036e601bef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaced7c39ba9367c23d3296036e601bef7">&#9670;&nbsp;</a></span>makeScopeGuard() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -695,7 +712,7 @@ template&lt;typename TFunc , typename... TParams&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; <a class="el" href="../../d5/d7b/group___s_b_r_m.html#dd/d04/class_scope_guard">ScopeGuard</a>&lt;decltype(std::bind(std::forward&lt;TFunc&gt;(func), std::forward&lt;TParams&gt;(args)...))&gt;
+          <td></td><td> -&gt; <a class="el" href="../../d5/d7b/group___s_b_r_m.html#d0/da8/classembutil_1_1_scope_guard">ScopeGuard</a>&lt;decltype(std::bind(std::forward&lt;TFunc&gt;(func), std::forward&lt;TParams&gt;(args)...))&gt;
 </td>
         </tr>
       </table>
@@ -709,7 +726,8 @@ template&lt;typename TFunc , typename... TParams&gt; </div>
 <p>Create scope guard by binding the provided function and all the arguments. </p>
 <p>Use this function to create a scope guard when a function with one or more arguments needs to be called.</p>
 <p>Example:</p>
-<div class="fragment"><div class="line"><span class="comment">// Binding function with parameters:</span></div><div class="line"><span class="keyword">auto</span> guard = <a class="code" href="../../d5/d7b/group___s_b_r_m.html#gab28065061c97acdea5eb567b64ed6a89">makeScopeGuard</a>(&amp;func, std::ref(arg1), arg2);</div></div><!-- fragment --><p>Note that all the bound parameters are passed by value. If there is any need to use references with the bound object, use <code>std::ref()</code> (or <code>std::cref()</code> to create a <code>const</code> reference).</p>
+<div class="fragment"><div class="line"><span class="comment">// Binding function with parameters:</span></div><div class="line"><span class="keyword">auto</span> guard = <a class="code" href="../../d5/d7b/group___s_b_r_m.html#ga308ef46f67b8bc2ad8de22ca103c5ebd">makeScopeGuard</a>(&amp;func, std::ref(arg1), arg2);</div></div><!-- fragment --><p>Note that all the bound parameters are passed by value. If there is any need to use references with the bound object, use <code>std::ref()</code> (or <code>std::cref()</code> to create a <code>const</code> reference).</p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TFunc</td><td>Pointer to function type </td></tr>
@@ -731,13 +749,16 @@ Exception guarantee: <code>nothrow</code> in case copy/move constructors of the 
 
 </div>
 </div>
-<a id="ga8f715bd30e54d8a578335b9f23f7e1c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8f715bd30e54d8a578335b9f23f7e1c7">&#9670;&nbsp;</a></span>shared_resource()</h2>
+<a id="ga23babf64ce31a9ed7daa8b86c47d3095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga23babf64ce31a9ed7daa8b86c47d3095">&#9670;&nbsp;</a></span>shared_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::shared_ptr&lt;<a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>&gt; embutil::shared_resource </td>
@@ -763,14 +784,19 @@ template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typen
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant). </p>
-<p>The <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga8f715bd30e54d8a578335b9f23f7e1c7" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant).">shared_resource()</a> function creates unique pointers that manage C-style Resources. The function takes in an acquisiton function and release function (e.g. fopen and fclose). Remaining arguments are optional. If specified, they will be forwarded to the acquisition function.</p>
+<p>The <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga23babf64ce31a9ed7daa8b86c47d3095" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant).">shared_resource()</a> function creates unique pointers that manage C-style Resources. The function takes in an acquisiton function and release function (e.g. fopen and fclose). Remaining arguments are optional. If specified, they will be forwarded to the acquisition function.</p>
 <p>The resource is created via the acquisition function and stored in a shared_ptr. When the shared_ptr refcount reaches 0, the delete function will be automatically called.</p>
-<p>The <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga8f715bd30e54d8a578335b9f23f7e1c7" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant).">shared_resource()</a> function returns a std::shared, and is intended for resources that have multiple owners.</p>
+<p>The <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga23babf64ce31a9ed7daa8b86c47d3095" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant).">shared_resource()</a> function returns a std::shared, and is intended for resources that have multiple owners.</p>
 <h1>Using shared_resource</h1>
-<p>You specify the storage type when invoking <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga8f715bd30e54d8a578335b9f23f7e1c7" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant).">shared_resource()</a>. For example, if we want to manage a <code>FILE</code>:</p>
+<p>You specify the storage type when invoking <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga23babf64ce31a9ed7daa8b86c47d3095" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::shared_ptr variant).">shared_resource()</a>. For example, if we want to manage a <code>FILE</code>:</p>
 <div class="fragment"><div class="line">shared_resource&lt;FILE&gt;(...);</div></div><!-- fragment --><p>Note that we use <code>FILE</code> in the template invocation, rather than <code>FILE*</code>. std::shared_resource will actually manage a <code>FILE*</code> under the hood, and that's what the acquire function returns.</p>
 <p>The full invocation requires us to specify arguments. In order to open a file we would normally use <a class="el" href="../../d6/dd1/stdio_8h.html#a4f88e21c8715922a8af104bcd5276c54">fopen()</a>, and to close the file we use <a class="el" href="../../d6/dd1/stdio_8h.html#a6441bf0a1040701d1ba906b64f348daf">fclose()</a>. <a class="el" href="../../d6/dd1/stdio_8h.html#a4f88e21c8715922a8af104bcd5276c54">fopen()</a> requires two arguments: a filename and the mode (e.g., read or write). We open a file <code>filename</code> for writing in the following way:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> sfile = embutil::shared_resource&lt;FILE&gt;(<a class="code" href="../../d6/dd1/stdio_8h.html#a4f88e21c8715922a8af104bcd5276c54">fopen</a>, <a class="code" href="../../d6/dd1/stdio_8h.html#a6441bf0a1040701d1ba906b64f348daf">fclose</a>, filename, <span class="stringliteral">&quot;w&quot;</span>);</div></div><!-- fragment --><p>The resulting <code>sfile</code> can be passed into the C-style APIs using the std::shared_ptr <code>.get()</code> member function.</p>
@@ -796,13 +822,16 @@ template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typen
 
 </div>
 </div>
-<a id="ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9">&#9670;&nbsp;</a></span>unique_resource()</h2>
+<a id="ga49df65ef7183a769e766d62dd3b4ac7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49df65ef7183a769e766d62dd3b4ac7f">&#9670;&nbsp;</a></span>unique_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d1/daa/k__tanf_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>, ReleaseFunc&gt; embutil::unique_resource </td>
@@ -828,14 +857,19 @@ template&lt;typename T , typename AcquisitionFunc , typename ReleaseFunc , typen
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant). </p>
-<p>The <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant).">unique_resource()</a> function creates unique pointers that manage C-style Resources. The function takes in an acquisiton function and release function (e.g. fopen and fclose). Remaining arguments are optional. If specified, they will be forwarded to the acquisition function.</p>
+<p>The <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga49df65ef7183a769e766d62dd3b4ac7f" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant).">unique_resource()</a> function creates unique pointers that manage C-style Resources. The function takes in an acquisiton function and release function (e.g. fopen and fclose). Remaining arguments are optional. If specified, they will be forwarded to the acquisition function.</p>
 <p>The resource is created via the acquisition function and stored in a unique_ptr. When the unique_ptr goes out of scope, the delete function will be automatically called.</p>
-<p>The <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant).">unique_resource()</a> function returns a std::unique_ptr, and is intended for resources that have a single owner.</p>
+<p>The <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga49df65ef7183a769e766d62dd3b4ac7f" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant).">unique_resource()</a> function returns a std::unique_ptr, and is intended for resources that have a single owner.</p>
 <h1>Using unique_resource</h1>
-<p>You specify the storage type when invoking <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga7ab7c45f4f35b0e7bd7a6afaf1ab43d9" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant).">unique_resource()</a>. For example, if we want to manage a <code>FILE</code>:</p>
+<p>You specify the storage type when invoking <a class="el" href="../../d5/d7b/group___s_b_r_m.html#ga49df65ef7183a769e766d62dd3b4ac7f" title="Enable Scope-Bound Resource Management (SBRM) for C-style resources (std::unique_ptr variant).">unique_resource()</a>. For example, if we want to manage a <code>FILE</code>:</p>
 <div class="fragment"><div class="line">unique_resource&lt;FILE&gt;(...);</div></div><!-- fragment --><p>Note that we use <code>FILE</code> in the template invocation, rather than <code>FILE*</code>. std::unique_ptr will actually manage a <code>FILE*</code> under the hood, and that's what the acquire function returns.</p>
 <p>The full invocation requires us to specify arguments. In order to open a file we would normally use <a class="el" href="../../d6/dd1/stdio_8h.html#a4f88e21c8715922a8af104bcd5276c54">fopen()</a>, and to close the file we use <a class="el" href="../../d6/dd1/stdio_8h.html#a6441bf0a1040701d1ba906b64f348daf">fclose()</a>. <a class="el" href="../../d6/dd1/stdio_8h.html#a4f88e21c8715922a8af104bcd5276c54">fopen()</a> requires two arguments: a filename and the mode (e.g., read or write). We open a file <code>filename</code> for writing in the following way:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> ufile = embutil::unique_resource&lt;FILE&gt;(<a class="code" href="../../d6/dd1/stdio_8h.html#a4f88e21c8715922a8af104bcd5276c54">fopen</a>, <a class="code" href="../../d6/dd1/stdio_8h.html#a6441bf0a1040701d1ba906b64f348daf">fclose</a>, filename, <span class="stringliteral">&quot;w&quot;</span>);</div></div><!-- fragment --><p>The resulting <code>ufile</code> can be passed into the C-style APIs using the std::unique_ptr <code>.get()</code> member function.</p>

@@ -88,6 +88,9 @@ Classes</h2></td></tr>
 <tr class="memitem:d4/db3/classembutil_1_1_dispatch_queue___base"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#d4/db3/classembutil_1_1_dispatch_queue___base">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;</a></td></tr>
 <tr class="memdesc:d4/db3/classembutil_1_1_dispatch_queue___base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for dispatch queues.  <a href="../../d1/d15/group___dispatch_queue.html#d4/db3/classembutil_1_1_dispatch_queue___base">More...</a><br /></td></tr>
 <tr class="separator:d4/db3/classembutil_1_1_dispatch_queue___base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/d14/classembutil_1_1_interrupt_queue"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue&lt; TLockType, TSize &gt;</a></td></tr>
+<tr class="memdesc:de/d14/classembutil_1_1_interrupt_queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRQ safe dispatch queue (For running application-level (bottom-half) interrupt handlers)  <a href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">More...</a><br /></td></tr>
+<tr class="separator:de/d14/classembutil_1_1_interrupt_queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -99,6 +102,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga179ebed9f4943970e58d123e15a88ab8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#ga179ebed9f4943970e58d123e15a88ab8">embutil::StaticDispatchQueue</a> = <a class="el" href="../../d1/d15/group___dispatch_queue.html#d4/db3/classembutil_1_1_dispatch_queue___base">DispatchQueue_Base</a>&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;</td></tr>
 <tr class="memdesc:ga179ebed9f4943970e58d123e15a88ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch queue specializatoin using only static memory allocation.  <a href="../../d1/d15/group___dispatch_queue.html#ga179ebed9f4943970e58d123e15a88ab8">More...</a><br /></td></tr>
 <tr class="separator:ga179ebed9f4943970e58d123e15a88ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae55451a760f207f1a5db73f616452f44"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">embutil::IRQBottomHalfOp_t</a> = stdext::inplace_function&lt; void(), 96 &gt;</td></tr>
+<tr class="separator:gae55451a760f207f1a5db73f616452f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30562cdd789f4cc04628935d02f76cc2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#ga30562cdd789f4cc04628935d02f76cc2">embutil::IRQDispatcherFunc_t</a> = stdext::inplace_function&lt; void(const <a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">IRQBottomHalfOp_t</a> &amp;)&gt;</td></tr>
+<tr class="separator:ga30562cdd789f4cc04628935d02f76cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Group of worker threads that enables asynchronous processing. </p>
@@ -124,8 +131,8 @@ class embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &
 <li><code>StaticDispatchQueue</code></li>
 </ul>
 <h1>Using a Dispatch Queue</h1>
-<p>Users interact with a dispatch queue using the <a class="el" href="../../d1/d15/group___dispatch_queue.html#ab676d2c7132e3553831eeabb96f75ed3" title="Dispatch an operation.">dispatch()</a> APIs. The dispatch queue can accept any functor: functions, function pointers, lambdas. The client passes a functor to the <a class="el" href="../../d1/d15/group___dispatch_queue.html#ab676d2c7132e3553831eeabb96f75ed3" title="Dispatch an operation.">dispatch()</a> operation, which returns immediately to the client. The functor will be executed asynchronously on the next available dispatch thread.</p>
-<div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d0/d95/strtodg_8c.html#a6e21ba825183ae20ce05deeb6b55f40e">increment</a>(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">    count++;</div><div class="line">}</div><div class="line"></div><div class="line"><a class="code" href="../../d1/d15/group___dispatch_queue.html#d4/db3/classembutil_1_1_dispatch_queue___base">embutil::DynamicDispatchQueue&lt;&gt;</a> q(num_threads);</div><div class="line">q.dispatch(count);</div><div class="line">q.dispatch([] { <a class="code" href="../../d3/d6b/printf_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;Hello from a lambda!\n&quot;</span>); });</div></div><!-- fragment --><p>Dispatch queues are used when an operation needs to run on a separate thread, but you don't want to use explicit thread management. They support asynchronous processing models. A common usage mode is to have the operation call <a class="el" href="../../d1/d15/group___dispatch_queue.html#ab676d2c7132e3553831eeabb96f75ed3" title="Dispatch an operation.">dispatch()</a> to carry out the next step in a processing chain.</p>
+<p>Users interact with a dispatch queue using the <a class="el" href="../../d1/d15/group___dispatch_queue.html#aee0d33a27d47554f91af4449c5d44d89" title="Dispatch an operation.">dispatch()</a> APIs. The dispatch queue can accept any functor: functions, function pointers, lambdas. The client passes a functor to the <a class="el" href="../../d1/d15/group___dispatch_queue.html#aee0d33a27d47554f91af4449c5d44d89" title="Dispatch an operation.">dispatch()</a> operation, which returns immediately to the client. The functor will be executed asynchronously on the next available dispatch thread.</p>
+<div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="../../d0/d95/strtodg_8c.html#a6e21ba825183ae20ce05deeb6b55f40e">increment</a>(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">    count++;</div><div class="line">}</div><div class="line"></div><div class="line"><a class="code" href="../../d1/d15/group___dispatch_queue.html#d4/db3/classembutil_1_1_dispatch_queue___base">embutil::DynamicDispatchQueue&lt;&gt;</a> q(num_threads);</div><div class="line">q.dispatch(count);</div><div class="line">q.dispatch([] { <a class="code" href="../../d3/d6b/printf_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;Hello from a lambda!\n&quot;</span>); });</div></div><!-- fragment --><p>Dispatch queues are used when an operation needs to run on a separate thread, but you don't want to use explicit thread management. They support asynchronous processing models. A common usage mode is to have the operation call <a class="el" href="../../d1/d15/group___dispatch_queue.html#aee0d33a27d47554f91af4449c5d44d89" title="Dispatch an operation.">dispatch()</a> to carry out the next step in a processing chain.</p>
 <p>Dispatch queues cannot be copied or moved.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -143,21 +150,21 @@ class embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &
 <tr class="memdesc:adf6724c2a509d65280664f0623b7b0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public alias for the dispatch functor type.  <a href="#adf6724c2a509d65280664f0623b7b0e2">More...</a><br /></td></tr>
 <tr class="separator:adf6724c2a509d65280664f0623b7b0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
-<tr class="memitem:a253787397ef966a027a3ec8aeff6f6ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a253787397ef966a027a3ec8aeff6f6ff">DispatchQueue_Base</a> (<a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#aaa58623b11c727afd36e174b54b79be7">thread_count</a>=1)</td></tr>
-<tr class="memdesc:a253787397ef966a027a3ec8aeff6f6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an unnamed dispatch queue.  <a href="#a253787397ef966a027a3ec8aeff6f6ff">More...</a><br /></td></tr>
-<tr class="separator:a253787397ef966a027a3ec8aeff6f6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c49b3f525bf49e67b15dddbcb9381f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a0c49b3f525bf49e67b15dddbcb9381f6">DispatchQueue_Base</a> (const char *name, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#aaa58623b11c727afd36e174b54b79be7">thread_count</a>=1)</td></tr>
-<tr class="memdesc:a0c49b3f525bf49e67b15dddbcb9381f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dispatch queue with a C-string name.  <a href="#a0c49b3f525bf49e67b15dddbcb9381f6">More...</a><br /></td></tr>
-<tr class="separator:a0c49b3f525bf49e67b15dddbcb9381f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae481eb385e099afb775feab625bd3ddb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#ae481eb385e099afb775feab625bd3ddb">DispatchQueue_Base</a> (const std::string &amp;name, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#aaa58623b11c727afd36e174b54b79be7">thread_count</a>=1)</td></tr>
-<tr class="memdesc:ae481eb385e099afb775feab625bd3ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dispatch queue with a std::string name.  <a href="#ae481eb385e099afb775feab625bd3ddb">More...</a><br /></td></tr>
-<tr class="separator:ae481eb385e099afb775feab625bd3ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4ff3edbb720d6d74c6663534d7781a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#ad4ff3edbb720d6d74c6663534d7781a8">DispatchQueue_Base</a> (const std::string_view &amp;name, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#aaa58623b11c727afd36e174b54b79be7">thread_count</a>=1)</td></tr>
-<tr class="memdesc:ad4ff3edbb720d6d74c6663534d7781a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dispatch queue with a std::string name.  <a href="#ad4ff3edbb720d6d74c6663534d7781a8">More...</a><br /></td></tr>
-<tr class="separator:ad4ff3edbb720d6d74c6663534d7781a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eb051c5ba2425ea59aec1d4e4345cc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a2eb051c5ba2425ea59aec1d4e4345cc8">~DispatchQueue_Base</a> ()</td></tr>
-<tr class="memdesc:a2eb051c5ba2425ea59aec1d4e4345cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#a2eb051c5ba2425ea59aec1d4e4345cc8">More...</a><br /></td></tr>
-<tr class="separator:a2eb051c5ba2425ea59aec1d4e4345cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017605bbdba6fbb68095c4a1798b5277"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a017605bbdba6fbb68095c4a1798b5277">DispatchQueue_Base</a> (<a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1d3e1647e79a82ef11354184fffbefbb">thread_count</a>=1) noexcept</td></tr>
+<tr class="memdesc:a017605bbdba6fbb68095c4a1798b5277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an unnamed dispatch queue.  <a href="#a017605bbdba6fbb68095c4a1798b5277">More...</a><br /></td></tr>
+<tr class="separator:a017605bbdba6fbb68095c4a1798b5277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ac39623bb94f08fba006f823473e17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a10ac39623bb94f08fba006f823473e17">DispatchQueue_Base</a> (const char *name, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1d3e1647e79a82ef11354184fffbefbb">thread_count</a>=1) noexcept</td></tr>
+<tr class="memdesc:a10ac39623bb94f08fba006f823473e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dispatch queue with a C-string name.  <a href="#a10ac39623bb94f08fba006f823473e17">More...</a><br /></td></tr>
+<tr class="separator:a10ac39623bb94f08fba006f823473e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258d5e3f2ad58840e60677938a9d9f6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a258d5e3f2ad58840e60677938a9d9f6d">DispatchQueue_Base</a> (const std::string &amp;name, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1d3e1647e79a82ef11354184fffbefbb">thread_count</a>=1) noexcept</td></tr>
+<tr class="memdesc:a258d5e3f2ad58840e60677938a9d9f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dispatch queue with a std::string name.  <a href="#a258d5e3f2ad58840e60677938a9d9f6d">More...</a><br /></td></tr>
+<tr class="separator:a258d5e3f2ad58840e60677938a9d9f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdef6439e5e7f601e99cf8ff05ad2f85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#acdef6439e5e7f601e99cf8ff05ad2f85">DispatchQueue_Base</a> (const std::string_view &amp;name, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1d3e1647e79a82ef11354184fffbefbb">thread_count</a>=1) noexcept</td></tr>
+<tr class="memdesc:acdef6439e5e7f601e99cf8ff05ad2f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dispatch queue with a std::string name.  <a href="#acdef6439e5e7f601e99cf8ff05ad2f85">More...</a><br /></td></tr>
+<tr class="separator:acdef6439e5e7f601e99cf8ff05ad2f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1af118bba5965936b31067ec5e66ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a6c1af118bba5965936b31067ec5e66ba">~DispatchQueue_Base</a> () noexcept</td></tr>
+<tr class="memdesc:a6c1af118bba5965936b31067ec5e66ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#a6c1af118bba5965936b31067ec5e66ba">More...</a><br /></td></tr>
+<tr class="separator:a6c1af118bba5965936b31067ec5e66ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca3262a4c27e0eb32c5f9f6e6f6f82df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#aca3262a4c27e0eb32c5f9f6e6f6f82df">DispatchQueue_Base</a> (const <a class="el" href="../../d1/d15/group___dispatch_queue.html#d4/db3/classembutil_1_1_dispatch_queue___base">DispatchQueue_Base</a> &amp;)=delete</td></tr>
 <tr class="memdesc:aca3262a4c27e0eb32c5f9f6e6f6f82df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy constructor.  <a href="#aca3262a4c27e0eb32c5f9f6e6f6f82df">More...</a><br /></td></tr>
 <tr class="separator:aca3262a4c27e0eb32c5f9f6e6f6f82df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,26 +177,26 @@ class embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &
 <tr class="memitem:aeaced0bf80ef69a069ae96cb26ef229c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d15/group___dispatch_queue.html#d4/db3/classembutil_1_1_dispatch_queue___base">DispatchQueue_Base</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#aeaced0bf80ef69a069ae96cb26ef229c">operator=</a> (<a class="el" href="../../d1/d15/group___dispatch_queue.html#d4/db3/classembutil_1_1_dispatch_queue___base">DispatchQueue_Base</a> &amp;&amp;)=delete</td></tr>
 <tr class="memdesc:aeaced0bf80ef69a069ae96cb26ef229c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted move assignment operator.  <a href="#aeaced0bf80ef69a069ae96cb26ef229c">More...</a><br /></td></tr>
 <tr class="separator:aeaced0bf80ef69a069ae96cb26ef229c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab676d2c7132e3553831eeabb96f75ed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#ab676d2c7132e3553831eeabb96f75ed3">dispatch</a> (const TFunc &amp;op)</td></tr>
-<tr class="memdesc:ab676d2c7132e3553831eeabb96f75ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch an operation.  <a href="#ab676d2c7132e3553831eeabb96f75ed3">More...</a><br /></td></tr>
-<tr class="separator:ab676d2c7132e3553831eeabb96f75ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01d87901ed46a30813eb070d5b796ed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a01d87901ed46a30813eb070d5b796ed6">dispatch</a> (TFunc &amp;&amp;op)</td></tr>
-<tr class="separator:a01d87901ed46a30813eb070d5b796ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7666459061c6c71e0ef72ca9bbdb58e0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a7666459061c6c71e0ef72ca9bbdb58e0">getBoundDispatch</a> ()</td></tr>
-<tr class="memdesc:a7666459061c6c71e0ef72ca9bbdb58e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a std::bind object for the instance's dispatch(const&amp;) function.  <a href="#a7666459061c6c71e0ef72ca9bbdb58e0">More...</a><br /></td></tr>
-<tr class="separator:a7666459061c6c71e0ef72ca9bbdb58e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a892c3130688b38c15be92c3ec968975e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a892c3130688b38c15be92c3ec968975e">getBoundMoveDispatch</a> ()</td></tr>
-<tr class="memdesc:a892c3130688b38c15be92c3ec968975e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a std::bind object for the instance's dispatch(&amp;&amp;) function.  <a href="#a892c3130688b38c15be92c3ec968975e">More...</a><br /></td></tr>
-<tr class="separator:a892c3130688b38c15be92c3ec968975e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a73597c3fd04c88953b45ec9db204de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a1a73597c3fd04c88953b45ec9db204de">queue_size</a> () const</td></tr>
-<tr class="memdesc:a1a73597c3fd04c88953b45ec9db204de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current size of the operation queue.  <a href="#a1a73597c3fd04c88953b45ec9db204de">More...</a><br /></td></tr>
-<tr class="separator:a1a73597c3fd04c88953b45ec9db204de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b6e36c901779b9d33c0d970b90e0803"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a0b6e36c901779b9d33c0d970b90e0803">capacity</a> ()</td></tr>
-<tr class="memdesc:a0b6e36c901779b9d33c0d970b90e0803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the capacity of the operation queue.  <a href="#a0b6e36c901779b9d33c0d970b90e0803">More...</a><br /></td></tr>
-<tr class="separator:a0b6e36c901779b9d33c0d970b90e0803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa58623b11c727afd36e174b54b79be7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#aaa58623b11c727afd36e174b54b79be7">thread_count</a> ()</td></tr>
-<tr class="memdesc:aaa58623b11c727afd36e174b54b79be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of threads used by this dispatch queue.  <a href="#aaa58623b11c727afd36e174b54b79be7">More...</a><br /></td></tr>
-<tr class="separator:aaa58623b11c727afd36e174b54b79be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee0d33a27d47554f91af4449c5d44d89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#aee0d33a27d47554f91af4449c5d44d89">dispatch</a> (const TFunc &amp;op) noexcept</td></tr>
+<tr class="memdesc:aee0d33a27d47554f91af4449c5d44d89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch an operation.  <a href="#aee0d33a27d47554f91af4449c5d44d89">More...</a><br /></td></tr>
+<tr class="separator:aee0d33a27d47554f91af4449c5d44d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ff279cfba2705a8e5525d636f8178f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#aa1ff279cfba2705a8e5525d636f8178f">dispatch</a> (TFunc &amp;&amp;op) noexcept</td></tr>
+<tr class="separator:aa1ff279cfba2705a8e5525d636f8178f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fce18cea2a9125f9739cd9e91cfceeb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a7fce18cea2a9125f9739cd9e91cfceeb">getBoundDispatch</a> () noexcept</td></tr>
+<tr class="memdesc:a7fce18cea2a9125f9739cd9e91cfceeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a std::bind object for the instance's dispatch(const&amp;) function.  <a href="#a7fce18cea2a9125f9739cd9e91cfceeb">More...</a><br /></td></tr>
+<tr class="separator:a7fce18cea2a9125f9739cd9e91cfceeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2185f2c33946de22e70dc1b3c69ca95d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a2185f2c33946de22e70dc1b3c69ca95d">getBoundMoveDispatch</a> () noexcept</td></tr>
+<tr class="memdesc:a2185f2c33946de22e70dc1b3c69ca95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a std::bind object for the instance's dispatch(&amp;&amp;) function.  <a href="#a2185f2c33946de22e70dc1b3c69ca95d">More...</a><br /></td></tr>
+<tr class="separator:a2185f2c33946de22e70dc1b3c69ca95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698aa133a8acf9662ccc6693137383f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a698aa133a8acf9662ccc6693137383f4">queue_size</a> () const noexcept</td></tr>
+<tr class="memdesc:a698aa133a8acf9662ccc6693137383f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current size of the operation queue.  <a href="#a698aa133a8acf9662ccc6693137383f4">More...</a><br /></td></tr>
+<tr class="separator:a698aa133a8acf9662ccc6693137383f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d29ddc778038dd4180ec9a5a9775c5"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a90d29ddc778038dd4180ec9a5a9775c5">capacity</a> () const noexcept</td></tr>
+<tr class="memdesc:a90d29ddc778038dd4180ec9a5a9775c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the capacity of the operation queue.  <a href="#a90d29ddc778038dd4180ec9a5a9775c5">More...</a><br /></td></tr>
+<tr class="separator:a90d29ddc778038dd4180ec9a5a9775c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3e1647e79a82ef11354184fffbefbb"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a1d3e1647e79a82ef11354184fffbefbb">thread_count</a> () const noexcept</td></tr>
+<tr class="memdesc:a1d3e1647e79a82ef11354184fffbefbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of threads used by this dispatch queue.  <a href="#a1d3e1647e79a82ef11354184fffbefbb">More...</a><br /></td></tr>
+<tr class="separator:a1d3e1647e79a82ef11354184fffbefbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Types</h3></td></tr>
 <tr class="memitem:a8e31e4068fba145e19d9569ef2654b5b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a8e31e4068fba145e19d9569ef2654b5b">TVecType</a> = typename std::conditional&lt;(TSize==0), std::vector&lt; std::thread &gt;, etl::vector&lt; std::thread, TThreadCount &gt; &gt;::<a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a></td></tr>
 <tr class="memdesc:a8e31e4068fba145e19d9569ef2654b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definition for the thread storage vector.  <a href="#a8e31e4068fba145e19d9569ef2654b5b">More...</a><br /></td></tr>
@@ -198,9 +205,9 @@ class embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &
 <tr class="memdesc:a24123d1d8aa6cefdd6e510a046943ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definition for the operation storage queue.  <a href="#a24123d1d8aa6cefdd6e510a046943ed1">More...</a><br /></td></tr>
 <tr class="separator:a24123d1d8aa6cefdd6e510a046943ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Member Functions</h3></td></tr>
-<tr class="memitem:a20eaf92b8fe01dc362040b8d99770d02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a20eaf92b8fe01dc362040b8d99770d02">dispatch_thread_handler</a> ()</td></tr>
-<tr class="memdesc:a20eaf92b8fe01dc362040b8d99770d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Worker thread handler.  <a href="#a20eaf92b8fe01dc362040b8d99770d02">More...</a><br /></td></tr>
-<tr class="separator:a20eaf92b8fe01dc362040b8d99770d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29fb9a5fdd6dc99cf37e65e5e557283b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a29fb9a5fdd6dc99cf37e65e5e557283b">dispatch_thread_handler</a> () noexcept</td></tr>
+<tr class="memdesc:a29fb9a5fdd6dc99cf37e65e5e557283b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Worker thread handler.  <a href="#a29fb9a5fdd6dc99cf37e65e5e557283b">More...</a><br /></td></tr>
+<tr class="separator:a29fb9a5fdd6dc99cf37e65e5e557283b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Attributes</h3></td></tr>
 <tr class="memitem:ae2956e80c9ebc4eff1ca583b4cf027fc"><td class="memItemLeft" align="right" valign="top">const std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#ae2956e80c9ebc4eff1ca583b4cf027fc">name_</a></td></tr>
 <tr class="memdesc:ae2956e80c9ebc4eff1ca583b4cf027fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the dispatch queue.  <a href="#ae2956e80c9ebc4eff1ca583b4cf027fc">More...</a><br /></td></tr>
@@ -295,8 +302,8 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 </div>
 </div>
 <h4 class="groupheader">Constructor &amp; Destructor Documentation</h4>
-<a id="a253787397ef966a027a3ec8aeff6f6ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a253787397ef966a027a3ec8aeff6f6ff">&#9670;&nbsp;</a></span>DispatchQueue_Base() <span class="overload">[1/6]</span></h2>
+<a id="a017605bbdba6fbb68095c4a1798b5277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a017605bbdba6fbb68095c4a1798b5277">&#9670;&nbsp;</a></span>DispatchQueue_Base() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,7 +323,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -329,12 +336,12 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a20eaf92b8fe01dc362040b8d99770d02">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#aaa58623b11c727afd36e174b54b79be7">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a175ff2f365a8d89256cd619f457e76df">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::threads_</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a29fb9a5fdd6dc99cf37e65e5e557283b">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1d3e1647e79a82ef11354184fffbefbb">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a175ff2f365a8d89256cd619f457e76df">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::threads_</a>.</p>
 
 </div>
 </div>
-<a id="a0c49b3f525bf49e67b15dddbcb9381f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c49b3f525bf49e67b15dddbcb9381f6">&#9670;&nbsp;</a></span>DispatchQueue_Base() <span class="overload">[2/6]</span></h2>
+<a id="a10ac39623bb94f08fba006f823473e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ac39623bb94f08fba006f823473e17">&#9670;&nbsp;</a></span>DispatchQueue_Base() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,7 +371,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -378,12 +385,12 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a20eaf92b8fe01dc362040b8d99770d02">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#aaa58623b11c727afd36e174b54b79be7">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a175ff2f365a8d89256cd619f457e76df">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::threads_</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a29fb9a5fdd6dc99cf37e65e5e557283b">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1d3e1647e79a82ef11354184fffbefbb">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a175ff2f365a8d89256cd619f457e76df">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::threads_</a>.</p>
 
 </div>
 </div>
-<a id="ae481eb385e099afb775feab625bd3ddb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae481eb385e099afb775feab625bd3ddb">&#9670;&nbsp;</a></span>DispatchQueue_Base() <span class="overload">[3/6]</span></h2>
+<a id="a258d5e3f2ad58840e60677938a9d9f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258d5e3f2ad58840e60677938a9d9f6d">&#9670;&nbsp;</a></span>DispatchQueue_Base() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,7 +420,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -425,7 +432,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d1/d15/group___dispatch_queue.html#a253787397ef966a027a3ec8aeff6f6ff" title="Create an unnamed dispatch queue.">DispatchQueue_Base()</a> uses a std::string_view, so a std::string input must remain valid. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d1/d15/group___dispatch_queue.html#a017605bbdba6fbb68095c4a1798b5277" title="Create an unnamed dispatch queue.">DispatchQueue_Base()</a> uses a std::string_view, so a std::string input must remain valid. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_count</td><td>Optional parameter that determines the number of threads associated with this queue. thread_count cannot exceed TThreadCount. </td></tr>
@@ -433,12 +440,12 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a20eaf92b8fe01dc362040b8d99770d02">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#aaa58623b11c727afd36e174b54b79be7">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a175ff2f365a8d89256cd619f457e76df">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::threads_</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a29fb9a5fdd6dc99cf37e65e5e557283b">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1d3e1647e79a82ef11354184fffbefbb">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a175ff2f365a8d89256cd619f457e76df">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::threads_</a>.</p>
 
 </div>
 </div>
-<a id="ad4ff3edbb720d6d74c6663534d7781a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4ff3edbb720d6d74c6663534d7781a8">&#9670;&nbsp;</a></span>DispatchQueue_Base() <span class="overload">[4/6]</span></h2>
+<a id="acdef6439e5e7f601e99cf8ff05ad2f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef6439e5e7f601e99cf8ff05ad2f85">&#9670;&nbsp;</a></span>DispatchQueue_Base() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -468,7 +475,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -480,7 +487,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d1/d15/group___dispatch_queue.html#a253787397ef966a027a3ec8aeff6f6ff" title="Create an unnamed dispatch queue.">DispatchQueue_Base()</a> uses a std::string_view, so the original std::string must remain valid. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="../../d1/d15/group___dispatch_queue.html#a017605bbdba6fbb68095c4a1798b5277" title="Create an unnamed dispatch queue.">DispatchQueue_Base()</a> uses a std::string_view, so the original std::string must remain valid. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread_count</td><td>Optional parameter that determines the number of threads associated with this queue. thread_count cannot exceed TThreadCount. </td></tr>
@@ -488,12 +495,12 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a20eaf92b8fe01dc362040b8d99770d02">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#aaa58623b11c727afd36e174b54b79be7">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a175ff2f365a8d89256cd619f457e76df">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::threads_</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a29fb9a5fdd6dc99cf37e65e5e557283b">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1d3e1647e79a82ef11354184fffbefbb">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a175ff2f365a8d89256cd619f457e76df">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::threads_</a>.</p>
 
 </div>
 </div>
-<a id="a2eb051c5ba2425ea59aec1d4e4345cc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eb051c5ba2425ea59aec1d4e4345cc8">&#9670;&nbsp;</a></span>~DispatchQueue_Base()</h2>
+<a id="a6c1af118bba5965936b31067ec5e66ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1af118bba5965936b31067ec5e66ba">&#9670;&nbsp;</a></span>~DispatchQueue_Base()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,13 +519,14 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Default destructor. </p>
-<p>The destructor notifies dispatch threads that it is time to quit. We must wait for threads to exit before destroying the class to prevent race conditions and memory faults. Once all threads are joined, the object is destructed. </p>
+<p>The destructor notifies dispatch threads that it is time to quit. We must wait for threads to exit before destroying the class to prevent race conditions and memory faults. Once all threads are joined, the object is destructed.</p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call. </p>
 
 <p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a578ba382dd0d682c806f12c293a9258f">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::cv_</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a086746b81e4f146d0ab2e8cf6cae85c2">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::lock_</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#ac43f01024db97eaa461657b9d418bdc8">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::quit_</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a175ff2f365a8d89256cd619f457e76df">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::threads_</a>.</p>
 
@@ -585,8 +593,8 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 </div>
 </div>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="a0b6e36c901779b9d33c0d970b90e0803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b6e36c901779b9d33c0d970b90e0803">&#9670;&nbsp;</a></span>capacity()</h2>
+<a id="a90d29ddc778038dd4180ec9a5a9775c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90d29ddc778038dd4180ec9a5a9775c5">&#9670;&nbsp;</a></span>capacity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -600,12 +608,12 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
           <td class="memname">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#d4/db3/classembutil_1_1_dispatch_queue___base">embutil::DispatchQueue_Base</a>&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::capacity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -617,8 +625,8 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 
 </div>
 </div>
-<a id="ab676d2c7132e3553831eeabb96f75ed3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab676d2c7132e3553831eeabb96f75ed3">&#9670;&nbsp;</a></span>dispatch() <span class="overload">[1/2]</span></h2>
+<a id="aee0d33a27d47554f91af4449c5d44d89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee0d33a27d47554f91af4449c5d44d89">&#9670;&nbsp;</a></span>dispatch() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -638,7 +646,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -646,6 +654,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 <p>Dispatch an operation. </p>
 <p>This call adds the operation to the function queue and notifies worker threads that new work is available.</p>
 <p>The dispatch call returns immediately. Processing happens asynchronously whenever a worker thread is available for processing the operation.</p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call. It's possible that the queue might throw on push(), for example.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">op</td><td>The operation to dispatch to a worker thread. </td></tr>
@@ -653,14 +662,14 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a578ba382dd0d682c806f12c293a9258f">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::cv_</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a086746b81e4f146d0ab2e8cf6cae85c2">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::lock_</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#ae98119766f532b6c6ba90e456fc03c78">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::q_</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a578ba382dd0d682c806f12c293a9258f">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::cv_</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a086746b81e4f146d0ab2e8cf6cae85c2">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::lock_</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#ae98119766f532b6c6ba90e456fc03c78">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::q_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a7666459061c6c71e0ef72ca9bbdb58e0">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::getBoundDispatch()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a892c3130688b38c15be92c3ec968975e">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::getBoundMoveDispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a7fce18cea2a9125f9739cd9e91cfceeb">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::getBoundDispatch()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a2185f2c33946de22e70dc1b3c69ca95d">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::getBoundMoveDispatch()</a>.</p>
 
 </div>
 </div>
-<a id="a01d87901ed46a30813eb070d5b796ed6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01d87901ed46a30813eb070d5b796ed6">&#9670;&nbsp;</a></span>dispatch() <span class="overload">[2/2]</span></h2>
+<a id="aa1ff279cfba2705a8e5525d636f8178f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ff279cfba2705a8e5525d636f8178f">&#9670;&nbsp;</a></span>dispatch() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -680,18 +689,18 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a578ba382dd0d682c806f12c293a9258f">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::cv_</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a086746b81e4f146d0ab2e8cf6cae85c2">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::lock_</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#ae98119766f532b6c6ba90e456fc03c78">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::q_</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a578ba382dd0d682c806f12c293a9258f">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::cv_</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a086746b81e4f146d0ab2e8cf6cae85c2">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::lock_</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#ae98119766f532b6c6ba90e456fc03c78">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::q_</a>.</p>
 
 </div>
 </div>
-<a id="a20eaf92b8fe01dc362040b8d99770d02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20eaf92b8fe01dc362040b8d99770d02">&#9670;&nbsp;</a></span>dispatch_thread_handler()</h2>
+<a id="a29fb9a5fdd6dc99cf37e65e5e557283b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29fb9a5fdd6dc99cf37e65e5e557283b">&#9670;&nbsp;</a></span>dispatch_thread_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -710,13 +719,14 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Worker thread handler. </p>
 <p>Worker threads all utilize the same operational flow:</p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call. We can't guarantee that ops or the queue won't have exceptions.</p>
 <ul>
 <li>Threads sleep until there is work in the queue (or quit_ is set)</li>
 <li>Whenever work is available, an operation is popped from the queue and processed locally by the worker thread.</li>
@@ -725,12 +735,12 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 
 <p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a578ba382dd0d682c806f12c293a9258f">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::cv_</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a086746b81e4f146d0ab2e8cf6cae85c2">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::lock_</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#ae98119766f532b6c6ba90e456fc03c78">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::q_</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#ac43f01024db97eaa461657b9d418bdc8">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::quit_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a253787397ef966a027a3ec8aeff6f6ff">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::DispatchQueue_Base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a017605bbdba6fbb68095c4a1798b5277">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::DispatchQueue_Base()</a>.</p>
 
 </div>
 </div>
-<a id="a7666459061c6c71e0ef72ca9bbdb58e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7666459061c6c71e0ef72ca9bbdb58e0">&#9670;&nbsp;</a></span>getBoundDispatch()</h2>
+<a id="a7fce18cea2a9125f9739cd9e91cfceeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fce18cea2a9125f9739cd9e91cfceeb">&#9670;&nbsp;</a></span>getBoundDispatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -749,7 +759,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -758,12 +768,12 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 <p>If you need to get the dispatch(const&amp;) variant for another class, use this function to avoid making your code messy with an insane std::bind call.</p>
 <dl class="section return"><dt>Returns</dt><dd>std::bind construct which will map to the the dispatch(const&amp;) function for this queue instance. </dd></dl>
 
-<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#ab676d2c7132e3553831eeabb96f75ed3">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#aee0d33a27d47554f91af4449c5d44d89">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch()</a>.</p>
 
 </div>
 </div>
-<a id="a892c3130688b38c15be92c3ec968975e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a892c3130688b38c15be92c3ec968975e">&#9670;&nbsp;</a></span>getBoundMoveDispatch()</h2>
+<a id="a2185f2c33946de22e70dc1b3c69ca95d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2185f2c33946de22e70dc1b3c69ca95d">&#9670;&nbsp;</a></span>getBoundMoveDispatch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -782,7 +792,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -791,7 +801,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 <p>If you need to get the dispatch(&amp;&amp;) variant for another class, use this function to avoid making your code messy with a stupid std::bind call.</p>
 <dl class="section return"><dt>Returns</dt><dd>std::bind construct which will map to the the dispatch(&amp;&amp;) function for this queue instance. </dd></dl>
 
-<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#ab676d2c7132e3553831eeabb96f75ed3">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#aee0d33a27d47554f91af4449c5d44d89">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch()</a>.</p>
 
 </div>
 </div>
@@ -855,8 +865,8 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 
 </div>
 </div>
-<a id="a1a73597c3fd04c88953b45ec9db204de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a73597c3fd04c88953b45ec9db204de">&#9670;&nbsp;</a></span>queue_size()</h2>
+<a id="a698aa133a8acf9662ccc6693137383f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698aa133a8acf9662ccc6693137383f4">&#9670;&nbsp;</a></span>queue_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -875,7 +885,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -887,8 +897,8 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 
 </div>
 </div>
-<a id="aaa58623b11c727afd36e174b54b79be7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa58623b11c727afd36e174b54b79be7">&#9670;&nbsp;</a></span>thread_count()</h2>
+<a id="a1d3e1647e79a82ef11354184fffbefbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3e1647e79a82ef11354184fffbefbb">&#9670;&nbsp;</a></span>thread_count()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -902,12 +912,12 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
           <td class="memname">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#d4/db3/classembutil_1_1_dispatch_queue___base">embutil::DispatchQueue_Base</a>&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -917,7 +927,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 
 <p class="reference">References <a class="el" href="../../d1/d15/group___dispatch_queue.html#a175ff2f365a8d89256cd619f457e76df">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::threads_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a253787397ef966a027a3ec8aeff6f6ff">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::DispatchQueue_Base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a017605bbdba6fbb68095c4a1798b5277">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::DispatchQueue_Base()</a>.</p>
 
 </div>
 </div>
@@ -946,7 +956,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 
 <p>The condition variable which is used to notify dispatch threads. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#ab676d2c7132e3553831eeabb96f75ed3">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a20eaf92b8fe01dc362040b8d99770d02">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a2eb051c5ba2425ea59aec1d4e4345cc8">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::~DispatchQueue_Base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#aee0d33a27d47554f91af4449c5d44d89">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a29fb9a5fdd6dc99cf37e65e5e557283b">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a6c1af118bba5965936b31067ec5e66ba">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::~DispatchQueue_Base()</a>.</p>
 
 </div>
 </div>
@@ -974,7 +984,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 
 <p>Instance of the lock used to protect the operation queue. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#ab676d2c7132e3553831eeabb96f75ed3">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a20eaf92b8fe01dc362040b8d99770d02">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a2eb051c5ba2425ea59aec1d4e4345cc8">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::~DispatchQueue_Base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#aee0d33a27d47554f91af4449c5d44d89">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a29fb9a5fdd6dc99cf37e65e5e557283b">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a6c1af118bba5965936b31067ec5e66ba">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::~DispatchQueue_Base()</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1038,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 
 <p>The operation queue instance. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a0b6e36c901779b9d33c0d970b90e0803">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::capacity()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#ab676d2c7132e3553831eeabb96f75ed3">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a20eaf92b8fe01dc362040b8d99770d02">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1a73597c3fd04c88953b45ec9db204de">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::queue_size()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a90d29ddc778038dd4180ec9a5a9775c5">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::capacity()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#aee0d33a27d47554f91af4449c5d44d89">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a29fb9a5fdd6dc99cf37e65e5e557283b">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a698aa133a8acf9662ccc6693137383f4">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::queue_size()</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1066,7 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 
 <p>Flag used to signal to threads that it is time to shutdown the queue. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a20eaf92b8fe01dc362040b8d99770d02">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a2eb051c5ba2425ea59aec1d4e4345cc8">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::~DispatchQueue_Base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a29fb9a5fdd6dc99cf37e65e5e557283b">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::dispatch_thread_handler()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a6c1af118bba5965936b31067ec5e66ba">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::~DispatchQueue_Base()</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1094,688 @@ template&lt;const size_t TSize, const size_t TThreadCount, typename TFunc = stde
 
 <p>Vector of threads which handle dispatch operations. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a253787397ef966a027a3ec8aeff6f6ff">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::DispatchQueue_Base()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#aaa58623b11c727afd36e174b54b79be7">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a2eb051c5ba2425ea59aec1d4e4345cc8">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::~DispatchQueue_Base()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a017605bbdba6fbb68095c4a1798b5277">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::DispatchQueue_Base()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1d3e1647e79a82ef11354184fffbefbb">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::thread_count()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a6c1af118bba5965936b31067ec5e66ba">embutil::DispatchQueue_Base&lt; TSize, TThreadCount, TFunc, TLock, TCond &gt;::~DispatchQueue_Base()</a>.</p>
+
+</div>
+</div>
+
+</div>
+</div>
+<a name="de/d14/classembutil_1_1_interrupt_queue" id="de/d14/classembutil_1_1_interrupt_queue"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#de/d14/classembutil_1_1_interrupt_queue">&#9670;&nbsp;</a></span>embutil::InterruptQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class embutil::InterruptQueue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename TLockType, const size_t TSize = 32&gt;<br />
+class embutil::InterruptQueue&lt; TLockType, TSize &gt;</h3>
+
+<p>IRQ safe dispatch queue (For running application-level (bottom-half) interrupt handlers) </p>
+<p>This dispatch queue can queue operations from a context which cannot acquire a mutex The function queue is fully serial, so each operation will execute in order.</p>
+<p>This queue uses only static memory to avoid the potential for dynamic memory allocations in an IRQ context</p>
+<p>This queue represents the bottom-half handler of an IRQ system. To avoid operations impacting the IRQ latency, this queue forwards interrupt operations to a standard dispatch queue for execution.</p>
+<p>TDisableOp and TEnableOp are functions which enable/disable interrupts. TDisableOp must be an operation which returns a value that can be passed into TEnableOp. TDisableOp's return is used to restore the proper value once interrupts are re-enabled.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TLockType</td><td>The type of lock to use for protecting the queue. Must meet the requirements of a basic lockable type. </td></tr>
+    <tr><td class="paramname">TSize</td><td>The maximum number of operations to store in the queue. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><div class="dynheader">
+Inheritance diagram for embutil::InterruptQueue&lt; TLockType, TSize &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d55/classembutil_1_1_interrupt_queue__inherit__graph.jpg" border="0" usemap="#embutil_1_1_interrupt_queue_3_01_t_lock_type_00_01_t_size_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="embutil_1_1_interrupt_queue_3_01_t_lock_type_00_01_t_size_01_4_inherit__map" id="embutil_1_1_interrupt_queue_3_01_t_lock_type_00_01_t_size_01_4_inherit__map">
+<area shape="rect"  title="IRQ safe dispatch queue (For running application&#45;level (bottom&#45;half) interrupt handlers)" alt="" coords="116,5,301,332"/>
+<area shape="rect"  href="../../d1/d15/group___dispatch_queue.html" title=" " alt="" coords="5,407,198,733"/>
+<area shape="rect"  href="../../d1/d15/group___dispatch_queue.html" title=" " alt="" coords="223,407,408,733"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
+<tr class="memitem:a35a1aece9dac78af3c9c5513c0ba9cc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a35a1aece9dac78af3c9c5513c0ba9cc8">InterruptQueue</a> () noexcept</td></tr>
+<tr class="separator:a35a1aece9dac78af3c9c5513c0ba9cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea4cb985066afbd3c901338d8ee6230"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a1ea4cb985066afbd3c901338d8ee6230">~InterruptQueue</a> () noexcept</td></tr>
+<tr class="memdesc:a1ea4cb985066afbd3c901338d8ee6230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an interupt queue and kill the thread.  <a href="#a1ea4cb985066afbd3c901338d8ee6230">More...</a><br /></td></tr>
+<tr class="separator:a1ea4cb985066afbd3c901338d8ee6230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24502c7f3c5a92205cdb6adcd3461fca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a24502c7f3c5a92205cdb6adcd3461fca">InterruptQueue</a> (const <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a24502c7f3c5a92205cdb6adcd3461fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy constructor.  <a href="#a24502c7f3c5a92205cdb6adcd3461fca">More...</a><br /></td></tr>
+<tr class="separator:a24502c7f3c5a92205cdb6adcd3461fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafa9c7d1141bf33b0891f792805d377"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#afafa9c7d1141bf33b0891f792805d377">operator=</a> (const <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a> &amp;)=delete</td></tr>
+<tr class="memdesc:afafa9c7d1141bf33b0891f792805d377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted copy assignment operator.  <a href="#afafa9c7d1141bf33b0891f792805d377">More...</a><br /></td></tr>
+<tr class="separator:afafa9c7d1141bf33b0891f792805d377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7edc1e654744ce71e9df6a7d39d0718c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a7edc1e654744ce71e9df6a7d39d0718c">InterruptQueue</a> (<a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a> &amp;&amp;)=delete</td></tr>
+<tr class="memdesc:a7edc1e654744ce71e9df6a7d39d0718c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted move constructor.  <a href="#a7edc1e654744ce71e9df6a7d39d0718c">More...</a><br /></td></tr>
+<tr class="separator:a7edc1e654744ce71e9df6a7d39d0718c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852da36a167770d7adf2516038facf7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a852da36a167770d7adf2516038facf7b">operator=</a> (<a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a> &amp;&amp;)=delete</td></tr>
+<tr class="memdesc:a852da36a167770d7adf2516038facf7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted move assignment operator.  <a href="#a852da36a167770d7adf2516038facf7b">More...</a><br /></td></tr>
+<tr class="separator:a852da36a167770d7adf2516038facf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b331608f4c212ba2a8f94a144849ad2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a6b331608f4c212ba2a8f94a144849ad2">dispatch</a> (const <a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">IRQBottomHalfOp_t</a> &amp;op) noexcept</td></tr>
+<tr class="memdesc:a6b331608f4c212ba2a8f94a144849ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch an operation to the thread via copy Adds the operation to the queue.  <a href="#a6b331608f4c212ba2a8f94a144849ad2">More...</a><br /></td></tr>
+<tr class="separator:a6b331608f4c212ba2a8f94a144849ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b20815c564cfdf94ca594ea15277232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a3b20815c564cfdf94ca594ea15277232">dispatch</a> (<a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">IRQBottomHalfOp_t</a> &amp;&amp;op) noexcept</td></tr>
+<tr class="memdesc:a3b20815c564cfdf94ca594ea15277232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch an operation to the thread via move Adds the operation to the queue.  <a href="#a3b20815c564cfdf94ca594ea15277232">More...</a><br /></td></tr>
+<tr class="separator:a3b20815c564cfdf94ca594ea15277232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab303312c48b7cbc636ca0617fe7c1493"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#ab303312c48b7cbc636ca0617fe7c1493">getBoundDispatch</a> () noexcept</td></tr>
+<tr class="separator:ab303312c48b7cbc636ca0617fe7c1493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c0495c2902ef42d142fbaaf2c2c17e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a33c0495c2902ef42d142fbaaf2c2c17e">queue_size</a> () const noexcept</td></tr>
+<tr class="memdesc:a33c0495c2902ef42d142fbaaf2c2c17e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current number of enqueued operations.  <a href="#a33c0495c2902ef42d142fbaaf2c2c17e">More...</a><br /></td></tr>
+<tr class="separator:a33c0495c2902ef42d142fbaaf2c2c17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320e8c1acaf1af862d7efa8273379a53"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a320e8c1acaf1af862d7efa8273379a53">capacity</a> () const noexcept</td></tr>
+<tr class="memdesc:a320e8c1acaf1af862d7efa8273379a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the capacity of the queue.  <a href="#a320e8c1acaf1af862d7efa8273379a53">More...</a><br /></td></tr>
+<tr class="separator:a320e8c1acaf1af862d7efa8273379a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bbde99883c5ce57bb1f859d6b651c4f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a2bbde99883c5ce57bb1f859d6b651c4f">thread_count</a> () const noexcept</td></tr>
+<tr class="memdesc:a2bbde99883c5ce57bb1f859d6b651c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of threads associated with the interrupt queue (always 1)  <a href="#a2bbde99883c5ce57bb1f859d6b651c4f">More...</a><br /></td></tr>
+<tr class="separator:a2bbde99883c5ce57bb1f859d6b651c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Private Member Functions</h3></td></tr>
+<tr class="memitem:a8f3a2bcc96564ec0ed1cc6d2770c107a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a8f3a2bcc96564ec0ed1cc6d2770c107a">wait_and_pop</a> (<a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">IRQBottomHalfOp_t</a> &amp;op) noexcept</td></tr>
+<tr class="memdesc:a8f3a2bcc96564ec0ed1cc6d2770c107a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function which waits for the queue and pops off of it without requiring excessive locks/unlocks.  <a href="#a8f3a2bcc96564ec0ed1cc6d2770c107a">More...</a><br /></td></tr>
+<tr class="separator:a8f3a2bcc96564ec0ed1cc6d2770c107a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fa08be21a7c2f7818b996c9c5208d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#aa0fa08be21a7c2f7818b996c9c5208d1">dispatch_thread_handler</a> (void) noexcept</td></tr>
+<tr class="memdesc:aa0fa08be21a7c2f7818b996c9c5208d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread handler for dispatch queue threads Sleeps until there is an operation in the thread (or quit_ is set) Processes operations from queue.  <a href="#aa0fa08be21a7c2f7818b996c9c5208d1">More...</a><br /></td></tr>
+<tr class="separator:aa0fa08be21a7c2f7818b996c9c5208d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Private Attributes</h3></td></tr>
+<tr class="memitem:ae4b993e90ec1e9a4d45a971471b6bfae"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#ae4b993e90ec1e9a4d45a971471b6bfae">thread_</a></td></tr>
+<tr class="separator:ae4b993e90ec1e9a4d45a971471b6bfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7fcc67b7847b7c4cccc7efc2dd241c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag">embvm::VirtualEventFlag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a3a7fcc67b7847b7c4cccc7efc2dd241c">flags_</a></td></tr>
+<tr class="separator:a3a7fcc67b7847b7c4cccc7efc2dd241c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b99e7a1fd9caa3ed2781c5139edcbd2"><td class="memItemLeft" align="right" valign="top">etl::queue&lt; <a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">IRQBottomHalfOp_t</a>, TSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a7b99e7a1fd9caa3ed2781c5139edcbd2">q_</a></td></tr>
+<tr class="separator:a7b99e7a1fd9caa3ed2781c5139edcbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f11e317a2344aa078bc524d61ccb260"><td class="memItemLeft" align="right" valign="top">TLockType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a8f11e317a2344aa078bc524d61ccb260">irq_lock_</a></td></tr>
+<tr class="separator:a8f11e317a2344aa078bc524d61ccb260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Static Private Attributes</h3></td></tr>
+<tr class="memitem:a1b6354c6cf622b49b7ddbb725259c95b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/d92/aarch64_2include_2__types_2__uint32__t_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#a1b6354c6cf622b49b7ddbb725259c95b">WORK_READY_FLAG</a> = (1 &lt;&lt; 0)</td></tr>
+<tr class="separator:a1b6354c6cf622b49b7ddbb725259c95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8bb36719fd50c6a31be26199a845ad4"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/d92/aarch64_2include_2__types_2__uint32__t_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d15/group___dispatch_queue.html#aa8bb36719fd50c6a31be26199a845ad4">QUIT_FLAG</a> = (1 &lt;&lt; 1)</td></tr>
+<tr class="separator:aa8bb36719fd50c6a31be26199a845ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Constructor &amp; Destructor Documentation</h4>
+<a id="a35a1aece9dac78af3c9c5513c0ba9cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a1aece9dac78af3c9c5513c0ba9cc8">&#9670;&nbsp;</a></span>InterruptQueue() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::<a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ea4cb985066afbd3c901338d8ee6230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea4cb985066afbd3c901338d8ee6230">&#9670;&nbsp;</a></span>~InterruptQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::~<a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroy an interupt queue and kill the thread. </p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call. </p>
+
+</div>
+</div>
+<a id="a24502c7f3c5a92205cdb6adcd3461fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24502c7f3c5a92205cdb6adcd3461fca">&#9670;&nbsp;</a></span>InterruptQueue() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::<a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a>&lt; TLockType, TSize &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deleted copy constructor. </p>
+
+</div>
+</div>
+<a id="a7edc1e654744ce71e9df6a7d39d0718c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7edc1e654744ce71e9df6a7d39d0718c">&#9670;&nbsp;</a></span>InterruptQueue() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::<a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a>&lt; TLockType, TSize &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deleted move constructor. </p>
+
+</div>
+</div>
+<h4 class="groupheader">Member Function Documentation</h4>
+<a id="a320e8c1acaf1af862d7efa8273379a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320e8c1acaf1af862d7efa8273379a53">&#9670;&nbsp;</a></span>capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::capacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the capacity of the queue. </p>
+
+</div>
+</div>
+<a id="a6b331608f4c212ba2a8f94a144849ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b331608f4c212ba2a8f94a144849ad2">&#9670;&nbsp;</a></span>dispatch() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::dispatch </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">IRQBottomHalfOp_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dispatch an operation to the thread via copy Adds the operation to the queue. </p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call. It's possible that pushing to the queue would trigger an exception depending on the underlying type, for example. </p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#ab303312c48b7cbc636ca0617fe7c1493">embutil::InterruptQueue&lt; std::mutex &gt;::getBoundDispatch()</a>.</p>
+
+</div>
+</div>
+<a id="a3b20815c564cfdf94ca594ea15277232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b20815c564cfdf94ca594ea15277232">&#9670;&nbsp;</a></span>dispatch() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::dispatch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">IRQBottomHalfOp_t</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dispatch an operation to the thread via move Adds the operation to the queue. </p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call. It's possible that pushing to the queue would trigger an exception depending on the underlying type, for example. </p>
+
+</div>
+</div>
+<a id="aa0fa08be21a7c2f7818b996c9c5208d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0fa08be21a7c2f7818b996c9c5208d1">&#9670;&nbsp;</a></span>dispatch_thread_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::dispatch_thread_handler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Thread handler for dispatch queue threads Sleeps until there is an operation in the thread (or quit_ is set) Processes operations from queue. </p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call. </p>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a35a1aece9dac78af3c9c5513c0ba9cc8">embutil::InterruptQueue&lt; std::mutex &gt;::InterruptQueue()</a>.</p>
+
+</div>
+</div>
+<a id="ab303312c48b7cbc636ca0617fe7c1493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab303312c48b7cbc636ca0617fe7c1493">&#9670;&nbsp;</a></span>getBoundDispatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::getBoundDispatch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d5/d37/class_blinky_simulator_h_w_platform.html#adfea87ef9107ac7af78fd727ac6da03e">BlinkySimulatorHWPlatform::init_()</a>, and <a class="el" href="../../de/de5/class_f_w_demo_simulator_h_w_platform.html#a1750ab0d50f63d9464d4ee4b92ed44e4">FWDemoSimulatorHWPlatform::init_()</a>.</p>
+
+</div>
+</div>
+<a id="afafa9c7d1141bf33b0891f792805d377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafa9c7d1141bf33b0891f792805d377">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a>&amp; <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a>&lt; TLockType, TSize &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deleted copy assignment operator. </p>
+
+</div>
+</div>
+<a id="a852da36a167770d7adf2516038facf7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a852da36a167770d7adf2516038facf7b">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a>&amp; <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">InterruptQueue</a>&lt; TLockType, TSize &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deleted move assignment operator. </p>
+
+</div>
+</div>
+<a id="a33c0495c2902ef42d142fbaaf2c2c17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c0495c2902ef42d142fbaaf2c2c17e">&#9670;&nbsp;</a></span>queue_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::queue_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the current number of enqueued operations. </p>
+
+</div>
+</div>
+<a id="a2bbde99883c5ce57bb1f859d6b651c4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bbde99883c5ce57bb1f859d6b651c4f">&#9670;&nbsp;</a></span>thread_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::thread_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the number of threads associated with the interrupt queue (always 1) </p>
+
+</div>
+</div>
+<a id="a8f3a2bcc96564ec0ed1cc6d2770c107a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3a2bcc96564ec0ed1cc6d2770c107a">&#9670;&nbsp;</a></span>wait_and_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::wait_and_pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">IRQBottomHalfOp_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convenience function which waits for the queue and pops off of it without requiring excessive locks/unlocks. </p>
+<p>Using a reference parameter to receive the result is used to transfer ownership out of the queue in order to avoid the exception safety issues of returning data by-value: if the copy constructor of a by-value return throws, then the data has been removed from the queue, but is lost, whereas with this approach, the potentially problematic copy is performed prior to modifying the queue (see Herb Sutter's Guru Of The Week #8 for a discussion of the issues).4</p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call.</p>
+<dl class="section return"><dt>Returns</dt><dd>false if the thread should exit, true otherwise </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#aa0fa08be21a7c2f7818b996c9c5208d1">embutil::InterruptQueue&lt; std::mutex &gt;::dispatch_thread_handler()</a>.</p>
+
+</div>
+</div>
+<h4 class="groupheader">Member Data Documentation</h4>
+<a id="a3a7fcc67b7847b7c4cccc7efc2dd241c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a7fcc67b7847b7c4cccc7efc2dd241c">&#9670;&nbsp;</a></span>flags_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag">embvm::VirtualEventFlag</a>* <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::flags_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a6b331608f4c212ba2a8f94a144849ad2">embutil::InterruptQueue&lt; std::mutex &gt;::dispatch()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a35a1aece9dac78af3c9c5513c0ba9cc8">embutil::InterruptQueue&lt; std::mutex &gt;::InterruptQueue()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a8f3a2bcc96564ec0ed1cc6d2770c107a">embutil::InterruptQueue&lt; std::mutex &gt;::wait_and_pop()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1ea4cb985066afbd3c901338d8ee6230">embutil::InterruptQueue&lt; std::mutex &gt;::~InterruptQueue()</a>.</p>
+
+</div>
+</div>
+<a id="a8f11e317a2344aa078bc524d61ccb260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f11e317a2344aa078bc524d61ccb260">&#9670;&nbsp;</a></span>irq_lock_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TLockType <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::irq_lock_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a6b331608f4c212ba2a8f94a144849ad2">embutil::InterruptQueue&lt; std::mutex &gt;::dispatch()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a8f3a2bcc96564ec0ed1cc6d2770c107a">embutil::InterruptQueue&lt; std::mutex &gt;::wait_and_pop()</a>.</p>
+
+</div>
+</div>
+<a id="a7b99e7a1fd9caa3ed2781c5139edcbd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b99e7a1fd9caa3ed2781c5139edcbd2">&#9670;&nbsp;</a></span>q_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">etl::queue&lt;<a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">IRQBottomHalfOp_t</a>, TSize&gt; <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::q_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a320e8c1acaf1af862d7efa8273379a53">embutil::InterruptQueue&lt; std::mutex &gt;::capacity()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a6b331608f4c212ba2a8f94a144849ad2">embutil::InterruptQueue&lt; std::mutex &gt;::dispatch()</a>, <a class="el" href="../../d1/d15/group___dispatch_queue.html#a33c0495c2902ef42d142fbaaf2c2c17e">embutil::InterruptQueue&lt; std::mutex &gt;::queue_size()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a8f3a2bcc96564ec0ed1cc6d2770c107a">embutil::InterruptQueue&lt; std::mutex &gt;::wait_and_pop()</a>.</p>
+
+</div>
+</div>
+<a id="aa8bb36719fd50c6a31be26199a845ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8bb36719fd50c6a31be26199a845ad4">&#9670;&nbsp;</a></span>QUIT_FLAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../df/d92/aarch64_2include_2__types_2__uint32__t_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::QUIT_FLAG = (1 &lt;&lt; 1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a8f3a2bcc96564ec0ed1cc6d2770c107a">embutil::InterruptQueue&lt; std::mutex &gt;::wait_and_pop()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1ea4cb985066afbd3c901338d8ee6230">embutil::InterruptQueue&lt; std::mutex &gt;::~InterruptQueue()</a>.</p>
+
+</div>
+</div>
+<a id="ae4b993e90ec1e9a4d45a971471b6bfae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b993e90ec1e9a4d45a971471b6bfae">&#9670;&nbsp;</a></span>thread_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::thread <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::thread_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a35a1aece9dac78af3c9c5513c0ba9cc8">embutil::InterruptQueue&lt; std::mutex &gt;::InterruptQueue()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1ea4cb985066afbd3c901338d8ee6230">embutil::InterruptQueue&lt; std::mutex &gt;::~InterruptQueue()</a>.</p>
+
+</div>
+</div>
+<a id="a1b6354c6cf622b49b7ddbb725259c95b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6354c6cf622b49b7ddbb725259c95b">&#9670;&nbsp;</a></span>WORK_READY_FLAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TLockType, const size_t TSize = 32&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../df/d92/aarch64_2include_2__types_2__uint32__t_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> <a class="el" href="../../d1/d15/group___dispatch_queue.html#de/d14/classembutil_1_1_interrupt_queue">embutil::InterruptQueue</a>&lt; TLockType, TSize &gt;::WORK_READY_FLAG = (1 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a6b331608f4c212ba2a8f94a144849ad2">embutil::InterruptQueue&lt; std::mutex &gt;::dispatch()</a>, and <a class="el" href="../../d1/d15/group___dispatch_queue.html#a8f3a2bcc96564ec0ed1cc6d2770c107a">embutil::InterruptQueue&lt; std::mutex &gt;::wait_and_pop()</a>.</p>
 
 </div>
 </div>
@@ -1120,6 +1811,34 @@ To instantiate with default TFunc type, use <code>DynamicDispatchQueue&lt;&gt;</
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gae55451a760f207f1a5db73f616452f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae55451a760f207f1a5db73f616452f44">&#9670;&nbsp;</a></span>IRQBottomHalfOp_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">embutil::IRQBottomHalfOp_t</a> = typedef stdext::inplace_function&lt;void(), 96&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga30562cdd789f4cc04628935d02f76cc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30562cdd789f4cc04628935d02f76cc2">&#9670;&nbsp;</a></span>IRQDispatcherFunc_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d1/d15/group___dispatch_queue.html#ga30562cdd789f4cc04628935d02f76cc2">embutil::IRQDispatcherFunc_t</a> = typedef stdext::inplace_function&lt;void(const <a class="el" href="../../d1/d15/group___dispatch_queue.html#gae55451a760f207f1a5db73f616452f44">IRQBottomHalfOp_t</a>&amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -122,6 +122,8 @@ Classes</h2></td></tr>
 <tr class="memitem:de/de3/classembvm_1_1_virtual_event_flag"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag">embvm::VirtualEventFlag</a></td></tr>
 <tr class="memdesc:de/de3/classembvm_1_1_virtual_event_flag"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag" title="Defines the VirtualEventFlag interface.">VirtualEventFlag</a> interface.  <a href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag">More...</a><br /></td></tr>
 <tr class="separator:de/de3/classembvm_1_1_virtual_event_flag"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d1/d56/classembvm_1_1_virtual_heap"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#d1/d56/classembvm_1_1_virtual_heap">embvm::VirtualHeap&lt; THeapImpl &gt;</a></td></tr>
+<tr class="separator:d1/d56/classembvm_1_1_virtual_heap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d4/da8/classembvm_1_1_virtual_message_queue"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue">embvm::VirtualMessageQueue&lt; TType &gt;</a></td></tr>
 <tr class="memdesc:d4/da8/classembvm_1_1_virtual_message_queue"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the <a class="el" href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue" title="Defines the VirtualMessageQueue interface.">VirtualMessageQueue</a> interface.  <a href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue">More...</a><br /></td></tr>
 <tr class="separator:d4/da8/classembvm_1_1_virtual_message_queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,9 +219,9 @@ Inheritance diagram for embvm::VirtualConditionVariable:</div>
 <tr><td colspan="2"><h3>Protected Member Functions</h3></td></tr>
 <tr class="memitem:aee5a7dea0c8a461ebc303701a6764c02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aee5a7dea0c8a461ebc303701a6764c02">VirtualConditionVariable</a> ()=default</td></tr>
 <tr class="separator:aee5a7dea0c8a461ebc303701a6764c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a127d627cd152c30fcf270aac1cdde938"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a127d627cd152c30fcf270aac1cdde938">~VirtualConditionVariable</a> ()</td></tr>
-<tr class="memdesc:a127d627cd152c30fcf270aac1cdde938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS CV.  <a href="#a127d627cd152c30fcf270aac1cdde938">More...</a><br /></td></tr>
-<tr class="separator:a127d627cd152c30fcf270aac1cdde938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041431354c64f7c9c8293034be607033"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a041431354c64f7c9c8293034be607033">~VirtualConditionVariable</a> () noexcept</td></tr>
+<tr class="memdesc:a041431354c64f7c9c8293034be607033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS CV.  <a href="#a041431354c64f7c9c8293034be607033">More...</a><br /></td></tr>
+<tr class="separator:a041431354c64f7c9c8293034be607033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Constructor &amp; Destructor Documentation</h4>
 <a id="a571eb18b2724108a12f0541cb877e62d"></a>
@@ -303,8 +305,8 @@ Inheritance diagram for embvm::VirtualConditionVariable:</div>
 
 </div>
 </div>
-<a id="a127d627cd152c30fcf270aac1cdde938"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a127d627cd152c30fcf270aac1cdde938">&#9670;&nbsp;</a></span>~VirtualConditionVariable()</h2>
+<a id="a041431354c64f7c9c8293034be607033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041431354c64f7c9c8293034be607033">&#9670;&nbsp;</a></span>~VirtualConditionVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,7 +323,7 @@ Inheritance diagram for embvm::VirtualConditionVariable:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -716,18 +718,18 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
 </div>
 <table class="memberdecls">
 <tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
-<tr class="memitem:a5831cbf7c2e40dd654a4bc04723edaf3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#ad445b91322133d0b57cab4452b18e51e">embvm::eventflag::flag_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a5831cbf7c2e40dd654a4bc04723edaf3">get</a> (<a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#ad445b91322133d0b57cab4452b18e51e">embvm::eventflag::flag_t</a> bits_wait, <a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#a6640dbc6a66dc7a0defa43e095f5f57a">embvm::eventflag::option</a> opt=<a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#a6640dbc6a66dc7a0defa43e095f5f57aa1d00e7dce692e8dc3f6877f035e3a616">embvm::eventflag::option::OR</a>, <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> clearOnExit=<a class="el" href="../../dc/d6c/test__suite_8cpp.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>, const <a class="el" href="../../d2/d3b/group___framework_o_s.html#ga262cb9ffbc7d2a7fdf42deb7528060b2">embvm::os_timeout_t</a> &amp;timeout=<a class="el" href="../../d2/d3b/group___framework_o_s.html#ga2aaa9257780be7831db1172854f85aa1">embvm::OS_WAIT_FOREVER</a>)=0</td></tr>
-<tr class="memdesc:a5831cbf7c2e40dd654a4bc04723edaf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get (or wait for) event flags.  <a href="#a5831cbf7c2e40dd654a4bc04723edaf3">More...</a><br /></td></tr>
-<tr class="separator:a5831cbf7c2e40dd654a4bc04723edaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81c7868adb64d7a6be26b4acea440206"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a81c7868adb64d7a6be26b4acea440206">set</a> (<a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#ad445b91322133d0b57cab4452b18e51e">embvm::eventflag::flag_t</a> bits)=0</td></tr>
-<tr class="memdesc:a81c7868adb64d7a6be26b4acea440206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set event flags.  <a href="#a81c7868adb64d7a6be26b4acea440206">More...</a><br /></td></tr>
-<tr class="separator:a81c7868adb64d7a6be26b4acea440206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8e19394dfb3652c771274543291544"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a9d8e19394dfb3652c771274543291544">setFromISR</a> (<a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#ad445b91322133d0b57cab4452b18e51e">embvm::eventflag::flag_t</a> bits)=0</td></tr>
-<tr class="memdesc:a9d8e19394dfb3652c771274543291544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set event flags from an ISR.  <a href="#a9d8e19394dfb3652c771274543291544">More...</a><br /></td></tr>
-<tr class="separator:a9d8e19394dfb3652c771274543291544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc2c0577974af0315f7e789b1e833495"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#acc2c0577974af0315f7e789b1e833495">clear</a> ()=0</td></tr>
-<tr class="memdesc:acc2c0577974af0315f7e789b1e833495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all event flag bits.  <a href="#acc2c0577974af0315f7e789b1e833495">More...</a><br /></td></tr>
-<tr class="separator:acc2c0577974af0315f7e789b1e833495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7658043c8c486cb700624bd1a7a0a5f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#ad445b91322133d0b57cab4452b18e51e">embvm::eventflag::flag_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ab7658043c8c486cb700624bd1a7a0a5f">get</a> (<a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#ad445b91322133d0b57cab4452b18e51e">embvm::eventflag::flag_t</a> bits_wait, <a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#a6640dbc6a66dc7a0defa43e095f5f57a">embvm::eventflag::option</a> opt=<a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#a6640dbc6a66dc7a0defa43e095f5f57aa1d00e7dce692e8dc3f6877f035e3a616">embvm::eventflag::option::OR</a>, <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> clearOnExit=<a class="el" href="../../dc/d6c/test__suite_8cpp.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>, const <a class="el" href="../../d2/d3b/group___framework_o_s.html#ga262cb9ffbc7d2a7fdf42deb7528060b2">embvm::os_timeout_t</a> &amp;timeout=<a class="el" href="../../d2/d3b/group___framework_o_s.html#ga2aaa9257780be7831db1172854f85aa1">embvm::OS_WAIT_FOREVER</a>) noexcept=0</td></tr>
+<tr class="memdesc:ab7658043c8c486cb700624bd1a7a0a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get (or wait for) event flags.  <a href="#ab7658043c8c486cb700624bd1a7a0a5f">More...</a><br /></td></tr>
+<tr class="separator:ab7658043c8c486cb700624bd1a7a0a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbae0ee9044b675e7af3dd4b7a0ecd6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a0dbae0ee9044b675e7af3dd4b7a0ecd6">set</a> (<a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#ad445b91322133d0b57cab4452b18e51e">embvm::eventflag::flag_t</a> bits) noexcept=0</td></tr>
+<tr class="memdesc:a0dbae0ee9044b675e7af3dd4b7a0ecd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set event flags.  <a href="#a0dbae0ee9044b675e7af3dd4b7a0ecd6">More...</a><br /></td></tr>
+<tr class="separator:a0dbae0ee9044b675e7af3dd4b7a0ecd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bdedf58f69a1b73f2e83169041d12c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a93bdedf58f69a1b73f2e83169041d12c">setFromISR</a> (<a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#ad445b91322133d0b57cab4452b18e51e">embvm::eventflag::flag_t</a> bits) noexcept=0</td></tr>
+<tr class="memdesc:a93bdedf58f69a1b73f2e83169041d12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set event flags from an ISR.  <a href="#a93bdedf58f69a1b73f2e83169041d12c">More...</a><br /></td></tr>
+<tr class="separator:a93bdedf58f69a1b73f2e83169041d12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70794924b4a419bad3cb9113577f7e0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aa70794924b4a419bad3cb9113577f7e0">clear</a> () noexcept=0</td></tr>
+<tr class="memdesc:aa70794924b4a419bad3cb9113577f7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all event flag bits.  <a href="#aa70794924b4a419bad3cb9113577f7e0">More...</a><br /></td></tr>
+<tr class="separator:aa70794924b4a419bad3cb9113577f7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af00cb8fd8b5971902467a6705b7ce4e1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#acc2ad07d95865565cc822f3f43998173">embvm::eventflag::handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#af00cb8fd8b5971902467a6705b7ce4e1">native_handle</a> () const noexcept=0</td></tr>
 <tr class="memdesc:af00cb8fd8b5971902467a6705b7ce4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the native handle for the event flags group object.  <a href="#af00cb8fd8b5971902467a6705b7ce4e1">More...</a><br /></td></tr>
 <tr class="separator:af00cb8fd8b5971902467a6705b7ce4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -746,9 +748,9 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
 <tr><td colspan="2"><h3>Protected Member Functions</h3></td></tr>
 <tr class="memitem:aef0dba062263ddb210a37510359267eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aef0dba062263ddb210a37510359267eb">VirtualEventFlag</a> ()=default</td></tr>
 <tr class="separator:aef0dba062263ddb210a37510359267eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeabbd4d63d9ebbac3566fe02b7a8c854"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aeabbd4d63d9ebbac3566fe02b7a8c854">~VirtualEventFlag</a> ()</td></tr>
-<tr class="memdesc:aeabbd4d63d9ebbac3566fe02b7a8c854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS event flag.  <a href="#aeabbd4d63d9ebbac3566fe02b7a8c854">More...</a><br /></td></tr>
-<tr class="separator:aeabbd4d63d9ebbac3566fe02b7a8c854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add0c3cc9be263b410bed8e57f0b391cd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#add0c3cc9be263b410bed8e57f0b391cd">~VirtualEventFlag</a> () noexcept</td></tr>
+<tr class="memdesc:add0c3cc9be263b410bed8e57f0b391cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS event flag.  <a href="#add0c3cc9be263b410bed8e57f0b391cd">More...</a><br /></td></tr>
+<tr class="separator:add0c3cc9be263b410bed8e57f0b391cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Constructor &amp; Destructor Documentation</h4>
 <a id="a837cd923e52c13777085011684537a90"></a>
@@ -832,8 +834,8 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
 
 </div>
 </div>
-<a id="aeabbd4d63d9ebbac3566fe02b7a8c854"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeabbd4d63d9ebbac3566fe02b7a8c854">&#9670;&nbsp;</a></span>~VirtualEventFlag()</h2>
+<a id="add0c3cc9be263b410bed8e57f0b391cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add0c3cc9be263b410bed8e57f0b391cd">&#9670;&nbsp;</a></span>~VirtualEventFlag()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -850,7 +852,7 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -860,8 +862,8 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
 </div>
 </div>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="acc2c0577974af0315f7e789b1e833495"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc2c0577974af0315f7e789b1e833495">&#9670;&nbsp;</a></span>clear()</h2>
+<a id="aa70794924b4a419bad3cb9113577f7e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa70794924b4a419bad3cb9113577f7e0">&#9670;&nbsp;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -878,7 +880,7 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -886,12 +888,12 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
 <p>Clear all event flag bits. </p>
 <dl class="section post"><dt>Postcondition</dt><dd>Event flag group value is reset to '0'. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a2f1934fc5823d8ae651366868f17bdea">os::posix::EventFlag</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#aa819a38d4eed7a1d6ec86da2ab1a4251">os::freertos::EventFlag</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a064fbb60070b3870a8b47bedfd1a74f3">os::posix::EventFlag</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a13702d6decb7224a3a4a2993c4742f5e">os::freertos::EventFlag</a>.</p>
 
 </div>
 </div>
-<a id="a5831cbf7c2e40dd654a4bc04723edaf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5831cbf7c2e40dd654a4bc04723edaf3">&#9670;&nbsp;</a></span>get()</h2>
+<a id="ab7658043c8c486cb700624bd1a7a0a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7658043c8c486cb700624bd1a7a0a5f">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -931,7 +933,7 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -942,7 +944,7 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bits_wait</td><td>A bitmask of bits to wait for in the event flags group. </td></tr>
-    <tr><td class="paramname">opt</td><td>The wait option, which is combined with bits_wait to control the behavior of <a class="el" href="../../d2/d3b/group___framework_o_s.html#a5831cbf7c2e40dd654a4bc04723edaf3" title="Get (or wait for) event flags.">get()</a>. <a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#a6640dbc6a66dc7a0defa43e095f5f57aa1d00e7dce692e8dc3f6877f035e3a616" title="Wait until any of the requested bits are set.">embvm::eventflag::option::OR</a> will return once any of the bits specified in bits_wait are set in the event flag group. <a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#a6640dbc6a66dc7a0defa43e095f5f57aa558ffc8f5770d8e4f95f51d822685532" title="Wait until all requested bits are set.">embvm::eventflag::option::AND</a> will only return once ALL of the bits specified in bits_wait are set in the event flag group. </td></tr>
+    <tr><td class="paramname">opt</td><td>The wait option, which is combined with bits_wait to control the behavior of <a class="el" href="../../d2/d3b/group___framework_o_s.html#ab7658043c8c486cb700624bd1a7a0a5f" title="Get (or wait for) event flags.">get()</a>. <a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#a6640dbc6a66dc7a0defa43e095f5f57aa1d00e7dce692e8dc3f6877f035e3a616" title="Wait until any of the requested bits are set.">embvm::eventflag::option::OR</a> will return once any of the bits specified in bits_wait are set in the event flag group. <a class="el" href="../../d1/da2/namespaceembvm_1_1eventflag.html#a6640dbc6a66dc7a0defa43e095f5f57aa558ffc8f5770d8e4f95f51d822685532" title="Wait until all requested bits are set.">embvm::eventflag::option::AND</a> will only return once ALL of the bits specified in bits_wait are set in the event flag group. </td></tr>
     <tr><td class="paramname">clearOnExit</td><td>If true, all event flags that were specified in bits_wait and set in the event flag group will be set to 0. If false, event flag bits will not be modified. </td></tr>
     <tr><td class="paramname">timeout</td><td>Specify a timeout for the get operation. If OS_WAIT_FOREVER is supplied, this call will block until the event flags are set. Otherwise, the function will timeout after the elapsed time if flags are not set. </td></tr>
   </table>
@@ -950,9 +952,9 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if timeout, or flags that were currently set according to bits_wait </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a0eecbea5e7857c3c00749b7498a90b0f">os::posix::EventFlag</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#acc83fbedf0c933efa60118ea597ed56e">os::freertos::EventFlag</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a01c9572afe5678f1b5348425261029e9">os::posix::EventFlag</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#aac6f0527c8c76b05ace3e18da220108f">os::freertos::EventFlag</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dd5/group___framework_utils.html#adf0e43c45efb5cd66fe38ddfac76d8e3">InterruptQueue&lt; ThumbInterruptLock, 156 &gt;::wait_and_pop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a8f3a2bcc96564ec0ed1cc6d2770c107a">embutil::InterruptQueue&lt; std::mutex &gt;::wait_and_pop()</a>.</p>
 
 </div>
 </div>
@@ -1042,8 +1044,8 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
 
 </div>
 </div>
-<a id="a81c7868adb64d7a6be26b4acea440206"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81c7868adb64d7a6be26b4acea440206">&#9670;&nbsp;</a></span>set()</h2>
+<a id="a0dbae0ee9044b675e7af3dd4b7a0ecd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dbae0ee9044b675e7af3dd4b7a0ecd6">&#9670;&nbsp;</a></span>set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1061,13 +1063,13 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Set event flags. </p>
-<p>Set event flags from a threaded context. Threads waiting on event flags (via <a class="el" href="../../d2/d3b/group___framework_o_s.html#a5831cbf7c2e40dd654a4bc04723edaf3" title="Get (or wait for) event flags.">get()</a>) will be notified.</p>
+<p>Set event flags from a threaded context. Threads waiting on event flags (via <a class="el" href="../../d2/d3b/group___framework_o_s.html#ab7658043c8c486cb700624bd1a7a0a5f" title="Get (or wait for) event flags.">get()</a>) will be notified.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bits</td><td>A bitmask representing the bits to set in the event flag group. </td></tr>
@@ -1075,14 +1077,14 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a9009cb8d429ba6e939242dfe4ed86609">os::posix::EventFlag</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a6e96e8ff044e34ad677c5d2bc0714928">os::freertos::EventFlag</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a5ddd62584115c99a860b3cca2b0bcea4">os::posix::EventFlag</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a9ecbd86fab7e4445b5aa3f2e4734a2b6">os::freertos::EventFlag</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dd5/group___framework_utils.html#a6ec566dcfb46c4a924922649e0078fd1">InterruptQueue&lt; ThumbInterruptLock, 156 &gt;::~InterruptQueue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1ea4cb985066afbd3c901338d8ee6230">embutil::InterruptQueue&lt; std::mutex &gt;::~InterruptQueue()</a>.</p>
 
 </div>
 </div>
-<a id="a9d8e19394dfb3652c771274543291544"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d8e19394dfb3652c771274543291544">&#9670;&nbsp;</a></span>setFromISR()</h2>
+<a id="a93bdedf58f69a1b73f2e83169041d12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93bdedf58f69a1b73f2e83169041d12c">&#9670;&nbsp;</a></span>setFromISR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1100,13 +1102,13 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Set event flags from an ISR. </p>
-<p>Set event flags from an interrupt context. This call must not use a lock. Threads waiting on event flags (via <a class="el" href="../../d2/d3b/group___framework_o_s.html#a5831cbf7c2e40dd654a4bc04723edaf3" title="Get (or wait for) event flags.">get()</a>) will be notified.</p>
+<p>Set event flags from an interrupt context. This call must not use a lock. Threads waiting on event flags (via <a class="el" href="../../d2/d3b/group___framework_o_s.html#ab7658043c8c486cb700624bd1a7a0a5f" title="Get (or wait for) event flags.">get()</a>) will be notified.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bits</td><td>A bitmask representing the bits to set in the event flag group. </td></tr>
@@ -1114,9 +1116,171 @@ Inheritance diagram for embvm::VirtualEventFlag:</div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a717fafa71b9ae163b479c46381b13605">os::posix::EventFlag</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#ae03d33383c90202e7c1c598146319a24">os::freertos::EventFlag</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#aae1b6cb045f53a95dddb813eb038a163">os::posix::EventFlag</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#aa041ad7adae7f97997cf0a64a13a5086">os::freertos::EventFlag</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dd5/group___framework_utils.html#a9fe276449557d1118a413d29b73244ad">InterruptQueue&lt; ThumbInterruptLock, 156 &gt;::dispatch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a6b331608f4c212ba2a8f94a144849ad2">embutil::InterruptQueue&lt; std::mutex &gt;::dispatch()</a>.</p>
+
+</div>
+</div>
+
+</div>
+</div>
+<a name="d1/d56/classembvm_1_1_virtual_heap" id="d1/d56/classembvm_1_1_virtual_heap"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#d1/d56/classembvm_1_1_virtual_heap">&#9670;&nbsp;</a></span>embvm::VirtualHeap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class embvm::VirtualHeap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename THeapImpl&gt;<br />
+class embvm::VirtualHeap&lt; THeapImpl &gt;</h3>
+
+</div><table class="memberdecls">
+<tr><td colspan="2"><h3>Static Public Member Functions</h3></td></tr>
+<tr class="memitem:a4ad36cc21aa1a969f670f84523f98399"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a4ad36cc21aa1a969f670f84523f98399">addBlock</a> (void *addr, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> size) noexcept</td></tr>
+<tr class="separator:a4ad36cc21aa1a969f670f84523f98399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f4664e0475412efcc8f2be4cefc5df"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a48f4664e0475412efcc8f2be4cefc5df">init</a> () noexcept</td></tr>
+<tr class="separator:a48f4664e0475412efcc8f2be4cefc5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08230c3a785c64ad40d5d369bf2129e3"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a08230c3a785c64ad40d5d369bf2129e3">alloc</a> (<a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> size) noexcept</td></tr>
+<tr class="separator:a08230c3a785c64ad40d5d369bf2129e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db9241688a171281f8c61f8c9084002"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a9db9241688a171281f8c61f8c9084002">free</a> (void *addr) noexcept</td></tr>
+<tr class="separator:a9db9241688a171281f8c61f8c9084002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Member Function Documentation</h4>
+<a id="a4ad36cc21aa1a969f670f84523f98399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad36cc21aa1a969f670f84523f98399">&#9670;&nbsp;</a></span>addBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename THeapImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="../../d2/d3b/group___framework_o_s.html#d1/d56/classembvm_1_1_virtual_heap">embvm::VirtualHeap</a>&lt; THeapImpl &gt;::addBlock </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d36/malloc__framework__rtos_8cpp.html#aefccca545b4f08bf860289c476b51aae">malloc_addblock()</a>.</p>
+
+</div>
+</div>
+<a id="a08230c3a785c64ad40d5d369bf2129e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08230c3a785c64ad40d5d369bf2129e3">&#9670;&nbsp;</a></span>alloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename THeapImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void* <a class="el" href="../../d2/d3b/group___framework_o_s.html#d1/d56/classembvm_1_1_virtual_heap">embvm::VirtualHeap</a>&lt; THeapImpl &gt;::alloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../de/d36/malloc__framework__rtos_8cpp.html#a7ac38fce3243a7dcf448301ee9ffd392">malloc()</a>.</p>
+
+</div>
+</div>
+<a id="a9db9241688a171281f8c61f8c9084002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db9241688a171281f8c61f8c9084002">&#9670;&nbsp;</a></span>free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename THeapImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="../../d2/d3b/group___framework_o_s.html#d1/d56/classembvm_1_1_virtual_heap">embvm::VirtualHeap</a>&lt; THeapImpl &gt;::free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, and <a class="el" href="../../dc/d9c/stdlib_8h.html#afbedc913aa4651b3c3b4b3aecd9b4711">free()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d36/malloc__framework__rtos_8cpp.html#afbedc913aa4651b3c3b4b3aecd9b4711">free()</a>.</p>
+
+</div>
+</div>
+<a id="a48f4664e0475412efcc8f2be4cefc5df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f4664e0475412efcc8f2be4cefc5df">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename THeapImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="../../d2/d3b/group___framework_o_s.html#d1/d56/classembvm_1_1_virtual_heap">embvm::VirtualHeap</a>&lt; THeapImpl &gt;::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="../../de/d36/malloc__framework__rtos_8cpp.html#a1645cfe5dc0147ec8748b6a5a077d6f8">__attribute__()</a>.</p>
 
 </div>
 </div>
@@ -1170,33 +1334,33 @@ Inheritance diagram for embvm::VirtualMessageQueue&lt; TType &gt;:</div>
 <tr class="memitem:a52a9e7ed026cad4f28ef350e5e8678be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue">VirtualMessageQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a52a9e7ed026cad4f28ef350e5e8678be">operator=</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue">VirtualMessageQueue</a> &amp;&amp;) noexcept=default</td></tr>
 <tr class="memdesc:a52a9e7ed026cad4f28ef350e5e8678be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move assignment operator.  <a href="#a52a9e7ed026cad4f28ef350e5e8678be">More...</a><br /></td></tr>
 <tr class="separator:a52a9e7ed026cad4f28ef350e5e8678be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93e64c57166d34dc15af84c4e7911ccb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a93e64c57166d34dc15af84c4e7911ccb">push</a> (TType val, <a class="el" href="../../d2/d3b/group___framework_o_s.html#ga262cb9ffbc7d2a7fdf42deb7528060b2">embvm::os_timeout_t</a> timeout=<a class="el" href="../../d2/d3b/group___framework_o_s.html#ga2aaa9257780be7831db1172854f85aa1">embvm::OS_WAIT_FOREVER</a>)=0</td></tr>
-<tr class="memdesc:a93e64c57166d34dc15af84c4e7911ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a message to the queue.  <a href="#a93e64c57166d34dc15af84c4e7911ccb">More...</a><br /></td></tr>
-<tr class="separator:a93e64c57166d34dc15af84c4e7911ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fa93f38697d3fa3891f2e584e10a7f3"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; TType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a6fa93f38697d3fa3891f2e584e10a7f3">pop</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#ga262cb9ffbc7d2a7fdf42deb7528060b2">embvm::os_timeout_t</a> timeout=<a class="el" href="../../d2/d3b/group___framework_o_s.html#ga2aaa9257780be7831db1172854f85aa1">embvm::OS_WAIT_FOREVER</a>)=0</td></tr>
-<tr class="memdesc:a6fa93f38697d3fa3891f2e584e10a7f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a message from the queue.  <a href="#a6fa93f38697d3fa3891f2e584e10a7f3">More...</a><br /></td></tr>
-<tr class="separator:a6fa93f38697d3fa3891f2e584e10a7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f3a163f493f6f3ed0cd0c087b201bc0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a0f3a163f493f6f3ed0cd0c087b201bc0">size</a> ()=0</td></tr>
-<tr class="memdesc:a0f3a163f493f6f3ed0cd0c087b201bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current size of the message queue.  <a href="#a0f3a163f493f6f3ed0cd0c087b201bc0">More...</a><br /></td></tr>
-<tr class="separator:a0f3a163f493f6f3ed0cd0c087b201bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a540c59663ad6501d51597fffae647a97"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a540c59663ad6501d51597fffae647a97">reset</a> ()=0</td></tr>
-<tr class="memdesc:a540c59663ad6501d51597fffae647a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the message queue to an empty state.  <a href="#a540c59663ad6501d51597fffae647a97">More...</a><br /></td></tr>
-<tr class="separator:a540c59663ad6501d51597fffae647a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c325a33b022a985b4da175adce48b8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ab5c325a33b022a985b4da175adce48b8">empty</a> ()=0</td></tr>
-<tr class="memdesc:ab5c325a33b022a985b4da175adce48b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the message queue is empty.  <a href="#ab5c325a33b022a985b4da175adce48b8">More...</a><br /></td></tr>
-<tr class="separator:ab5c325a33b022a985b4da175adce48b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46985b89b239d6e98d6bbeaaad545dfe"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a46985b89b239d6e98d6bbeaaad545dfe">full</a> ()=0</td></tr>
-<tr class="memdesc:a46985b89b239d6e98d6bbeaaad545dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the message queue is full.  <a href="#a46985b89b239d6e98d6bbeaaad545dfe">More...</a><br /></td></tr>
-<tr class="separator:a46985b89b239d6e98d6bbeaaad545dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a6950b24abd3f7991e4779335260c9d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a3a6950b24abd3f7991e4779335260c9d">push</a> (TType val, <a class="el" href="../../d2/d3b/group___framework_o_s.html#ga262cb9ffbc7d2a7fdf42deb7528060b2">embvm::os_timeout_t</a> timeout=<a class="el" href="../../d2/d3b/group___framework_o_s.html#ga2aaa9257780be7831db1172854f85aa1">embvm::OS_WAIT_FOREVER</a>) noexcept=0</td></tr>
+<tr class="memdesc:a3a6950b24abd3f7991e4779335260c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a message to the queue.  <a href="#a3a6950b24abd3f7991e4779335260c9d">More...</a><br /></td></tr>
+<tr class="separator:a3a6950b24abd3f7991e4779335260c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa572d60df34dc9f569615136bf415d58"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; TType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aa572d60df34dc9f569615136bf415d58">pop</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#ga262cb9ffbc7d2a7fdf42deb7528060b2">embvm::os_timeout_t</a> timeout=<a class="el" href="../../d2/d3b/group___framework_o_s.html#ga2aaa9257780be7831db1172854f85aa1">embvm::OS_WAIT_FOREVER</a>) noexcept=0</td></tr>
+<tr class="memdesc:aa572d60df34dc9f569615136bf415d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a message from the queue.  <a href="#aa572d60df34dc9f569615136bf415d58">More...</a><br /></td></tr>
+<tr class="separator:aa572d60df34dc9f569615136bf415d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092608183e7dab71d847c7ba1ba69eee"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a092608183e7dab71d847c7ba1ba69eee">size</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a092608183e7dab71d847c7ba1ba69eee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current size of the message queue.  <a href="#a092608183e7dab71d847c7ba1ba69eee">More...</a><br /></td></tr>
+<tr class="separator:a092608183e7dab71d847c7ba1ba69eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68844ab727a53e0ea0e64c307362e21c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a68844ab727a53e0ea0e64c307362e21c">reset</a> () noexcept=0</td></tr>
+<tr class="memdesc:a68844ab727a53e0ea0e64c307362e21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the message queue to an empty state.  <a href="#a68844ab727a53e0ea0e64c307362e21c">More...</a><br /></td></tr>
+<tr class="separator:a68844ab727a53e0ea0e64c307362e21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8b72218dbf5607f058fc7a34f888b3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a3f8b72218dbf5607f058fc7a34f888b3">empty</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a3f8b72218dbf5607f058fc7a34f888b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the message queue is empty.  <a href="#a3f8b72218dbf5607f058fc7a34f888b3">More...</a><br /></td></tr>
+<tr class="separator:a3f8b72218dbf5607f058fc7a34f888b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1f796e7822f06b0e77336e82590564"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a8e1f796e7822f06b0e77336e82590564">full</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a8e1f796e7822f06b0e77336e82590564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the message queue is full.  <a href="#a8e1f796e7822f06b0e77336e82590564">More...</a><br /></td></tr>
+<tr class="separator:a8e1f796e7822f06b0e77336e82590564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a1f13e1a4a005c128f9cb104273ca1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/d55/namespaceembvm_1_1msgqueue.html#a466695f1453be8a84dcdbb4ad652b63a">embvm::msgqueue::handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a99a1f13e1a4a005c128f9cb104273ca1">native_handle</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a99a1f13e1a4a005c128f9cb104273ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the native handle for the message queue object.  <a href="#a99a1f13e1a4a005c128f9cb104273ca1">More...</a><br /></td></tr>
 <tr class="separator:a99a1f13e1a4a005c128f9cb104273ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Protected Member Functions</h3></td></tr>
 <tr class="memitem:a5c94b6c75fe68fe2805a5a268bd99921"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a5c94b6c75fe68fe2805a5a268bd99921">VirtualMessageQueue</a> ()=default</td></tr>
 <tr class="separator:a5c94b6c75fe68fe2805a5a268bd99921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53080211416d1e83a7d2e0d4496b1e1a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a53080211416d1e83a7d2e0d4496b1e1a">~VirtualMessageQueue</a> ()=default</td></tr>
-<tr class="memdesc:a53080211416d1e83a7d2e0d4496b1e1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS msg queue.  <a href="#a53080211416d1e83a7d2e0d4496b1e1a">More...</a><br /></td></tr>
-<tr class="separator:a53080211416d1e83a7d2e0d4496b1e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338cbd0f4eba6e77aae9ab2d2c580c26"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a338cbd0f4eba6e77aae9ab2d2c580c26">~VirtualMessageQueue</a> () noexcept=default</td></tr>
+<tr class="memdesc:a338cbd0f4eba6e77aae9ab2d2c580c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS msg queue.  <a href="#a338cbd0f4eba6e77aae9ab2d2c580c26">More...</a><br /></td></tr>
+<tr class="separator:a338cbd0f4eba6e77aae9ab2d2c580c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Constructor &amp; Destructor Documentation</h4>
 <a id="a89b2841bfd77c9db5fc4d6a2695df34a"></a>
@@ -1286,8 +1450,8 @@ template&lt;typename TType &gt; </div>
 
 </div>
 </div>
-<a id="a53080211416d1e83a7d2e0d4496b1e1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53080211416d1e83a7d2e0d4496b1e1a">&#9670;&nbsp;</a></span>~VirtualMessageQueue()</h2>
+<a id="a338cbd0f4eba6e77aae9ab2d2c580c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338cbd0f4eba6e77aae9ab2d2c580c26">&#9670;&nbsp;</a></span>~VirtualMessageQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1306,7 +1470,7 @@ template&lt;typename TType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1316,8 +1480,8 @@ template&lt;typename TType &gt; </div>
 </div>
 </div>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="ab5c325a33b022a985b4da175adce48b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5c325a33b022a985b4da175adce48b8">&#9670;&nbsp;</a></span>empty()</h2>
+<a id="a3f8b72218dbf5607f058fc7a34f888b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f8b72218dbf5607f058fc7a34f888b3">&#9670;&nbsp;</a></span>empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1331,12 +1495,12 @@ template&lt;typename TType &gt; </div>
           <td class="memname">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> <a class="el" href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue">embvm::VirtualMessageQueue</a>&lt; TType &gt;::empty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1344,12 +1508,12 @@ template&lt;typename TType &gt; </div>
 <p>Check if the message queue is empty. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the queue is empty, false otherwise. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a53aa997cd8862b30f9b5a4d930461f7d">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#af3577f28ef0f9cfe342880d71f3e9cc9">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a45281a5a0d6642b51c93876b7cddf896">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a128205f594daf130540511ed4b377882">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a46985b89b239d6e98d6bbeaaad545dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46985b89b239d6e98d6bbeaaad545dfe">&#9670;&nbsp;</a></span>full()</h2>
+<a id="a8e1f796e7822f06b0e77336e82590564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1f796e7822f06b0e77336e82590564">&#9670;&nbsp;</a></span>full()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1363,12 +1527,12 @@ template&lt;typename TType &gt; </div>
           <td class="memname">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a> <a class="el" href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue">embvm::VirtualMessageQueue</a>&lt; TType &gt;::full </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1376,7 +1540,7 @@ template&lt;typename TType &gt; </div>
 <p>Check if the message queue is full. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the queue is full, false otherwise. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a205786fe58802cb73db98205d465d093">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a178304133150f6394134601a41bf9d89">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#af8a312ae734e1406d0275588d647c901">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a97196e12fead9455d71a3488c632dc5f">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
 
 </div>
 </div>
@@ -1472,8 +1636,8 @@ template&lt;typename TType &gt; </div>
 
 </div>
 </div>
-<a id="a6fa93f38697d3fa3891f2e584e10a7f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fa93f38697d3fa3891f2e584e10a7f3">&#9670;&nbsp;</a></span>pop()</h2>
+<a id="aa572d60df34dc9f569615136bf415d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa572d60df34dc9f569615136bf415d58">&#9670;&nbsp;</a></span>pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1493,7 +1657,7 @@ template&lt;typename TType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1508,12 +1672,12 @@ template&lt;typename TType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an optional value. Use <code>has_value()</code> member function to determine if the value is valid. A valid value is only returned on success. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#adff995d68f240b47e8f8d1a0eb843676">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#adce57407227d79192151ca938a2ef0d2">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a1f56df4082b15dd6c76863e866fc778b">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a4e44bfa067646e2cae0a4563543c4bd8">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a93e64c57166d34dc15af84c4e7911ccb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93e64c57166d34dc15af84c4e7911ccb">&#9670;&nbsp;</a></span>push()</h2>
+<a id="a3a6950b24abd3f7991e4779335260c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a6950b24abd3f7991e4779335260c9d">&#9670;&nbsp;</a></span>push()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1543,14 +1707,14 @@ template&lt;typename TType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Post a message to the queue. </p>
 <p>Post a message to the queue. This function blocks the calling thread until there is an available slot (if OS_WAIT_FOREVER is specified as a timeout), or until the timeout expires.</p>
-<p>Posting a message to the queue will notify all threads waiting on a new message (via <a class="el" href="../../d2/d3b/group___framework_o_s.html#a6fa93f38697d3fa3891f2e584e10a7f3" title="Retrieve a message from the queue.">pop()</a>).</p>
+<p>Posting a message to the queue will notify all threads waiting on a new message (via <a class="el" href="../../d2/d3b/group___framework_o_s.html#aa572d60df34dc9f569615136bf415d58" title="Retrieve a message from the queue.">pop()</a>).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">val</td><td>The data value to post to the queue. </td></tr>
@@ -1560,12 +1724,12 @@ template&lt;typename TType &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the message was successfully posted, false otherwise. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a81d9c2d7b295bb85631b350df5ebb805">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a5c82edd832c4bffeaff6fe9b1f502eea">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a27c69b363979a2d674647b60609b5fac">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a0383733fe20bb9eed32f059d0cb27344">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a540c59663ad6501d51597fffae647a97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a540c59663ad6501d51597fffae647a97">&#9670;&nbsp;</a></span>reset()</h2>
+<a id="a68844ab727a53e0ea0e64c307362e21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68844ab727a53e0ea0e64c307362e21c">&#9670;&nbsp;</a></span>reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1584,7 +1748,7 @@ template&lt;typename TType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1592,12 +1756,12 @@ template&lt;typename TType &gt; </div>
 <p>Reset the message queue to an empty state. </p>
 <dl class="section post"><dt>Postcondition</dt><dd>The message queue is emptied, with size 0. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a7754e62e75b94d05a4133a2f82c4a00e">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a42727287e2c8a58f91344a08fc8f275f">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#acd5c60e9c34bf80a5426c8624e64c5c4">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a48ff10947b2da19b36df920691cedbd6">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="a0f3a163f493f6f3ed0cd0c087b201bc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f3a163f493f6f3ed0cd0c087b201bc0">&#9670;&nbsp;</a></span>size()</h2>
+<a id="a092608183e7dab71d847c7ba1ba69eee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092608183e7dab71d847c7ba1ba69eee">&#9670;&nbsp;</a></span>size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1611,12 +1775,12 @@ template&lt;typename TType &gt; </div>
           <td class="memname">virtual <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue">embvm::VirtualMessageQueue</a>&lt; TType &gt;::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1625,7 +1789,7 @@ template&lt;typename TType &gt; </div>
 <p>Size represents the number of elements stored, rather than the maximum size (aka capacity).</p>
 <dl class="section return"><dt>Returns</dt><dd>the current number of elements stored in the message queue. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#af40201feb357f0566221272f53d45ad5">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a7f00a1535d6b9946e88088cb29fe0de4">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#ab4607af8b36affb65bf3e858031ded6a">os::posix::MessageQueue&lt; TType &gt;</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a79d661510bfdd7ef762069fb32a1911a">os::freertos::MessageQueue&lt; TType &gt;</a>.</p>
 
 </div>
 </div>
@@ -1670,23 +1834,23 @@ Inheritance diagram for embvm::VirtualMutex:</div>
 <tr class="memitem:ab191db5936fcc45569ac9c713d4b5f9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex">VirtualMutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ab191db5936fcc45569ac9c713d4b5f9b">operator=</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex">VirtualMutex</a> &amp;&amp;)=default</td></tr>
 <tr class="memdesc:ab191db5936fcc45569ac9c713d4b5f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move assignment operator.  <a href="#ab191db5936fcc45569ac9c713d4b5f9b">More...</a><br /></td></tr>
 <tr class="separator:ab191db5936fcc45569ac9c713d4b5f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a403a2fd74e206e3d0c784009228632d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a403a2fd74e206e3d0c784009228632d9">lock</a> ()=0</td></tr>
-<tr class="memdesc:a403a2fd74e206e3d0c784009228632d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the mutex.  <a href="#a403a2fd74e206e3d0c784009228632d9">More...</a><br /></td></tr>
-<tr class="separator:a403a2fd74e206e3d0c784009228632d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2791ae18033d4b99e5c019234e5b47c7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a2791ae18033d4b99e5c019234e5b47c7">unlock</a> ()=0</td></tr>
-<tr class="memdesc:a2791ae18033d4b99e5c019234e5b47c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the mutex.  <a href="#a2791ae18033d4b99e5c019234e5b47c7">More...</a><br /></td></tr>
-<tr class="separator:a2791ae18033d4b99e5c019234e5b47c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1faa1354a654fd7f946f69e43c7807bc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a1faa1354a654fd7f946f69e43c7807bc">trylock</a> ()=0</td></tr>
-<tr class="memdesc:a1faa1354a654fd7f946f69e43c7807bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to lock the mutex.  <a href="#a1faa1354a654fd7f946f69e43c7807bc">More...</a><br /></td></tr>
-<tr class="separator:a1faa1354a654fd7f946f69e43c7807bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77f8d02f7f6477a27ca4e3d14e6022fa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d42/namespaceembvm_1_1mutex.html#a06a9c16aa29d7dd4a6388f878f6a77d4">embvm::mutex::handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a77f8d02f7f6477a27ca4e3d14e6022fa">native_handle</a> () const =0</td></tr>
-<tr class="separator:a77f8d02f7f6477a27ca4e3d14e6022fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a2992b6405b723fd9b51da8c537d59"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a16a2992b6405b723fd9b51da8c537d59">lock</a> () noexcept=0</td></tr>
+<tr class="memdesc:a16a2992b6405b723fd9b51da8c537d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the mutex.  <a href="#a16a2992b6405b723fd9b51da8c537d59">More...</a><br /></td></tr>
+<tr class="separator:a16a2992b6405b723fd9b51da8c537d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaded2257f1d965bdd77ad3d20d8a7686"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aaded2257f1d965bdd77ad3d20d8a7686">unlock</a> () noexcept=0</td></tr>
+<tr class="memdesc:aaded2257f1d965bdd77ad3d20d8a7686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the mutex.  <a href="#aaded2257f1d965bdd77ad3d20d8a7686">More...</a><br /></td></tr>
+<tr class="separator:aaded2257f1d965bdd77ad3d20d8a7686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72717c9e40f8ec4d135ba53050c387b7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a72717c9e40f8ec4d135ba53050c387b7">trylock</a> () noexcept=0</td></tr>
+<tr class="memdesc:a72717c9e40f8ec4d135ba53050c387b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to lock the mutex.  <a href="#a72717c9e40f8ec4d135ba53050c387b7">More...</a><br /></td></tr>
+<tr class="separator:a72717c9e40f8ec4d135ba53050c387b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f6b243f9f71d20953a517b03f4d66f8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d42/namespaceembvm_1_1mutex.html#a06a9c16aa29d7dd4a6388f878f6a77d4">embvm::mutex::handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a4f6b243f9f71d20953a517b03f4d66f8">native_handle</a> () const noexcept=0</td></tr>
+<tr class="separator:a4f6b243f9f71d20953a517b03f4d66f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Protected Member Functions</h3></td></tr>
 <tr class="memitem:a06f8cd7c1a614486f09a8fc6603ac285"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a06f8cd7c1a614486f09a8fc6603ac285">VirtualMutex</a> ()=default</td></tr>
 <tr class="separator:a06f8cd7c1a614486f09a8fc6603ac285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31cddcb710254d8efb0e81f6ee4b33c8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a31cddcb710254d8efb0e81f6ee4b33c8">~VirtualMutex</a> ()</td></tr>
-<tr class="memdesc:a31cddcb710254d8efb0e81f6ee4b33c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS mutex.  <a href="#a31cddcb710254d8efb0e81f6ee4b33c8">More...</a><br /></td></tr>
-<tr class="separator:a31cddcb710254d8efb0e81f6ee4b33c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac117b243c7ac533eb501c588eadf6ec8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ac117b243c7ac533eb501c588eadf6ec8">~VirtualMutex</a> () noexcept</td></tr>
+<tr class="memdesc:ac117b243c7ac533eb501c588eadf6ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS mutex.  <a href="#ac117b243c7ac533eb501c588eadf6ec8">More...</a><br /></td></tr>
+<tr class="separator:ac117b243c7ac533eb501c588eadf6ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Constructor &amp; Destructor Documentation</h4>
 <a id="aef45b5936e1239090f10565c12a96e49"></a>
@@ -1770,8 +1934,8 @@ Inheritance diagram for embvm::VirtualMutex:</div>
 
 </div>
 </div>
-<a id="a31cddcb710254d8efb0e81f6ee4b33c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31cddcb710254d8efb0e81f6ee4b33c8">&#9670;&nbsp;</a></span>~VirtualMutex()</h2>
+<a id="ac117b243c7ac533eb501c588eadf6ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac117b243c7ac533eb501c588eadf6ec8">&#9670;&nbsp;</a></span>~VirtualMutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1788,7 +1952,7 @@ Inheritance diagram for embvm::VirtualMutex:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1798,8 +1962,8 @@ Inheritance diagram for embvm::VirtualMutex:</div>
 </div>
 </div>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="a403a2fd74e206e3d0c784009228632d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a403a2fd74e206e3d0c784009228632d9">&#9670;&nbsp;</a></span>lock()</h2>
+<a id="a16a2992b6405b723fd9b51da8c537d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a2992b6405b723fd9b51da8c537d59">&#9670;&nbsp;</a></span>lock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1816,7 +1980,7 @@ Inheritance diagram for embvm::VirtualMutex:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1825,14 +1989,12 @@ Inheritance diagram for embvm::VirtualMutex:</div>
 <p>Attempts to lock the mutex. If successful, the function returns with the calling thread owning the lock. If the lock is already owned, the calling thread will block until the lock is available.</p>
 <dl class="section post"><dt>Postcondition</dt><dd>The mutex is locked and owned by the calling thread. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a137b4c9911e48c54de4caf877d31ee9e">os::posix::Mutex</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a8f632f04fdf008df308d5008cf58850d">os::freertos::Mutex</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade97280f8ce8f81a9c68128e08009e77">os::freertos::ConditionVariable::freertos_wait()</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a2dff238662bea539cc43f408567db34c">os::posix::Mutex</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a0996f26cfe715c06028f8de322e3737e">os::freertos::Mutex</a>.</p>
 
 </div>
 </div>
-<a id="a77f8d02f7f6477a27ca4e3d14e6022fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77f8d02f7f6477a27ca4e3d14e6022fa">&#9670;&nbsp;</a></span>native_handle()</h2>
+<a id="a4f6b243f9f71d20953a517b03f4d66f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f6b243f9f71d20953a517b03f4d66f8">&#9670;&nbsp;</a></span>native_handle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1849,12 +2011,12 @@ Inheritance diagram for embvm::VirtualMutex:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a8375fb153a6fb22d06261d1b0396828b">os::posix::Mutex</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a90b5859f02384eb83fca4b6a0572d031">os::freertos::Mutex</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#ab9172fb42c577f193e0e7c68d27e7d7c">os::posix::Mutex</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a3afc326664c024494425631090ed3037">os::freertos::Mutex</a>.</p>
 
 </div>
 </div>
@@ -1914,8 +2076,8 @@ Inheritance diagram for embvm::VirtualMutex:</div>
 
 </div>
 </div>
-<a id="a1faa1354a654fd7f946f69e43c7807bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1faa1354a654fd7f946f69e43c7807bc">&#9670;&nbsp;</a></span>trylock()</h2>
+<a id="a72717c9e40f8ec4d135ba53050c387b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72717c9e40f8ec4d135ba53050c387b7">&#9670;&nbsp;</a></span>trylock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1932,7 +2094,7 @@ Inheritance diagram for embvm::VirtualMutex:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1942,12 +2104,12 @@ Inheritance diagram for embvm::VirtualMutex:</div>
 <dl class="section post"><dt>Postcondition</dt><dd>If the mutex is unowned, the mutex will be locked and owned by the calling thread. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the mutex is successfully locked, false if another thread owns the mutex. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#aa7bb27e1c5ae02902418188a3fb6a972">os::posix::Mutex</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#ab8dbae8bbc4d10019ca90a1e514ff943">os::freertos::Mutex</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a3a02205a3b0f45e53669369a0887eddc">os::posix::Mutex</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a8e1fe2b9df7e6b075a557ddac828eefc">os::freertos::Mutex</a>.</p>
 
 </div>
 </div>
-<a id="a2791ae18033d4b99e5c019234e5b47c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2791ae18033d4b99e5c019234e5b47c7">&#9670;&nbsp;</a></span>unlock()</h2>
+<a id="aaded2257f1d965bdd77ad3d20d8a7686"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaded2257f1d965bdd77ad3d20d8a7686">&#9670;&nbsp;</a></span>unlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1964,7 +2126,7 @@ Inheritance diagram for embvm::VirtualMutex:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1973,9 +2135,7 @@ Inheritance diagram for embvm::VirtualMutex:</div>
 <dl class="section pre"><dt>Precondition</dt><dd>The mutex is locked and owned by the calling thread. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>The mutex is unlocked. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a38b0c6b1fe38a0f64b4cc31bb61dca18">os::posix::Mutex</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#ad05e04454eac1dc8bd452f6e7bb9058a">os::freertos::Mutex</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d3/d7b/classos_1_1freertos_1_1_condition_variable.html#ade97280f8ce8f81a9c68128e08009e77">os::freertos::ConditionVariable::freertos_wait()</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a6dd005d1f96cba2c0bc97e635cdcdfc7">os::posix::Mutex</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a6bf69f8575d10158d4b98c17cfb96d29">os::freertos::Mutex</a>.</p>
 
 </div>
 </div>
@@ -2012,38 +2172,38 @@ class embvm::VirtualOSFactory&lt; TFactory &gt;</h3>
 <tr class="memitem:a07d8ed5f5fb4d8093197b7b4909c47f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a07d8ed5f5fb4d8093197b7b4909c47f0">~VirtualOSFactory</a> ()=default</td></tr>
 <tr class="separator:a07d8ed5f5fb4d8093197b7b4909c47f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Static Public Member Functions</h3></td></tr>
-<tr class="memitem:ae2fd103f6f83aede1e8e5fb75e578335"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#d7/de3/classembvm_1_1_virtual_condition_variable">embvm::VirtualConditionVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ae2fd103f6f83aede1e8e5fb75e578335">createConditionVariable</a> ()</td></tr>
-<tr class="memdesc:ae2fd103f6f83aede1e8e5fb75e578335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual condition variable.  <a href="#ae2fd103f6f83aede1e8e5fb75e578335">More...</a><br /></td></tr>
-<tr class="separator:ae2fd103f6f83aede1e8e5fb75e578335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30c5c4d2cd1ac75687465b3428f57306"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#df/dba/classembvm_1_1_virtual_thread">embvm::VirtualThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a30c5c4d2cd1ac75687465b3428f57306">createThread</a> (std::string_view name, <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#a5a160efbabcbeed63b56c048fdd56213">embvm::thread::func_t</a> f, <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#af748b330631ff171f0f4d75ae8d7cfa0">embvm::thread::input_t</a> input=nullptr, <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#a54511f7ddd372003cc568040d0214764">embvm::thread::priority</a> <a class="el" href="../../d4/dfa/test_2src_2malloc__freelist_8c.html#a8e3a3e55f9448a87da5720ae4c8b00c6">p</a>=<a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#a54511f7ddd372003cc568040d0214764afea087517c26fadd409bd4b9dc642555">embvm::thread::priority::normal</a>, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> stack_size=<a class="el" href="../../d1/d13/rtos_8hpp.html#a4aa0e267753eaeb1a00cb55c2cd66569">FRAMEWORK_DEFAULT_STACK_SIZE</a>, void *stack_ptr=nullptr)</td></tr>
-<tr class="memdesc:a30c5c4d2cd1ac75687465b3428f57306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual thread.  <a href="#a30c5c4d2cd1ac75687465b3428f57306">More...</a><br /></td></tr>
-<tr class="separator:a30c5c4d2cd1ac75687465b3428f57306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234457980a41c8a2272089d314801b89"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex">embvm::VirtualMutex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a234457980a41c8a2272089d314801b89">createMutex</a> (<a class="el" href="../../df/d42/namespaceembvm_1_1mutex.html#a8b754de2a51d53198b0b6709e61a7d96">embvm::mutex::type</a> <a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a>=<a class="el" href="../../df/d42/namespaceembvm_1_1mutex.html#a8b754de2a51d53198b0b6709e61a7d96a6fd8ccca00cb036a3909204ffc7bc5f9">embvm::mutex::type::defaultType</a>, <a class="el" href="../../df/d42/namespaceembvm_1_1mutex.html#afec267fc99daa884fe3cdd09db9e05d0">embvm::mutex::mode</a> mode=<a class="el" href="../../df/d42/namespaceembvm_1_1mutex.html#afec267fc99daa884fe3cdd09db9e05d0a925170c03aa88a660442100e8269fb63">embvm::mutex::mode::defaultMode</a>)</td></tr>
-<tr class="memdesc:a234457980a41c8a2272089d314801b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual Mutex.  <a href="#a234457980a41c8a2272089d314801b89">More...</a><br /></td></tr>
-<tr class="separator:a234457980a41c8a2272089d314801b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ed214c4993f9988f414ede848bc616f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore">embvm::VirtualSemaphore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a2ed214c4993f9988f414ede848bc616f">createBinarySemaphore</a> ()</td></tr>
-<tr class="memdesc:a2ed214c4993f9988f414ede848bc616f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual binary semaphore.  <a href="#a2ed214c4993f9988f414ede848bc616f">More...</a><br /></td></tr>
-<tr class="separator:a2ed214c4993f9988f414ede848bc616f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a771be1d370f05d1c724334e300aff33c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore">embvm::VirtualSemaphore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a771be1d370f05d1c724334e300aff33c">createSemaphore</a> (<a class="el" href="../../df/d31/namespaceembvm_1_1semaphore.html#a8774f2611818ccec4b790c0dd94f0ddb">embvm::semaphore::count_t</a> ceiling, <a class="el" href="../../df/d31/namespaceembvm_1_1semaphore.html#a8774f2611818ccec4b790c0dd94f0ddb">embvm::semaphore::count_t</a> initial_count=-1)</td></tr>
-<tr class="memdesc:a771be1d370f05d1c724334e300aff33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual counting semaphore.  <a href="#a771be1d370f05d1c724334e300aff33c">More...</a><br /></td></tr>
-<tr class="separator:a771be1d370f05d1c724334e300aff33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9b05c415c5b3c06264cfbe85fa733d2"><td class="memTemplParams" colspan="2">template&lt;typename TType &gt; </td></tr>
-<tr class="memitem:af9b05c415c5b3c06264cfbe85fa733d2"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue">embvm::VirtualMessageQueue</a>&lt; TType &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#af9b05c415c5b3c06264cfbe85fa733d2">createMessageQueue</a> (<a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> queue_length)</td></tr>
-<tr class="memdesc:af9b05c415c5b3c06264cfbe85fa733d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual message queue.  <a href="#af9b05c415c5b3c06264cfbe85fa733d2">More...</a><br /></td></tr>
-<tr class="separator:af9b05c415c5b3c06264cfbe85fa733d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ff69dbc7c78132a0018ef7bf45a4a8d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag">embvm::VirtualEventFlag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a7ff69dbc7c78132a0018ef7bf45a4a8d">createEventFlag</a> ()</td></tr>
-<tr class="memdesc:a7ff69dbc7c78132a0018ef7bf45a4a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual event flag.  <a href="#a7ff69dbc7c78132a0018ef7bf45a4a8d">More...</a><br /></td></tr>
-<tr class="separator:a7ff69dbc7c78132a0018ef7bf45a4a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eafadff789273c276578163969bf286"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a2eafadff789273c276578163969bf286">destroy</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#df/dba/classembvm_1_1_virtual_thread">embvm::VirtualThread</a> *item)</td></tr>
-<tr class="separator:a2eafadff789273c276578163969bf286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8d7dae84b5c391def304a5ad2a15357"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#af8d7dae84b5c391def304a5ad2a15357">destroy</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex">embvm::VirtualMutex</a> *item)</td></tr>
-<tr class="separator:af8d7dae84b5c391def304a5ad2a15357"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d0feeea975bd3c3fd524c6c7ae775cd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a7d0feeea975bd3c3fd524c6c7ae775cd">destroy</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore">embvm::VirtualSemaphore</a> *item)</td></tr>
-<tr class="separator:a7d0feeea975bd3c3fd524c6c7ae775cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61714c6c1dc4b99fe5319d9cb4d1377f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a61714c6c1dc4b99fe5319d9cb4d1377f">destroy</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag">embvm::VirtualEventFlag</a> *item)</td></tr>
-<tr class="separator:a61714c6c1dc4b99fe5319d9cb4d1377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef1607accc40b2530c7f1a1d038538a9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aef1607accc40b2530c7f1a1d038538a9">destroy</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#d7/de3/classembvm_1_1_virtual_condition_variable">embvm::VirtualConditionVariable</a> *item)</td></tr>
-<tr class="separator:aef1607accc40b2530c7f1a1d038538a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5cb48f1008b2cf252277e53d7fe5f4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#d7/de3/classembvm_1_1_virtual_condition_variable">embvm::VirtualConditionVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a9e5cb48f1008b2cf252277e53d7fe5f4">createConditionVariable</a> () noexcept</td></tr>
+<tr class="memdesc:a9e5cb48f1008b2cf252277e53d7fe5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual condition variable.  <a href="#a9e5cb48f1008b2cf252277e53d7fe5f4">More...</a><br /></td></tr>
+<tr class="separator:a9e5cb48f1008b2cf252277e53d7fe5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c5f94075ec95a8673fd01456e32288"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#df/dba/classembvm_1_1_virtual_thread">embvm::VirtualThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ac9c5f94075ec95a8673fd01456e32288">createThread</a> (std::string_view name, <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#a5a160efbabcbeed63b56c048fdd56213">embvm::thread::func_t</a> f, <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#af748b330631ff171f0f4d75ae8d7cfa0">embvm::thread::input_t</a> input=nullptr, <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#a54511f7ddd372003cc568040d0214764">embvm::thread::priority</a> <a class="el" href="../../d4/dfa/test_2src_2malloc__freelist_8c.html#a8e3a3e55f9448a87da5720ae4c8b00c6">p</a>=<a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#a54511f7ddd372003cc568040d0214764afea087517c26fadd409bd4b9dc642555">embvm::thread::priority::normal</a>, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> stack_size=<a class="el" href="../../d1/d13/rtos_8hpp.html#ac12d62a39902e7d740e6512cdb858d32">DEFAULT_STACK_SIZE</a>, void *stack_ptr=nullptr) noexcept</td></tr>
+<tr class="memdesc:ac9c5f94075ec95a8673fd01456e32288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual thread.  <a href="#ac9c5f94075ec95a8673fd01456e32288">More...</a><br /></td></tr>
+<tr class="separator:ac9c5f94075ec95a8673fd01456e32288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0867cde1f4c4a83055fae6a420099b5d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex">embvm::VirtualMutex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a0867cde1f4c4a83055fae6a420099b5d">createMutex</a> (<a class="el" href="../../df/d42/namespaceembvm_1_1mutex.html#a8b754de2a51d53198b0b6709e61a7d96">embvm::mutex::type</a> <a class="el" href="../../d8/d14/s__lroundl_8c.html#a53155e22eaa05190346890241be3367c">type</a>=<a class="el" href="../../df/d42/namespaceembvm_1_1mutex.html#a8b754de2a51d53198b0b6709e61a7d96a6fd8ccca00cb036a3909204ffc7bc5f9">embvm::mutex::type::defaultType</a>, <a class="el" href="../../df/d42/namespaceembvm_1_1mutex.html#afec267fc99daa884fe3cdd09db9e05d0">embvm::mutex::mode</a> mode=<a class="el" href="../../df/d42/namespaceembvm_1_1mutex.html#afec267fc99daa884fe3cdd09db9e05d0a925170c03aa88a660442100e8269fb63">embvm::mutex::mode::defaultMode</a>) noexcept</td></tr>
+<tr class="memdesc:a0867cde1f4c4a83055fae6a420099b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual Mutex.  <a href="#a0867cde1f4c4a83055fae6a420099b5d">More...</a><br /></td></tr>
+<tr class="separator:a0867cde1f4c4a83055fae6a420099b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3406a5c4db95d53451a0d478295c9fe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore">embvm::VirtualSemaphore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ab3406a5c4db95d53451a0d478295c9fe">createBinarySemaphore</a> () noexcept</td></tr>
+<tr class="memdesc:ab3406a5c4db95d53451a0d478295c9fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual binary semaphore.  <a href="#ab3406a5c4db95d53451a0d478295c9fe">More...</a><br /></td></tr>
+<tr class="separator:ab3406a5c4db95d53451a0d478295c9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeba28c19967d360871d22f12a898051"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore">embvm::VirtualSemaphore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aeeba28c19967d360871d22f12a898051">createSemaphore</a> (<a class="el" href="../../df/d31/namespaceembvm_1_1semaphore.html#a8774f2611818ccec4b790c0dd94f0ddb">embvm::semaphore::count_t</a> ceiling, <a class="el" href="../../df/d31/namespaceembvm_1_1semaphore.html#a8774f2611818ccec4b790c0dd94f0ddb">embvm::semaphore::count_t</a> initial_count=-1) noexcept</td></tr>
+<tr class="memdesc:aeeba28c19967d360871d22f12a898051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual counting semaphore.  <a href="#aeeba28c19967d360871d22f12a898051">More...</a><br /></td></tr>
+<tr class="separator:aeeba28c19967d360871d22f12a898051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb0cb49cd36be3e6aedb14bcc856f86"><td class="memTemplParams" colspan="2">template&lt;typename TType &gt; </td></tr>
+<tr class="memitem:a6fb0cb49cd36be3e6aedb14bcc856f86"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue">embvm::VirtualMessageQueue</a>&lt; TType &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a6fb0cb49cd36be3e6aedb14bcc856f86">createMessageQueue</a> (<a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> queue_length) noexcept</td></tr>
+<tr class="memdesc:a6fb0cb49cd36be3e6aedb14bcc856f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual message queue.  <a href="#a6fb0cb49cd36be3e6aedb14bcc856f86">More...</a><br /></td></tr>
+<tr class="separator:a6fb0cb49cd36be3e6aedb14bcc856f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e9d1f69c9d7aec85c236efb758d12e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag">embvm::VirtualEventFlag</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ae4e9d1f69c9d7aec85c236efb758d12e">createEventFlag</a> () noexcept</td></tr>
+<tr class="memdesc:ae4e9d1f69c9d7aec85c236efb758d12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a virtual event flag.  <a href="#ae4e9d1f69c9d7aec85c236efb758d12e">More...</a><br /></td></tr>
+<tr class="separator:ae4e9d1f69c9d7aec85c236efb758d12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581594e0865352ec893cbb5c9e153fc6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a581594e0865352ec893cbb5c9e153fc6">destroy</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#df/dba/classembvm_1_1_virtual_thread">embvm::VirtualThread</a> *item) noexcept</td></tr>
+<tr class="separator:a581594e0865352ec893cbb5c9e153fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6e804d81f50d4b36a4838a0f5f0073"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a4b6e804d81f50d4b36a4838a0f5f0073">destroy</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex">embvm::VirtualMutex</a> *item) noexcept</td></tr>
+<tr class="separator:a4b6e804d81f50d4b36a4838a0f5f0073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa638bc3fbfff7ead5fe7e4fef3bf5243"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aa638bc3fbfff7ead5fe7e4fef3bf5243">destroy</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore">embvm::VirtualSemaphore</a> *item) noexcept</td></tr>
+<tr class="separator:aa638bc3fbfff7ead5fe7e4fef3bf5243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fa79eac592c3929cacfde181815d19"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a06fa79eac592c3929cacfde181815d19">destroy</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag">embvm::VirtualEventFlag</a> *item) noexcept</td></tr>
+<tr class="separator:a06fa79eac592c3929cacfde181815d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38907a8deccd7391310694111ca8ee55"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a38907a8deccd7391310694111ca8ee55">destroy</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#d7/de3/classembvm_1_1_virtual_condition_variable">embvm::VirtualConditionVariable</a> *item) noexcept</td></tr>
+<tr class="separator:a38907a8deccd7391310694111ca8ee55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Public Attributes</h3></td></tr>
 <tr class="memitem:ae194484294b7bfa6a58276439f13ad6d"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ae194484294b7bfa6a58276439f13ad6d">TFactory</a></td></tr>
 <tr class="separator:ae194484294b7bfa6a58276439f13ad6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2104,8 +2264,8 @@ template&lt;typename TFactory &gt; </div>
 </div>
 </div>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="a2ed214c4993f9988f414ede848bc616f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ed214c4993f9988f414ede848bc616f">&#9670;&nbsp;</a></span>createBinarySemaphore()</h2>
+<a id="ab3406a5c4db95d53451a0d478295c9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3406a5c4db95d53451a0d478295c9fe">&#9670;&nbsp;</a></span>createBinarySemaphore()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2124,7 +2284,7 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2132,15 +2292,15 @@ template&lt;typename TFactory &gt; </div>
 <p>Create a virtual binary semaphore. </p>
 <p>Creates a virtual binary semaphore using the underlying RTOS. A generic <a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore" title="Defines the VirtualSemaphore interface.">embvm::VirtualSemaphore</a> pointer is returned, masking the underlying implementation from higher layers.</p>
 <p>A binary semaphore is limited to a count of 1.</p>
-<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a2eafadff789273c276578163969bf286">destroy()</a> function.</p>
+<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a581594e0865352ec893cbb5c9e153fc6">destroy()</a> function.</p>
 <dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore" title="Defines the VirtualSemaphore interface.">embvm::VirtualSemaphore</a> pointer </dd></dl>
 
 <p class="reference">References <a class="el" href="../../df/d31/namespaceembvm_1_1semaphore.html#a7163ebf3813c484c5d6ba9c57093d9baa9d7183f16acce70658f686ae7f1a4d20">embvm::semaphore::binary</a>.</p>
 
 </div>
 </div>
-<a id="ae2fd103f6f83aede1e8e5fb75e578335"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2fd103f6f83aede1e8e5fb75e578335">&#9670;&nbsp;</a></span>createConditionVariable()</h2>
+<a id="a9e5cb48f1008b2cf252277e53d7fe5f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e5cb48f1008b2cf252277e53d7fe5f4">&#9670;&nbsp;</a></span>createConditionVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2159,20 +2319,20 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Create a virtual condition variable. </p>
 <p>Creates a condition variable using the underlying platform RTOS. A generic <a class="el" href="../../d2/d3b/group___framework_o_s.html#d7/de3/classembvm_1_1_virtual_condition_variable" title="Defines the VirtualConditionVariable interface.">embvm::VirtualConditionVariable</a> pointer is returned, masking the underlying implementation from higher layers.</p>
-<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a2eafadff789273c276578163969bf286">destroy()</a> function.</p>
+<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a581594e0865352ec893cbb5c9e153fc6">destroy()</a> function.</p>
 <dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="../../d2/d3b/group___framework_o_s.html#d7/de3/classembvm_1_1_virtual_condition_variable" title="Defines the VirtualConditionVariable interface.">embvm::VirtualConditionVariable</a> pointer </dd></dl>
 
 </div>
 </div>
-<a id="a7ff69dbc7c78132a0018ef7bf45a4a8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ff69dbc7c78132a0018ef7bf45a4a8d">&#9670;&nbsp;</a></span>createEventFlag()</h2>
+<a id="ae4e9d1f69c9d7aec85c236efb758d12e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e9d1f69c9d7aec85c236efb758d12e">&#9670;&nbsp;</a></span>createEventFlag()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2191,22 +2351,22 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Create a virtual event flag. </p>
 <p>Creates a virtual event flag using the underlying RTOS. A generic <a class="el" href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag" title="Defines the VirtualEventFlag interface.">embvm::VirtualEventFlag</a> pointer is returned, masking the underlying implementation from higher layers.</p>
-<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a2eafadff789273c276578163969bf286">destroy()</a> function.</p>
+<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a581594e0865352ec893cbb5c9e153fc6">destroy()</a> function.</p>
 <dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="../../d2/d3b/group___framework_o_s.html#de/de3/classembvm_1_1_virtual_event_flag" title="Defines the VirtualEventFlag interface.">embvm::VirtualEventFlag</a> pointer. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dd5/group___framework_utils.html#ad2fe9cba8dc88fc37069cdf6d662cc3c">InterruptQueue&lt; ThumbInterruptLock, 156 &gt;::InterruptQueue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a35a1aece9dac78af3c9c5513c0ba9cc8">embutil::InterruptQueue&lt; std::mutex &gt;::InterruptQueue()</a>.</p>
 
 </div>
 </div>
-<a id="af9b05c415c5b3c06264cfbe85fa733d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9b05c415c5b3c06264cfbe85fa733d2">&#9670;&nbsp;</a></span>createMessageQueue()</h2>
+<a id="a6fb0cb49cd36be3e6aedb14bcc856f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fb0cb49cd36be3e6aedb14bcc856f86">&#9670;&nbsp;</a></span>createMessageQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2228,14 +2388,14 @@ template&lt;typename TType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Create a virtual message queue. </p>
 <p>Creates a virtual message queue using the underlying RTOS. The type of data stored in the message queue is determined using a template parameter. A generic <a class="el" href="../../d2/d3b/group___framework_o_s.html#d4/da8/classembvm_1_1_virtual_message_queue" title="Defines the VirtualMessageQueue interface.">embvm::VirtualMessageQueue</a> pointer is returned, masking the underlying implementation from higher layers.</p>
-<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a2eafadff789273c276578163969bf286">destroy()</a> function.</p>
+<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a581594e0865352ec893cbb5c9e153fc6">destroy()</a> function.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TType</td><td>The type of the underlying data to be stored. </td></tr>
@@ -2252,8 +2412,8 @@ template&lt;typename TType &gt; </div>
 
 </div>
 </div>
-<a id="a234457980a41c8a2272089d314801b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a234457980a41c8a2272089d314801b89">&#9670;&nbsp;</a></span>createMutex()</h2>
+<a id="a0867cde1f4c4a83055fae6a420099b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0867cde1f4c4a83055fae6a420099b5d">&#9670;&nbsp;</a></span>createMutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2283,14 +2443,14 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Create a virtual Mutex. </p>
 <p>Creates a virtual mutex using the underlying RTOS. A generic <a class="el" href="../../d2/d3b/group___framework_o_s.html#d3/d52/classembvm_1_1_virtual_mutex" title="Defines the VirtualMutex interface.">embvm::VirtualMutex</a> pointer is returned, masking the underlying implementation from higher layers.</p>
-<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a2eafadff789273c276578163969bf286">destroy()</a> function.</p>
+<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a581594e0865352ec893cbb5c9e153fc6">destroy()</a> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>The type of mutex to create. </td></tr>
@@ -2304,8 +2464,8 @@ template&lt;typename TFactory &gt; </div>
 
 </div>
 </div>
-<a id="a771be1d370f05d1c724334e300aff33c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a771be1d370f05d1c724334e300aff33c">&#9670;&nbsp;</a></span>createSemaphore()</h2>
+<a id="aeeba28c19967d360871d22f12a898051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeba28c19967d360871d22f12a898051">&#9670;&nbsp;</a></span>createSemaphore()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2335,7 +2495,7 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2343,7 +2503,7 @@ template&lt;typename TFactory &gt; </div>
 <p>Create a virtual counting semaphore. </p>
 <p>Creates a virtual counting semaphore using the underlying RTOS. A generic <a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore" title="Defines the VirtualSemaphore interface.">embvm::VirtualSemaphore</a> pointer is returned, masking the underlying implementation from higher layers.</p>
 <p>The counting semaphore supports counts &gt; 1.</p>
-<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a2eafadff789273c276578163969bf286">destroy()</a> function.</p>
+<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a581594e0865352ec893cbb5c9e153fc6">destroy()</a> function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ceiling</td><td>The maximum count the semaphore supports. </td></tr>
@@ -2357,8 +2517,8 @@ template&lt;typename TFactory &gt; </div>
 
 </div>
 </div>
-<a id="a30c5c4d2cd1ac75687465b3428f57306"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30c5c4d2cd1ac75687465b3428f57306">&#9670;&nbsp;</a></span>createThread()</h2>
+<a id="ac9c5f94075ec95a8673fd01456e32288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9c5f94075ec95a8673fd01456e32288">&#9670;&nbsp;</a></span>createThread()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2396,7 +2556,7 @@ template&lt;typename TFactory &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
-          <td class="paramname"><em>stack_size</em> = <code><a class="el" href="../../d1/d13/rtos_8hpp.html#a4aa0e267753eaeb1a00cb55c2cd66569">FRAMEWORK_DEFAULT_STACK_SIZE</a></code>, </td>
+          <td class="paramname"><em>stack_size</em> = <code><a class="el" href="../../d1/d13/rtos_8hpp.html#ac12d62a39902e7d740e6512cdb858d32">DEFAULT_STACK_SIZE</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2412,14 +2572,14 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Create a virtual thread. </p>
 <p>Creates a thread using the underlying platform RTOS. A generic <a class="el" href="../../d2/d3b/group___framework_o_s.html#df/dba/classembvm_1_1_virtual_thread" title="Defines the VirtualThread interface.">embvm::VirtualThread</a> pointer is returned, masking the underlying implementation from higher layers.</p>
-<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a2eafadff789273c276578163969bf286">destroy()</a> function.</p>
+<p>The caller owns the returnd pointer. It must be returned with the factory <a class="el" href="../../d2/d3b/group___framework_o_s.html#a581594e0865352ec893cbb5c9e153fc6">destroy()</a> function.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>f is not nullptr </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>A thread object is created and the thread is started.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2435,14 +2595,14 @@ template&lt;typename TFactory &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="../../d2/d3b/group___framework_o_s.html#df/dba/classembvm_1_1_virtual_thread" title="Defines the VirtualThread interface.">embvm::VirtualThread</a> pointer </dd></dl>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, and <a class="el" href="../../d4/dfa/test_2src_2malloc__freelist_8c.html#a8e3a3e55f9448a87da5720ae4c8b00c6">p</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, and <a class="el" href="../../d4/dfa/test_2src_2malloc__freelist_8c.html#a8e3a3e55f9448a87da5720ae4c8b00c6">p</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#aa631c956bf766a788cff820807a6a78d">nRF52DK_FrameworkDemoPlatform::initOS_()</a>, and <a class="el" href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#a627a43c8739cb0c948ec208ae683fc2f">nRF52DK_FrameworkDemoPlatform::startBlink()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#a38d6ccb10f4986624646bec2cd093a15">nRF52DK_FrameworkDemoPlatform::initOS_()</a>, and <a class="el" href="../../de/dfa/classn_r_f52_d_k___framework_demo_platform.html#afb2bd869be94da4253b562036f7029c0">nRF52DK_FrameworkDemoPlatform::startBlink()</a>.</p>
 
 </div>
 </div>
-<a id="a2eafadff789273c276578163969bf286"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eafadff789273c276578163969bf286">&#9670;&nbsp;</a></span>destroy() <span class="overload">[1/5]</span></h2>
+<a id="a581594e0865352ec893cbb5c9e153fc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a581594e0865352ec893cbb5c9e153fc6">&#9670;&nbsp;</a></span>destroy() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2462,17 +2622,17 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="../../d3/dd5/group___framework_utils.html#a6ec566dcfb46c4a924922649e0078fd1">InterruptQueue&lt; ThumbInterruptLock, 156 &gt;::~InterruptQueue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d1/d15/group___dispatch_queue.html#a1ea4cb985066afbd3c901338d8ee6230">embutil::InterruptQueue&lt; std::mutex &gt;::~InterruptQueue()</a>.</p>
 
 </div>
 </div>
-<a id="af8d7dae84b5c391def304a5ad2a15357"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8d7dae84b5c391def304a5ad2a15357">&#9670;&nbsp;</a></span>destroy() <span class="overload">[2/5]</span></h2>
+<a id="a4b6e804d81f50d4b36a4838a0f5f0073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6e804d81f50d4b36a4838a0f5f0073">&#9670;&nbsp;</a></span>destroy() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2492,15 +2652,15 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7d0feeea975bd3c3fd524c6c7ae775cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d0feeea975bd3c3fd524c6c7ae775cd">&#9670;&nbsp;</a></span>destroy() <span class="overload">[3/5]</span></h2>
+<a id="aa638bc3fbfff7ead5fe7e4fef3bf5243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa638bc3fbfff7ead5fe7e4fef3bf5243">&#9670;&nbsp;</a></span>destroy() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2520,15 +2680,15 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a61714c6c1dc4b99fe5319d9cb4d1377f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61714c6c1dc4b99fe5319d9cb4d1377f">&#9670;&nbsp;</a></span>destroy() <span class="overload">[4/5]</span></h2>
+<a id="a06fa79eac592c3929cacfde181815d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fa79eac592c3929cacfde181815d19">&#9670;&nbsp;</a></span>destroy() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2548,15 +2708,15 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aef1607accc40b2530c7f1a1d038538a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef1607accc40b2530c7f1a1d038538a9">&#9670;&nbsp;</a></span>destroy() <span class="overload">[5/5]</span></h2>
+<a id="a38907a8deccd7391310694111ca8ee55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38907a8deccd7391310694111ca8ee55">&#9670;&nbsp;</a></span>destroy() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2576,7 +2736,7 @@ template&lt;typename TFactory &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2641,26 +2801,26 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
 <tr class="memitem:aeda8baef338d6cef53d48bc4f393944b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore">VirtualSemaphore</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aeda8baef338d6cef53d48bc4f393944b">operator=</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#da/dc2/classembvm_1_1_virtual_semaphore">VirtualSemaphore</a> &amp;&amp;)=default</td></tr>
 <tr class="memdesc:aeda8baef338d6cef53d48bc4f393944b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move operator.  <a href="#aeda8baef338d6cef53d48bc4f393944b">More...</a><br /></td></tr>
 <tr class="separator:aeda8baef338d6cef53d48bc4f393944b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c1b6bfc34bafe73dd7a2121da8a8ce3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a5c1b6bfc34bafe73dd7a2121da8a8ce3">give</a> ()=0</td></tr>
-<tr class="memdesc:a5c1b6bfc34bafe73dd7a2121da8a8ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment count Return a resource to the semaphore, incrementing the count.  <a href="#a5c1b6bfc34bafe73dd7a2121da8a8ce3">More...</a><br /></td></tr>
-<tr class="separator:a5c1b6bfc34bafe73dd7a2121da8a8ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71c8433e21271ba74430ef4151bd34d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a71c8433e21271ba74430ef4151bd34d7">giveFromISR</a> ()=0</td></tr>
-<tr class="memdesc:a71c8433e21271ba74430ef4151bd34d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment count from an ISR Return a resource to the semaphore, incrementing the count.  <a href="#a71c8433e21271ba74430ef4151bd34d7">More...</a><br /></td></tr>
-<tr class="separator:a71c8433e21271ba74430ef4151bd34d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3cc2e4695541413856c82a32009097b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ad3cc2e4695541413856c82a32009097b">take</a> (const <a class="el" href="../../d2/d3b/group___framework_o_s.html#ga262cb9ffbc7d2a7fdf42deb7528060b2">embvm::os_timeout_t</a> &amp;timeout=<a class="el" href="../../d2/d3b/group___framework_o_s.html#ga2aaa9257780be7831db1172854f85aa1">embvm::OS_WAIT_FOREVER</a>)=0</td></tr>
-<tr class="memdesc:ad3cc2e4695541413856c82a32009097b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement count Take a resource from the semaphore, decrementing the count.  <a href="#ad3cc2e4695541413856c82a32009097b">More...</a><br /></td></tr>
-<tr class="separator:ad3cc2e4695541413856c82a32009097b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35bd004d0f7f5e5e5f727fd863d5bf6c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d31/namespaceembvm_1_1semaphore.html#a8774f2611818ccec4b790c0dd94f0ddb">embvm::semaphore::count_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a35bd004d0f7f5e5e5f727fd863d5bf6c">count</a> ()=0</td></tr>
-<tr class="memdesc:a35bd004d0f7f5e5e5f727fd863d5bf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the count of the semaphore.  <a href="#a35bd004d0f7f5e5e5f727fd863d5bf6c">More...</a><br /></td></tr>
-<tr class="separator:a35bd004d0f7f5e5e5f727fd863d5bf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af378b9c64311c09c124cc0dc30172f16"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d31/namespaceembvm_1_1semaphore.html#ab64bfb31ff8acf946df3df22206893b1">embvm::semaphore::handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#af378b9c64311c09c124cc0dc30172f16">native_handle</a> () const =0</td></tr>
-<tr class="separator:af378b9c64311c09c124cc0dc30172f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeba503de21b95ce6642d3ef8f9e6f13"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aaeba503de21b95ce6642d3ef8f9e6f13">give</a> () noexcept=0</td></tr>
+<tr class="memdesc:aaeba503de21b95ce6642d3ef8f9e6f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment count Return a resource to the semaphore, incrementing the count.  <a href="#aaeba503de21b95ce6642d3ef8f9e6f13">More...</a><br /></td></tr>
+<tr class="separator:aaeba503de21b95ce6642d3ef8f9e6f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e58a6873c77996bc06ea455b7d1b3f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a61e58a6873c77996bc06ea455b7d1b3f">giveFromISR</a> () noexcept=0</td></tr>
+<tr class="memdesc:a61e58a6873c77996bc06ea455b7d1b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment count from an ISR Return a resource to the semaphore, incrementing the count.  <a href="#a61e58a6873c77996bc06ea455b7d1b3f">More...</a><br /></td></tr>
+<tr class="separator:a61e58a6873c77996bc06ea455b7d1b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc95b298ae6e3c34413aaf6d0a3155b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a4cc95b298ae6e3c34413aaf6d0a3155b">take</a> (const <a class="el" href="../../d2/d3b/group___framework_o_s.html#ga262cb9ffbc7d2a7fdf42deb7528060b2">embvm::os_timeout_t</a> &amp;timeout=<a class="el" href="../../d2/d3b/group___framework_o_s.html#ga2aaa9257780be7831db1172854f85aa1">embvm::OS_WAIT_FOREVER</a>) noexcept=0</td></tr>
+<tr class="memdesc:a4cc95b298ae6e3c34413aaf6d0a3155b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement count Take a resource from the semaphore, decrementing the count.  <a href="#a4cc95b298ae6e3c34413aaf6d0a3155b">More...</a><br /></td></tr>
+<tr class="separator:a4cc95b298ae6e3c34413aaf6d0a3155b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bdf04718a57138bdb2cc249832312b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d31/namespaceembvm_1_1semaphore.html#a8774f2611818ccec4b790c0dd94f0ddb">embvm::semaphore::count_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a16bdf04718a57138bdb2cc249832312b">count</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a16bdf04718a57138bdb2cc249832312b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the count of the semaphore.  <a href="#a16bdf04718a57138bdb2cc249832312b">More...</a><br /></td></tr>
+<tr class="separator:a16bdf04718a57138bdb2cc249832312b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f6aa1f76d720ee6022e7e30e7bf671"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d31/namespaceembvm_1_1semaphore.html#ab64bfb31ff8acf946df3df22206893b1">embvm::semaphore::handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a53f6aa1f76d720ee6022e7e30e7bf671">native_handle</a> () const noexcept=0</td></tr>
+<tr class="separator:a53f6aa1f76d720ee6022e7e30e7bf671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Protected Member Functions</h3></td></tr>
 <tr class="memitem:a949362266422cfd45bcf495f17969bca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a949362266422cfd45bcf495f17969bca">VirtualSemaphore</a> ()=default</td></tr>
 <tr class="separator:a949362266422cfd45bcf495f17969bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd6bbdbc811c744c1cd16c02eafd02f1"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#acd6bbdbc811c744c1cd16c02eafd02f1">~VirtualSemaphore</a> ()</td></tr>
-<tr class="memdesc:acd6bbdbc811c744c1cd16c02eafd02f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS semaphor.  <a href="#acd6bbdbc811c744c1cd16c02eafd02f1">More...</a><br /></td></tr>
-<tr class="separator:acd6bbdbc811c744c1cd16c02eafd02f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1ef67af9aaadfe7e1afb069d24daba"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aed1ef67af9aaadfe7e1afb069d24daba">~VirtualSemaphore</a> () noexcept</td></tr>
+<tr class="memdesc:aed1ef67af9aaadfe7e1afb069d24daba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS semaphor.  <a href="#aed1ef67af9aaadfe7e1afb069d24daba">More...</a><br /></td></tr>
+<tr class="separator:aed1ef67af9aaadfe7e1afb069d24daba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Constructor &amp; Destructor Documentation</h4>
 <a id="ab0d4a7dd997b0a149558f8e7bb2c7486"></a>
@@ -2744,8 +2904,8 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
 
 </div>
 </div>
-<a id="acd6bbdbc811c744c1cd16c02eafd02f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd6bbdbc811c744c1cd16c02eafd02f1">&#9670;&nbsp;</a></span>~VirtualSemaphore()</h2>
+<a id="aed1ef67af9aaadfe7e1afb069d24daba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed1ef67af9aaadfe7e1afb069d24daba">&#9670;&nbsp;</a></span>~VirtualSemaphore()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2762,7 +2922,7 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2772,8 +2932,8 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
 </div>
 </div>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="a35bd004d0f7f5e5e5f727fd863d5bf6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35bd004d0f7f5e5e5f727fd863d5bf6c">&#9670;&nbsp;</a></span>count()</h2>
+<a id="a16bdf04718a57138bdb2cc249832312b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bdf04718a57138bdb2cc249832312b">&#9670;&nbsp;</a></span>count()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2785,12 +2945,12 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
           <td class="memname">virtual <a class="el" href="../../df/d31/namespaceembvm_1_1semaphore.html#a8774f2611818ccec4b790c0dd94f0ddb">embvm::semaphore::count_t</a> embvm::VirtualSemaphore::count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2798,12 +2958,12 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
 <p>Check the count of the semaphore. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current semaphore count. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a40ad4077753bef3e031321c05c672f94">os::posix::Semaphore</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#af80c959ba2b81bf3feb1888ece2a219a">os::freertos::Semaphore</a>.</p>
+<p>Implemented in <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#aa65a8ed2d4751d1455e5d6e37915a279">os::freertos::Semaphore</a>.</p>
 
 </div>
 </div>
-<a id="a5c1b6bfc34bafe73dd7a2121da8a8ce3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c1b6bfc34bafe73dd7a2121da8a8ce3">&#9670;&nbsp;</a></span>give()</h2>
+<a id="aaeba503de21b95ce6642d3ef8f9e6f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeba503de21b95ce6642d3ef8f9e6f13">&#9670;&nbsp;</a></span>give()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2820,19 +2980,19 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Increment count Return a resource to the semaphore, incrementing the count. </p>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#ac3b22f38a1b4f559d7b39401e01c8d2c">os::posix::Semaphore</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a6810c936fbe78c01e933a135aaf7948c">os::freertos::Semaphore</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a43cb1076bb375b5c5a1d3db5b1acfb37">os::posix::Semaphore</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a080e0aeef7a2df3066a87a0f68cde8ce">os::freertos::Semaphore</a>.</p>
 
 </div>
 </div>
-<a id="a71c8433e21271ba74430ef4151bd34d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71c8433e21271ba74430ef4151bd34d7">&#9670;&nbsp;</a></span>giveFromISR()</h2>
+<a id="a61e58a6873c77996bc06ea455b7d1b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e58a6873c77996bc06ea455b7d1b3f">&#9670;&nbsp;</a></span>giveFromISR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2849,7 +3009,7 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2857,12 +3017,12 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
 <p>Increment count from an ISR Return a resource to the semaphore, incrementing the count. </p>
 <p>This function variant is safe to call from an interrupt routine. No locking can be used inside this variant. </p>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#af3eb58e77356adb41c47f431b1005c9a">os::posix::Semaphore</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a2a8c2421da48ba540aefab0e3b85af17">os::freertos::Semaphore</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a291c4a163943b762b6133f7be0321710">os::posix::Semaphore</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#acca9021a7e657a56a309f850ce073228">os::freertos::Semaphore</a>.</p>
 
 </div>
 </div>
-<a id="af378b9c64311c09c124cc0dc30172f16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af378b9c64311c09c124cc0dc30172f16">&#9670;&nbsp;</a></span>native_handle()</h2>
+<a id="a53f6aa1f76d720ee6022e7e30e7bf671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f6aa1f76d720ee6022e7e30e7bf671">&#9670;&nbsp;</a></span>native_handle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2879,12 +3039,12 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a2212d5114df4cb5d177d8ca8cb71f840">os::posix::Semaphore</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a4de9641855574fbae30e1f7afdfee0dc">os::freertos::Semaphore</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a88973e5e3be58d75a8438b0992b63d8f">os::posix::Semaphore</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#af662d69efc0f6a7a176a1c4c74026191">os::freertos::Semaphore</a>.</p>
 
 </div>
 </div>
@@ -2944,8 +3104,8 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
 
 </div>
 </div>
-<a id="ad3cc2e4695541413856c82a32009097b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3cc2e4695541413856c82a32009097b">&#9670;&nbsp;</a></span>take()</h2>
+<a id="a4cc95b298ae6e3c34413aaf6d0a3155b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc95b298ae6e3c34413aaf6d0a3155b">&#9670;&nbsp;</a></span>take()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2963,7 +3123,7 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2977,7 +3137,7 @@ Inheritance diagram for embvm::VirtualSemaphore:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if take was successful, false if a timeout occurred. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#ad86d063bce2e40061b6f3ef60f3d1bc0">os::freertos::Semaphore</a>.</p>
+<p>Implemented in <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#aaa1d33c70ed40e3524cff60cf1884ec7">os::freertos::Semaphore</a>.</p>
 
 </div>
 </div>
@@ -3022,30 +3182,30 @@ Inheritance diagram for embvm::VirtualThread:</div>
 <tr class="memitem:a5c0667f2bd4d5f0acf5c8ac37a918521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d3b/group___framework_o_s.html#df/dba/classembvm_1_1_virtual_thread">VirtualThread</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a5c0667f2bd4d5f0acf5c8ac37a918521">operator=</a> (<a class="el" href="../../d2/d3b/group___framework_o_s.html#df/dba/classembvm_1_1_virtual_thread">VirtualThread</a> &amp;&amp;)=delete</td></tr>
 <tr class="memdesc:a5c0667f2bd4d5f0acf5c8ac37a918521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default move assignment operator.  <a href="#a5c0667f2bd4d5f0acf5c8ac37a918521">More...</a><br /></td></tr>
 <tr class="separator:a5c0667f2bd4d5f0acf5c8ac37a918521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a487fae8dc09f7d83ed11915ee7dca6cd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#ac0710012c5c82a798dc339cf825378d0">embvm::thread::state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a487fae8dc09f7d83ed11915ee7dca6cd">state</a> ()=0</td></tr>
-<tr class="memdesc:a487fae8dc09f7d83ed11915ee7dca6cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread state.  <a href="#a487fae8dc09f7d83ed11915ee7dca6cd">More...</a><br /></td></tr>
-<tr class="separator:a487fae8dc09f7d83ed11915ee7dca6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a1e3c98c4fe3ba8d4264d33de4f5a74"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a9a1e3c98c4fe3ba8d4264d33de4f5a74">start</a> ()=0</td></tr>
-<tr class="memdesc:a9a1e3c98c4fe3ba8d4264d33de4f5a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the thread, if it is not auto-started.  <a href="#a9a1e3c98c4fe3ba8d4264d33de4f5a74">More...</a><br /></td></tr>
-<tr class="separator:a9a1e3c98c4fe3ba8d4264d33de4f5a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7c0e280453136dfd965a78eaa727087"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ad7c0e280453136dfd965a78eaa727087">terminate</a> ()=0</td></tr>
-<tr class="memdesc:ad7c0e280453136dfd965a78eaa727087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a running thread.  <a href="#ad7c0e280453136dfd965a78eaa727087">More...</a><br /></td></tr>
-<tr class="separator:ad7c0e280453136dfd965a78eaa727087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60ce723269356d843510dafa9f02abd6"><td class="memItemLeft" align="right" valign="top">virtual std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a60ce723269356d843510dafa9f02abd6">name</a> ()=0</td></tr>
-<tr class="memdesc:a60ce723269356d843510dafa9f02abd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">View the thread's name.  <a href="#a60ce723269356d843510dafa9f02abd6">More...</a><br /></td></tr>
-<tr class="separator:a60ce723269356d843510dafa9f02abd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d826ee31c55350ca05e0efafaaaf85"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ad1d826ee31c55350ca05e0efafaaaf85">join</a> ()=0</td></tr>
-<tr class="memdesc:ad1d826ee31c55350ca05e0efafaaaf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join a running thread.  <a href="#ad1d826ee31c55350ca05e0efafaaaf85">More...</a><br /></td></tr>
-<tr class="separator:ad1d826ee31c55350ca05e0efafaaaf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0606f37bebb6339459c9cbcfcbb12083"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#abafb4c4ff2ca8cfadedae4baf0b92396">embvm::thread::handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a0606f37bebb6339459c9cbcfcbb12083">native_handle</a> ()=0</td></tr>
-<tr class="memdesc:a0606f37bebb6339459c9cbcfcbb12083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the native handle for the thread.  <a href="#a0606f37bebb6339459c9cbcfcbb12083">More...</a><br /></td></tr>
-<tr class="separator:a0606f37bebb6339459c9cbcfcbb12083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507ba3e38a8b74e7cc610bb56ae9b415"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#ac0710012c5c82a798dc339cf825378d0">embvm::thread::state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a507ba3e38a8b74e7cc610bb56ae9b415">state</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a507ba3e38a8b74e7cc610bb56ae9b415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread state.  <a href="#a507ba3e38a8b74e7cc610bb56ae9b415">More...</a><br /></td></tr>
+<tr class="separator:a507ba3e38a8b74e7cc610bb56ae9b415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4e24487f1748f7cba033686bc20524"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#aab4e24487f1748f7cba033686bc20524">start</a> () noexcept=0</td></tr>
+<tr class="memdesc:aab4e24487f1748f7cba033686bc20524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the thread, if it is not auto-started.  <a href="#aab4e24487f1748f7cba033686bc20524">More...</a><br /></td></tr>
+<tr class="separator:aab4e24487f1748f7cba033686bc20524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c6ff24eef701801b5fa8d5fe774b40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a15c6ff24eef701801b5fa8d5fe774b40">terminate</a> () noexcept=0</td></tr>
+<tr class="memdesc:a15c6ff24eef701801b5fa8d5fe774b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a running thread.  <a href="#a15c6ff24eef701801b5fa8d5fe774b40">More...</a><br /></td></tr>
+<tr class="separator:a15c6ff24eef701801b5fa8d5fe774b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bed858c6993c77c56af9f0a46f1ea47"><td class="memItemLeft" align="right" valign="top">virtual std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a4bed858c6993c77c56af9f0a46f1ea47">name</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a4bed858c6993c77c56af9f0a46f1ea47"><td class="mdescLeft">&#160;</td><td class="mdescRight">View the thread's name.  <a href="#a4bed858c6993c77c56af9f0a46f1ea47">More...</a><br /></td></tr>
+<tr class="separator:a4bed858c6993c77c56af9f0a46f1ea47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c69f95a97910544005cb9e41ded102"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a37c69f95a97910544005cb9e41ded102">join</a> () noexcept=0</td></tr>
+<tr class="memdesc:a37c69f95a97910544005cb9e41ded102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join a running thread.  <a href="#a37c69f95a97910544005cb9e41ded102">More...</a><br /></td></tr>
+<tr class="separator:a37c69f95a97910544005cb9e41ded102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff17d013f257833154c34d8b6533aa6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#abafb4c4ff2ca8cfadedae4baf0b92396">embvm::thread::handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a7ff17d013f257833154c34d8b6533aa6">native_handle</a> () const noexcept=0</td></tr>
+<tr class="memdesc:a7ff17d013f257833154c34d8b6533aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the native handle for the thread.  <a href="#a7ff17d013f257833154c34d8b6533aa6">More...</a><br /></td></tr>
+<tr class="separator:a7ff17d013f257833154c34d8b6533aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Protected Member Functions</h3></td></tr>
 <tr class="memitem:a50c4c9aeed9e00835f4410990566a35a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a50c4c9aeed9e00835f4410990566a35a">VirtualThread</a> ()=default</td></tr>
 <tr class="separator:a50c4c9aeed9e00835f4410990566a35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58720b17f02647c99933df64dd2a235d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#a58720b17f02647c99933df64dd2a235d">~VirtualThread</a> ()</td></tr>
-<tr class="memdesc:a58720b17f02647c99933df64dd2a235d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS task.  <a href="#a58720b17f02647c99933df64dd2a235d">More...</a><br /></td></tr>
-<tr class="separator:a58720b17f02647c99933df64dd2a235d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8df4f5ed5483682d00582890a15aaee"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3b/group___framework_o_s.html#ac8df4f5ed5483682d00582890a15aaee">~VirtualThread</a> () noexcept</td></tr>
+<tr class="memdesc:ac8df4f5ed5483682d00582890a15aaee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived classes should ensure their destructor deletes the OS task.  <a href="#ac8df4f5ed5483682d00582890a15aaee">More...</a><br /></td></tr>
+<tr class="separator:ac8df4f5ed5483682d00582890a15aaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Constructor &amp; Destructor Documentation</h4>
 <a id="a2e3839e2e6cb950109d3488a72acbac6"></a>
@@ -3129,8 +3289,8 @@ Inheritance diagram for embvm::VirtualThread:</div>
 
 </div>
 </div>
-<a id="a58720b17f02647c99933df64dd2a235d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58720b17f02647c99933df64dd2a235d">&#9670;&nbsp;</a></span>~VirtualThread()</h2>
+<a id="ac8df4f5ed5483682d00582890a15aaee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8df4f5ed5483682d00582890a15aaee">&#9670;&nbsp;</a></span>~VirtualThread()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3147,7 +3307,7 @@ Inheritance diagram for embvm::VirtualThread:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3157,8 +3317,8 @@ Inheritance diagram for embvm::VirtualThread:</div>
 </div>
 </div>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="ad1d826ee31c55350ca05e0efafaaaf85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1d826ee31c55350ca05e0efafaaaf85">&#9670;&nbsp;</a></span>join()</h2>
+<a id="a37c69f95a97910544005cb9e41ded102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c69f95a97910544005cb9e41ded102">&#9670;&nbsp;</a></span>join()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3175,7 +3335,7 @@ Inheritance diagram for embvm::VirtualThread:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3185,12 +3345,12 @@ Inheritance diagram for embvm::VirtualThread:</div>
 <dl class="section pre"><dt>Precondition</dt><dd>The thread has not exited. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>The thread has exited. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#af553a4ce9d8ecd031d80709d7bfd5c6f">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a9bdc2b325de2d9d5b5e6f0f093950cf1">os::freertos::Thread</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a86c29ab63554cd32d1e6679b97c00199">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a2157312c8cf5435baa30634405c6ee22">os::freertos::Thread</a>.</p>
 
 </div>
 </div>
-<a id="a60ce723269356d843510dafa9f02abd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60ce723269356d843510dafa9f02abd6">&#9670;&nbsp;</a></span>name()</h2>
+<a id="a4bed858c6993c77c56af9f0a46f1ea47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bed858c6993c77c56af9f0a46f1ea47">&#9670;&nbsp;</a></span>name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3202,12 +3362,12 @@ Inheritance diagram for embvm::VirtualThread:</div>
           <td class="memname">virtual std::string_view embvm::VirtualThread::name </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3216,12 +3376,12 @@ Inheritance diagram for embvm::VirtualThread:</div>
 <p>Storage for the thread name is implementation defined. For example, the name may be stored in the RTOS memory, or it may require internal object storage.</p>
 <dl class="section return"><dt>Returns</dt><dd>The thread object's name. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#aa579149e645791c80f06a433f194f74e">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a1279140c8f679f28b82ff859da3dd1aa">os::freertos::Thread</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#afa590518d6b1276c303e08eb1527e829">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a310d8d6aefc94420237d7931f9912f4c">os::freertos::Thread</a>.</p>
 
 </div>
 </div>
-<a id="a0606f37bebb6339459c9cbcfcbb12083"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0606f37bebb6339459c9cbcfcbb12083">&#9670;&nbsp;</a></span>native_handle()</h2>
+<a id="a7ff17d013f257833154c34d8b6533aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff17d013f257833154c34d8b6533aa6">&#9670;&nbsp;</a></span>native_handle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3233,12 +3393,12 @@ Inheritance diagram for embvm::VirtualThread:</div>
           <td class="memname">virtual <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#abafb4c4ff2ca8cfadedae4baf0b92396">embvm::thread::handle_t</a> embvm::VirtualThread::native_handle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3247,7 +3407,7 @@ Inheritance diagram for embvm::VirtualThread:</div>
 <p>If custom extensions or behaviors are needed, the thread handle can be retrieved and manipulated directly.</p>
 <dl class="section return"><dt>Returns</dt><dd>the native thread object handle as a <code>void*</code>. The user must cast appropriately. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#afee41714f1c62d8d0c03fc0ff4dc27bf">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a0a8ad1b039506cc793e0306990e1ce88">os::freertos::Thread</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a0a8522ad53e6efa9cf9f67b96c67c270">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#adeea93f05fc53eeca1a725effb7a46f0">os::freertos::Thread</a>.</p>
 
 </div>
 </div>
@@ -3307,8 +3467,8 @@ Inheritance diagram for embvm::VirtualThread:</div>
 
 </div>
 </div>
-<a id="a9a1e3c98c4fe3ba8d4264d33de4f5a74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a1e3c98c4fe3ba8d4264d33de4f5a74">&#9670;&nbsp;</a></span>start()</h2>
+<a id="aab4e24487f1748f7cba033686bc20524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4e24487f1748f7cba033686bc20524">&#9670;&nbsp;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3325,19 +3485,19 @@ Inheritance diagram for embvm::VirtualThread:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Start the thread, if it is not auto-started. </p>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#ad64662f292978b3d8fa62349ba1e5f5a">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a5652805fce406709852da9466bc78860">os::freertos::Thread</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a2c27709a86b99b34fffca3cd7e9a394d">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a891b753b173fc2097c80c15111995b60">os::freertos::Thread</a>.</p>
 
 </div>
 </div>
-<a id="a487fae8dc09f7d83ed11915ee7dca6cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a487fae8dc09f7d83ed11915ee7dca6cd">&#9670;&nbsp;</a></span>state()</h2>
+<a id="a507ba3e38a8b74e7cc610bb56ae9b415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a507ba3e38a8b74e7cc610bb56ae9b415">&#9670;&nbsp;</a></span>state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3349,12 +3509,12 @@ Inheritance diagram for embvm::VirtualThread:</div>
           <td class="memname">virtual <a class="el" href="../../db/ddc/namespaceembvm_1_1thread.html#ac0710012c5c82a798dc339cf825378d0">embvm::thread::state</a> embvm::VirtualThread::state </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3362,12 +3522,12 @@ Inheritance diagram for embvm::VirtualThread:</div>
 <p>Get the thread state. </p>
 <dl class="section return"><dt>Returns</dt><dd>The state of the thread. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#ab7eeaf7a04b561b35d6942ab481ee8ca">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#acc1586cd41581911479ffc9d3fca3a56">os::freertos::Thread</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#ab4008146dc42e3e2eae31009aba46af6">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a1cfeda687443625c42848d55c53cac44">os::freertos::Thread</a>.</p>
 
 </div>
 </div>
-<a id="ad7c0e280453136dfd965a78eaa727087"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7c0e280453136dfd965a78eaa727087">&#9670;&nbsp;</a></span>terminate()</h2>
+<a id="a15c6ff24eef701801b5fa8d5fe774b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c6ff24eef701801b5fa8d5fe774b40">&#9670;&nbsp;</a></span>terminate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3384,7 +3544,7 @@ Inheritance diagram for embvm::VirtualThread:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3393,7 +3553,7 @@ Inheritance diagram for embvm::VirtualThread:</div>
 <dl class="section pre"><dt>Precondition</dt><dd>The thread is running. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>The thread is aborted. </dd></dl>
 
-<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a835cb4c518051c3445aae29cdb3b33fc">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#ad8ce2c3c35ac1bc09e4e9de8c6b0061f">os::freertos::Thread</a>.</p>
+<p>Implemented in <a class="el" href="../../db/dd1/group___p_o_s_i_x_o_s.html#a48ec8415cc6f13eb37718c9158b2a64a">os::posix::Thread</a>, and <a class="el" href="../../d9/dad/group___free_r_t_o_s_o_s.html#a994dd368bd30e61695de37ca6395b781">os::freertos::Thread</a>.</p>
 
 </div>
 </div>
@@ -3432,7 +3592,7 @@ Inheritance diagram for embvm::VirtualThread:</div>
 
 <p>Create a WAIT_FOREVER alias which can be used. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/dd2/freertos__msg__queue_8cpp.html#ac27a6b4385f8e0bcff3ccc197ff6030d">convert_timeout()</a>, <a class="el" href="../../dc/d83/namespaceos_1_1freertos.html#a9136b420219b723eb13ebdb60ccefeb2">os::freertos::frameworkTimeoutToTicks()</a>, and <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#ab63e89164fb62f6acad59aa8c3c8dd1e">os::posix::ConditionVariable::wait()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/dd2/freertos__msg__queue_8cpp.html#a4f47558e85c6ac8d5b136a153b44537d">convert_timeout()</a>, <a class="el" href="../../dc/d83/namespaceos_1_1freertos.html#a0267477e3ab7e1d9590e246a23001bc1">os::freertos::frameworkTimeoutToTicks()</a>, and <a class="el" href="../../d4/d23/classos_1_1posix_1_1_condition_variable.html#ab63e89164fb62f6acad59aa8c3c8dd1e">os::posix::ConditionVariable::wait()</a>.</p>
 
 </div>
 </div>

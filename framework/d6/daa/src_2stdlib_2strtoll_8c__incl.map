@@ -1,11 +1,11 @@
 <map id="src/stdlibs/libc/src/stdlib/strtoll.c" name="src/stdlibs/libc/src/stdlib/strtoll.c">
 <area shape="rect" id="node1" title=" " alt="" coords="848,5,974,44"/>
 <area shape="rect" id="node2" href="$d7/d0d/ctype_8h.html" title=" " alt="" coords="810,92,874,117"/>
-<area shape="rect" id="node3" href="$d9/d86/limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
+<area shape="rect" id="node3" href="$de/d3b/include_2limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
 <area shape="rect" id="node5" href="$dc/d9c/stdlib_8h.html" title=" " alt="" coords="1239,92,1303,117"/>
 <area shape="rect" id="node4" href="$d3/d22/x86__64_2include_2__limits_8h.html" title=" " alt="" coords="5,312,76,337"/>
 <area shape="rect" id="node6" href="$d3/dce/stddef_8h.html" title=" " alt="" coords="2093,165,2162,191"/>
-<area shape="rect" id="node9" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="948,165,1013,191"/>
+<area shape="rect" id="node9" href="$dc/d69/include_2stdint_8h.html" title=" " alt="" coords="948,165,1013,191"/>
 <area shape="rect" id="node22" href="$da/dcf/wctype_8h.html" title=" " alt="" coords="1451,165,1525,191"/>
 <area shape="rect" id="node7" href="$de/d5d/x86__64_2include_2__types_2__ptrdiff__t_8h.html" title=" " alt="" coords="2064,239,2191,264"/>
 <area shape="rect" id="node8" href="$d1/dbb/x86__64_2include_2__types_2__size__t_8h.html" title=" " alt="" coords="2215,239,2333,264"/>

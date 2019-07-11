@@ -1,8 +1,8 @@
 <map id="main" name="main">
 <area shape="rect" id="node1" title="Function for application main entry." alt="" coords="531,89,581,115"/>
 <area shape="rect" id="node2" href="$dd/de5/platforms_2unit__test_2boot_8cpp.html#a6f7901d45e44c5212992eeaa425978f7" title=" " alt="" coords="342,5,434,31"/>
-<area shape="rect" id="node3" href="$d0/d06/group___framework_boot.html#ga31518afcb6f9b88831152868d7f322f3" title="Default Framework Boot Strategy." alt="" coords="305,55,470,93"/>
-<area shape="rect" id="node4" href="$d0/d06/group___framework_boot.html#ga24570e05d9cbd38e7dbb6bc36b5780ac" title=" " alt="" coords="324,117,452,143"/>
-<area shape="rect" id="node6" href="$d0/d06/group___framework_boot.html#gaf8fdd3f323c465a60916ff75c91b71b6" title="OSX Simulator Boot Strategy." alt="" coords="293,167,483,205"/>
-<area shape="rect" id="node5" href="$de/dfa/classn_r_f52_d_k___framework_demo_platform.html#aa631c956bf766a788cff820807a6a78d" title=" " alt="" coords="5,111,245,149"/>
+<area shape="rect" id="node3" href="$d0/d06/group___framework_boot.html#ga532370aacb6889e4d2565739b1f6fd71" title="Default Framework Boot Strategy." alt="" coords="305,55,470,93"/>
+<area shape="rect" id="node4" href="$d0/d06/group___framework_boot.html#ga15b89f61c25426f872c6df504ef0182f" title=" " alt="" coords="324,117,452,143"/>
+<area shape="rect" id="node6" href="$d0/d06/group___framework_boot.html#ga6f57fe37cb1de92eccefcd2cb93dd2fd" title="OSX Simulator Boot Strategy." alt="" coords="293,167,483,205"/>
+<area shape="rect" id="node5" href="$de/dfa/classn_r_f52_d_k___framework_demo_platform.html#a38d6ccb10f4986624646bec2cd093a15" title=" " alt="" coords="5,111,245,149"/>
 </map>

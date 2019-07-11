@@ -76,14 +76,16 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d8/dd9/driver__type_8hpp.html">driver_type.hpp</a>&quot;</code><br />
 <code>#include &lt;<a class="el" href="../../db/d03/instance__list_8hpp.html">instance_list/instance_list.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../de/de9/nop__lock_8hpp.html">nop_lock/nop_lock.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for driver_registry.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d4/d9e/driver__registry_8hpp__incl.jpg" border="0" usemap="#src_2core_2driver_2driver__registry_8hpp" alt=""/></div>
 <map name="src_2core_2driver_2driver__registry_8hpp" id="src_2core_2driver_2driver__registry_8hpp">
-<area shape="rect"  title=" " alt="" coords="101,5,244,44"/>
+<area shape="rect"  title=" " alt="" coords="237,5,380,44"/>
 <area shape="rect"  href="../../d8/dd9/driver__type_8hpp.html" title=" " alt="" coords="39,99,152,124"/>
 <area shape="rect"  href="../../db/d03/instance__list_8hpp.html" title=" " alt="" coords="235,92,383,131"/>
+<area shape="rect"  href="../../de/de9/nop__lock_8hpp.html" title=" " alt="" coords="407,99,565,124"/>
 <area shape="rect"  title=" " alt="" coords="5,185,65,211"/>
 <area shape="rect"  title=" " alt="" coords="89,185,155,211"/>
 <area shape="rect"  title=" " alt="" coords="179,185,265,211"/>
@@ -128,7 +130,7 @@ This graph shows which files directly or indirectly include this file:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:d5/df2/classembvm_1_1_driver_registry"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#d5/df2/classembvm_1_1_driver_registry">embvm::DriverRegistry&lt; TMaxSize, TReturnSize &gt;</a></td></tr>
+<tr class="memitem:d5/df2/classembvm_1_1_driver_registry"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#d5/df2/classembvm_1_1_driver_registry">embvm::DriverRegistry&lt; TMaxSize, TReturnSize, TLockType &gt;</a></td></tr>
 <tr class="memdesc:d5/df2/classembvm_1_1_driver_registry"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d1/dc2/group___framework_driver.html#d5/df2/classembvm_1_1_driver_registry" title="DriverRegistry base class.">DriverRegistry</a> base class.  <a href="../../d1/dc2/group___framework_driver.html#d5/df2/classembvm_1_1_driver_registry">More...</a><br /></td></tr>
 <tr class="separator:d5/df2/classembvm_1_1_driver_registry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -140,13 +142,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab0c8065c354188cd662131f4be4c9c99"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#gab0c8065c354188cd662131f4be4c9c99">embvm::DynamicDriverRegistry</a> = DriverRegistry&lt; 0, 0 &gt;</td></tr>
-<tr class="memdesc:gab0c8065c354188cd662131f4be4c9c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a <a class="el" href="../../d1/dc2/group___framework_driver.html#d5/df2/classembvm_1_1_driver_registry" title="DriverRegistry base class.">DriverRegistry</a> that uses dynamic memory allocation.  <a href="../../d1/dc2/group___framework_driver.html#gab0c8065c354188cd662131f4be4c9c99">More...</a><br /></td></tr>
-<tr class="separator:gab0c8065c354188cd662131f4be4c9c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga15a6542830410e6b1615562294233f7a"><td class="memTemplParams" colspan="2">template&lt;const size_t TMaxSize = 32, const size_t TReturnSize = 4&gt; </td></tr>
-<tr class="memitem:ga15a6542830410e6b1615562294233f7a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#ga15a6542830410e6b1615562294233f7a">embvm::StaticDriverRegistry</a> = DriverRegistry&lt; TMaxSize, TReturnSize &gt;</td></tr>
-<tr class="memdesc:ga15a6542830410e6b1615562294233f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a <a class="el" href="../../d1/dc2/group___framework_driver.html#d5/df2/classembvm_1_1_driver_registry" title="DriverRegistry base class.">DriverRegistry</a> that uses static memory allocation.  <a href="../../d1/dc2/group___framework_driver.html#ga15a6542830410e6b1615562294233f7a">More...</a><br /></td></tr>
-<tr class="separator:ga15a6542830410e6b1615562294233f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44edd59911da5139ab42e8ac4481912c"><td class="memTemplParams" colspan="2">template&lt;typename TLockType  = embutil::nop_lock&gt; </td></tr>
+<tr class="memitem:ga44edd59911da5139ab42e8ac4481912c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#ga44edd59911da5139ab42e8ac4481912c">embvm::DynamicDriverRegistry</a> = DriverRegistry&lt; 0, 0, TLockType &gt;</td></tr>
+<tr class="memdesc:ga44edd59911da5139ab42e8ac4481912c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a <a class="el" href="../../d1/dc2/group___framework_driver.html#d5/df2/classembvm_1_1_driver_registry" title="DriverRegistry base class.">DriverRegistry</a> that uses dynamic memory allocation.  <a href="../../d1/dc2/group___framework_driver.html#ga44edd59911da5139ab42e8ac4481912c">More...</a><br /></td></tr>
+<tr class="separator:ga44edd59911da5139ab42e8ac4481912c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0244d32106165291ba84fbb65a1e42f2"><td class="memTemplParams" colspan="2">template&lt;const size_t TMaxSize = 32, const size_t TReturnSize = 4, typename TLockType  = embutil::nop_lock&gt; </td></tr>
+<tr class="memitem:ga0244d32106165291ba84fbb65a1e42f2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/dc2/group___framework_driver.html#ga0244d32106165291ba84fbb65a1e42f2">embvm::StaticDriverRegistry</a> = DriverRegistry&lt; TMaxSize, TReturnSize, TLockType &gt;</td></tr>
+<tr class="memdesc:ga0244d32106165291ba84fbb65a1e42f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a <a class="el" href="../../d1/dc2/group___framework_driver.html#d5/df2/classembvm_1_1_driver_registry" title="DriverRegistry base class.">DriverRegistry</a> that uses static memory allocation.  <a href="../../d1/dc2/group___framework_driver.html#ga0244d32106165291ba84fbb65a1e42f2">More...</a><br /></td></tr>
+<tr class="separator:ga0244d32106165291ba84fbb65a1e42f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

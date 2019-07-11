@@ -1,10 +1,10 @@
 <map id="src/stdlibs/libc/src/string/strlen.c" name="src/stdlibs/libc/src/string/strlen.c">
 <area shape="rect" id="node1" title=" " alt="" coords="410,5,535,44"/>
-<area shape="rect" id="node2" href="$d9/d86/limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
+<area shape="rect" id="node2" href="$de/d3b/include_2limits_8h.html" title=" " alt="" coords="9,239,72,264"/>
 <area shape="rect" id="node4" href="$da/d66/string_8h.html" title=" " alt="" coords="871,92,936,117"/>
 <area shape="rect" id="node3" href="$d3/d22/x86__64_2include_2__limits_8h.html" title=" " alt="" coords="5,312,76,337"/>
 <area shape="rect" id="node5" href="$d3/dce/stddef_8h.html" title=" " alt="" coords="1934,165,2003,191"/>
-<area shape="rect" id="node8" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="871,165,935,191"/>
+<area shape="rect" id="node8" href="$dc/d69/include_2stdint_8h.html" title=" " alt="" coords="871,165,935,191"/>
 <area shape="rect" id="node6" href="$de/d5d/x86__64_2include_2__types_2__ptrdiff__t_8h.html" title=" " alt="" coords="2052,239,2179,264"/>
 <area shape="rect" id="node7" href="$d1/dbb/x86__64_2include_2__types_2__size__t_8h.html" title=" " alt="" coords="1910,239,2027,264"/>
 <area shape="rect" id="node9" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="1763,239,1886,264"/>

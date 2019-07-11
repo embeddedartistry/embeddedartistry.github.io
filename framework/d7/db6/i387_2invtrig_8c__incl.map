@@ -1,9 +1,9 @@
 <map id="src/stdlibs/libc/openlibm/i387/invtrig.c" name="src/stdlibs/libc/openlibm/i387/invtrig.c">
 <area shape="rect" id="node1" title=" " alt="" coords="814,5,976,44"/>
 <area shape="rect" id="node2" title=" " alt="" coords="751,92,839,117"/>
-<area shape="rect" id="node3" href="$df/dd8/stdint_8h.html" title=" " alt="" coords="863,92,927,117"/>
+<area shape="rect" id="node3" href="$dc/d69/include_2stdint_8h.html" title=" " alt="" coords="863,92,927,117"/>
 <area shape="rect" id="node18" title=" " alt="" coords="952,92,1020,117"/>
-<area shape="rect" id="node4" href="$d9/d86/limits_8h.html" title=" " alt="" coords="9,165,72,191"/>
+<area shape="rect" id="node4" href="$de/d3b/include_2limits_8h.html" title=" " alt="" coords="9,165,72,191"/>
 <area shape="rect" id="node6" href="$df/dfd/x86__64_2include_2__types_2__int16__t_8h.html" title=" " alt="" coords="96,165,219,191"/>
 <area shape="rect" id="node7" href="$da/d57/x86__64_2include_2__types_2__int32__t_8h.html" title=" " alt="" coords="243,165,366,191"/>
 <area shape="rect" id="node8" href="$d5/d63/x86__64_2include_2__types_2__int64__t_8h.html" title=" " alt="" coords="390,165,513,191"/>

@@ -121,7 +121,7 @@ Typedefs</h2></td></tr>
 struct embutil::InstanceElem&lt; TTrackedClass, TKey &gt;</h3>
 
 <p>Helper struct which is used to store Key/Value pairs in the <a class="el" href="../../d7/d8c/group___instance_list.html#d9/d62/classembutil_1_1_instance_list" title="Generic InstanceList template container.">InstanceList</a>. </p>
-<p>This structure respresents an Instance element. The key and value are stored in the element struct, and an <a class="el" href="../../d7/d8c/group___instance_list.html#a51d67b6dc80ac45736e11354b715b426" title="Compare equality between two instance elements.">operator==()</a> is implemented to support the find() and find_if() functions.</p>
+<p>This structure respresents an Instance element. The key and value are stored in the element struct, and an <a class="el" href="../../d7/d8c/group___instance_list.html#a79da5827380dc9f6d99ee9ff4f74e579" title="Compare equality between two instance elements.">operator==()</a> is implemented to support the find() and find_if() functions.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TTrackedClass</td><td>the type of class being tracked by the instance element. </td></tr>
@@ -131,9 +131,9 @@ struct embutil::InstanceElem&lt; TTrackedClass, TKey &gt;</h3>
 </dl>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h3>Public Member Functions</h3></td></tr>
-<tr class="memitem:a51d67b6dc80ac45736e11354b715b426"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a51d67b6dc80ac45736e11354b715b426">operator==</a> (const <a class="el" href="../../d7/d8c/group___instance_list.html#df/dbc/structembutil_1_1_instance_elem">InstanceElem</a> &amp;<a class="el" href="../../de/d74/test_2stdlib_2strtof_8c.html#ad5bd424b9bfbb646211206f2e8002568">t</a>) const</td></tr>
-<tr class="memdesc:a51d67b6dc80ac45736e11354b715b426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare equality between two instance elements.  <a href="#a51d67b6dc80ac45736e11354b715b426">More...</a><br /></td></tr>
-<tr class="separator:a51d67b6dc80ac45736e11354b715b426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79da5827380dc9f6d99ee9ff4f74e579"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d5e/stdbool_8h.html#afaa87723b8417d40fcf45b7330261ef9">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a79da5827380dc9f6d99ee9ff4f74e579">operator==</a> (const <a class="el" href="../../d7/d8c/group___instance_list.html#df/dbc/structembutil_1_1_instance_elem">InstanceElem</a> &amp;<a class="el" href="../../de/d74/test_2stdlib_2strtof_8c.html#a4bd67e987dfc9e09afd79a2c863b5af3">t</a>) const noexcept</td></tr>
+<tr class="memdesc:a79da5827380dc9f6d99ee9ff4f74e579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare equality between two instance elements.  <a href="#a79da5827380dc9f6d99ee9ff4f74e579">More...</a><br /></td></tr>
+<tr class="separator:a79da5827380dc9f6d99ee9ff4f74e579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Public Attributes</h3></td></tr>
 <tr class="memitem:ac79cc9ca14d2755f705802ad6a526a7d"><td class="memItemLeft" align="right" valign="top">TKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#ac79cc9ca14d2755f705802ad6a526a7d">key</a></td></tr>
 <tr class="separator:ac79cc9ca14d2755f705802ad6a526a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,8 +141,8 @@ struct embutil::InstanceElem&lt; TTrackedClass, TKey &gt;</h3>
 <tr class="separator:a5b50b62a0ab021a4acc1723f6ea5ab83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="a51d67b6dc80ac45736e11354b715b426"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51d67b6dc80ac45736e11354b715b426">&#9670;&nbsp;</a></span>operator==()</h2>
+<a id="a79da5827380dc9f6d99ee9ff4f74e579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79da5827380dc9f6d99ee9ff4f74e579">&#9670;&nbsp;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +162,7 @@ template&lt;class TTrackedClass , typename TKey &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -170,7 +170,7 @@ template&lt;class TTrackedClass , typename TKey &gt; </div>
 <p>Compare equality between two instance elements. </p>
 <p>Both the key and the value must match for two instance elements to be equal. </p>
 
-<p class="reference">References <a class="el" href="../../d4/d96/test_2stdlib_2atof_8c.html#a02afd118ac068d38a901d1b848528e55">t</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d96/test_2stdlib_2atof_8c.html#a41ea810237375d5dce2818269ca36a05">t</a>.</p>
 
 </div>
 </div>
@@ -230,14 +230,14 @@ class embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;</h3>
 <li>DynamicInstanceList</li>
 <li>StaticInstanceList</li>
 </ul>
-<p>This list designed to work with STL containers and ETL containers which supply the <code>push_back()</code>, <code><a class="el" href="../../d7/d8c/group___instance_list.html#a5dd8de07e43b348e9d9d07a8d5de6629" title="Remove instance matching key and value.">remove()</a></code>, and <code>remove_if()</code> methods.</p>
+<p>This list designed to work with STL containers and ETL containers which supply the <code>push_back()</code>, <code><a class="el" href="../../d7/d8c/group___instance_list.html#ab72756d85c7e2977b68a461afdc0ee4e" title="Remove instance matching key and value.">remove()</a></code>, and <code>remove_if()</code> methods.</p>
 <h1>Using an <a class="el" href="../../d7/d8c/group___instance_list.html#d9/d62/classembutil_1_1_instance_list" title="Generic InstanceList template container.">InstanceList</a></h1>
 <p>For an example module which uses an <a class="el" href="../../d7/d8c/group___instance_list.html#d9/d62/classembutil_1_1_instance_list" title="Generic InstanceList template container.">InstanceList</a>, see <a class="el" href="../../d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers.">embvm::DriverBase</a>.</p>
 <p>The DriverBase <a class="el" href="../../d7/d8c/group___instance_list.html#d9/d62/classembutil_1_1_instance_list" title="Generic InstanceList template container.">InstanceList</a> stores pointers to DriverBase instances, which is the base class for all framework drivers:</p>
-<div class="fragment"><div class="line"><a class="code" href="../../d7/d8c/group___instance_list.html#d9/d62/classembutil_1_1_instance_list">embutil::DynamicInstanceList&lt;embvm::DriverBase, TKey&gt;</a></div></div><!-- fragment --><p>When framework drivers are constructed, they are added to the DriverRegistry instance list. The registerDriver() interface forwards the call to the DriverRegistry <a class="el" href="../../d7/d8c/group___instance_list.html#a5d4088f4ea174bad37f48dfd8aae29eb" title="Register an instance of the TTrackedClass with a key.">add()</a> function.</p>
-<div class="fragment"><div class="line"><a class="code" href="../../d1/dc2/group___framework_driver.html#a47d141430b9830c7ca0c1e274b69e497">embvm::DriverBase::DriverBase</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <a class="code" href="../../df/d92/aarch64_2include_2__types_2__uint32__t_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> c) : name_(name), type_(c)</div><div class="line">{</div><div class="line">    <a class="code" href="../../d3/de7/group___framework_platform.html#a61e8361fe0a394362c3ae6617a8d9b11">VirtualPlatform::registerDriver</a>(name_, <span class="keyword">this</span>);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> DriverRegistry::add(<span class="keyword">const</span> TKey name, <a class="code" href="../../d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base">embvm::DriverBase</a>* driver)</div><div class="line">{</div><div class="line"> list_.add(name, driver);</div><div class="line">}</div></div><!-- fragment --><p>The DeriverBase destructor removes instances from the list. The unregisterDriver() interface forwards the call to the DriverRegistry <a class="el" href="../../d7/d8c/group___instance_list.html#a5dd8de07e43b348e9d9d07a8d5de6629" title="Remove instance matching key and value.">remove()</a> function.</p>
-<div class="fragment"><div class="line"><a class="code" href="../../d1/dc2/group___framework_driver.html#a0ccdab2c30f48d58b348954ed5aabbb4">embvm::DriverBase::~DriverBase</a>()</div><div class="line">{</div><div class="line">    <a class="code" href="../../d3/de7/group___framework_platform.html#aef1a4ed6c461c106d9350d58a9c4c2e9">VirtualPlatform::unregisterDriver</a>(name_, <span class="keyword">this</span>);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a class="code" href="../../d6/dd1/stdio_8h.html#ad058e27a69e7acab0e0e9368ecfa0465">DriverRegistry::remove</a>(<span class="keyword">const</span> TKey name, <a class="code" href="../../d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base">embvm::DriverBase</a>* driver)</div><div class="line">{</div><div class="line"> list_.remove(name, driver);</div><div class="line">}</div></div><!-- fragment --><p>Lookups can be performed by key:</p>
-<div class="fragment"><div class="line"><span class="keyword">auto</span> <a class="code" href="../../d7/d8c/group___instance_list.html#a16ee4c4285750ef9a53df2ba1ccd43bb">find</a>(<span class="keyword">const</span> TKey name)</div><div class="line">{</div><div class="line"> <span class="keywordflow">return</span> list_.find(name);</div><div class="line">}</div><div class="line"></div><div class="line">The <span class="keywordflow">return</span> <a class="code" href="../../d4/d33/s__llrint_8c.html#a53155e22eaa05190346890241be3367c">type</a> of <a class="code" href="../../d7/d8c/group___instance_list.html#a16ee4c4285750ef9a53df2ba1ccd43bb">find</a>() is <a class="code" href="../../d4/d03/libm-bench_8cpp.html#a1459acff5521623150808315fbe1b76d">a</a> type_safe::<a class="code" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a>&lt;TTrackedClass&gt;. If the value is found,</div><div class="line">The <a class="code" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a> will be valid and can be used. If the value is not found, the <a class="code" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a></div><div class="line">will be marked as invalid. Validity can be determined with `operator <span class="keywordtype">bool</span>()`:</div><div class="line"></div><div class="line">@code</div><div class="line">auto tof = <a class="code" href="../../dd/d82/class_blinky_demo_platform.html">VirtualPlatform</a>::template findDriver&lt;<a class="code" href="../../dc/dda/namespaceembvm.html">embvm</a>::tof::sensor&gt;();</div><div class="line">if(tof)</div><div class="line">{</div><div class="line">    tof.value().registerReadCallback([](<a class="code" href="../../dc/d02/aarch64_2include_2__types_2__uint16__t_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> v) { <a class="code" href="../../d3/d6b/printf_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;ToF Range: %u mm\n&quot;</span>, v); });</div><div class="line">}</div><div class="line"><span class="keywordflow">else</span></div><div class="line">{</div><div class="line">    <a class="code" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(0 &amp;&amp; <span class="stringliteral">&quot;ToF Driver Missing&quot;</span>);</div><div class="line">}</div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+<div class="fragment"><div class="line"><a class="code" href="../../d7/d8c/group___instance_list.html#d9/d62/classembutil_1_1_instance_list">embutil::DynamicInstanceList&lt;embvm::DriverBase, TKey&gt;</a></div></div><!-- fragment --><p>When framework drivers are constructed, they are added to the DriverRegistry instance list. The registerDriver() interface forwards the call to the DriverRegistry <a class="el" href="../../d7/d8c/group___instance_list.html#acc8c21238537f73c5319c5d252c27cf7" title="Register an instance of the TTrackedClass with a key.">add()</a> function.</p>
+<div class="fragment"><div class="line"><a class="code" href="../../d1/dc2/group___framework_driver.html#a9e830b7cdc3689881155ccf6359e385e">embvm::DriverBase::DriverBase</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <a class="code" href="../../df/d92/aarch64_2include_2__types_2__uint32__t_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a> c) : name_(name), type_(c)</div><div class="line">{</div><div class="line">    <a class="code" href="../../d3/de7/group___framework_platform.html#a47fb4b9bd59b1d62f5389fb789510106">VirtualPlatform::registerDriver</a>(name_, <span class="keyword">this</span>);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> DriverRegistry::add(<span class="keyword">const</span> TKey name, <a class="code" href="../../d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base">embvm::DriverBase</a>* driver)</div><div class="line">{</div><div class="line"> list_.add(name, driver);</div><div class="line">}</div></div><!-- fragment --><p>The DeriverBase destructor removes instances from the list. The unregisterDriver() interface forwards the call to the DriverRegistry <a class="el" href="../../d7/d8c/group___instance_list.html#ab72756d85c7e2977b68a461afdc0ee4e" title="Remove instance matching key and value.">remove()</a> function.</p>
+<div class="fragment"><div class="line"><a class="code" href="../../d1/dc2/group___framework_driver.html#a651772f6a10b78fb7079d2c53dcd9415">embvm::DriverBase::~DriverBase</a>()</div><div class="line">{</div><div class="line">    <a class="code" href="../../d3/de7/group___framework_platform.html#a2a0ecdea11b5c72c5914c4908e815efb">VirtualPlatform::unregisterDriver</a>(name_, <span class="keyword">this</span>);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> <a class="code" href="../../d6/dd1/stdio_8h.html#ad058e27a69e7acab0e0e9368ecfa0465">DriverRegistry::remove</a>(<span class="keyword">const</span> TKey name, <a class="code" href="../../d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base">embvm::DriverBase</a>* driver)</div><div class="line">{</div><div class="line"> list_.remove(name, driver);</div><div class="line">}</div></div><!-- fragment --><p>Lookups can be performed by key:</p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> <a class="code" href="../../d7/d8c/group___instance_list.html#af3ac136676445fed5e7e980b645a01ef">find</a>(<span class="keyword">const</span> TKey name)</div><div class="line">{</div><div class="line"> <span class="keywordflow">return</span> list_.find(name);</div><div class="line">}</div><div class="line"></div><div class="line">The <span class="keywordflow">return</span> <a class="code" href="../../d4/d33/s__llrint_8c.html#a53155e22eaa05190346890241be3367c">type</a> of <a class="code" href="../../d7/d8c/group___instance_list.html#af3ac136676445fed5e7e980b645a01ef">find</a>() is <a class="code" href="../../d4/d03/libm-bench_8cpp.html#a1459acff5521623150808315fbe1b76d">a</a> type_safe::<a class="code" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a>&lt;TTrackedClass&gt;. If the value is found,</div><div class="line">The <a class="code" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a> will be valid and can be used. If the value is not found, the <a class="code" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a></div><div class="line">will be marked as invalid. Validity can be determined with `operator <span class="keywordtype">bool</span>()`:</div><div class="line"></div><div class="line">@code</div><div class="line">auto tof = <a class="code" href="../../dd/d82/class_blinky_demo_platform.html">VirtualPlatform</a>::template findDriver&lt;<a class="code" href="../../dc/dda/namespaceembvm.html">embvm</a>::tof::sensor&gt;();</div><div class="line">if(tof)</div><div class="line">{</div><div class="line">    tof.value().registerReadCallback([](<a class="code" href="../../dc/d02/aarch64_2include_2__types_2__uint16__t_8h.html#a273cf69d639a59973b6019625df33e30">uint16_t</a> v) { <a class="code" href="../../d3/d6b/printf_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9">printf</a>(<span class="stringliteral">&quot;ToF Range: %u mm\n&quot;</span>, v); });</div><div class="line">}</div><div class="line"><span class="keywordflow">else</span></div><div class="line">{</div><div class="line">    <a class="code" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>(0 &amp;&amp; <span class="stringliteral">&quot;ToF Driver Missing&quot;</span>);</div><div class="line">}</div></div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TTrackedClass</td><td>The type of class which is tracked by this instance list. </td></tr>
     <tr><td class="paramname">TKey</td><td>The key type which is used to lookup stored values. </td></tr>
@@ -257,39 +257,39 @@ class embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;</h3>
 <tr class="memitem:afcff8c67a9304b2eab6bc329e4a5e6fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#afcff8c67a9304b2eab6bc329e4a5e6fe">~InstanceList</a> ()=default</td></tr>
 <tr class="memdesc:afcff8c67a9304b2eab6bc329e4a5e6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#afcff8c67a9304b2eab6bc329e4a5e6fe">More...</a><br /></td></tr>
 <tr class="separator:afcff8c67a9304b2eab6bc329e4a5e6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6da4cdafdee906c960493adc6c666c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#ab6da4cdafdee906c960493adc6c666c2">size</a> ()</td></tr>
-<tr class="memdesc:ab6da4cdafdee906c960493adc6c666c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current size of the list.  <a href="#ab6da4cdafdee906c960493adc6c666c2">More...</a><br /></td></tr>
-<tr class="separator:ab6da4cdafdee906c960493adc6c666c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d2e3f01ff090041ff8c8b4f5a7ef190"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a6d2e3f01ff090041ff8c8b4f5a7ef190">capacity</a> ()</td></tr>
-<tr class="memdesc:a6d2e3f01ff090041ff8c8b4f5a7ef190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total storage capacity of the list.  <a href="#a6d2e3f01ff090041ff8c8b4f5a7ef190">More...</a><br /></td></tr>
-<tr class="separator:a6d2e3f01ff090041ff8c8b4f5a7ef190"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a614aefdc55b84000a007397b6250a618"><td class="memItemLeft" align="right" valign="top">TContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a614aefdc55b84000a007397b6250a618">rawStorage</a> ()</td></tr>
-<tr class="memdesc:a614aefdc55b84000a007397b6250a618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registered instance list accessor.  <a href="#a614aefdc55b84000a007397b6250a618">More...</a><br /></td></tr>
-<tr class="separator:a614aefdc55b84000a007397b6250a618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0903fbb708fda52b583dbc6427190ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#ae0903fbb708fda52b583dbc6427190ab">size</a> () const noexcept</td></tr>
+<tr class="memdesc:ae0903fbb708fda52b583dbc6427190ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current size of the list.  <a href="#ae0903fbb708fda52b583dbc6427190ab">More...</a><br /></td></tr>
+<tr class="separator:ae0903fbb708fda52b583dbc6427190ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791a3bed4642bed46eeba1c930bb3e06"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a791a3bed4642bed46eeba1c930bb3e06">capacity</a> () const noexcept</td></tr>
+<tr class="memdesc:a791a3bed4642bed46eeba1c930bb3e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total storage capacity of the list.  <a href="#a791a3bed4642bed46eeba1c930bb3e06">More...</a><br /></td></tr>
+<tr class="separator:a791a3bed4642bed46eeba1c930bb3e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b648892059de1e57b22179525901be"><td class="memItemLeft" align="right" valign="top">TContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a10b648892059de1e57b22179525901be">rawStorage</a> () noexcept</td></tr>
+<tr class="memdesc:a10b648892059de1e57b22179525901be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registered instance list accessor.  <a href="#a10b648892059de1e57b22179525901be">More...</a><br /></td></tr>
+<tr class="separator:a10b648892059de1e57b22179525901be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Add Instances</div></td></tr>
-<tr class="memitem:a5d4088f4ea174bad37f48dfd8aae29eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a5d4088f4ea174bad37f48dfd8aae29eb">add</a> (TKey key, TTrackedClass *instance)</td></tr>
-<tr class="memdesc:a5d4088f4ea174bad37f48dfd8aae29eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an instance of the TTrackedClass with a key.  <a href="#a5d4088f4ea174bad37f48dfd8aae29eb">More...</a><br /></td></tr>
-<tr class="separator:a5d4088f4ea174bad37f48dfd8aae29eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47b75f896aed5c306d88808dfe7540ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a47b75f896aed5c306d88808dfe7540ac">add</a> (TTrackedClass *instance)</td></tr>
-<tr class="memdesc:a47b75f896aed5c306d88808dfe7540ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an instance of the TTrackedClass without a key.  <a href="#a47b75f896aed5c306d88808dfe7540ac">More...</a><br /></td></tr>
-<tr class="separator:a47b75f896aed5c306d88808dfe7540ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8c21238537f73c5319c5d252c27cf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#acc8c21238537f73c5319c5d252c27cf7">add</a> (TKey key, TTrackedClass *instance) noexcept</td></tr>
+<tr class="memdesc:acc8c21238537f73c5319c5d252c27cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an instance of the TTrackedClass with a key.  <a href="#acc8c21238537f73c5319c5d252c27cf7">More...</a><br /></td></tr>
+<tr class="separator:acc8c21238537f73c5319c5d252c27cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7baaee7aa9324f6ec1506da71c0328"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#abb7baaee7aa9324f6ec1506da71c0328">add</a> (TTrackedClass *instance) noexcept</td></tr>
+<tr class="memdesc:abb7baaee7aa9324f6ec1506da71c0328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an instance of the TTrackedClass without a key.  <a href="#abb7baaee7aa9324f6ec1506da71c0328">More...</a><br /></td></tr>
+<tr class="separator:abb7baaee7aa9324f6ec1506da71c0328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Remove Instances</div></td></tr>
-<tr class="memitem:a5dd8de07e43b348e9d9d07a8d5de6629"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a5dd8de07e43b348e9d9d07a8d5de6629">remove</a> (TKey key, TTrackedClass *instance)</td></tr>
-<tr class="memdesc:a5dd8de07e43b348e9d9d07a8d5de6629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove instance matching key and value.  <a href="#a5dd8de07e43b348e9d9d07a8d5de6629">More...</a><br /></td></tr>
-<tr class="separator:a5dd8de07e43b348e9d9d07a8d5de6629"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e17a2da4635cb1250f848fed1b94b9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a7e17a2da4635cb1250f848fed1b94b9e">remove</a> (TKey key)</td></tr>
-<tr class="memdesc:a7e17a2da4635cb1250f848fed1b94b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all instances matchey key.  <a href="#a7e17a2da4635cb1250f848fed1b94b9e">More...</a><br /></td></tr>
-<tr class="separator:a7e17a2da4635cb1250f848fed1b94b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54926a40b0efcc629c43506a48d3b96e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a54926a40b0efcc629c43506a48d3b96e">remove</a> (TTrackedClass *instance)</td></tr>
-<tr class="memdesc:a54926a40b0efcc629c43506a48d3b96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an instance value from the list.  <a href="#a54926a40b0efcc629c43506a48d3b96e">More...</a><br /></td></tr>
-<tr class="separator:a54926a40b0efcc629c43506a48d3b96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab72756d85c7e2977b68a461afdc0ee4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#ab72756d85c7e2977b68a461afdc0ee4e">remove</a> (TKey key, TTrackedClass *instance) noexcept</td></tr>
+<tr class="memdesc:ab72756d85c7e2977b68a461afdc0ee4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove instance matching key and value.  <a href="#ab72756d85c7e2977b68a461afdc0ee4e">More...</a><br /></td></tr>
+<tr class="separator:ab72756d85c7e2977b68a461afdc0ee4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539732e40dd32cf745df7b923fdf2bec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a539732e40dd32cf745df7b923fdf2bec">remove</a> (TKey key) noexcept</td></tr>
+<tr class="memdesc:a539732e40dd32cf745df7b923fdf2bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all instances matchey key.  <a href="#a539732e40dd32cf745df7b923fdf2bec">More...</a><br /></td></tr>
+<tr class="separator:a539732e40dd32cf745df7b923fdf2bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3612f5b76af6ce9b2d15abc2ba08c106"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a3612f5b76af6ce9b2d15abc2ba08c106">remove</a> (TTrackedClass *instance) noexcept</td></tr>
+<tr class="memdesc:a3612f5b76af6ce9b2d15abc2ba08c106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an instance value from the list.  <a href="#a3612f5b76af6ce9b2d15abc2ba08c106">More...</a><br /></td></tr>
+<tr class="separator:a3612f5b76af6ce9b2d15abc2ba08c106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Instance Lookup</div></td></tr>
-<tr class="memitem:ac47433431a42ecef9df774dfa3f67ac8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#ac47433431a42ecef9df774dfa3f67ac8">operator[]</a> (TKey key)</td></tr>
-<tr class="memdesc:ac47433431a42ecef9df774dfa3f67ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indexing operator supports the use of key.  <a href="#ac47433431a42ecef9df774dfa3f67ac8">More...</a><br /></td></tr>
-<tr class="separator:ac47433431a42ecef9df774dfa3f67ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ee4c4285750ef9a53df2ba1ccd43bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a16ee4c4285750ef9a53df2ba1ccd43bb">find</a> (TKey key)</td></tr>
-<tr class="memdesc:a16ee4c4285750ef9a53df2ba1ccd43bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find instance using a key.  <a href="#a16ee4c4285750ef9a53df2ba1ccd43bb">More...</a><br /></td></tr>
-<tr class="separator:a16ee4c4285750ef9a53df2ba1ccd43bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a624a250e6dbbea345f796e967ff5a719"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a624a250e6dbbea345f796e967ff5a719">operator[]</a> (TKey key) noexcept</td></tr>
+<tr class="memdesc:a624a250e6dbbea345f796e967ff5a719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indexing operator supports the use of key.  <a href="#a624a250e6dbbea345f796e967ff5a719">More...</a><br /></td></tr>
+<tr class="separator:a624a250e6dbbea345f796e967ff5a719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ac136676445fed5e7e980b645a01ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#af3ac136676445fed5e7e980b645a01ef">find</a> (TKey key) noexcept</td></tr>
+<tr class="memdesc:af3ac136676445fed5e7e980b645a01ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find instance using a key.  <a href="#af3ac136676445fed5e7e980b645a01ef">More...</a><br /></td></tr>
+<tr class="separator:af3ac136676445fed5e7e980b645a01ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><h3>Private Types</h3></td></tr>
 <tr class="memitem:a955a025f7d867097c297a71fc3440b13"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d8c/group___instance_list.html#a955a025f7d867097c297a71fc3440b13">optional_ref</a> = type_safe::optional_ref&lt; TTrackedClass &gt;</td></tr>
 <tr class="memdesc:a955a025f7d867097c297a71fc3440b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience alias for optional references, used internally to the class.  <a href="#a955a025f7d867097c297a71fc3440b13">More...</a><br /></td></tr>
@@ -402,8 +402,8 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
 </div>
 </div>
 <h4 class="groupheader">Member Function Documentation</h4>
-<a id="a5d4088f4ea174bad37f48dfd8aae29eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d4088f4ea174bad37f48dfd8aae29eb">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
+<a id="acc8c21238537f73c5319c5d252c27cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc8c21238537f73c5319c5d252c27cf7">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -433,13 +433,14 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Register an instance of the TTrackedClass with a key. </p>
-<p><a class="el" href="../../d7/d8c/group___instance_list.html#a5d4088f4ea174bad37f48dfd8aae29eb" title="Register an instance of the TTrackedClass with a key.">add()</a> should be called in the base-class constructor of the instance type which you are tracking. See <a class="el" href="../../d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers.">embvm::DriverBase</a> for an example.</p>
+<p><a class="el" href="../../d7/d8c/group___instance_list.html#acc8c21238537f73c5319c5d252c27cf7" title="Register an instance of the TTrackedClass with a key.">add()</a> should be called in the base-class constructor of the instance type which you are tracking. See <a class="el" href="../../d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers.">embvm::DriverBase</a> for an example.</p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The key to register the instance under. </td></tr>
@@ -448,14 +449,14 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../../dc/da7/assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#ac5c11f957d4d4837e4a4e9ac2cb06013">b</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#a6d2e3f01ff090041ff8c8b4f5a7ef190">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::capacity()</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#aa243fa2fc98808791dd25f5a70aa1484">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::registered_</a>, and <a class="el" href="../../d7/d8c/group___instance_list.html#ab6da4cdafdee906c960493adc6c666c2">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::size()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/da3/include_2assert_8h.html#af576bf8ffa22a44e53018c67095ffbf0">assert</a>, <a class="el" href="../../d4/d03/libm-bench_8cpp.html#ac5c11f957d4d4837e4a4e9ac2cb06013">b</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#a791a3bed4642bed46eeba1c930bb3e06">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::capacity()</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#aa243fa2fc98808791dd25f5a70aa1484">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::registered_</a>, and <a class="el" href="../../d7/d8c/group___instance_list.html#ae0903fbb708fda52b583dbc6427190ab">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::size()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d8c/group___instance_list.html#a47b75f896aed5c306d88808dfe7540ac">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::add()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d8c/group___instance_list.html#abb7baaee7aa9324f6ec1506da71c0328">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::add()</a>.</p>
 
 </div>
 </div>
-<a id="a47b75f896aed5c306d88808dfe7540ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47b75f896aed5c306d88808dfe7540ac">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
+<a id="abb7baaee7aa9324f6ec1506da71c0328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7baaee7aa9324f6ec1506da71c0328">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -475,13 +476,14 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Register an instance of the TTrackedClass without a key. </p>
-<p><a class="el" href="../../d7/d8c/group___instance_list.html#a5d4088f4ea174bad37f48dfd8aae29eb" title="Register an instance of the TTrackedClass with a key.">add()</a> should be called in the base-class constructor of the instance type which you are tracking. See <a class="el" href="../../d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers.">embvm::DriverBase</a> for an example.</p>
+<p><a class="el" href="../../d7/d8c/group___instance_list.html#acc8c21238537f73c5319c5d252c27cf7" title="Register an instance of the TTrackedClass with a key.">add()</a> should be called in the base-class constructor of the instance type which you are tracking. See <a class="el" href="../../d1/dc2/group___framework_driver.html#d8/d47/classembvm_1_1_driver_base" title="Virtual base class for framework drivers.">embvm::DriverBase</a> for an example.</p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">instance</td><td>The instance pointer to track. </td></tr>
@@ -489,12 +491,12 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="../../d7/d8c/group___instance_list.html#a5d4088f4ea174bad37f48dfd8aae29eb">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::add()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d8c/group___instance_list.html#acc8c21238537f73c5319c5d252c27cf7">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::add()</a>.</p>
 
 </div>
 </div>
-<a id="a6d2e3f01ff090041ff8c8b4f5a7ef190"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d2e3f01ff090041ff8c8b4f5a7ef190">&#9670;&nbsp;</a></span>capacity()</h2>
+<a id="a791a3bed4642bed46eeba1c930bb3e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a791a3bed4642bed46eeba1c930bb3e06">&#9670;&nbsp;</a></span>capacity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,12 +510,12 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
           <td class="memname">constexpr <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d7/d8c/group___instance_list.html#d9/d62/classembutil_1_1_instance_list">embutil::InstanceList</a>&lt; TTrackedClass, TKey, TContainer, TSize &gt;::capacity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -523,12 +525,12 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
 
 <p class="reference">References <a class="el" href="../../d7/d8c/group___instance_list.html#aa243fa2fc98808791dd25f5a70aa1484">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::registered_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d8c/group___instance_list.html#a5d4088f4ea174bad37f48dfd8aae29eb">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::add()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d8c/group___instance_list.html#acc8c21238537f73c5319c5d252c27cf7">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::add()</a>.</p>
 
 </div>
 </div>
-<a id="a16ee4c4285750ef9a53df2ba1ccd43bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16ee4c4285750ef9a53df2ba1ccd43bb">&#9670;&nbsp;</a></span>find()</h2>
+<a id="af3ac136676445fed5e7e980b645a01ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ac136676445fed5e7e980b645a01ef">&#9670;&nbsp;</a></span>find()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -548,7 +550,7 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -564,12 +566,12 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
 
 <p class="reference">References <a class="el" href="../../d7/d8c/group___instance_list.html#aa243fa2fc98808791dd25f5a70aa1484">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::registered_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d8c/group___instance_list.html#ac47433431a42ecef9df774dfa3f67ac8">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::operator[]()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d8c/group___instance_list.html#a624a250e6dbbea345f796e967ff5a719">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::operator[]()</a>.</p>
 
 </div>
 </div>
-<a id="ac47433431a42ecef9df774dfa3f67ac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac47433431a42ecef9df774dfa3f67ac8">&#9670;&nbsp;</a></span>operator[]()</h2>
+<a id="a624a250e6dbbea345f796e967ff5a719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a624a250e6dbbea345f796e967ff5a719">&#9670;&nbsp;</a></span>operator[]()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -589,7 +591,7 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -604,12 +606,12 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an optional_ref to the TTrackedClass value corresponding to key. If no value is found that matches the key, the optional_ref will be empty. </dd></dl>
 
-<p class="reference">References <a class="el" href="../../d7/d8c/group___instance_list.html#a16ee4c4285750ef9a53df2ba1ccd43bb">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::find()</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d8c/group___instance_list.html#af3ac136676445fed5e7e980b645a01ef">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::find()</a>.</p>
 
 </div>
 </div>
-<a id="a614aefdc55b84000a007397b6250a618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a614aefdc55b84000a007397b6250a618">&#9670;&nbsp;</a></span>rawStorage()</h2>
+<a id="a10b648892059de1e57b22179525901be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10b648892059de1e57b22179525901be">&#9670;&nbsp;</a></span>rawStorage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -628,7 +630,7 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -641,8 +643,8 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
 
 </div>
 </div>
-<a id="a5dd8de07e43b348e9d9d07a8d5de6629"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dd8de07e43b348e9d9d07a8d5de6629">&#9670;&nbsp;</a></span>remove() <span class="overload">[1/3]</span></h2>
+<a id="ab72756d85c7e2977b68a461afdc0ee4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab72756d85c7e2977b68a461afdc0ee4e">&#9670;&nbsp;</a></span>remove() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,13 +674,14 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Remove instance matching key and value. </p>
 <p>Both the key and the value must match for the instance to be removed.</p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The key corresponding to the instance to remove. </td></tr>
@@ -691,8 +694,8 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
 
 </div>
 </div>
-<a id="a7e17a2da4635cb1250f848fed1b94b9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e17a2da4635cb1250f848fed1b94b9e">&#9670;&nbsp;</a></span>remove() <span class="overload">[2/3]</span></h2>
+<a id="a539732e40dd32cf745df7b923fdf2bec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539732e40dd32cf745df7b923fdf2bec">&#9670;&nbsp;</a></span>remove() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -712,12 +715,13 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Remove all instances matchey key. </p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The corresponding key to remove instances for. </td></tr>
@@ -729,8 +733,8 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
 
 </div>
 </div>
-<a id="a54926a40b0efcc629c43506a48d3b96e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54926a40b0efcc629c43506a48d3b96e">&#9670;&nbsp;</a></span>remove() <span class="overload">[3/3]</span></h2>
+<a id="a3612f5b76af6ce9b2d15abc2ba08c106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3612f5b76af6ce9b2d15abc2ba08c106">&#9670;&nbsp;</a></span>remove() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -750,12 +754,13 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Remove an instance value from the list. </p>
+<p>This function is marked noexcept because we want the program to terminate if an exception results from this call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">instance</td><td>The pointer to the instance to remove from the list. </td></tr>
@@ -767,8 +772,8 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
 
 </div>
 </div>
-<a id="ab6da4cdafdee906c960493adc6c666c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6da4cdafdee906c960493adc6c666c2">&#9670;&nbsp;</a></span>size()</h2>
+<a id="ae0903fbb708fda52b583dbc6427190ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0903fbb708fda52b583dbc6427190ab">&#9670;&nbsp;</a></span>size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -782,12 +787,12 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
           <td class="memname"><a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> <a class="el" href="../../d7/d8c/group___instance_list.html#d9/d62/classembutil_1_1_instance_list">embutil::InstanceList</a>&lt; TTrackedClass, TKey, TContainer, TSize &gt;::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -797,7 +802,7 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
 
 <p class="reference">References <a class="el" href="../../d7/d8c/group___instance_list.html#aa243fa2fc98808791dd25f5a70aa1484">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::registered_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d8c/group___instance_list.html#a5d4088f4ea174bad37f48dfd8aae29eb">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::add()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d8c/group___instance_list.html#acc8c21238537f73c5319c5d252c27cf7">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::add()</a>.</p>
 
 </div>
 </div>
@@ -826,7 +831,7 @@ template&lt;class TTrackedClass , typename TKey , class TContainer , const size_
 
 <p>The list of registered instances. </p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d8c/group___instance_list.html#a5d4088f4ea174bad37f48dfd8aae29eb">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::add()</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#a6d2e3f01ff090041ff8c8b4f5a7ef190">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::capacity()</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#a16ee4c4285750ef9a53df2ba1ccd43bb">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::find()</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#a614aefdc55b84000a007397b6250a618">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::rawStorage()</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#a5dd8de07e43b348e9d9d07a8d5de6629">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::remove()</a>, and <a class="el" href="../../d7/d8c/group___instance_list.html#ab6da4cdafdee906c960493adc6c666c2">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::size()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d8c/group___instance_list.html#acc8c21238537f73c5319c5d252c27cf7">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::add()</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#a791a3bed4642bed46eeba1c930bb3e06">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::capacity()</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#af3ac136676445fed5e7e980b645a01ef">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::find()</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#a10b648892059de1e57b22179525901be">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::rawStorage()</a>, <a class="el" href="../../d7/d8c/group___instance_list.html#ab72756d85c7e2977b68a461afdc0ee4e">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::remove()</a>, and <a class="el" href="../../d7/d8c/group___instance_list.html#ae0903fbb708fda52b583dbc6427190ab">embutil::InstanceList&lt; TTrackedClass, TKey, TContainer, TSize &gt;::size()</a>.</p>
 
 </div>
 </div>

@@ -149,6 +149,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a00ba2ca988495904efc418acbf0627d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6b/printf_8h.html#a00ba2ca988495904efc418acbf0627d7">vsnprintf</a>&#160;&#160;&#160;<a class="el" href="../../d3/d6b/printf_8h.html#af37254f8c6a2d9d51e82c85fd666f88e">vsnprintf_</a></td></tr>
 <tr class="separator:a00ba2ca988495904efc418acbf0627d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a275497dfccfba8ca97e73865fd2b083b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6b/printf_8h.html#a275497dfccfba8ca97e73865fd2b083b">vprintf</a>&#160;&#160;&#160;<a class="el" href="../../d3/d6b/printf_8h.html#aa199d9388f8dcddcda1a0451315cae89">vprintf_</a></td></tr>
+<tr class="memdesc:a275497dfccfba8ca97e73865fd2b083b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiny vprintf implementation.  <a href="#a275497dfccfba8ca97e73865fd2b083b">More...</a><br /></td></tr>
 <tr class="separator:a275497dfccfba8ca97e73865fd2b083b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b2f42a7388678ff725644dd84edde7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6c/test__suite_8cpp.html#a8b2f42a7388678ff725644dd84edde7a">_PRINTF_H_</a></td></tr>
 <tr class="separator:a8b2f42a7388678ff725644dd84edde7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,11 +177,11 @@ Functions</h2></td></tr>
 <tr class="separator:a5b16fca837f5301cb0c01fa668f044f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af37254f8c6a2d9d51e82c85fd666f88e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6b/printf_8h.html#af37254f8c6a2d9d51e82c85fd666f88e">vsnprintf_</a> (char *buffer, <a class="el" href="../../d4/ddb/aarch64_2include_2__types_2__size__t_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> count, const char *format, <a class="el" href="../../d1/d2d/stdarg_8h.html#af53f622e3b6c080daeb167c1955d7ec1">va_list</a> va)</td></tr>
 <tr class="separator:af37254f8c6a2d9d51e82c85fd666f88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa199d9388f8dcddcda1a0451315cae89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6b/printf_8h.html#aa199d9388f8dcddcda1a0451315cae89">vprintf_</a> (const char *format, <a class="el" href="../../d1/d2d/stdarg_8h.html#af53f622e3b6c080daeb167c1955d7ec1">va_list</a> va)</td></tr>
+<tr class="separator:aa199d9388f8dcddcda1a0451315cae89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16cdc6ff34afc2122ae164d4ee3a8c50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6b/printf_8h.html#a16cdc6ff34afc2122ae164d4ee3a8c50">fctprintf</a> (void(*out)(char character, void *arg), void *arg, const char *format,...)</td></tr>
 <tr class="memdesc:a16cdc6ff34afc2122ae164d4ee3a8c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">printf with output function You may use this as dynamic alternative to <a class="el" href="../../d3/d6b/printf_8h.html#a3cb9f0894fab1c8fbb0753c9c7c2a8d9" title="Tiny printf implementation You have to implement putchar if you use printf() To avoid conflicts with ...">printf()</a> with its fixed <a class="el" href="../../d3/d6b/printf_8h.html#a223496da92021626a4430fed0af667bd" title="Output a character to a custom device like UART, used by the printf() function This function is decla...">_putchar()</a> output  <a href="#a16cdc6ff34afc2122ae164d4ee3a8c50">More...</a><br /></td></tr>
 <tr class="separator:a16cdc6ff34afc2122ae164d4ee3a8c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa199d9388f8dcddcda1a0451315cae89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6b/printf_8h.html#aa199d9388f8dcddcda1a0451315cae89">vprintf_</a> (const char *format, <a class="el" href="../../d1/d2d/stdarg_8h.html#af53f622e3b6c080daeb167c1955d7ec1">va_list</a> va)</td></tr>
-<tr class="separator:aa199d9388f8dcddcda1a0451315cae89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a8b2f42a7388678ff725644dd84edde7a"></a>
@@ -266,10 +267,11 @@ Functions</h2></td></tr>
     <tr><td class="paramname">buffer</td><td>A pointer to the buffer where to store the formatted string </td></tr>
     <tr><td class="paramname">count</td><td>The maximum number of characters to store in the buffer, including a terminating null character </td></tr>
     <tr><td class="paramname">format</td><td>A string that specifies the format of the output </td></tr>
+    <tr><td class="paramname">va</td><td>A value identifying a variable arguments list </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of characters that are WRITTEN into the buffer, not counting the terminating null character If the formatted string is truncated the buffer size (count) is returned </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters that COULD have been written into the buffer, not counting the terminating null character. A value equal or larger than count indicates truncation. Only when the returned value is non-negative and less than count, the string has been completely written. </dd></dl>
 
 </div>
 </div>
@@ -322,6 +324,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Tiny vprintf implementation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>A string that specifies the format of the output </td></tr>
+    <tr><td class="paramname">va</td><td>A value identifying a variable arguments list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of characters that are WRITTEN into the buffer, not counting the terminating null character </dd></dl>
 
 </div>
 </div>
@@ -445,14 +457,14 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../d1/d3d/printf_8c.html#ad940608e967c675b53207179377308f5">_out_fct()</a>, <a class="el" href="../../d1/d3d/printf_8c.html#a2bad5a18d0dcf3bbf70d0eb1b2797044">_vsnprintf()</a>, <a class="el" href="../../d1/d2d/stdarg_8h.html#a823b205416e9129825841b74c3bf8484">va_end</a>, and <a class="el" href="../../d1/d2d/stdarg_8h.html#aa0628ab596c3d7e78f5e08c2d98e24da">va_start</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dd/d45/group___logging_subsystem.html#a8c0ca591802803fa29f6bb57b7906624">embvm::LoggerBase&lt; TLock &gt;::log()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dd/d45/group___logging_subsystem.html#a3055153cb76d5d0f40146ce24d613c5f">embvm::LoggerBase&lt; TLock &gt;::log()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d6b/printf_8h_a16cdc6ff34afc2122ae164d4ee3a8c50_icgraph.jpg" border="0" usemap="#d3/d6b/printf_8h_a16cdc6ff34afc2122ae164d4ee3a8c50_icgraph" alt=""/></div>
 <map name="d3/d6b/printf_8h_a16cdc6ff34afc2122ae164d4ee3a8c50_icgraph" id="d3/d6b/printf_8h_a16cdc6ff34afc2122ae164d4ee3a8c50_icgraph">
 <area shape="rect"  title="printf with output function You may use this as dynamic alternative to printf() with its fixed _putch..." alt="" coords="223,5,288,31"/>
-<area shape="rect"  href="../../dd/d45/group___logging_subsystem.html#a8c0ca591802803fa29f6bb57b7906624" title="Add data to the log buffer." alt="" coords="5,5,175,31"/>
+<area shape="rect"  href="../../dd/d45/group___logging_subsystem.html#a3055153cb76d5d0f40146ce24d613c5f" title="Add data to the log buffer." alt="" coords="5,5,175,31"/>
 </map>
 </div>
 
